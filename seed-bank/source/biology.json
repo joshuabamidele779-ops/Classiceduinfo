@@ -1,0 +1,855 @@
+{
+  "_note": "Original practice items written for the Classic EDU Suite CBT bank. Not reproduced from any past paper. Syllabus-aligned to JAMB Biology.",
+  "questions": [
+    {
+      "question": "In which organelle does cellular respiration take place?",
+      "type": "single",
+      "options": [
+        "Golgi body",
+        "Ribosome",
+        "Chloroplast",
+        "Mitochondrion"
+      ],
+      "correct": "D",
+      "explanation": "The mitochondrion releases energy from glucose and is called the powerhouse of the cell.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Cell Structure",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Photosynthesis takes place in the",
+      "type": "single",
+      "options": [
+        "vacuole",
+        "cell membrane",
+        "chloroplast",
+        "nucleus"
+      ],
+      "correct": "C",
+      "explanation": "Chloroplasts contain chlorophyll, which traps the light energy used to make food.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Cell Structure",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The cell wall of a plant cell is made mainly of",
+      "type": "single",
+      "options": [
+        "cellulose",
+        "protein",
+        "lipid",
+        "chitin"
+      ],
+      "correct": "A",
+      "explanation": "Cellulose fibres give the plant cell wall its rigidity.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Cell Structure",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The function of the ribosome in a cell is",
+      "type": "single",
+      "options": [
+        "storage of water",
+        "digestion of worn-out organelles",
+        "transport of materials",
+        "protein synthesis"
+      ],
+      "correct": "D",
+      "explanation": "Ribosomes assemble amino acids into proteins.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Cell Structure",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Meiosis differs from mitosis in that meiosis",
+      "type": "single",
+      "options": [
+        "does not involve cell division",
+        "produces two identical daughter cells",
+        "occurs in all body cells",
+        "halves the chromosome number of the daughter cells"
+      ],
+      "correct": "D",
+      "explanation": "Meiosis is reduction division, producing haploid gametes from a diploid cell.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Cell Division",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "How many chromosomes are present in a normal human body cell?",
+      "type": "single",
+      "options": [
+        "44",
+        "92",
+        "23",
+        "46"
+      ],
+      "correct": "D",
+      "explanation": "Body cells are diploid with 23 pairs, giving 46 chromosomes.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Cell Division",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The raw materials required for photosynthesis are",
+      "type": "single",
+      "options": [
+        "nitrogen and water",
+        "carbon(IV) oxide and water",
+        "oxygen and water",
+        "glucose and oxygen"
+      ],
+      "correct": "B",
+      "explanation": "Carbon dioxide and water are combined using light energy trapped by chlorophyll.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Nutrition in Plants",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The products of photosynthesis are",
+      "type": "single",
+      "options": [
+        "starch and nitrogen",
+        "water and energy",
+        "glucose and oxygen",
+        "carbon(IV) oxide and water"
+      ],
+      "correct": "C",
+      "explanation": "Glucose is the food made, and oxygen is released as a by-product.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Nutrition in Plants",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Which reagent is used to test for the presence of starch in a leaf?",
+      "type": "single",
+      "options": [
+        "Lime water",
+        "Benedict's solution",
+        "Iodine solution",
+        "Sodium hydroxide solution"
+      ],
+      "correct": "C",
+      "explanation": "Iodine turns blue-black in the presence of starch.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Food Tests",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The enzyme in saliva that acts on starch is",
+      "type": "single",
+      "options": [
+        "amylase",
+        "trypsin",
+        "pepsin",
+        "lipase"
+      ],
+      "correct": "A",
+      "explanation": "Salivary amylase (ptyalin) breaks starch down to maltose.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Digestion",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Pepsin is most active in",
+      "type": "single",
+      "options": [
+        "an alkaline medium",
+        "a neutral medium",
+        "a medium free of water",
+        "an acidic medium"
+      ],
+      "correct": "D",
+      "explanation": "Hydrochloric acid in the stomach provides the low pH that pepsin requires.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Digestion",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Bile is produced by the liver and stored in the",
+      "type": "single",
+      "options": [
+        "spleen",
+        "gall bladder",
+        "pancreas",
+        "duodenum"
+      ],
+      "correct": "B",
+      "explanation": "Bile is concentrated in the gall bladder and released into the duodenum to emulsify fats.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Digestion",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Absorption of digested food takes place mainly in the",
+      "type": "single",
+      "options": [
+        "oesophagus",
+        "stomach",
+        "small intestine",
+        "large intestine"
+      ],
+      "correct": "C",
+      "explanation": "The villi of the small intestine give a very large surface area for absorption.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Digestion",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Oxygen is transported in the blood by",
+      "type": "single",
+      "options": [
+        "platelets",
+        "haemoglobin",
+        "white blood cells",
+        "plasma"
+      ],
+      "correct": "B",
+      "explanation": "Haemoglobin in red blood cells binds oxygen to form oxyhaemoglobin.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Transport in Animals",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Which blood component is essential for clotting?",
+      "type": "single",
+      "options": [
+        "Lymphocytes",
+        "Plasma proteins only",
+        "Platelets",
+        "Red blood cells"
+      ],
+      "correct": "C",
+      "explanation": "Platelets trigger the cascade that converts fibrinogen to fibrin.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Transport in Animals",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Which chamber of the mammalian heart has the thickest muscular wall?",
+      "type": "single",
+      "options": [
+        "Right atrium",
+        "Left atrium",
+        "Right ventricle",
+        "Left ventricle"
+      ],
+      "correct": "D",
+      "explanation": "It pumps blood to the whole body, so it must generate the highest pressure.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Transport in Animals",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Arteries differ from veins in that arteries",
+      "type": "single",
+      "options": [
+        "have valves along their length",
+        "carry blood away from the heart",
+        "have thinner walls",
+        "always carry deoxygenated blood"
+      ],
+      "correct": "B",
+      "explanation": "Direction of flow is the reliable distinction; the pulmonary artery carries deoxygenated blood.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Transport in Animals",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Water and mineral salts are transported in flowering plants through the",
+      "type": "single",
+      "options": [
+        "xylem",
+        "cortex",
+        "phloem",
+        "cambium"
+      ],
+      "correct": "A",
+      "explanation": "Xylem vessels carry water upwards; phloem carries manufactured food.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Transport in Plants",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The loss of water vapour from the aerial parts of a plant is called",
+      "type": "single",
+      "options": [
+        "transpiration",
+        "translocation",
+        "guttation",
+        "osmosis"
+      ],
+      "correct": "A",
+      "explanation": "Most of it occurs through the stomata of the leaves.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Transport in Plants",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The products of aerobic respiration in animals are",
+      "type": "single",
+      "options": [
+        "ethanol and carbon(IV) oxide",
+        "carbon(IV) oxide, water and energy",
+        "glucose and oxygen",
+        "lactic acid and energy"
+      ],
+      "correct": "B",
+      "explanation": "Glucose is completely oxidised, releasing the maximum energy.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Respiration",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Anaerobic respiration in human muscle produces",
+      "type": "single",
+      "options": [
+        "lactic acid",
+        "carbon(IV) oxide only",
+        "pyruvic acid and oxygen",
+        "ethanol"
+      ],
+      "correct": "A",
+      "explanation": "Lactic acid accumulates during vigorous exercise, causing muscle fatigue.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Respiration",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The energy currency of the cell is",
+      "type": "single",
+      "options": [
+        "ATP",
+        "haemoglobin",
+        "glucose",
+        "DNA"
+      ],
+      "correct": "A",
+      "explanation": "Adenosine triphosphate releases energy when its terminal phosphate bond is broken.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Respiration",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The functional unit of the kidney is the",
+      "type": "single",
+      "options": [
+        "villus",
+        "nephron",
+        "neurone",
+        "alveolus"
+      ],
+      "correct": "B",
+      "explanation": "Each nephron filters blood and reabsorbs useful substances.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Excretion",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Which organ excretes excess water and salts in the form of sweat?",
+      "type": "single",
+      "options": [
+        "Lung",
+        "Skin",
+        "Kidney",
+        "Liver"
+      ],
+      "correct": "B",
+      "explanation": "Sweat glands in the skin excrete water, salts and a little urea.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Excretion",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The lungs excrete",
+      "type": "single",
+      "options": [
+        "carbon(IV) oxide and water vapour",
+        "salts and urea",
+        "bile pigments",
+        "urea and water"
+      ],
+      "correct": "A",
+      "explanation": "Both are waste products of respiration removed during exhalation.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Excretion",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Support in young herbaceous plants is largely provided by",
+      "type": "single",
+      "options": [
+        "adventitious roots",
+        "lignified wood",
+        "the waxy cuticle",
+        "the turgidity of their cells"
+      ],
+      "correct": "D",
+      "explanation": "Turgid cells press against their walls and hold the plant upright; wilting follows water loss.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Support and Movement",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The joint at the elbow is an example of a",
+      "type": "single",
+      "options": [
+        "ball and socket joint",
+        "pivot joint",
+        "immovable joint",
+        "hinge joint"
+      ],
+      "correct": "D",
+      "explanation": "A hinge joint permits movement in one plane only.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Support and Movement",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The biceps and triceps of the upper arm are described as",
+      "type": "single",
+      "options": [
+        "smooth muscles",
+        "antagonistic muscles",
+        "voluntary muscles only",
+        "cardiac muscles"
+      ],
+      "correct": "B",
+      "explanation": "One contracts while the other relaxes, producing opposite movements.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Support and Movement",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The structural and functional unit of the nervous system is the",
+      "type": "single",
+      "options": [
+        "ganglion",
+        "nephron",
+        "neurone",
+        "synapse"
+      ],
+      "correct": "C",
+      "explanation": "A neurone conducts impulses; a synapse is the junction between two of them.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Coordination",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Which part of the brain is responsible for balance and the coordination of muscular activity?",
+      "type": "single",
+      "options": [
+        "Cerebrum",
+        "Medulla oblongata",
+        "Cerebellum",
+        "Hypothalamus"
+      ],
+      "correct": "C",
+      "explanation": "The cerebellum fine-tunes posture and movement.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Coordination",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Insulin, the hormone that lowers blood glucose level, is secreted by the",
+      "type": "single",
+      "options": [
+        "pancreas",
+        "thyroid gland",
+        "adrenal gland",
+        "pituitary gland"
+      ],
+      "correct": "A",
+      "explanation": "The islets of Langerhans in the pancreas secrete insulin.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Hormones",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Adrenaline is secreted by the",
+      "type": "single",
+      "options": [
+        "pancreas",
+        "pituitary gland",
+        "adrenal gland",
+        "thyroid gland"
+      ],
+      "correct": "C",
+      "explanation": "The adrenal glands sit above the kidneys and prepare the body for emergency action.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Hormones",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The growth of a plant shoot towards a source of light is called",
+      "type": "single",
+      "options": [
+        "phototropism",
+        "hydrotropism",
+        "thigmotropism",
+        "geotropism"
+      ],
+      "correct": "A",
+      "explanation": "Auxin accumulates on the shaded side, making those cells elongate and the shoot bend towards light.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Coordination",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "In dim light, vision depends mainly on the",
+      "type": "single",
+      "options": [
+        "iris",
+        "cones of the retina",
+        "lens",
+        "rods of the retina"
+      ],
+      "correct": "D",
+      "explanation": "Rods are sensitive to low light intensity but do not distinguish colour.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Sense Organs",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The transfer of pollen grains from the anther to the stigma is called",
+      "type": "single",
+      "options": [
+        "dispersal",
+        "pollination",
+        "fertilisation",
+        "germination"
+      ],
+      "correct": "B",
+      "explanation": "Fertilisation follows pollination, when the male nucleus fuses with the ovule.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Reproduction in Plants",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Pollen grains are produced in the",
+      "type": "single",
+      "options": [
+        "style",
+        "anther",
+        "ovary",
+        "stigma"
+      ],
+      "correct": "B",
+      "explanation": "The anther is the pollen-bearing part of the stamen.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Reproduction in Plants",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "In humans, fertilisation normally takes place in the",
+      "type": "single",
+      "options": [
+        "oviduct",
+        "ovary",
+        "vagina",
+        "uterus"
+      ],
+      "correct": "A",
+      "explanation": "The sperm meets the egg in the fallopian tube (oviduct), and the embryo then implants in the uterus.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Reproduction in Animals",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The main function of the placenta is to",
+      "type": "single",
+      "options": [
+        "allow exchange of materials between mother and foetus",
+        "store food for the mother",
+        "produce the ovum",
+        "protect the foetus from physical shock"
+      ],
+      "correct": "A",
+      "explanation": "Oxygen and nutrients pass to the foetus and wastes pass back, without the blood mixing.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Reproduction in Animals",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "A cross between two heterozygous tall pea plants (Tt × Tt) gives a phenotypic ratio of",
+      "type": "single",
+      "options": [
+        "3 tall : 1 short",
+        "1 tall : 1 short",
+        "all tall",
+        "1 tall : 3 short"
+      ],
+      "correct": "A",
+      "explanation": "The offspring are TT, Tt, Tt and tt, so three show the dominant tall phenotype.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Genetics",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The observable characteristic of an organism is its",
+      "type": "single",
+      "options": [
+        "genotype",
+        "allele",
+        "chromosome",
+        "phenotype"
+      ],
+      "correct": "D",
+      "explanation": "The genotype is the genetic make-up; the phenotype is how it is expressed.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Genetics",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "In humans, the sex chromosomes of a normal male are",
+      "type": "single",
+      "options": [
+        "XO",
+        "XX",
+        "XY",
+        "YY"
+      ],
+      "correct": "C",
+      "explanation": "The father's sperm carries either X or Y, so it determines the sex of the child.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Genetics",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Sickle cell anaemia in humans is caused by",
+      "type": "single",
+      "options": [
+        "a deficiency of iron in the diet",
+        "an infection by a virus",
+        "a gene mutation",
+        "exposure to cold weather"
+      ],
+      "correct": "C",
+      "explanation": "An altered gene produces abnormal haemoglobin, distorting the red blood cells.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Variation and Mutation",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Natural selection as the mechanism of evolution was proposed by",
+      "type": "single",
+      "options": [
+        "Jean Lamarck",
+        "Gregor Mendel",
+        "Louis Pasteur",
+        "Charles Darwin"
+      ],
+      "correct": "D",
+      "explanation": "Lamarck proposed the inheritance of acquired characteristics, which is not accepted today.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Evolution",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "In a food chain, green plants are referred to as",
+      "type": "single",
+      "options": [
+        "primary consumers",
+        "decomposers",
+        "secondary consumers",
+        "producers"
+      ],
+      "correct": "D",
+      "explanation": "They manufacture their own food by photosynthesis and begin every food chain.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Ecology",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "As one moves up successive trophic levels in an ecosystem, the available energy",
+      "type": "single",
+      "options": [
+        "doubles at each level",
+        "increases steadily",
+        "decreases",
+        "remains constant"
+      ],
+      "correct": "C",
+      "explanation": "Energy is lost as heat and in respiration at each transfer, so less is passed on.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Ecology",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "All the organisms of the same species living together in a given area constitute a",
+      "type": "single",
+      "options": [
+        "ecosystem",
+        "population",
+        "habitat",
+        "community"
+      ],
+      "correct": "B",
+      "explanation": "Several populations of different species together form a community.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Ecology",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Nitrogen fixation in the root nodules of leguminous plants is carried out by",
+      "type": "single",
+      "options": [
+        "Nitrobacter",
+        "Azotobacter",
+        "Rhizobium",
+        "Nitrosomonas"
+      ],
+      "correct": "C",
+      "explanation": "Rhizobium lives symbiotically in the nodules and fixes atmospheric nitrogen.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Nutrient Cycles",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "Plants that are structurally adapted to survive in very dry habitats are called",
+      "type": "single",
+      "options": [
+        "halophytes",
+        "xerophytes",
+        "hydrophytes",
+        "mesophytes"
+      ],
+      "correct": "B",
+      "explanation": "Xerophytes reduce water loss with thick cuticles, sunken stomata and reduced leaves.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Adaptation",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The system of naming organisms using two names, the genus and the species, is called",
+      "type": "single",
+      "options": [
+        "classification",
+        "binomial nomenclature",
+        "taxonomy",
+        "identification"
+      ],
+      "correct": "B",
+      "explanation": "For example Homo sapiens, in which the genus is written first and capitalised.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Classification",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Which of the following is the most immediate consequence of deforestation?",
+      "type": "single",
+      "options": [
+        "Soil erosion",
+        "Reduction in atmospheric carbon(IV) oxide",
+        "Increase in rainfall",
+        "Increase in soil fertility"
+      ],
+      "correct": "A",
+      "explanation": "Removing the plant cover exposes bare soil to the direct action of rain and wind.",
+      "subject": "Biology",
+      "exam_type": "JAMB",
+      "topic": "Conservation",
+      "difficulty": "medium",
+      "marks": 1
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+# Only needed for the file types you actually have.
+# Plain .txt / .md / .csv / .json files need nothing at all.
+
+# PDFs (preferred: keeps layout, handles columns better)
+pdfplumber==0.11.4
+
+# PDFs (fallback, much lighter)
+pypdf==5.1.0
+
+# Word documents
+python-docx==1.1.2

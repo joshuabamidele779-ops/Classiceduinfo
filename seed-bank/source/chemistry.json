@@ -1,0 +1,855 @@
+{
+  "_note": "Original practice items written for the Classic EDU Suite CBT bank. Not reproduced from any past paper. Syllabus-aligned to JAMB Chemistry.",
+  "questions": [
+    {
+      "question": "The atomic number of an element is the number of",
+      "type": "single",
+      "options": [
+        "neutrons in its nucleus",
+        "protons in its nucleus",
+        "protons and neutrons in its nucleus",
+        "electrons in its outermost shell"
+      ],
+      "correct": "B",
+      "explanation": "Atomic number counts protons; protons plus neutrons gives the mass number.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Atomic Structure",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Isotopes of an element have the same",
+      "type": "single",
+      "options": [
+        "number of electrons and neutrons",
+        "mass number but different atomic numbers",
+        "number of neutrons but different numbers of protons",
+        "number of protons but different numbers of neutrons"
+      ],
+      "correct": "D",
+      "explanation": "Isotopes differ only in neutron count, so the atomic number is unchanged.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Atomic Structure",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "What is the electron configuration of sodium (atomic number 11)?",
+      "type": "single",
+      "options": [
+        "1s² 2s² 2p⁶ 3s¹",
+        "1s² 2s² 2p⁶ 3s²",
+        "1s² 2s² 2p⁵ 3s²",
+        "1s² 2s² 2p⁶"
+      ],
+      "correct": "A",
+      "explanation": "Eleven electrons fill 1s², 2s², 2p⁶ and leave one in 3s.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Electronic Configuration",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "How many moles are present in 22 g of carbon(IV) oxide? [C = 12, O = 16]",
+      "type": "single",
+      "options": [
+        "0.5 mol",
+        "2.0 mol",
+        "1.0 mol",
+        "0.25 mol"
+      ],
+      "correct": "A",
+      "explanation": "Molar mass of CO₂ = 44 g/mol, so moles = 22/44 = 0.5 mol.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "The Mole Concept",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "How many molecules are contained in 0.5 mole of a gas? [Avogadro's constant = 6.02 × 10²³ mol⁻¹]",
+      "type": "single",
+      "options": [
+        "3.01 × 10²³",
+        "1.20 × 10²⁴",
+        "3.01 × 10²²",
+        "6.02 × 10²³"
+      ],
+      "correct": "A",
+      "explanation": "0.5 × 6.02 × 10²³ = 3.01 × 10²³ molecules.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "The Mole Concept",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "What amount of gas occupies 11.2 dm³ at s.t.p.? [molar volume at s.t.p. = 22.4 dm³]",
+      "type": "single",
+      "options": [
+        "0.25 mol",
+        "2.0 mol",
+        "1.0 mol",
+        "0.5 mol"
+      ],
+      "correct": "D",
+      "explanation": "Moles = 11.2/22.4 = 0.5 mol.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "The Mole Concept",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A compound contains 40% carbon, 6.7% hydrogen and 53.3% oxygen by mass. What is its empirical formula? [C = 12, H = 1, O = 16]",
+      "type": "single",
+      "options": [
+        "CHO",
+        "C₂H₆O",
+        "CH₂O",
+        "C₂H₄O"
+      ],
+      "correct": "C",
+      "explanation": "Dividing by molar masses gives 3.33 : 6.7 : 3.33, which simplifies to 1 : 2 : 1.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Formulae and Equations",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "For the reaction 2H₂ + O₂ → 2H₂O, what mass of oxygen is required to burn 4 g of hydrogen completely? [H = 1, O = 16]",
+      "type": "single",
+      "options": [
+        "64 g",
+        "32 g",
+        "16 g",
+        "8 g"
+      ],
+      "correct": "B",
+      "explanation": "4 g of H₂ is 2 mol, which reacts with 1 mol of O₂, that is 32 g.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Stoichiometry",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Which of the following compounds contains ionic bonding?",
+      "type": "single",
+      "options": [
+        "CO₂",
+        "HCl",
+        "CH₄",
+        "NaCl"
+      ],
+      "correct": "D",
+      "explanation": "Sodium transfers an electron to chlorine, forming Na⁺ and Cl⁻ ions.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Chemical Bonding",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Which of the following molecules contains only covalent bonds?",
+      "type": "single",
+      "options": [
+        "MgCl₂",
+        "KBr",
+        "CH₄",
+        "CaO"
+      ],
+      "correct": "C",
+      "explanation": "Carbon shares electrons with four hydrogen atoms; the others are ionic.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Chemical Bonding",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The bond formed when a lone pair of electrons on nitrogen is donated to a hydrogen ion to form NH₄⁺ is",
+      "type": "single",
+      "options": [
+        "a hydrogen bond",
+        "a dative covalent bond",
+        "an ionic bond",
+        "a metallic bond"
+      ],
+      "correct": "B",
+      "explanation": "Both shared electrons come from one atom, which defines a dative (coordinate) bond.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Chemical Bonding",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Calculate the percentage by mass of nitrogen in ammonium nitrate, NH₄NO₃. [N = 14, H = 1, O = 16]",
+      "type": "single",
+      "options": [
+        "17.5%",
+        "28.0%",
+        "46.7%",
+        "35.0%"
+      ],
+      "correct": "D",
+      "explanation": "Molar mass = 80; nitrogen contributes 28, so 28/80 × 100 = 35%.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Stoichiometry",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "Across a period in the periodic table, the atomic radius of the elements generally",
+      "type": "single",
+      "options": [
+        "increases",
+        "decreases",
+        "remains constant",
+        "increases then decreases sharply"
+      ],
+      "correct": "B",
+      "explanation": "Nuclear charge rises while the number of shells stays the same, pulling electrons closer.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Periodic Table",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The elements of Group 1 of the periodic table are known as",
+      "type": "single",
+      "options": [
+        "transition metals",
+        "alkali metals",
+        "alkaline earth metals",
+        "halogens"
+      ],
+      "correct": "B",
+      "explanation": "Group 1 metals form strongly alkaline hydroxides in water.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Periodic Table",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The noble gases are chemically unreactive because",
+      "type": "single",
+      "options": [
+        "they exist as diatomic molecules",
+        "their outermost shells are completely filled",
+        "they have very high melting points",
+        "they are very heavy"
+      ],
+      "correct": "B",
+      "explanation": "A full outer shell leaves no tendency to gain, lose or share electrons.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Periodic Table",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "According to the Brønsted-Lowry theory, an acid is a substance that",
+      "type": "single",
+      "options": [
+        "donates a pair of electrons",
+        "produces hydroxide ions in water",
+        "accepts a proton",
+        "donates a proton"
+      ],
+      "correct": "D",
+      "explanation": "A Brønsted-Lowry acid is a proton donor; a base is a proton acceptor.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Acids, Bases and Salts",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "What is the pH of a solution whose hydrogen ion concentration is 1 × 10⁻³ mol/dm³?",
+      "type": "single",
+      "options": [
+        "10",
+        "11",
+        "1",
+        "3"
+      ],
+      "correct": "D",
+      "explanation": "pH = −log[H⁺] = −log(10⁻³) = 3.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Acids, Bases and Salts",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The reaction between an acid and a base to form a salt and water is called",
+      "type": "single",
+      "options": [
+        "oxidation",
+        "esterification",
+        "neutralisation",
+        "hydrolysis"
+      ],
+      "correct": "C",
+      "explanation": "H⁺ and OH⁻ combine to form water, leaving the salt in solution.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Acids, Bases and Salts",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Which of the following is an acid salt?",
+      "type": "single",
+      "options": [
+        "NaHSO₄",
+        "Na₂SO₄",
+        "NaCl",
+        "CaCO₃"
+      ],
+      "correct": "A",
+      "explanation": "It still contains a replaceable hydrogen atom from the parent acid.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Acids, Bases and Salts",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "What colour does phenolphthalein show in an alkaline solution?",
+      "type": "single",
+      "options": [
+        "Yellow",
+        "Blue",
+        "Colourless",
+        "Pink"
+      ],
+      "correct": "D",
+      "explanation": "Phenolphthalein is colourless in acid and pink in alkali.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Acid-Base Titration",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "What volume of 0.05 mol/dm³ hydrochloric acid is required to neutralise 25 cm³ of 0.1 mol/dm³ sodium hydroxide?",
+      "type": "single",
+      "options": [
+        "100.0 cm³",
+        "50.0 cm³",
+        "12.5 cm³",
+        "25.0 cm³"
+      ],
+      "correct": "B",
+      "explanation": "Moles of NaOH = 0.0025; the reaction is 1:1, so volume = 0.0025/0.05 = 0.05 dm³ = 50 cm³.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Acid-Base Titration",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "Oxidation is best defined as the",
+      "type": "single",
+      "options": [
+        "loss of electrons",
+        "gain of electrons",
+        "loss of oxygen",
+        "gain of hydrogen"
+      ],
+      "correct": "A",
+      "explanation": "In electronic terms oxidation is electron loss and reduction is electron gain.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Redox Reactions",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "What is the oxidation number of sulphur in H₂SO₄?",
+      "type": "single",
+      "options": [
+        "+2",
+        "+4",
+        "+6",
+        "−2"
+      ],
+      "correct": "C",
+      "explanation": "2(+1) + S + 4(−2) = 0, so S = +6.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Redox Reactions",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "What is the oxidation number of manganese in KMnO₄?",
+      "type": "single",
+      "options": [
+        "+7",
+        "+2",
+        "+6",
+        "+4"
+      ],
+      "correct": "A",
+      "explanation": "+1 + Mn + 4(−2) = 0, so Mn = +7.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Redox Reactions",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "During the electrolysis of an electrolyte, cations migrate towards the",
+      "type": "single",
+      "options": [
+        "electrolyte surface",
+        "salt bridge",
+        "cathode",
+        "anode"
+      ],
+      "correct": "C",
+      "explanation": "Cations are positive, so they move to the negative electrode, the cathode.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Electrolysis",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "What mass of copper is deposited when 2 faradays of electricity are passed through copper(II) sulphate solution? [Cu = 64]",
+      "type": "single",
+      "options": [
+        "16 g",
+        "64 g",
+        "32 g",
+        "128 g"
+      ],
+      "correct": "B",
+      "explanation": "Cu²⁺ + 2e⁻ → Cu, so 2 faradays deposit 1 mole of copper, that is 64 g.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Electrolysis",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "Which of the following is a non-electrolyte?",
+      "type": "single",
+      "options": [
+        "Sodium hydroxide solution",
+        "Dilute sulphuric acid",
+        "Molten sodium chloride",
+        "Sugar solution"
+      ],
+      "correct": "D",
+      "explanation": "Sugar dissolves as neutral molecules, so there are no free ions to carry current.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Electrolysis",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "An increase in temperature increases the rate of a chemical reaction mainly because",
+      "type": "single",
+      "options": [
+        "the activation energy of the reaction is lowered",
+        "the particles collide more frequently and with greater energy",
+        "the concentration of the reactants increases",
+        "the equilibrium constant always increases"
+      ],
+      "correct": "B",
+      "explanation": "Heating raises the proportion of collisions with energy above the activation energy.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Rates of Reaction",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "A catalyst increases the rate of a chemical reaction by",
+      "type": "single",
+      "options": [
+        "being used up in the reaction",
+        "shifting the position of equilibrium",
+        "providing an alternative path of lower activation energy",
+        "increasing the temperature of the reaction"
+      ],
+      "correct": "C",
+      "explanation": "A catalyst is recovered unchanged in mass and does not move the equilibrium position.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Rates of Reaction",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "In the equilibrium N₂(g) + 3H₂(g) ⇌ 2NH₃(g), an increase in pressure favours",
+      "type": "single",
+      "options": [
+        "the decomposition of ammonia",
+        "the forward reaction",
+        "the backward reaction",
+        "neither reaction"
+      ],
+      "correct": "B",
+      "explanation": "The forward reaction reduces the number of gas molecules from 4 to 2, relieving the pressure.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Chemical Equilibrium",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "In an exothermic reaction, the enthalpy change ΔH is",
+      "type": "single",
+      "options": [
+        "zero",
+        "positive",
+        "negative",
+        "always equal to the activation energy"
+      ],
+      "correct": "C",
+      "explanation": "Heat is given out, so the products have less enthalpy than the reactants.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Energy Changes",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Temporary hardness in water is best removed by",
+      "type": "single",
+      "options": [
+        "adding sodium chloride",
+        "boiling the water",
+        "filtering the water",
+        "adding dilute hydrochloric acid"
+      ],
+      "correct": "B",
+      "explanation": "Boiling decomposes the dissolved hydrogencarbonates, which precipitate out.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Water",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The 5H₂O in the formula CuSO₄·5H₂O is referred to as",
+      "type": "single",
+      "options": [
+        "hygroscopic water",
+        "a hydrated salt",
+        "deliquescent water",
+        "water of crystallisation"
+      ],
+      "correct": "D",
+      "explanation": "It is water chemically combined in fixed proportion within the crystal.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Water",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A gas occupies 300 cm³ at 27 °C. What volume will it occupy at 127 °C if the pressure is kept constant?",
+      "type": "single",
+      "options": [
+        "225 cm³",
+        "1411 cm³",
+        "350 cm³",
+        "400 cm³"
+      ],
+      "correct": "D",
+      "explanation": "By Charles' law, V₂ = 300 × 400/300 = 400 cm³, using temperatures in kelvin.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Gas Laws",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "Graham's law states that the rate of diffusion of a gas is inversely proportional to the",
+      "type": "single",
+      "options": [
+        "square of its density",
+        "volume it occupies",
+        "square root of its density",
+        "absolute temperature"
+      ],
+      "correct": "C",
+      "explanation": "Lighter gases diffuse faster, in proportion to 1/√density.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Gas Laws",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Which gas turns lime water milky?",
+      "type": "single",
+      "options": [
+        "Carbon(IV) oxide",
+        "Hydrogen",
+        "Nitrogen",
+        "Oxygen"
+      ],
+      "correct": "A",
+      "explanation": "Insoluble calcium carbonate is precipitated, giving the milky appearance.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Tests for Gases",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Which gas relights a glowing splint?",
+      "type": "single",
+      "options": [
+        "Oxygen",
+        "Hydrogen",
+        "Carbon(IV) oxide",
+        "Ammonia"
+      ],
+      "correct": "A",
+      "explanation": "Oxygen supports combustion, so the glowing splint bursts back into flame.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Tests for Gases",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Which gas burns with a characteristic 'pop' when a lighted splint is applied?",
+      "type": "single",
+      "options": [
+        "Hydrogen",
+        "Oxygen",
+        "Chlorine",
+        "Sulphur(IV) oxide"
+      ],
+      "correct": "A",
+      "explanation": "Hydrogen explodes quietly with air, producing the familiar pop.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Tests for Gases",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Which gas turns damp red litmus paper blue?",
+      "type": "single",
+      "options": [
+        "Ammonia",
+        "Hydrogen chloride",
+        "Chlorine",
+        "Carbon(IV) oxide"
+      ],
+      "correct": "A",
+      "explanation": "Ammonia dissolves to give an alkaline solution.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Tests for Gases",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Chlorine bleaches damp litmus paper because, in the presence of water, it acts as",
+      "type": "single",
+      "options": [
+        "a neutral gas",
+        "a reducing agent",
+        "an oxidising agent",
+        "a dehydrating agent"
+      ],
+      "correct": "C",
+      "explanation": "Chlorine and water form hypochlorous acid, which oxidises and so bleaches the dye.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Halogens",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "In the blast furnace, iron(III) oxide is reduced principally by",
+      "type": "single",
+      "options": [
+        "oxygen",
+        "carbon(II) oxide",
+        "hydrogen",
+        "limestone"
+      ],
+      "correct": "B",
+      "explanation": "Carbon monoxide formed from coke removes oxygen from the ore.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Metals and Extraction",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The rusting of iron requires the presence of",
+      "type": "single",
+      "options": [
+        "carbon(IV) oxide only",
+        "oxygen only",
+        "oxygen and water",
+        "nitrogen and water"
+      ],
+      "correct": "C",
+      "explanation": "Both are necessary; iron does not rust in dry air or in air-free water.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Metals and Extraction",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Coating iron with a layer of zinc to prevent rusting is known as",
+      "type": "single",
+      "options": [
+        "galvanising",
+        "smelting",
+        "electroplating",
+        "annealing"
+      ],
+      "correct": "A",
+      "explanation": "The more reactive zinc corrodes in place of the iron, protecting it sacrificially.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Metals and Extraction",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "What is the general formula of the alkanes?",
+      "type": "single",
+      "options": [
+        "CnH₂n₊₂",
+        "CnH₂n₋₂",
+        "CnH₂n₊₁OH",
+        "CnH₂n"
+      ],
+      "correct": "A",
+      "explanation": "Alkanes are saturated, so each carbon carries the maximum number of hydrogens.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Organic Chemistry",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Which observation distinguishes an alkene from an alkane?",
+      "type": "single",
+      "options": [
+        "It decolourises bromine water",
+        "It burns with a sooty flame",
+        "It is a gas at room temperature",
+        "It is insoluble in water"
+      ],
+      "correct": "A",
+      "explanation": "The double bond adds bromine across it, discharging the orange colour.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Organic Chemistry",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "What is the functional group of the alkanols?",
+      "type": "single",
+      "options": [
+        "−COOH",
+        "−CHO",
+        "−COO−",
+        "−OH"
+      ],
+      "correct": "D",
+      "explanation": "Alkanols (alcohols) carry the hydroxyl group.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Organic Chemistry",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The reaction between an alkanol and an alkanoic acid to produce a sweet-smelling compound and water is called",
+      "type": "single",
+      "options": [
+        "hydrogenation",
+        "esterification",
+        "fermentation",
+        "saponification"
+      ],
+      "correct": "B",
+      "explanation": "The product is an ester, and the reaction is catalysed by concentrated sulphuric acid.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Organic Chemistry",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The conversion of ethene to polyethene is an example of",
+      "type": "single",
+      "options": [
+        "substitution",
+        "condensation polymerisation",
+        "addition polymerisation",
+        "cracking"
+      ],
+      "correct": "C",
+      "explanation": "The monomers join across their double bonds with no small molecule eliminated.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Polymers",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Soap is produced by the hydrolysis of fats and oils with an alkali. This process is called",
+      "type": "single",
+      "options": [
+        "hydrogenation",
+        "polymerisation",
+        "saponification",
+        "esterification"
+      ],
+      "correct": "C",
+      "explanation": "Alkaline hydrolysis of the ester links in the fat gives soap and glycerol.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Organic Chemistry",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Which of the following is a condensation polymer?",
+      "type": "single",
+      "options": [
+        "Polyethene",
+        "Polyvinyl chloride",
+        "Polystyrene",
+        "Nylon"
+      ],
+      "correct": "D",
+      "explanation": "Nylon forms with the loss of water molecules at each link; the others are addition polymers.",
+      "subject": "Chemistry",
+      "exam_type": "JAMB",
+      "topic": "Polymers",
+      "difficulty": "hard",
+      "marks": 1
+    }
+  ]
+}

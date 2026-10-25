@@ -1,0 +1,855 @@
+{
+  "_note": "Original practice items written for the Classic EDU Suite CBT bank. Not reproduced from any past paper. Syllabus-aligned to JAMB Physics.",
+  "questions": [
+    {
+      "question": "What is the SI unit of force?",
+      "type": "single",
+      "options": [
+        "Watt",
+        "Pascal",
+        "Joule",
+        "Newton"
+      ],
+      "correct": "D",
+      "explanation": "Force is measured in newtons (N), where 1 N = 1 kg m/s².",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Measurements and Units",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Which of the following is a vector quantity?",
+      "type": "single",
+      "options": [
+        "Displacement",
+        "Speed",
+        "Mass",
+        "Distance"
+      ],
+      "correct": "A",
+      "explanation": "Displacement has both magnitude and direction; the others have magnitude only.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Scalars and Vectors",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A body starts from rest and accelerates uniformly at 4 m/s² for 5 seconds. Find its final velocity.",
+      "type": "single",
+      "options": [
+        "100 m/s",
+        "20 m/s",
+        "9 m/s",
+        "0.8 m/s"
+      ],
+      "correct": "B",
+      "explanation": "v = u + at = 0 + 4 × 5 = 20 m/s.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Linear Motion",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A body starts from rest and accelerates uniformly at 4 m/s² for 5 seconds. What distance does it cover?",
+      "type": "single",
+      "options": [
+        "100 m",
+        "20 m",
+        "50 m",
+        "25 m"
+      ],
+      "correct": "C",
+      "explanation": "s = ut + ½at² = 0 + ½ × 4 × 25 = 50 m.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Linear Motion",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Calculate the force required to give a mass of 10 kg an acceleration of 2 m/s².",
+      "type": "single",
+      "options": [
+        "20 N",
+        "0.2 N",
+        "5 N",
+        "12 N"
+      ],
+      "correct": "A",
+      "explanation": "From Newton's second law, F = ma = 10 × 2 = 20 N.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Newton's Laws of Motion",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Find the momentum of a body of mass 5 kg moving with a velocity of 4 m/s.",
+      "type": "single",
+      "options": [
+        "40 kg m/s",
+        "20 kg m/s",
+        "1.25 kg m/s",
+        "9 kg m/s"
+      ],
+      "correct": "B",
+      "explanation": "Momentum p = mv = 5 × 4 = 20 kg m/s.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Momentum",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A force of 10 N acts on a body for 3 seconds. Calculate the impulse.",
+      "type": "single",
+      "options": [
+        "13 Ns",
+        "30 Ns",
+        "7 Ns",
+        "3.3 Ns"
+      ],
+      "correct": "B",
+      "explanation": "Impulse = Ft = 10 × 3 = 30 Ns.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Momentum",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A force of 50 N moves a body through a distance of 4 m in the direction of the force. Calculate the work done.",
+      "type": "single",
+      "options": [
+        "12.5 J",
+        "54 J",
+        "46 J",
+        "200 J"
+      ],
+      "correct": "D",
+      "explanation": "Work = force × distance = 50 × 4 = 200 J.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Work, Energy and Power",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A machine does 600 J of work in 5 seconds. Calculate its power.",
+      "type": "single",
+      "options": [
+        "3000 W",
+        "605 W",
+        "0.008 W",
+        "120 W"
+      ],
+      "correct": "D",
+      "explanation": "Power = work/time = 600/5 = 120 W.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Work, Energy and Power",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Calculate the kinetic energy of a body of mass 2 kg moving at 3 m/s.",
+      "type": "single",
+      "options": [
+        "18 J",
+        "9 J",
+        "3 J",
+        "6 J"
+      ],
+      "correct": "B",
+      "explanation": "K.E. = ½mv² = ½ × 2 × 9 = 9 J.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Work, Energy and Power",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A body of mass 5 kg is raised to a height of 10 m. Calculate its potential energy. [g = 10 m/s²]",
+      "type": "single",
+      "options": [
+        "500 J",
+        "50 J",
+        "5 J",
+        "250 J"
+      ],
+      "correct": "A",
+      "explanation": "P.E. = mgh = 5 × 10 × 10 = 500 J.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Work, Energy and Power",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A stone is released from rest and falls freely for 3 seconds. Find its velocity just before impact. [g = 10 m/s²]",
+      "type": "single",
+      "options": [
+        "10 m/s",
+        "3.3 m/s",
+        "30 m/s",
+        "90 m/s"
+      ],
+      "correct": "C",
+      "explanation": "v = gt = 10 × 3 = 30 m/s.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Gravitational Field",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A body of mass 200 g occupies a volume of 50 cm³. Calculate its density.",
+      "type": "single",
+      "options": [
+        "250 g/cm³",
+        "4 g/cm³",
+        "0.25 g/cm³",
+        "10,000 g/cm³"
+      ],
+      "correct": "B",
+      "explanation": "Density = mass/volume = 200/50 = 4 g/cm³.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Density and Upthrust",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A force of 200 N acts normally on an area of 0.5 m². Calculate the pressure exerted.",
+      "type": "single",
+      "options": [
+        "0.0025 Pa",
+        "400 Pa",
+        "100 Pa",
+        "200.5 Pa"
+      ],
+      "correct": "B",
+      "explanation": "Pressure = force/area = 200/0.5 = 400 Pa.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Pressure",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Calculate the pressure at a depth of 2 m in water of density 1000 kg/m³. [g = 10 m/s²]",
+      "type": "single",
+      "options": [
+        "2,000 Pa",
+        "200 Pa",
+        "20,000 Pa",
+        "5,000 Pa"
+      ],
+      "correct": "C",
+      "explanation": "P = ρgh = 1000 × 10 × 2 = 20,000 Pa.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Pressure",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "A body wholly or partially immersed in a fluid experiences an upthrust equal to",
+      "type": "single",
+      "options": [
+        "the weight of the fluid displaced",
+        "the volume of the fluid displaced",
+        "the density of the fluid",
+        "the weight of the body"
+      ],
+      "correct": "A",
+      "explanation": "This is Archimedes' principle: the upthrust equals the weight of fluid displaced.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Density and Upthrust",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Which statement best expresses Hooke's law?",
+      "type": "single",
+      "options": [
+        "Force is proportional to the square of the extension",
+        "Within the elastic limit, extension is directly proportional to the applied force",
+        "Stress is inversely proportional to strain",
+        "Extension is proportional to the length of the wire"
+      ],
+      "correct": "B",
+      "explanation": "Hooke's law holds only up to the elastic limit, where extension ∝ force.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Elasticity",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A load of 20 N produces an extension of 4 cm in a spring. Calculate the force constant of the spring.",
+      "type": "single",
+      "options": [
+        "80 N/m",
+        "500 N/m",
+        "0.2 N/m",
+        "5 N/m"
+      ],
+      "correct": "B",
+      "explanation": "k = F/e = 20/0.04 m = 500 N/m.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Elasticity",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Calculate the heat required to raise the temperature of 2 kg of water by 10 °C. [specific heat capacity of water = 4200 J/kg K]",
+      "type": "single",
+      "options": [
+        "8,400 J",
+        "42,000 J",
+        "840 J",
+        "84,000 J"
+      ],
+      "correct": "D",
+      "explanation": "Q = mcΔθ = 2 × 4200 × 10 = 84,000 J.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Quantity of Heat",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Calculate the heat required to melt 0.5 kg of ice at 0 °C. [specific latent heat of fusion of ice = 3.36 × 10⁵ J/kg]",
+      "type": "single",
+      "options": [
+        "3.36 × 10⁵ J",
+        "3.36 × 10⁴ J",
+        "6.72 × 10⁵ J",
+        "1.68 × 10⁵ J"
+      ],
+      "correct": "D",
+      "explanation": "Q = ml = 0.5 × 3.36 × 10⁵ = 1.68 × 10⁵ J.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Latent Heat",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "A gas occupies 3 litres at a pressure of 2 atmospheres. What volume will it occupy at 1 atmosphere if the temperature is constant?",
+      "type": "single",
+      "options": [
+        "1.5 litres",
+        "6 litres",
+        "3 litres",
+        "0.67 litres"
+      ],
+      "correct": "B",
+      "explanation": "By Boyle's law, P₁V₁ = P₂V₂, so V₂ = (2 × 3)/1 = 6 litres.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Gas Laws",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Charles' law states that at constant pressure, the volume of a fixed mass of gas is",
+      "type": "single",
+      "options": [
+        "proportional to the square of its temperature",
+        "inversely proportional to its pressure",
+        "independent of its temperature",
+        "directly proportional to its absolute temperature"
+      ],
+      "correct": "D",
+      "explanation": "V ∝ T at constant pressure, where T is measured in kelvin.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Gas Laws",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Heat is transferred through liquids and gases mainly by",
+      "type": "single",
+      "options": [
+        "convection",
+        "conduction",
+        "radiation",
+        "induction"
+      ],
+      "correct": "A",
+      "explanation": "The warmer, less dense fluid rises and cooler fluid sinks, setting up convection currents.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Heat Transfer",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Mercury is preferred to water as a thermometric liquid mainly because it",
+      "type": "single",
+      "options": [
+        "does not wet glass and expands uniformly",
+        "is cheaper than water",
+        "boils at a lower temperature",
+        "is a poor conductor of heat"
+      ],
+      "correct": "A",
+      "explanation": "Mercury is opaque, does not cling to the glass and expands regularly over a wide range.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Temperature and Thermometers",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "A wave of frequency 50 Hz has a wavelength of 4 m. Calculate its speed.",
+      "type": "single",
+      "options": [
+        "200 m/s",
+        "46 m/s",
+        "12.5 m/s",
+        "54 m/s"
+      ],
+      "correct": "A",
+      "explanation": "v = fλ = 50 × 4 = 200 m/s.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Waves",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Calculate the period of a wave whose frequency is 25 Hz.",
+      "type": "single",
+      "options": [
+        "0.4 s",
+        "2.5 s",
+        "25 s",
+        "0.04 s"
+      ],
+      "correct": "D",
+      "explanation": "T = 1/f = 1/25 = 0.04 s.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Waves",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Which of the following cannot travel through a vacuum?",
+      "type": "single",
+      "options": [
+        "Light waves",
+        "Radio waves",
+        "Sound waves",
+        "X-rays"
+      ],
+      "correct": "C",
+      "explanation": "Sound is a mechanical wave and needs a material medium to propagate.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Sound Waves",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A boy claps his hands near a wall and hears the echo 2 seconds later. How far is he from the wall? [speed of sound = 340 m/s]",
+      "type": "single",
+      "options": [
+        "680 m",
+        "170 m",
+        "340 m",
+        "85 m"
+      ],
+      "correct": "C",
+      "explanation": "The sound covers 2 × distance in 2 s, so distance = (340 × 2)/2 = 340 m.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Sound Waves",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "When light is reflected from a plane mirror, the angle of incidence is",
+      "type": "single",
+      "options": [
+        "half the angle of reflection",
+        "always 90°",
+        "equal to the angle of reflection",
+        "twice the angle of reflection"
+      ],
+      "correct": "C",
+      "explanation": "The first law of reflection: the angles of incidence and reflection are equal.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Reflection of Light",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A ray of light passes from air into a medium with an angle of incidence of 60° and an angle of refraction of 30°. Calculate the refractive index of the medium.",
+      "type": "single",
+      "options": [
+        "2.00",
+        "0.58",
+        "1.50",
+        "1.73"
+      ],
+      "correct": "D",
+      "explanation": "n = sin 60°/sin 30° = 0.866/0.5 = 1.73.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Refraction of Light",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Total internal reflection occurs when light travels",
+      "type": "single",
+      "options": [
+        "from a less dense to a denser medium at any angle",
+        "from a denser to a less dense medium below the critical angle",
+        "along the normal between two media",
+        "from a denser to a less dense medium at an angle greater than the critical angle"
+      ],
+      "correct": "D",
+      "explanation": "Both conditions are required: denser to less dense, and incidence beyond the critical angle.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Refraction of Light",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "An object is placed beyond 2F in front of a converging lens. The image formed is",
+      "type": "single",
+      "options": [
+        "virtual, inverted and diminished",
+        "real, inverted and diminished",
+        "virtual, upright and magnified",
+        "real, upright and the same size"
+      ],
+      "correct": "B",
+      "explanation": "Beyond 2F the image falls between F and 2F on the other side, and is real, inverted and smaller.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Lenses",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "An object 15 cm from a converging lens forms a real image 30 cm from the lens. Calculate the focal length.",
+      "type": "single",
+      "options": [
+        "5 cm",
+        "45 cm",
+        "10 cm",
+        "22.5 cm"
+      ],
+      "correct": "C",
+      "explanation": "1/f = 1/u + 1/v = 1/15 + 1/30 = 3/30, so f = 10 cm.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Lenses",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "A potential difference of 12 V is applied across a 3 Ω resistor. Calculate the current flowing.",
+      "type": "single",
+      "options": [
+        "15 A",
+        "36 A",
+        "0.25 A",
+        "4 A"
+      ],
+      "correct": "D",
+      "explanation": "From Ohm's law, I = V/R = 12/3 = 4 A.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Current Electricity",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Resistors of 2 Ω, 3 Ω and 5 Ω are connected in series. Find the effective resistance.",
+      "type": "single",
+      "options": [
+        "30 Ω",
+        "1.03 Ω",
+        "10 Ω",
+        "0.97 Ω"
+      ],
+      "correct": "C",
+      "explanation": "In series, resistances simply add: 2 + 3 + 5 = 10 Ω.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Current Electricity",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A 6 Ω resistor and a 3 Ω resistor are connected in parallel. Find the effective resistance.",
+      "type": "single",
+      "options": [
+        "2 Ω",
+        "18 Ω",
+        "9 Ω",
+        "4.5 Ω"
+      ],
+      "correct": "A",
+      "explanation": "1/R = 1/6 + 1/3 = 1/2, so R = 2 Ω.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Current Electricity",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "An electric heater rated 2000 W is used for 3 hours. Calculate the energy consumed in kilowatt-hours.",
+      "type": "single",
+      "options": [
+        "6 kWh",
+        "600 kWh",
+        "0.67 kWh",
+        "6000 kWh"
+      ],
+      "correct": "A",
+      "explanation": "Energy = power × time = 2 kW × 3 h = 6 kWh.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Electrical Energy and Power",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A cell of e.m.f. 12 V and internal resistance 1 Ω is connected to an external resistor of 5 Ω. Calculate the current in the circuit.",
+      "type": "single",
+      "options": [
+        "1.2 A",
+        "2.4 A",
+        "2 A",
+        "12 A"
+      ],
+      "correct": "C",
+      "explanation": "I = E/(R + r) = 12/(5 + 1) = 2 A.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Current Electricity",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The main purpose of a fuse in an electrical circuit is to",
+      "type": "single",
+      "options": [
+        "store electrical charge",
+        "melt and break the circuit when the current is excessive",
+        "convert a.c. to d.c.",
+        "increase the current in the circuit"
+      ],
+      "correct": "B",
+      "explanation": "A fuse is a deliberately weak link that melts before the wiring or appliance is damaged.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Electrical Safety",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The direction of the magnetic field around a straight current-carrying conductor is given by",
+      "type": "single",
+      "options": [
+        "Lenz's law",
+        "Maxwell's right-hand screw rule",
+        "Fleming's left-hand rule",
+        "Faraday's law"
+      ],
+      "correct": "B",
+      "explanation": "Fleming's left-hand rule gives the direction of force, not of the field around a conductor.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Magnetic Fields",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "A transformer steps 240 V down to 12 V. If the primary coil has 1000 turns, how many turns has the secondary coil?",
+      "type": "single",
+      "options": [
+        "2000",
+        "50",
+        "20",
+        "200"
+      ],
+      "correct": "B",
+      "explanation": "Ns/Np = Vs/Vp, so Ns = 1000 × 12/240 = 50 turns.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Transformers",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Faraday's law of electromagnetic induction states that the induced e.m.f. is proportional to the",
+      "type": "single",
+      "options": [
+        "resistance of the coil",
+        "square of the number of turns",
+        "rate of change of magnetic flux linkage",
+        "total magnetic flux linkage"
+      ],
+      "correct": "C",
+      "explanation": "It is the rate of change of flux linkage, not the flux itself, that induces an e.m.f.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Electromagnetic Induction",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "An a.c. generator converts",
+      "type": "single",
+      "options": [
+        "electrical energy to heat energy",
+        "electrical energy to mechanical energy",
+        "mechanical energy to electrical energy",
+        "chemical energy to electrical energy"
+      ],
+      "correct": "C",
+      "explanation": "A coil is rotated in a magnetic field, so mechanical work becomes electrical energy.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Electromagnetic Induction",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Two capacitors of 2 μF and 3 μF are connected in parallel. Find the effective capacitance.",
+      "type": "single",
+      "options": [
+        "5 μF",
+        "1.2 μF",
+        "6 μF",
+        "0.83 μF"
+      ],
+      "correct": "A",
+      "explanation": "Capacitors in parallel add directly: 2 + 3 = 5 μF.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Capacitors",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The minimum energy required to eject an electron from the surface of a metal is called the",
+      "type": "single",
+      "options": [
+        "work function",
+        "threshold frequency",
+        "ionisation energy",
+        "quantum number"
+      ],
+      "correct": "A",
+      "explanation": "The work function is an energy; the threshold frequency is the corresponding frequency.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Photoelectric Effect",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "An alpha particle is identical to",
+      "type": "single",
+      "options": [
+        "a helium nucleus",
+        "a photon",
+        "an electron",
+        "a proton"
+      ],
+      "correct": "A",
+      "explanation": "An alpha particle consists of 2 protons and 2 neutrons, which is a helium nucleus.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Radioactivity",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A radioactive sample of mass 80 g has a half-life of 5 days. What mass remains after 15 days?",
+      "type": "single",
+      "options": [
+        "5 g",
+        "40 g",
+        "20 g",
+        "10 g"
+      ],
+      "correct": "D",
+      "explanation": "15 days is 3 half-lives: 80 → 40 → 20 → 10 g.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Radioactivity",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "How many neutrons are there in an atom of uranium with mass number 238 and atomic number 92?",
+      "type": "single",
+      "options": [
+        "330",
+        "92",
+        "146",
+        "238"
+      ],
+      "correct": "C",
+      "explanation": "Neutrons = mass number − atomic number = 238 − 92 = 146.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Atomic Structure",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "X-rays are produced when",
+      "type": "single",
+      "options": [
+        "a radioactive nucleus emits an alpha particle",
+        "visible light is passed through a prism",
+        "an electric current flows through an electrolyte",
+        "fast-moving electrons are suddenly stopped by a metal target"
+      ],
+      "correct": "D",
+      "explanation": "The sudden deceleration of high-energy electrons at the target releases X-radiation.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "X-rays",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The energy of a quantum of radiation of frequency f is given by",
+      "type": "single",
+      "options": [
+        "hf",
+        "h/f",
+        "hc",
+        "f/h"
+      ],
+      "correct": "A",
+      "explanation": "Planck's relation gives E = hf, where h is Planck's constant.",
+      "subject": "Physics",
+      "exam_type": "JAMB",
+      "topic": "Quantum Physics",
+      "difficulty": "easy",
+      "marks": 1
+    }
+  ]
+}

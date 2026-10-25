@@ -1,0 +1,22 @@
+# Build output. Rebuild the installable plugin zip with:
+#   powershell -ExecutionPolicy Bypass -File build-plugin.ps1
+/dist/
+
+# Vercel link files — they hold this machine's project and organisation ids.
+.vercel/
+
+# Python bytecode from the question-ingest tool.
+__pycache__/
+*.py[cod]
+
+# Editor and operating-system clutter.
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Local scratch.
+*.log
+*.bak
+*.orig

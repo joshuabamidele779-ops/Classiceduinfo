@@ -1,0 +1,403 @@
+/**
+ * Classic EDU Suite - wp-admin styles (handle: ces-admin).
+ *
+ * Enqueued by CES_Admin_Menu::assets() on every plugin screen. It styles the
+ * classes that file renders - .ces-wrap, .ces-sub, .ces-cards, .ces-card,
+ * .ces-card__value, .ces-card__label, .ces-card__link - plus the few extra
+ * classes the module screens use.
+ *
+ * Deliberately conservative: it sits inside wp-admin and borrows core's type
+ * scale rather than fighting it. Every selector is scoped to .ces-wrap so it
+ * cannot leak into other plugins' screens.
+ */
+
+.ces-wrap {
+	--ces-admin-primary: #2c62cd;
+	--ces-admin-border: #dcdfe4;
+	--ces-admin-muted: #646970;
+	--ces-admin-surface: #ffffff;
+	--ces-admin-alt: #f6f7f7;
+
+	max-width: 1180px;
+}
+
+.ces-wrap .ces-sub {
+	margin: 0.2em 0 1.4em;
+	max-width: 60ch;
+	color: var( --ces-admin-muted );
+	font-size: 14px;
+	line-height: 1.6;
+}
+
+/* ------------------------------------------------------------------ */
+/* Stat cards                                                         */
+/* ------------------------------------------------------------------ */
+
+.ces-wrap .ces-cards {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 14px;
+	margin: 0 0 24px;
+}
+
+@media screen and ( min-width: 600px ) {
+
+	.ces-wrap .ces-cards {
+		grid-template-columns: repeat( 2, minmax( 0, 1fr ) );
+	}
+}
+
+@media screen and ( min-width: 960px ) {
+
+	.ces-wrap .ces-cards {
+		grid-template-columns: repeat( 4, minmax( 0, 1fr ) );
+	}
+}
+
+.ces-wrap .ces-card {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 2px;
+	box-sizing: border-box;
+	padding: 16px 18px 14px;
+	border: 1px solid var( --ces-admin-border );
+	border-left: 4px solid var( --ces-admin-primary );
+	border-radius: 6px;
+	background: var( --ces-admin-surface );
+	box-shadow: 0 1px 1px rgba( 0, 0, 0, 0.04 );
+}
+
+.ces-wrap .ces-card__value {
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 1.15;
+	color: #1d2327;
+	letter-spacing: -0.01em;
+	word-break: break-word;
+}
+
+.ces-wrap .ces-card__label {
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: var( --ces-admin-muted );
+	line-height: 1.4;
+}
+
+.ces-wrap .ces-card__link {
+	margin-top: 10px;
+	font-size: 13px;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.ces-wrap .ces-card__link:hover,
+.ces-wrap .ces-card__link:focus {
+	text-decoration: underline;
+}
+
+/* ------------------------------------------------------------------ */
+/* Module screens                                                     */
+/* ------------------------------------------------------------------ */
+
+.ces-wrap .ces-admin-tabs {
+	margin-bottom: 18px;
+}
+
+.ces-wrap .ces-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	align-items: center;
+	margin: 16px 0;
+}
+
+.ces-wrap .ces-code {
+	max-width: 60ch;
+	padding: 12px 14px;
+	border: 1px solid var( --ces-admin-border );
+	border-radius: 6px;
+	background: var( --ces-admin-alt );
+	color: #1d2327;
+	font-size: 12px;
+	line-height: 1.7;
+	white-space: pre-wrap;
+	overflow-x: auto;
+}
+
+.ces-wrap .ces-import-form .large-text {
+	font-family: Consolas, Monaco, monospace;
+	font-size: 13px;
+	line-height: 1.6;
+}
+
+.ces-wrap .ces-quotes-table td,
+.ces-wrap .ces-quotes-table th {
+	vertical-align: top;
+}
+
+.ces-wrap .ces-quotes-table td strong {
+	display: block;
+	max-width: 60ch;
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+.ces-wrap .ces-quotes-table .row-actions {
+	padding-top: 2px;
+	left: auto;
+}
+
+/* The popup preview is rendered with the real front-end stylesheet; this
+   just gives it room to breathe inside the admin column. */
+.ces-wrap .ces-popup-preview {
+	display: inline-block;
+	max-width: 100%;
+	margin: 8px 0 24px;
+	padding: 18px;
+	border: 1px solid var( --ces-admin-border );
+	border-radius: 8px;
+	background: var( --ces-admin-alt );
+}
+
+.ces-wrap .ul-disc {
+	margin-left: 1.4em;
+	list-style: disc;
+	max-width: 70ch;
+}
+
+.ces-wrap .ul-disc li {
+	margin-bottom: 6px;
+	line-height: 1.6;
+}
+
+.ces-wrap .notice.inline {
+	margin: 12px 0 18px;
+}
+
+/* ------------------------------------------------------------------
+   Parents screen.
+   ------------------------------------------------------------------ */
+
+.ces-parents-filters {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	align-items: center;
+	margin: 16px 0 10px;
+}
+
+.ces-parents-export {
+	margin: 0 0 16px;
+}
+
+.ces-parents-table td {
+	vertical-align: top;
+}
+
+.ces-parents-actions .button {
+	margin-bottom: 6px;
+}
+
+.ces-parents-preview {
+	margin-top: 6px;
+	max-width: 420px;
+}
+
+.ces-parents-preview summary {
+	cursor: pointer;
+	color: #2271b1;
+}
+
+.ces-parents-preview pre {
+	white-space: pre-wrap;
+	word-break: break-word;
+	background: var( --ces-admin-alt );
+	border: 1px solid var( --ces-admin-border );
+	border-radius: 6px;
+	padding: 10px;
+	margin: 8px 0 0;
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+/* ------------------------------------------------------------------ */
+/* Approvals screen (accounts module)                                 */
+/* ------------------------------------------------------------------ */
+
+.ces-approvals__filters {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	align-items: center;
+	margin: 14px 0 12px;
+}
+
+.ces-approvals__table td {
+	vertical-align: top;
+	line-height: 1.5;
+}
+
+.ces-approvals__actions .button {
+	margin: 0 4px 6px 0;
+}
+
+.ces-approvals .ces-empty {
+	padding: 18px;
+	background: var( --ces-admin-alt );
+	border: 1px solid var( --ces-admin-border );
+	border-radius: 6px;
+}
+
+/* The setup checklist. Answers "is this configured" before anything else. */
+
+.ces-health {
+	margin: 16px 0 20px;
+	padding: 14px 16px;
+	background: #fff;
+	border: 1px solid var( --ces-admin-border );
+	border-left: 4px solid #2271b1;
+	border-radius: 6px;
+}
+
+.ces-health h2 {
+	margin: 0 0 8px;
+	font-size: 14px;
+}
+
+.ces-health__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.ces-health__item {
+	padding: 3px 0;
+	font-size: 13px;
+	line-height: 1.6;
+}
+
+.ces-health__icon {
+	display: inline-block;
+	width: 16px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.ces-health__item.is-ok .ces-health__icon {
+	color: #00a32a;
+}
+
+.ces-health__item.is-warn .ces-health__icon {
+	color: #d63638;
+}
+
+.ces-health__item.is-info .ces-health__icon {
+	color: #2271b1;
+}
+
+.ces-health__uri {
+	margin: 12px 0 0;
+	padding-top: 10px;
+	border-top: 1px solid var( --ces-admin-border );
+	font-size: 13px;
+}
+
+.ces-health__uri code {
+	display: inline-block;
+	margin: 4px 0;
+	padding: 4px 8px;
+	background: var( --ces-admin-alt );
+	word-break: break-all;
+}
+
+/* One student in full. */
+
+.ces-detail {
+	max-width: 760px;
+	margin: 12px 0 18px;
+}
+
+.ces-detail th {
+	width: 220px;
+	text-align: left;
+}
+
+.ces-detail code {
+	word-break: break-all;
+}
+
+.ces-detail__actions {
+	margin: 0 0 18px;
+}
+
+.ces-detail__actions .button {
+	margin: 0 4px 6px 0;
+}
+
+.ces-events {
+	max-width: 1000px;
+}
+
+.ces-events td {
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+/* Shared small pieces. */
+
+.ces-wrap .ces-muted,
+.ces-muted {
+	color: #646970;
+	font-size: 12px;
+}
+
+.ces-tag {
+	display: inline-block;
+	padding: 1px 7px;
+	border-radius: 999px;
+	background: var( --ces-admin-alt );
+	border: 1px solid var( --ces-admin-border );
+	font-size: 11px;
+	line-height: 1.7;
+	white-space: nowrap;
+}
+
+.ces-flag {
+	color: #996800;
+	font-size: 12px;
+}
+
+.ces-pill {
+	display: inline-block;
+	padding: 2px 9px;
+	border-radius: 999px;
+	background: #f0f0f1;
+	color: #1d2327;
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 1.8;
+	white-space: nowrap;
+}
+
+.ces-pill--ok {
+	background: #dcfce7;
+	color: #14532d;
+}
+
+.ces-pill--wait {
+	background: #fef3c7;
+	color: #713f12;
+}
+
+.ces-pill--review {
+	background: #dbeafe;
+	color: #1e3a8a;
+}
+
+.ces-pill--bad {
+	background: #fee2e2;
+	color: #7f1d1d;
+}

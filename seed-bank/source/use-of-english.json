@@ -1,0 +1,855 @@
+{
+  "_note": "Original practice items written for the Classic EDU Suite CBT bank. Not reproduced from any past paper. Syllabus-aligned to JAMB Use of English.",
+  "questions": [
+    {
+      "question": "Choose the option nearest in meaning to the word in capital letters: The chairman's remarks at the meeting were APPOSITE.",
+      "type": "single",
+      "options": [
+        "unexpected",
+        "lengthy",
+        "appropriate",
+        "offensive"
+      ],
+      "correct": "C",
+      "explanation": "Apposite means strikingly suitable for the occasion.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Synonyms",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option nearest in meaning to the word in capital letters: The old man remained OBSTINATE despite our pleas.",
+      "type": "single",
+      "options": [
+        "stubborn",
+        "silent",
+        "cheerful",
+        "confused"
+      ],
+      "correct": "A",
+      "explanation": "An obstinate person refuses to change their mind.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Synonyms",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option nearest in meaning to the word in capital letters: The business turned out to be very LUCRATIVE.",
+      "type": "single",
+      "options": [
+        "complicated",
+        "profitable",
+        "tiring",
+        "risky"
+      ],
+      "correct": "B",
+      "explanation": "Lucrative means producing a great deal of profit.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Synonyms",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option nearest in meaning to the word in capital letters: She gave a CANDID account of what happened.",
+      "type": "single",
+      "options": [
+        "false",
+        "brief",
+        "frank",
+        "detailed"
+      ],
+      "correct": "C",
+      "explanation": "Candid means open and honest in speech.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Synonyms",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option nearest in meaning to the word in capital letters: The accountant is METICULOUS in keeping records.",
+      "type": "single",
+      "options": [
+        "careless",
+        "painstaking",
+        "slow",
+        "dishonest"
+      ],
+      "correct": "B",
+      "explanation": "Meticulous means showing great attention to detail.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Synonyms",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option nearest in meaning to the word in capital letters: The widow lived a FRUGAL life.",
+      "type": "single",
+      "options": [
+        "luxurious",
+        "miserable",
+        "lonely",
+        "thrifty"
+      ],
+      "correct": "D",
+      "explanation": "Frugal means sparing and economical in the use of money or food.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Synonyms",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option nearest in meaning to the word in capital letters: The fame of a pop star is often EPHEMERAL.",
+      "type": "single",
+      "options": [
+        "profitable",
+        "short-lived",
+        "well deserved",
+        "widespread"
+      ],
+      "correct": "B",
+      "explanation": "Ephemeral means lasting for a very short time.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Synonyms",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option nearest in meaning to the word in capital letters: Mobile phones have become UBIQUITOUS in the city.",
+      "type": "single",
+      "options": [
+        "unreliable",
+        "fashionable",
+        "found everywhere",
+        "very expensive"
+      ],
+      "correct": "C",
+      "explanation": "Ubiquitous means present or appearing everywhere.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Synonyms",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option nearest in meaning to the word in capital letters: The BELLIGERENT youth was arrested by the police.",
+      "type": "single",
+      "options": [
+        "drunken",
+        "aggressive",
+        "talkative",
+        "untidy"
+      ],
+      "correct": "B",
+      "explanation": "Belligerent means hostile and eager to fight.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Synonyms",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option nearest in meaning to the word in capital letters: It was a PRUDENT decision to save part of the money.",
+      "type": "single",
+      "options": [
+        "popular",
+        "hasty",
+        "generous",
+        "cautious"
+      ],
+      "correct": "D",
+      "explanation": "Prudent means showing care and good judgement about the future.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Synonyms",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option opposite in meaning to the word in capital letters: Food was SCARCE during the drought.",
+      "type": "single",
+      "options": [
+        "abundant",
+        "costly",
+        "unwholesome",
+        "rationed"
+      ],
+      "correct": "A",
+      "explanation": "Scarce means in short supply; its opposite is abundant.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Antonyms",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option opposite in meaning to the word in capital letters: He was a BENEVOLENT ruler.",
+      "type": "single",
+      "options": [
+        "powerful",
+        "generous",
+        "popular",
+        "malevolent"
+      ],
+      "correct": "D",
+      "explanation": "Benevolent means kindly and well-meaning; malevolent means wishing harm.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Antonyms",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option opposite in meaning to the word in capital letters: The louvres of the window are TRANSPARENT.",
+      "type": "single",
+      "options": [
+        "coloured",
+        "opaque",
+        "brittle",
+        "shiny"
+      ],
+      "correct": "B",
+      "explanation": "An opaque material does not allow light to pass through it.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Antonyms",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option opposite in meaning to the word in capital letters: In spite of his wealth he remained HUMBLE.",
+      "type": "single",
+      "options": [
+        "generous",
+        "arrogant",
+        "religious",
+        "quiet"
+      ],
+      "correct": "B",
+      "explanation": "The opposite of humble is proud or arrogant.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Antonyms",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option opposite in meaning to the word in capital letters: Metals EXPAND when they are heated.",
+      "type": "single",
+      "options": [
+        "weaken",
+        "rust",
+        "contract",
+        "melt"
+      ],
+      "correct": "C",
+      "explanation": "To contract is to become smaller in size, the opposite of expanding.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Antonyms",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option opposite in meaning to the word in capital letters: The soil in the valley is FERTILE.",
+      "type": "single",
+      "options": [
+        "wet",
+        "shallow",
+        "barren",
+        "sandy"
+      ],
+      "correct": "C",
+      "explanation": "Barren land produces little or no vegetation.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Antonyms",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option opposite in meaning to the word in capital letters: Attendance at the lecture is OPTIONAL.",
+      "type": "single",
+      "options": [
+        "encouraged",
+        "free",
+        "compulsory",
+        "limited"
+      ],
+      "correct": "C",
+      "explanation": "What is compulsory must be done; what is optional may be chosen.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Antonyms",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option opposite in meaning to the word in capital letters: The court ACQUITTED the accused person.",
+      "type": "single",
+      "options": [
+        "convicted",
+        "questioned",
+        "released",
+        "pardoned"
+      ],
+      "correct": "A",
+      "explanation": "To convict is to find guilty; to acquit is to declare not guilty.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Antonyms",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option opposite in meaning to the word in capital letters: The arrangement is TEMPORARY.",
+      "type": "single",
+      "options": [
+        "costly",
+        "permanent",
+        "convenient",
+        "unusual"
+      ],
+      "correct": "B",
+      "explanation": "Temporary means lasting for a limited time; permanent is its opposite.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Antonyms",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option opposite in meaning to the word in capital letters: She was RELUCTANT to accept the offer.",
+      "type": "single",
+      "options": [
+        "slow",
+        "willing",
+        "unable",
+        "afraid"
+      ],
+      "correct": "B",
+      "explanation": "Reluctant means unwilling and hesitant.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Antonyms",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The students took the teacher's advice with a pinch of salt. This means that they",
+      "type": "single",
+      "options": [
+        "were offended by it",
+        "repeated it to others",
+        "followed the advice completely",
+        "did not take it seriously"
+      ],
+      "correct": "D",
+      "explanation": "To take something with a pinch of salt is to regard it with some doubt.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Sentence Interpretation",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The councillor has an axe to grind in this matter. This means that he",
+      "type": "single",
+      "options": [
+        "has a private interest to serve",
+        "has no opinion on it",
+        "is very angry about it",
+        "wants to settle a quarrel"
+      ],
+      "correct": "A",
+      "explanation": "To have an axe to grind is to have a selfish or hidden motive.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Sentence Interpretation",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "After the scandal, the minister was shown the door. This means that he was",
+      "type": "single",
+      "options": [
+        "transferred to another ministry",
+        "dismissed from office",
+        "invited to explain himself",
+        "promoted quietly"
+      ],
+      "correct": "B",
+      "explanation": "To be shown the door is to be dismissed or sent away.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Sentence Interpretation",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Ngozi let the cat out of the bag at the party. This means that she",
+      "type": "single",
+      "options": [
+        "arrived very late",
+        "told a funny story",
+        "revealed a secret",
+        "caused a quarrel"
+      ],
+      "correct": "C",
+      "explanation": "To let the cat out of the bag is to disclose something meant to be kept secret.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Sentence Interpretation",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The company is on its last legs. This means that the company is",
+      "type": "single",
+      "options": [
+        "about to collapse",
+        "changing its management",
+        "paying off its debts",
+        "expanding rapidly"
+      ],
+      "correct": "A",
+      "explanation": "To be on one's last legs is to be close to failure or exhaustion.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Sentence Interpretation",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Their victory in the competition was a flash in the pan. This means that it was",
+      "type": "single",
+      "options": [
+        "thoroughly deserved",
+        "widely celebrated",
+        "a short-lived success",
+        "achieved by cheating"
+      ],
+      "correct": "C",
+      "explanation": "A flash in the pan is a sudden success that is not repeated.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Sentence Interpretation",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The two families have decided to bury the hatchet. This means that they have decided to",
+      "type": "single",
+      "options": [
+        "end their quarrel",
+        "go to court",
+        "hide the evidence",
+        "share the property"
+      ],
+      "correct": "A",
+      "explanation": "To bury the hatchet is to make peace after a dispute.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Sentence Interpretation",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The new policy is a double-edged sword. This means that the policy",
+      "type": "single",
+      "options": [
+        "has both advantages and disadvantages",
+        "is very difficult to understand",
+        "was introduced twice",
+        "will not last long"
+      ],
+      "correct": "A",
+      "explanation": "A double-edged sword cuts both ways, bringing benefit and harm together.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Sentence Interpretation",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option that best completes the sentence: Neither the principal nor the teachers ___ present at the assembly.",
+      "type": "single",
+      "options": [
+        "was",
+        "were",
+        "is",
+        "has been"
+      ],
+      "correct": "B",
+      "explanation": "With 'neither … nor', the verb agrees with the nearer subject, 'teachers'.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Concord",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option that best completes the sentence: Each of the boys ___ a copy of the textbook.",
+      "type": "single",
+      "options": [
+        "are having",
+        "has",
+        "were given",
+        "have"
+      ],
+      "correct": "B",
+      "explanation": "'Each' is singular, so it takes a singular verb.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Concord",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option that best completes the sentence: He is one of those students who ___ always complaining.",
+      "type": "single",
+      "options": [
+        "has been",
+        "are",
+        "is",
+        "was"
+      ],
+      "correct": "B",
+      "explanation": "The relative pronoun 'who' refers to 'those students', which is plural.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Concord",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option that best completes the sentence: Hardly had I arrived ___ the rain started.",
+      "type": "single",
+      "options": [
+        "that",
+        "before",
+        "when",
+        "than"
+      ],
+      "correct": "C",
+      "explanation": "'Hardly … when' is the fixed pattern; 'no sooner' takes 'than'.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Sentence Structure",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option that best completes the sentence: No sooner had he sat down ___ the bell rang.",
+      "type": "single",
+      "options": [
+        "than",
+        "that",
+        "then",
+        "when"
+      ],
+      "correct": "A",
+      "explanation": "'No sooner' is always followed by 'than'.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Sentence Structure",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option that best completes the sentence: She would rather ___ at home than go to the party.",
+      "type": "single",
+      "options": [
+        "stayed",
+        "to stay",
+        "staying",
+        "stay"
+      ],
+      "correct": "D",
+      "explanation": "'Would rather' is followed by the bare infinitive.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Verb Forms",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option that best completes the sentence: If I ___ you, I would apologise to the teacher.",
+      "type": "single",
+      "options": [
+        "am",
+        "was being",
+        "will be",
+        "were"
+      ],
+      "correct": "D",
+      "explanation": "The unreal conditional takes the subjunctive 'were'.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Conditional Sentences",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option that best completes the sentence: The man ___ car was stolen reported the matter to the police.",
+      "type": "single",
+      "options": [
+        "whose",
+        "who",
+        "which",
+        "whom"
+      ],
+      "correct": "A",
+      "explanation": "'Whose' shows possession and introduces the relative clause.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Relative Pronouns",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option that best completes the sentence: He has been living in this town ___ 2010.",
+      "type": "single",
+      "options": [
+        "from",
+        "in",
+        "for",
+        "since"
+      ],
+      "correct": "D",
+      "explanation": "'Since' is used with a point in time; 'for' is used with a period.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Prepositions",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option that best completes the sentence: His mother prevented him ___ leaving the house.",
+      "type": "single",
+      "options": [
+        "to",
+        "of",
+        "from",
+        "against"
+      ],
+      "correct": "C",
+      "explanation": "The verb 'prevent' takes 'from' before the gerund.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Prepositions",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option that best completes the sentence: The clerk was accused ___ stealing the money.",
+      "type": "single",
+      "options": [
+        "for",
+        "with",
+        "about",
+        "of"
+      ],
+      "correct": "D",
+      "explanation": "One is accused of an offence, though charged with it.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Prepositions",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option that best completes the sentence: We are looking forward to ___ her at the ceremony.",
+      "type": "single",
+      "options": [
+        "seeing",
+        "see",
+        "have seen",
+        "be seeing soon"
+      ],
+      "correct": "A",
+      "explanation": "'Look forward to' is followed by a gerund.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Verb Forms",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option that best completes the sentence: The teacher made us ___ the poem aloud.",
+      "type": "single",
+      "options": [
+        "recite",
+        "reciting",
+        "recited",
+        "to recite"
+      ],
+      "correct": "A",
+      "explanation": "After 'make' in the active voice, the bare infinitive is used.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Verb Forms",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option that best completes the sentence: Twenty thousand naira ___ a lot of money to a student.",
+      "type": "single",
+      "options": [
+        "are",
+        "were",
+        "is",
+        "have been"
+      ],
+      "correct": "C",
+      "explanation": "A sum of money is treated as a single unit, so the verb is singular.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Concord",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option that best completes the sentence: I wish I ___ the answer to that question.",
+      "type": "single",
+      "options": [
+        "will know",
+        "knew",
+        "know",
+        "have known"
+      ],
+      "correct": "B",
+      "explanation": "After 'I wish', the past form expresses a present regret.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Verb Forms",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option that best completes the sentence: Unless you work hard, you ___ fail the examination.",
+      "type": "single",
+      "options": [
+        "would",
+        "would have",
+        "shall not",
+        "will"
+      ],
+      "correct": "D",
+      "explanation": "'Unless' already carries the negative, so the main clause stays positive.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Conditional Sentences",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Choose the option that best completes the sentence: The furniture ___ been delivered to the hostel.",
+      "type": "single",
+      "options": [
+        "has",
+        "are",
+        "were",
+        "have"
+      ],
+      "correct": "A",
+      "explanation": "'Furniture' is an uncountable noun and takes a singular verb.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Concord",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Choose the correct plural form of the word 'sheep'.",
+      "type": "single",
+      "options": [
+        "sheepen",
+        "sheeps",
+        "sheepes",
+        "sheep"
+      ],
+      "correct": "D",
+      "explanation": "'Sheep' has the same form in the singular and the plural.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Nouns",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Which of the following words has a vowel sound different from the others?",
+      "type": "single",
+      "options": [
+        "beat",
+        "meet",
+        "seat",
+        "great"
+      ],
+      "correct": "D",
+      "explanation": "'Great' has the /eɪ/ sound, while the others all have /iː/.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Oral Forms",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Which of the following words rhymes with 'though'?",
+      "type": "single",
+      "options": [
+        "bough",
+        "cough",
+        "dough",
+        "tough"
+      ],
+      "correct": "C",
+      "explanation": "'Though' and 'dough' both end in the /əʊ/ sound.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Oral Forms",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "In which of the following words is the letter 'b' silent?",
+      "type": "single",
+      "options": [
+        "rabbit",
+        "bank",
+        "table",
+        "comb"
+      ],
+      "correct": "D",
+      "explanation": "The 'b' in 'comb' is not pronounced, as in 'tomb' and 'climb'.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Oral Forms",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "In the word 'development', the main stress falls on the ___ syllable.",
+      "type": "single",
+      "options": [
+        "second",
+        "first",
+        "third",
+        "fourth"
+      ],
+      "correct": "A",
+      "explanation": "It is pronounced de-VEL-op-ment, with the stress on 'vel'.",
+      "subject": "Use of English",
+      "exam_type": "JAMB",
+      "topic": "Oral Forms",
+      "difficulty": "hard",
+      "marks": 1
+    }
+  ]
+}

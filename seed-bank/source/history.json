@@ -1,0 +1,855 @@
+{
+  "_note": "Original practice items written for the Classic EDU Suite CBT bank. Not reproduced from any past paper. Syllabus-aligned to JAMB History.",
+  "questions": [
+    {
+      "question": "The Nok culture, famous for its terracotta figurines, flourished in",
+      "type": "single",
+      "options": [
+        "the Lake Chad basin",
+        "the Yoruba forest belt",
+        "the Niger Delta",
+        "central Nigeria, around the Jos Plateau"
+      ],
+      "correct": "D",
+      "explanation": "The first finds were made in tin workings near Nok on the Jos Plateau.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Early Nigerian Cultures",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The Nok culture is generally dated to about",
+      "type": "single",
+      "options": [
+        "AD 1000 to AD 1400",
+        "500 BC to AD 200",
+        "3000 BC to 2000 BC",
+        "AD 1500 to AD 1800"
+      ],
+      "correct": "B",
+      "explanation": "It is the earliest known centre of iron working and sculpture in Nigeria.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Early Nigerian Cultures",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "Ife is traditionally regarded as",
+      "type": "single",
+      "options": [
+        "the ancestral home of the Yoruba",
+        "the capital of the Sokoto Caliphate",
+        "the first colonial capital of Nigeria",
+        "the centre of the Nok culture"
+      ],
+      "correct": "A",
+      "explanation": "Yoruba tradition holds Ile-Ife to be the place where creation and their dynasties began.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Yoruba States",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The traditional ruler of Ife bears the title",
+      "type": "single",
+      "options": [
+        "Ooni",
+        "Alaafin",
+        "Oba",
+        "Emir"
+      ],
+      "correct": "A",
+      "explanation": "The Ooni of Ife is regarded as the spiritual head of the Yoruba.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Yoruba States",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The Alaafin was the ruler of the",
+      "type": "single",
+      "options": [
+        "Nupe Kingdom",
+        "Benin Kingdom",
+        "Kanem-Borno Empire",
+        "Oyo Empire"
+      ],
+      "correct": "D",
+      "explanation": "Oyo grew into the most powerful Yoruba state under the Alaafin.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Yoruba States",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The Oyo Mesi was",
+      "type": "single",
+      "options": [
+        "the standing army of Oyo",
+        "a religious cult of the Alaafin",
+        "a market association of traders",
+        "the council of seven kingmakers in Oyo"
+      ],
+      "correct": "D",
+      "explanation": "Led by the Bashorun, it checked the Alaafin's power and could compel him to abdicate.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Yoruba States",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The traditional ruler of the Benin Kingdom bears the title",
+      "type": "single",
+      "options": [
+        "Etsu",
+        "Mai",
+        "Oba",
+        "Obi"
+      ],
+      "correct": "C",
+      "explanation": "The Oba of Benin headed a highly centralised kingdom.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Benin Kingdom",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The Benin Kingdom was particularly renowned for its",
+      "type": "single",
+      "options": [
+        "glass making",
+        "terracotta pottery",
+        "gold mining",
+        "bronze casting"
+      ],
+      "correct": "D",
+      "explanation": "Benin bronzes and ivory carvings were produced by guilds working for the Oba.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Benin Kingdom",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The rulers of the Kanem-Borno Empire bore the title",
+      "type": "single",
+      "options": [
+        "Mai",
+        "Sarki",
+        "Oba",
+        "Alaafin"
+      ],
+      "correct": "A",
+      "explanation": "The Sefuwa dynasty ruled as Mai for roughly a thousand years.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Kanem-Borno",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Islam was introduced into Kanem-Borno mainly through",
+      "type": "single",
+      "options": [
+        "European missionaries",
+        "the trans-Atlantic slave trade",
+        "British colonial officials",
+        "the trans-Saharan trade routes"
+      ],
+      "correct": "D",
+      "explanation": "Traders and scholars crossing the Sahara carried the faith southward.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Kanem-Borno",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The Sokoto Caliphate was founded by",
+      "type": "single",
+      "options": [
+        "Yakubu of Bauchi",
+        "Muhammadu Bello",
+        "Usman dan Fodio",
+        "Idris Alooma"
+      ],
+      "correct": "C",
+      "explanation": "Usman dan Fodio led the jihad and became the first Sultan; his son Bello succeeded him.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Sokoto Caliphate",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The Sokoto jihad of Usman dan Fodio began in",
+      "type": "single",
+      "options": [
+        "1789",
+        "1804",
+        "1754",
+        "1776"
+      ],
+      "correct": "B",
+      "explanation": "The jihad was launched in 1804 against the Hausa rulers of Gobir.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Sokoto Caliphate",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The traditional political organisation of most Igbo communities was",
+      "type": "single",
+      "options": [
+        "a strongly centralised monarchy",
+        "an empire ruled from a single capital",
+        "largely decentralised, without kings over wide areas",
+        "a theocracy headed by a chief priest-king"
+      ],
+      "correct": "C",
+      "explanation": "Authority rested with village assemblies, age grades, title societies and councils of elders.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Igbo Political Systems",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The people of Arochukwu were well known in the pre-colonial period for",
+      "type": "single",
+      "options": [
+        "casting bronze heads",
+        "building stone walls",
+        "minting their own coins",
+        "the Long Juju oracle"
+      ],
+      "correct": "D",
+      "explanation": "The Ibini Ukpabi oracle gave Aro great influence over trade and dispute settlement.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Igbo Political Systems",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "The principal commodities exported from West Africa across the Sahara were",
+      "type": "single",
+      "options": [
+        "timber and groundnuts",
+        "cocoa and rubber",
+        "gold and slaves",
+        "crude oil and tin"
+      ],
+      "correct": "C",
+      "explanation": "Gold from the forest belt and captives were exchanged for salt, horses and cloth.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Trans-Saharan Trade",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "In the trans-Saharan trade, salt was obtained mainly from",
+      "type": "single",
+      "options": [
+        "the Niger Delta",
+        "deposits within the Sahara",
+        "the Atlantic coast",
+        "the forest belt of Guinea"
+      ],
+      "correct": "B",
+      "explanation": "Mines such as Taghaza supplied the salt that the savanna and forest peoples lacked.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Trans-Saharan Trade",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The first Europeans to reach the coast of what is now Nigeria were the",
+      "type": "single",
+      "options": [
+        "British, in the 18th century",
+        "French, in the 17th century",
+        "Portuguese, in the 15th century",
+        "Dutch, in the 16th century"
+      ],
+      "correct": "C",
+      "explanation": "Portuguese navigators reached Benin and the Niger Delta in the 1470s and 1480s.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "European Contact",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Britain abolished the trans-Atlantic slave trade in",
+      "type": "single",
+      "options": [
+        "1861",
+        "1884",
+        "1807",
+        "1833"
+      ],
+      "correct": "C",
+      "explanation": "The Abolition Act of 1807 outlawed the trade; slavery itself was abolished in 1833.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Slave Trade",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The main motive behind European interest in Africa in the late 19th century was",
+      "type": "single",
+      "options": [
+        "purely religious evangelism",
+        "the search for raw materials and markets",
+        "scientific curiosity about African geography",
+        "a desire to end inter-ethnic warfare"
+      ],
+      "correct": "B",
+      "explanation": "Industrialisation created demand for raw materials, markets and investment outlets.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Colonisation",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The Berlin Conference of 1884 to 1885",
+      "type": "single",
+      "options": [
+        "created the Organisation of African Unity",
+        "laid down rules for the partition of Africa among European powers",
+        "granted independence to African colonies",
+        "abolished slavery throughout Africa"
+      ],
+      "correct": "B",
+      "explanation": "No African ruler attended; the powers agreed on spheres of influence and effective occupation.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Colonisation",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The Royal Niger Company, which advanced British interests on the Niger, was led by",
+      "type": "single",
+      "options": [
+        "Richard Lander",
+        "Sir George Taubman Goldie",
+        "Lord Lugard",
+        "Mungo Park"
+      ],
+      "correct": "B",
+      "explanation": "Goldie amalgamated rival firms and obtained a royal charter in 1886.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Colonisation",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "Lagos was annexed by Britain and became a colony in",
+      "type": "single",
+      "options": [
+        "1914",
+        "1861",
+        "1885",
+        "1900"
+      ],
+      "correct": "B",
+      "explanation": "The treaty of cession was signed with Oba Dosunmu in 1861.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Colonisation",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The Oil Rivers Protectorate was later renamed the",
+      "type": "single",
+      "options": [
+        "Niger Coast Protectorate",
+        "Northern Nigeria Protectorate",
+        "Royal Niger Territory",
+        "Colony of Lagos"
+      ],
+      "correct": "A",
+      "explanation": "It was renamed in 1893 and later merged into Southern Nigeria.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Colonisation",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "The system of indirect rule in Northern Nigeria was introduced by",
+      "type": "single",
+      "options": [
+        "Sir Frederick Lugard",
+        "Sir Hugh Clifford",
+        "Sir Arthur Richards",
+        "Sir George Goldie"
+      ],
+      "correct": "A",
+      "explanation": "Lugard governed through the existing emirs, their courts and their tax systems.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Colonial Administration",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Indirect rule was most successful in",
+      "type": "single",
+      "options": [
+        "Northern Nigeria",
+        "the Lagos colony",
+        "the Niger Delta",
+        "Igboland"
+      ],
+      "correct": "A",
+      "explanation": "The emirates already had centralised authority, taxation and courts for the British to use.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Colonial Administration",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The Aba Women's Riot took place in",
+      "type": "single",
+      "options": [
+        "1945",
+        "1951",
+        "1929",
+        "1914"
+      ],
+      "correct": "C",
+      "explanation": "Women in south-eastern Nigeria protested against the warrant chiefs and the threat of taxation.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Colonial Administration",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The immediate cause of the Aba Women's Riot of 1929 was",
+      "type": "single",
+      "options": [
+        "the amalgamation of the protectorates",
+        "the introduction of English as the language of instruction",
+        "the fear of taxation and resentment of the warrant chief system",
+        "the abolition of the slave trade"
+      ],
+      "correct": "C",
+      "explanation": "The counting of women and their property was taken as a prelude to taxing them.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Colonial Administration",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The first political party to be formed in Nigeria was the",
+      "type": "single",
+      "options": [
+        "Nigerian National Democratic Party",
+        "Action Group",
+        "Northern People's Congress",
+        "National Council of Nigeria and the Cameroons"
+      ],
+      "correct": "A",
+      "explanation": "Herbert Macaulay founded the NNDP in 1923 to contest the new elective seats.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Nationalism",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Herbert Macaulay is generally regarded as",
+      "type": "single",
+      "options": [
+        "the father of Nigerian nationalism",
+        "the leader of the Northern People's Congress",
+        "Nigeria's first Prime Minister",
+        "the first Governor-General of Nigeria"
+      ],
+      "correct": "A",
+      "explanation": "He pioneered organised political opposition to colonial rule in Nigeria.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Nationalism",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The National Council of Nigeria and the Cameroons (NCNC) was led by",
+      "type": "single",
+      "options": [
+        "Obafemi Awolowo",
+        "Ahmadu Bello",
+        "Anthony Enahoro",
+        "Nnamdi Azikiwe"
+      ],
+      "correct": "D",
+      "explanation": "Azikiwe took over leadership after Macaulay's death in 1946.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Nationalism",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The Action Group was led by",
+      "type": "single",
+      "options": [
+        "Herbert Macaulay",
+        "Nnamdi Azikiwe",
+        "Obafemi Awolowo",
+        "Tafawa Balewa"
+      ],
+      "correct": "C",
+      "explanation": "Awolowo formed the Action Group in 1951, drawing on the Egbe Omo Oduduwa.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Nationalism",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The Northern People's Congress was led by",
+      "type": "single",
+      "options": [
+        "Nnamdi Azikiwe",
+        "Ahmadu Bello",
+        "Abubakar Tafawa Balewa",
+        "Aminu Kano"
+      ],
+      "correct": "B",
+      "explanation": "The Sardauna of Sokoto led the party, while Balewa served as its federal parliamentary leader.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Nationalism",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Nigeria's first Prime Minister was",
+      "type": "single",
+      "options": [
+        "Obafemi Awolowo",
+        "Abubakar Tafawa Balewa",
+        "Ahmadu Bello",
+        "Nnamdi Azikiwe"
+      ],
+      "correct": "B",
+      "explanation": "Balewa led the federal government from 1960 until the coup of January 1966.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Independence",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Nigeria's first indigenous Governor-General was",
+      "type": "single",
+      "options": [
+        "Aguiyi-Ironsi",
+        "Nnamdi Azikiwe",
+        "Abubakar Tafawa Balewa",
+        "Obafemi Awolowo"
+      ],
+      "correct": "B",
+      "explanation": "Azikiwe succeeded Sir James Robertson in 1960 and became President in 1963.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Independence",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The Nigerian civil war broke out in",
+      "type": "single",
+      "options": [
+        "1967",
+        "1970",
+        "1975",
+        "1960"
+      ],
+      "correct": "A",
+      "explanation": "Hostilities began in July 1967 after the declaration of the Republic of Biafra.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Civil War",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The leader of the secessionist Republic of Biafra was",
+      "type": "single",
+      "options": [
+        "Aguiyi-Ironsi",
+        "Murtala Muhammed",
+        "Chukwuemeka Odumegwu Ojukwu",
+        "Yakubu Gowon"
+      ],
+      "correct": "C",
+      "explanation": "Ojukwu, then Military Governor of the Eastern Region, declared Biafra in May 1967.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Civil War",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The Nigerian civil war came to an end in",
+      "type": "single",
+      "options": [
+        "January 1970",
+        "October 1971",
+        "December 1967",
+        "July 1968"
+      ],
+      "correct": "A",
+      "explanation": "Biafran forces surrendered in January 1970, and Gowon declared 'no victor, no vanquished'.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Civil War",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Nigeria's first military Head of State was",
+      "type": "single",
+      "options": [
+        "Olusegun Obasanjo",
+        "Johnson Aguiyi-Ironsi",
+        "Yakubu Gowon",
+        "Murtala Muhammed"
+      ],
+      "correct": "B",
+      "explanation": "Ironsi took power after the coup of January 1966 and was killed in July that year.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Military Rule",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The twelve-state structure replacing Nigeria's four regions was created in",
+      "type": "single",
+      "options": [
+        "1976",
+        "1987",
+        "1963",
+        "1967"
+      ],
+      "correct": "D",
+      "explanation": "Gowon created twelve states in May 1967, shortly before the civil war.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Military Rule",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "The first country in sub-Saharan Africa to gain independence from colonial rule was",
+      "type": "single",
+      "options": [
+        "Nigeria",
+        "Kenya",
+        "Senegal",
+        "Ghana"
+      ],
+      "correct": "D",
+      "explanation": "Ghana, formerly the Gold Coast, led the wave of African decolonisation.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "African Independence",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Ghana gained independence in",
+      "type": "single",
+      "options": [
+        "1960",
+        "1951",
+        "1954",
+        "1957"
+      ],
+      "correct": "D",
+      "explanation": "Independence was attained on 6 March 1957.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "African Independence",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The first President of independent Ghana was",
+      "type": "single",
+      "options": [
+        "Kwame Nkrumah",
+        "Jomo Kenyatta",
+        "Julius Nyerere",
+        "Leopold Senghor"
+      ],
+      "correct": "A",
+      "explanation": "Nkrumah led the Convention People's Party and became a leading Pan-Africanist.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "African Independence",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The official policy of racial segregation practised in South Africa was known as",
+      "type": "single",
+      "options": [
+        "apartheid",
+        "indirect rule",
+        "assimilation",
+        "colonialism"
+      ],
+      "correct": "A",
+      "explanation": "Apartheid separated people by race in law, land, work, schooling and politics.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Southern Africa",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Nelson Mandela was released from prison in",
+      "type": "single",
+      "options": [
+        "1976",
+        "1984",
+        "1988",
+        "1990"
+      ],
+      "correct": "D",
+      "explanation": "He was released in February 1990 and became president in 1994.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Southern Africa",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The Organisation of African Unity was founded in",
+      "type": "single",
+      "options": [
+        "1960",
+        "1963",
+        "1975",
+        "1957"
+      ],
+      "correct": "B",
+      "explanation": "Thirty-two states signed the founding charter in Addis Ababa in May 1963.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Pan-Africanism",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The Organisation of African Unity was formally replaced by the African Union in",
+      "type": "single",
+      "options": [
+        "2002",
+        "1991",
+        "1999",
+        "2010"
+      ],
+      "correct": "A",
+      "explanation": "The AU was launched at Durban in July 2002.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Pan-Africanism",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "The Mfecane, a period of wars and mass migration in southern Africa, is associated with",
+      "type": "single",
+      "options": [
+        "the Mandinka under Samori",
+        "the Asante under Osei Tutu",
+        "the Zulu under Shaka",
+        "the Fulani under dan Fodio"
+      ],
+      "correct": "C",
+      "explanation": "Shaka's military expansion in the early 19th century scattered neighbouring peoples.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Southern Africa",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "Mungo Park is remembered for his exploration of",
+      "type": "single",
+      "options": [
+        "the Congo",
+        "the Zambezi",
+        "the River Niger",
+        "the Nile"
+      ],
+      "correct": "C",
+      "explanation": "He traced the course of the Niger and died at Bussa in 1806.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "European Contact",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The Second World War stimulated African nationalism largely because it",
+      "type": "single",
+      "options": [
+        "ended the colonial economy immediately",
+        "exposed Africans to ideas of self-determination and freedom",
+        "removed all European settlers from Africa",
+        "destroyed all colonial armies in Africa"
+      ],
+      "correct": "B",
+      "explanation": "Ex-servicemen returned with new expectations, and the Atlantic Charter spoke of self-determination.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Nationalism",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The main aim of the Pan-African movement was",
+      "type": "single",
+      "options": [
+        "the promotion of European investment in Africa",
+        "the division of Africa into spheres of influence",
+        "the spread of a single African language",
+        "the unity and liberation of African peoples"
+      ],
+      "correct": "D",
+      "explanation": "It sought solidarity among Africans and people of African descent against colonial rule.",
+      "subject": "History",
+      "exam_type": "JAMB",
+      "topic": "Pan-Africanism",
+      "difficulty": "medium",
+      "marks": 1
+    }
+  ]
+}

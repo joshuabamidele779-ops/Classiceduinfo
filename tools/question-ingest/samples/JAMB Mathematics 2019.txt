@@ -1,0 +1,36 @@
+JAMB MATHEMATICS 2019
+Page 1
+
+1. Simplify 2x + 3x - 4x.
+A. x
+B. 2x
+C. 5x
+D. 9x
+Answer: A
+Explanation: 2x + 3x = 5x, and 5x - 4x = x.
+
+2. If a bag contains 4 red and 6 blue balls, what is the probability of picking a red ball at random?
+A. 2/5
+B. 3/5
+C. 1/2
+D. 4/6
+Ans - A
+
+3) Find the value of x if 3x - 7 = 11  (a) 4 (b) 5 (c) 6 (d) 7
+Answer: C
+
+4. The angles of a triangle are in the ratio 2:3:4. Find the largest angle.
+A. 40 degrees
+B. 60 degrees
+C. 80 degrees
+D. 100 degrees
+
+5. Simplify 2x + 3x - 4x
+A. x
+B. 2x
+C. 5x
+D. 9x
+Answer: A
+
+ANSWERS
+1. A  2. A  3. C  4. C  5. A

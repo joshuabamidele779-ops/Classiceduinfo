@@ -1,0 +1,515 @@
+/**
+ * Classic EDU Suite - coin wallet front end.
+ *
+ * Mobile-first: these are the phone styles, with a single min-width block at
+ * the bottom for wider screens. Brand colour comes from --ces-primary, which
+ * the module prints inline from the `brand_primary` setting.
+ *
+ * @package ClassicEduSuite
+ */
+
+.ces-wallet {
+	--ces-wallet-radius: 12px;
+	--ces-wallet-border: #e3e6ec;
+	--ces-wallet-muted: #5d6574;
+	--ces-wallet-in: #0f7b43;
+	--ces-wallet-out: #b4232a;
+
+	box-sizing: border-box;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.ces-wallet *,
+.ces-wallet *::before,
+.ces-wallet *::after {
+	box-sizing: inherit;
+}
+
+/* ---------------------------------------------------------------
+   Balance hero
+   --------------------------------------------------------------- */
+
+/*
+ * The balance hero: brand gradient, the science texture from ces-base.css on
+ * top of it, and a large coin outline behind the figure. The coin is a mask,
+ * not a background image, so it takes the coin-gold token and would follow a
+ * change to it.
+ */
+.ces-coin-hero {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2px;
+	overflow: hidden;
+	padding: 26px 16px;
+	margin: 0 0 18px;
+	border-radius: 18px;
+	background-color: var(--ces-primary, #2c62cd);
+	background-image:
+		var(--ces-pattern-science),
+		linear-gradient(135deg, rgba(15, 23, 42, 0.35), rgba(15, 23, 42, 0));
+	background-size: 120px 120px, auto;
+	color: #fff;
+	text-align: center;
+	box-shadow: var(--ces-shadow, 0 1px 2px rgba(15, 23, 42, 0.05));
+}
+
+.ces-coin-hero::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: -1.5rem;
+	width: 9rem;
+	height: 9rem;
+	transform: translateY(-50%);
+	opacity: 0.22;
+	background-color: var(--ces-coin, #d9a300);
+	-webkit-mask-image: var(--ces-icon-coin);
+	mask-image: var(--ces-icon-coin);
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	pointer-events: none;
+}
+
+.ces-coin-hero > * {
+	position: relative;
+	z-index: 1;
+}
+
+.ces-coin-hero__label {
+	font-size: 0.82rem;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	opacity: 0.85;
+}
+
+.ces-coin-hero__value {
+	font-size: 2.6rem;
+	font-weight: 700;
+	line-height: 1.1;
+}
+
+.ces-coin-hero__unit {
+	font-size: 0.9rem;
+	opacity: 0.85;
+}
+
+/* ---------------------------------------------------------------
+   Headings, empty states
+   --------------------------------------------------------------- */
+
+.ces-wallet__heading {
+	margin: 24px 0 10px;
+	font-size: 1.05rem;
+	font-weight: 700;
+}
+
+.ces-empty {
+	margin: 0;
+	padding: 14px;
+	border: 1px dashed var(--ces-wallet-border);
+	border-radius: var(--ces-wallet-radius);
+	color: var(--ces-wallet-muted);
+	font-size: 0.92rem;
+}
+
+.ces-wallet__cta,
+.ces-wallet__more {
+	margin: 14px 0 0;
+}
+
+/* ---------------------------------------------------------------
+   Progress bars (streak, milestone)
+   --------------------------------------------------------------- */
+
+.ces-progress {
+	height: 8px;
+	overflow: hidden;
+	border-radius: 999px;
+	background: #e9ecf2;
+}
+
+.ces-progress__bar {
+	display: block;
+	height: 100%;
+	border-radius: 999px;
+	background: linear-gradient(90deg, var(--ces-primary, #2c62cd), var(--ces-accent, #f59e0b));
+	transition: width 0.3s ease;
+}
+
+.ces-streak,
+.ces-milestone {
+	padding: 14px;
+	margin: 0 0 18px;
+	border: 1px solid var(--ces-wallet-border);
+	border-radius: var(--ces-wallet-radius);
+}
+
+.ces-streak__line,
+.ces-milestone__line {
+	margin: 0 0 10px;
+	font-size: 0.92rem;
+}
+
+/* ---------------------------------------------------------------
+   How to earn
+   --------------------------------------------------------------- */
+
+.ces-earn-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: 1px solid var(--ces-wallet-border);
+	border-radius: var(--ces-wallet-radius);
+	overflow: hidden;
+}
+
+.ces-earn-list__item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	padding: 12px 14px;
+	border-bottom: 1px solid var(--ces-wallet-border);
+}
+
+.ces-earn-list__item:last-child {
+	border-bottom: 0;
+}
+
+.ces-earn-list__label {
+	font-size: 0.92rem;
+}
+
+.ces-earn-list__coins {
+	flex: 0 0 auto;
+	padding: 3px 10px 3px 24px;
+	border-radius: 999px;
+	background: #fff8e1 var(--ces-icon-coin-gold) no-repeat 6px center;
+	background-size: 14px 14px;
+	color: #8a6400;
+	font-weight: 700;
+	font-size: 0.85rem;
+	white-space: nowrap;
+}
+
+/* ---------------------------------------------------------------
+   Ledger
+   --------------------------------------------------------------- */
+
+.ces-ledger {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: 1px solid var(--ces-wallet-border);
+	border-radius: var(--ces-wallet-radius);
+	overflow: hidden;
+}
+
+.ces-ledger__item {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 12px;
+	padding: 12px 14px;
+	border-bottom: 1px solid var(--ces-wallet-border);
+}
+
+.ces-ledger__item:last-child {
+	border-bottom: 0;
+}
+
+.ces-ledger__meta {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	min-width: 0;
+}
+
+.ces-ledger__label {
+	font-weight: 600;
+	font-size: 0.92rem;
+}
+
+.ces-ledger__note,
+.ces-ledger__date {
+	color: var(--ces-wallet-muted);
+	font-size: 0.8rem;
+	overflow-wrap: anywhere;
+}
+
+.ces-ledger__amount {
+	flex: 0 0 auto;
+	font-weight: 700;
+	font-variant-numeric: tabular-nums;
+	white-space: nowrap;
+}
+
+.ces-ledger__amount--in {
+	color: var(--ces-wallet-in);
+}
+
+.ces-ledger__amount--out {
+	color: var(--ces-wallet-out);
+}
+
+/* ---------------------------------------------------------------
+   Invite tab
+   --------------------------------------------------------------- */
+
+.ces-invite__intro {
+	margin: 0 0 16px;
+	font-size: 0.95rem;
+}
+
+.ces-invite__code-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4px;
+	padding: 16px;
+	margin: 0 0 12px;
+	border: 2px dashed var(--ces-primary, #2c62cd);
+	border-radius: var(--ces-wallet-radius);
+	text-align: center;
+}
+
+.ces-invite__code-label {
+	font-size: 0.78rem;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	color: var(--ces-wallet-muted);
+}
+
+.ces-invite__code {
+	font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+	font-size: 1.8rem;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	color: var(--ces-primary, #2c62cd);
+}
+
+.ces-invite__link-row {
+	display: flex;
+	gap: 8px;
+	margin: 0 0 12px;
+}
+
+.ces-invite__link {
+	flex: 1 1 auto;
+	min-width: 0;
+	padding: 10px 12px;
+	border: 1px solid var(--ces-wallet-border);
+	border-radius: 8px;
+	background: #f7f8fa;
+	font-size: 0.85rem;
+	color: #2b2f38;
+}
+
+.ces-invite__share {
+	margin: 0 0 18px;
+}
+
+.ces-invite__stats {
+	display: flex;
+	gap: 8px;
+	margin: 0 0 18px;
+}
+
+.ces-stat {
+	flex: 1 1 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2px;
+	padding: 12px 6px;
+	border: 1px solid var(--ces-wallet-border);
+	border-radius: var(--ces-wallet-radius);
+	text-align: center;
+}
+
+.ces-stat__value {
+	font-size: 1.35rem;
+	font-weight: 700;
+	line-height: 1.1;
+}
+
+.ces-stat__label {
+	font-size: 0.74rem;
+	color: var(--ces-wallet-muted);
+}
+
+.ces-invite__smallprint {
+	margin: 16px 0 0;
+	font-size: 0.78rem;
+	color: var(--ces-wallet-muted);
+}
+
+/* ---------------------------------------------------------------
+   Referral list
+   --------------------------------------------------------------- */
+
+.ces-referral-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: 1px solid var(--ces-wallet-border);
+	border-radius: var(--ces-wallet-radius);
+	overflow: hidden;
+}
+
+.ces-referral-list__item {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	gap: 2px 10px;
+	padding: 12px 14px;
+	border-bottom: 1px solid var(--ces-wallet-border);
+}
+
+.ces-referral-list__item:last-child {
+	border-bottom: 0;
+}
+
+.ces-referral-list__name {
+	font-weight: 600;
+	font-size: 0.92rem;
+	overflow-wrap: anywhere;
+}
+
+.ces-referral-list__hint {
+	grid-column: 1 / -1;
+	color: var(--ces-wallet-muted);
+	font-size: 0.78rem;
+}
+
+.ces-status {
+	align-self: start;
+	padding: 2px 9px;
+	border-radius: 999px;
+	font-size: 0.74rem;
+	font-weight: 700;
+	white-space: nowrap;
+}
+
+.ces-status--qualified {
+	background: #e3f5ea;
+	color: var(--ces-wallet-in);
+}
+
+.ces-status--pending {
+	background: #fff4e0;
+	color: #8a5200;
+}
+
+.ces-status--rejected {
+	background: #fdeaea;
+	color: var(--ces-wallet-out);
+}
+
+/* ---------------------------------------------------------------
+   Buttons and chips
+   --------------------------------------------------------------- */
+
+.ces-btn {
+	display: inline-block;
+	padding: 11px 18px;
+	border: 1px solid transparent;
+	border-radius: 8px;
+	font-size: 0.92rem;
+	font-weight: 600;
+	line-height: 1.2;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+.ces-btn--primary {
+	background: var(--ces-primary, #2c62cd);
+	color: #fff;
+}
+
+.ces-btn--ghost {
+	background: #fff;
+	border-color: var(--ces-wallet-border);
+	color: #2b2f38;
+}
+
+.ces-btn--ghost.is-copied {
+	border-color: var(--ces-wallet-in);
+	color: var(--ces-wallet-in);
+}
+
+.ces-btn--ghost.is-done {
+	color: var(--ces-wallet-muted);
+	cursor: default;
+}
+
+.ces-btn--whatsapp {
+	display: block;
+	width: 100%;
+	background: #25d366;
+	color: #06301a;
+}
+
+.ces-btn[disabled] {
+	opacity: 0.6;
+	cursor: progress;
+}
+
+.ces-chip {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding: 5px 12px;
+	border-radius: 999px;
+	background: #eef3ff;
+	color: var(--ces-primary, #2c62cd);
+	font-weight: 700;
+	font-size: 0.9rem;
+	text-decoration: none;
+	line-height: 1.4;
+}
+
+.ces-chip__label {
+	font-weight: 500;
+	opacity: 0.85;
+}
+
+.ces-login-link {
+	font-size: 0.92rem;
+}
+
+/* ---------------------------------------------------------------
+   Wider screens
+   --------------------------------------------------------------- */
+
+@media ( min-width: 640px ) {
+	.ces-coin-hero {
+		padding: 30px 20px;
+	}
+
+	.ces-coin-hero__value {
+		font-size: 3.2rem;
+	}
+
+	.ces-btn--whatsapp {
+		display: inline-block;
+		width: auto;
+	}
+
+	.ces-referral-list__item {
+		grid-template-columns: 1fr auto auto;
+		align-items: center;
+	}
+
+	.ces-referral-list__hint {
+		grid-column: auto;
+		text-align: right;
+	}
+}

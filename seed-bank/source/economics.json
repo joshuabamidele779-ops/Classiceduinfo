@@ -1,0 +1,855 @@
+{
+  "_note": "Original practice items written for the Classic EDU Suite CBT bank. Not reproduced from any past paper. Syllabus-aligned to JAMB Economics.",
+  "questions": [
+    {
+      "question": "Economics is best defined as the study of how",
+      "type": "single",
+      "options": [
+        "businesses maximise their advertising reach",
+        "money is printed and circulated",
+        "governments collect and spend revenue",
+        "society allocates scarce resources to satisfy unlimited wants"
+      ],
+      "correct": "D",
+      "explanation": "Scarcity relative to unlimited wants is the central economic problem.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Basic Economic Concepts",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The real cost of a choice, measured in terms of the next best alternative forgone, is called",
+      "type": "single",
+      "options": [
+        "marginal cost",
+        "fixed cost",
+        "opportunity cost",
+        "average cost"
+      ],
+      "correct": "C",
+      "explanation": "Opportunity cost expresses what had to be given up to obtain something else.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Basic Economic Concepts",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A production possibility curve illustrates",
+      "type": "single",
+      "options": [
+        "the growth of population over time",
+        "the maximum combinations of two goods obtainable from given resources",
+        "the relationship between price and quantity demanded",
+        "the distribution of income in a country"
+      ],
+      "correct": "B",
+      "explanation": "Points on the curve are efficient; points inside it waste resources.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Basic Economic Concepts",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The law of demand states that, other things being equal, as the price of a commodity rises, the quantity demanded",
+      "type": "single",
+      "options": [
+        "remains unchanged",
+        "rises then falls sharply",
+        "falls",
+        "rises"
+      ],
+      "correct": "C",
+      "explanation": "Price and quantity demanded move in opposite directions, giving a downward-sloping curve.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Demand and Supply",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A movement along a given demand curve is caused by a change in",
+      "type": "single",
+      "options": [
+        "the price of a substitute",
+        "consumers' income",
+        "the price of the commodity itself",
+        "consumers' taste"
+      ],
+      "correct": "C",
+      "explanation": "Only a change in the commodity's own price moves you along the curve; other factors shift it.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Demand and Supply",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Which of the following causes a shift in the demand curve for a commodity?",
+      "type": "single",
+      "options": [
+        "A change in consumers' income",
+        "A change in the quantity supplied",
+        "A fall in the price of the commodity",
+        "A rise in the price of the commodity"
+      ],
+      "correct": "A",
+      "explanation": "Income is a condition of demand, so a change in it shifts the whole curve.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Demand and Supply",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The price of a commodity falls by 10% and the quantity demanded rises by 20%. Calculate the price elasticity of demand.",
+      "type": "single",
+      "options": [
+        "10.0",
+        "0.2",
+        "2.0",
+        "0.5"
+      ],
+      "correct": "C",
+      "explanation": "Elasticity = % change in quantity ÷ % change in price = 20/10 = 2.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Elasticity",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "When the price elasticity of demand for a good is greater than one, demand is said to be",
+      "type": "single",
+      "options": [
+        "unitary",
+        "inelastic",
+        "elastic",
+        "perfectly inelastic"
+      ],
+      "correct": "C",
+      "explanation": "Quantity demanded responds more than proportionately to the price change.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Elasticity",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Goods that are normally consumed together, such as bread and butter, are called",
+      "type": "single",
+      "options": [
+        "substitute goods",
+        "free goods",
+        "inferior goods",
+        "complementary goods"
+      ],
+      "correct": "D",
+      "explanation": "A rise in the price of one reduces the demand for the other.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Demand and Supply",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Goods that can be used in place of one another are known as",
+      "type": "single",
+      "options": [
+        "joint goods",
+        "capital goods",
+        "substitute goods",
+        "public goods"
+      ],
+      "correct": "C",
+      "explanation": "A rise in the price of one raises the demand for the other, for example rice and yam.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Demand and Supply",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Equilibrium price in a market is the price at which",
+      "type": "single",
+      "options": [
+        "the producer makes maximum profit",
+        "government fixes the market rate",
+        "supply exceeds demand",
+        "quantity demanded equals quantity supplied"
+      ],
+      "correct": "D",
+      "explanation": "At that price there is neither surplus nor shortage, so the price is stable.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Price Determination",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "If the government fixes a maximum price below the equilibrium price, the immediate result will be",
+      "type": "single",
+      "options": [
+        "an increase in supply",
+        "a shortage of the commodity",
+        "a surplus of the commodity",
+        "a fall in demand"
+      ],
+      "correct": "B",
+      "explanation": "At the lower controlled price, quantity demanded exceeds quantity supplied.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Price Control",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The law of diminishing returns operates in the",
+      "type": "single",
+      "options": [
+        "short run",
+        "very long run",
+        "period of perfect competition",
+        "long run only"
+      ],
+      "correct": "A",
+      "explanation": "It applies when at least one factor of production is fixed.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Theory of Production",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Total product divided by the number of units of the variable factor employed gives",
+      "type": "single",
+      "options": [
+        "average product",
+        "marginal cost",
+        "marginal product",
+        "total revenue"
+      ],
+      "correct": "A",
+      "explanation": "Average product is output per unit of the variable factor.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Theory of Production",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "A fixed cost is a cost which",
+      "type": "single",
+      "options": [
+        "is incurred only at high output",
+        "is always equal to total cost",
+        "does not vary with the level of output",
+        "varies directly with output"
+      ],
+      "correct": "C",
+      "explanation": "Rent on a factory is payable whether or not anything is produced.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Costs of Production",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A firm incurs a total cost of ₦5,000 when output is zero. This ₦5,000 represents its",
+      "type": "single",
+      "options": [
+        "average cost",
+        "fixed cost",
+        "marginal cost",
+        "variable cost"
+      ],
+      "correct": "B",
+      "explanation": "Costs that remain when output is nil must be fixed costs.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Costs of Production",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Firms under perfect competition are described as",
+      "type": "single",
+      "options": [
+        "price discriminators",
+        "price makers",
+        "price takers",
+        "price leaders"
+      ],
+      "correct": "C",
+      "explanation": "Each firm is too small to influence the ruling market price.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Market Structures",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "A market situation in which there is only one seller of a commodity is",
+      "type": "single",
+      "options": [
+        "monopsony",
+        "oligopoly",
+        "duopoly",
+        "monopoly"
+      ],
+      "correct": "D",
+      "explanation": "A monopolist is the sole supplier and faces no close substitute.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Market Structures",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A market dominated by a few large sellers is called",
+      "type": "single",
+      "options": [
+        "monopolistic competition",
+        "oligopoly",
+        "monopoly",
+        "perfect competition"
+      ],
+      "correct": "B",
+      "explanation": "In an oligopoly each firm must consider the reactions of its few rivals.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Market Structures",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Which of the following is a feature of perfect competition?",
+      "type": "single",
+      "options": [
+        "A single dominant producer",
+        "Homogeneous products",
+        "Heavy advertising by each firm",
+        "Barriers to the entry of new firms"
+      ],
+      "correct": "B",
+      "explanation": "Identical products mean buyers have no reason to prefer one seller to another.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Market Structures",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The most important function of money is to serve as",
+      "type": "single",
+      "options": [
+        "a standard of deferred payment",
+        "a measure of value",
+        "a store of value",
+        "a medium of exchange"
+      ],
+      "correct": "D",
+      "explanation": "Money's primary role is to remove the inconvenience of barter.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Money",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The quality of money that enables it to be used for both small and large transactions is",
+      "type": "single",
+      "options": [
+        "durability",
+        "portability",
+        "divisibility",
+        "scarcity"
+      ],
+      "correct": "C",
+      "explanation": "Money must be capable of division into smaller units of value.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Money",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The central bank acts as lender of last resort when it",
+      "type": "single",
+      "options": [
+        "sells shares to the public",
+        "lends to commercial banks in temporary difficulty",
+        "grants loans to private individuals",
+        "borrows from foreign banks"
+      ],
+      "correct": "B",
+      "explanation": "It supports the banking system when banks cannot obtain funds elsewhere.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Banking",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Which of the following is a function of the Central Bank of Nigeria?",
+      "type": "single",
+      "options": [
+        "Issuing legal tender currency",
+        "Accepting deposits from the general public",
+        "Granting personal overdrafts",
+        "Buying and selling shares for individuals"
+      ],
+      "correct": "A",
+      "explanation": "Only the central bank has the sole right of note issue.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Banking",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The monetary policy rate is used mainly to control",
+      "type": "single",
+      "options": [
+        "the volume of exports",
+        "the population growth rate",
+        "the level of taxation",
+        "the supply of money and credit"
+      ],
+      "correct": "D",
+      "explanation": "Raising the rate makes borrowing dearer and reduces credit creation.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Monetary Policy",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Inflation is best described as",
+      "type": "single",
+      "options": [
+        "a fall in the value of exports",
+        "an increase in national output",
+        "a persistent rise in the general price level",
+        "a rise in the price of one commodity"
+      ],
+      "correct": "C",
+      "explanation": "It must be general and sustained, not a once-for-all rise in a single price.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Inflation",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Inflation caused by an excess of aggregate demand over available output is called",
+      "type": "single",
+      "options": [
+        "structural inflation",
+        "demand-pull inflation",
+        "cost-push inflation",
+        "imported inflation"
+      ],
+      "correct": "B",
+      "explanation": "Too much money chases too few goods, pulling prices upward.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Inflation",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "A tax whose rate increases as the income of the taxpayer increases is",
+      "type": "single",
+      "options": [
+        "indirect",
+        "progressive",
+        "proportional",
+        "regressive"
+      ],
+      "correct": "B",
+      "explanation": "Higher income earners pay a larger proportion of their income.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Taxation",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A tax levied on goods brought into a country is called",
+      "type": "single",
+      "options": [
+        "export duty",
+        "capital gains tax",
+        "excise duty",
+        "import duty"
+      ],
+      "correct": "D",
+      "explanation": "Import duties are collected at the point of entry by customs.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Taxation",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Which of the following is an example of a direct tax?",
+      "type": "single",
+      "options": [
+        "Excise duty",
+        "Personal income tax",
+        "Import duty",
+        "Value added tax"
+      ],
+      "correct": "B",
+      "explanation": "A direct tax is levied on income or wealth and paid by the person who bears it.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Taxation",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Since the 1970s, the largest single source of government revenue in Nigeria has been",
+      "type": "single",
+      "options": [
+        "customs duties on textiles",
+        "earnings from crude petroleum",
+        "company income tax",
+        "agricultural exports"
+      ],
+      "correct": "B",
+      "explanation": "Oil receipts came to dominate federal revenue, replacing agricultural exports.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Public Finance",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "A budget in which proposed government expenditure exceeds expected revenue is a",
+      "type": "single",
+      "options": [
+        "balanced budget",
+        "surplus budget",
+        "capital budget",
+        "deficit budget"
+      ],
+      "correct": "D",
+      "explanation": "The gap is normally financed by borrowing.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Public Finance",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The total money value of all final goods and services produced within a country in a year is",
+      "type": "single",
+      "options": [
+        "gross domestic product",
+        "per capita income",
+        "disposable income",
+        "net national product"
+      ],
+      "correct": "A",
+      "explanation": "GDP counts output produced inside the country's borders, whoever owns the factors.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "National Income",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Gross national product is obtained by",
+      "type": "single",
+      "options": [
+        "adding net income from abroad to gross domestic product",
+        "dividing national income by population",
+        "subtracting depreciation from gross domestic product",
+        "adding indirect taxes to national income"
+      ],
+      "correct": "A",
+      "explanation": "GNP measures output by a country's nationals wherever they are located.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "National Income",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "Per capita income is calculated as",
+      "type": "single",
+      "options": [
+        "total population divided by national income",
+        "national income minus taxes",
+        "gross domestic product plus exports",
+        "national income divided by total population"
+      ],
+      "correct": "D",
+      "explanation": "It gives average income per head and is used to compare living standards.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "National Income",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "National income can be measured by the",
+      "type": "single",
+      "options": [
+        "balance of payments method",
+        "income, output and expenditure approaches",
+        "export method only",
+        "population census method"
+      ],
+      "correct": "B",
+      "explanation": "All three approaches should in principle give the same total.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "National Income",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "In computing national income, double counting is avoided by",
+      "type": "single",
+      "options": [
+        "excluding government expenditure",
+        "ignoring the services sector",
+        "including all transactions twice",
+        "counting only final goods or value added"
+      ],
+      "correct": "D",
+      "explanation": "Counting intermediate goods as well as final goods would inflate the total.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "National Income",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "A country is said to have a comparative advantage in producing a commodity when it can produce that commodity at",
+      "type": "single",
+      "options": [
+        "a lower opportunity cost than other countries",
+        "a price fixed by government",
+        "the highest money cost",
+        "the largest possible scale"
+      ],
+      "correct": "A",
+      "explanation": "Comparative advantage rests on relative, not absolute, costs.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "International Trade",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "Balance of trade is the difference between a country's",
+      "type": "single",
+      "options": [
+        "visible exports and visible imports",
+        "total revenue and total expenditure",
+        "savings and investment",
+        "exports and foreign aid"
+      ],
+      "correct": "A",
+      "explanation": "It covers merchandise (visible) trade only.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "International Trade",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The balance of payments of a country records",
+      "type": "single",
+      "options": [
+        "all its economic transactions with the rest of the world",
+        "only its visible trade",
+        "only its capital transfers",
+        "its internal government accounts"
+      ],
+      "correct": "A",
+      "explanation": "It includes the current account, the capital account and official settlements.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "International Trade",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Specialisation and the division of labour in international trade generally lead to",
+      "type": "single",
+      "options": [
+        "a reduction in world output",
+        "increased output and greater efficiency",
+        "complete self-sufficiency for each country",
+        "the elimination of all trade barriers"
+      ],
+      "correct": "B",
+      "explanation": "Each country concentrates on what it produces relatively more cheaply.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "International Trade",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The devaluation of a country's currency is likely to make its",
+      "type": "single",
+      "options": [
+        "exports and imports both dearer",
+        "exports dearer and imports cheaper",
+        "exports and imports both cheaper",
+        "exports cheaper and imports dearer"
+      ],
+      "correct": "D",
+      "explanation": "Foreigners pay less for its goods while its own citizens pay more for foreign goods.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "International Trade",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "The Malthusian theory of population holds that",
+      "type": "single",
+      "options": [
+        "population tends to grow faster than the means of subsistence",
+        "population growth always raises living standards",
+        "population size has no economic effect",
+        "food supply grows faster than population"
+      ],
+      "correct": "A",
+      "explanation": "Malthus argued population grows geometrically while food supply grows arithmetically.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Population",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Optimum population is that population which",
+      "type": "single",
+      "options": [
+        "yields the highest output per head",
+        "is the largest a country can feed",
+        "is equal to the labour force",
+        "grows at a constant rate"
+      ],
+      "correct": "A",
+      "explanation": "Both under-population and over-population give lower output per head.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Population",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "A high dependency ratio in a country means that there is",
+      "type": "single",
+      "options": [
+        "a high level of foreign investment",
+        "a shortage of consumer goods",
+        "a large number of industries",
+        "a large proportion of people outside the working age group"
+      ],
+      "correct": "D",
+      "explanation": "The working population must support many children and elderly people.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Population",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Subsistence agriculture is characterised by",
+      "type": "single",
+      "options": [
+        "heavy use of machinery",
+        "large-scale production for export",
+        "production mainly for the farmer's own family",
+        "specialisation in a single cash crop"
+      ],
+      "correct": "C",
+      "explanation": "Output is small and little or no surplus reaches the market.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Agriculture",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Which of the following is a major problem of agriculture in Nigeria?",
+      "type": "single",
+      "options": [
+        "A shortage of arable land nationwide",
+        "Over-supply of agricultural credit",
+        "Inadequate storage and processing facilities",
+        "Excessive mechanisation of farms"
+      ],
+      "correct": "C",
+      "explanation": "Poor storage causes heavy post-harvest losses, especially of perishables.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Agriculture",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Economic development differs from economic growth in that development involves",
+      "type": "single",
+      "options": [
+        "only an increase in exports",
+        "structural and qualitative changes in the economy",
+        "only an increase in national output",
+        "only a rise in population"
+      ],
+      "correct": "B",
+      "explanation": "Growth is a rise in output; development also changes how the economy is organised.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Economic Development",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Which of the following is the most comprehensive indicator of economic development?",
+      "type": "single",
+      "options": [
+        "Human development index",
+        "Number of registered companies",
+        "Size of the money supply",
+        "Volume of exports"
+      ],
+      "correct": "A",
+      "explanation": "It combines income with health and education rather than income alone.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Economic Development",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The classification of production into primary, secondary and tertiary activities refers to the",
+      "type": "single",
+      "options": [
+        "sectors of production",
+        "scale of production",
+        "factors of production",
+        "mobility of labour"
+      ],
+      "correct": "A",
+      "explanation": "Extraction, manufacturing and services form the three sectors.",
+      "subject": "Economics",
+      "exam_type": "JAMB",
+      "topic": "Production",
+      "difficulty": "easy",
+      "marks": 1
+    }
+  ]
+}

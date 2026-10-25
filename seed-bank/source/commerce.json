@@ -1,0 +1,855 @@
+{
+  "_note": "Original practice items written for the Classic EDU Suite CBT bank. Not reproduced from any past paper. Syllabus-aligned to JAMB Commerce.",
+  "questions": [
+    {
+      "question": "Commerce may best be described as",
+      "type": "single",
+      "options": [
+        "the buying of raw materials only",
+        "the provision of government services",
+        "the production of goods in a factory",
+        "trade together with the aids to trade"
+      ],
+      "correct": "D",
+      "explanation": "Commerce covers trade and the services that assist it, such as banking, transport and insurance.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Introduction to Commerce",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Trade is",
+      "type": "single",
+      "options": [
+        "the buying and selling of goods and services",
+        "the manufacture of finished products",
+        "the storage of goods in a warehouse",
+        "the transportation of goods by road"
+      ],
+      "correct": "A",
+      "explanation": "Trade is the exchange of goods and services for money or other goods.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Introduction to Commerce",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The branch of trade carried on within the boundaries of a country is called",
+      "type": "single",
+      "options": [
+        "bilateral trade",
+        "home trade",
+        "entrepot trade",
+        "foreign trade"
+      ],
+      "correct": "B",
+      "explanation": "Home trade is made up of wholesale and retail trade.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Trade",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A wholesaler is a trader who buys",
+      "type": "single",
+      "options": [
+        "in bulk from producers and sells in smaller quantities to retailers",
+        "directly from consumers and sells to retailers",
+        "small quantities and sells them abroad",
+        "only on behalf of the government"
+      ],
+      "correct": "A",
+      "explanation": "The wholesaler stands between producer and retailer and breaks bulk.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Trade",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Foreign trade is made up of",
+      "type": "single",
+      "options": [
+        "import, export and entrepot trade",
+        "bulk and unit trade",
+        "wholesale and retail trade",
+        "cash and credit trade"
+      ],
+      "correct": "A",
+      "explanation": "These are the three branches of trade between countries.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Foreign Trade",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Entrepot trade refers to goods which are",
+      "type": "single",
+      "options": [
+        "exported without payment of duty",
+        "smuggled across the border",
+        "imported and then re-exported",
+        "produced and consumed locally"
+      ],
+      "correct": "C",
+      "explanation": "The goods pass through the country without being consumed there.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Foreign Trade",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Which of the following is an aid to trade?",
+      "type": "single",
+      "options": [
+        "Farming",
+        "Manufacturing",
+        "Mining",
+        "Banking"
+      ],
+      "correct": "D",
+      "explanation": "Banking, insurance, transport, warehousing, advertising and communication assist trade.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Aids to Trade",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A major function of the retailer is",
+      "type": "single",
+      "options": [
+        "manufacturing goods for sale",
+        "fixing national price levels",
+        "issuing currency notes",
+        "breaking bulk into units convenient for consumers"
+      ],
+      "correct": "D",
+      "explanation": "The retailer sells in small quantities and is the final link to the consumer.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Trade",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A business owned, financed and controlled by one person is a",
+      "type": "single",
+      "options": [
+        "public corporation",
+        "sole proprietorship",
+        "co-operative society",
+        "partnership"
+      ],
+      "correct": "B",
+      "explanation": "The owner takes all the profit and bears all the risk.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Business Units",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A major disadvantage of the sole proprietorship is",
+      "type": "single",
+      "options": [
+        "unlimited liability of the owner",
+        "the need to publish annual accounts",
+        "difficulty in taking quick decisions",
+        "compulsory sharing of profit"
+      ],
+      "correct": "A",
+      "explanation": "The owner's personal property can be taken to settle business debts.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Business Units",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The minimum number of persons required to form an ordinary partnership is",
+      "type": "single",
+      "options": [
+        "seven",
+        "one",
+        "two",
+        "five"
+      ],
+      "correct": "C",
+      "explanation": "A partnership requires at least two persons carrying on business in common.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Business Units",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A partner who contributes capital but takes no active part in the management of the business is a",
+      "type": "single",
+      "options": [
+        "sleeping partner",
+        "active partner",
+        "general partner",
+        "nominal partner"
+      ],
+      "correct": "A",
+      "explanation": "A sleeping or dormant partner shares in profits without managing the firm.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Business Units",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "A company whose shares are freely transferable and may be quoted on the stock exchange is a",
+      "type": "single",
+      "options": [
+        "partnership",
+        "public limited company",
+        "sole proprietorship",
+        "private limited company"
+      ],
+      "correct": "B",
+      "explanation": "It can invite the general public to subscribe for its shares.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Companies",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The document that states the objects of a company and governs its relations with outsiders is the",
+      "type": "single",
+      "options": [
+        "memorandum of association",
+        "articles of association",
+        "prospectus",
+        "certificate of incorporation"
+      ],
+      "correct": "A",
+      "explanation": "The memorandum defines the company's name, objects, capital and liability.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Companies",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The document that regulates the internal affairs and management of a company is the",
+      "type": "single",
+      "options": [
+        "annual return",
+        "memorandum of association",
+        "articles of association",
+        "share certificate"
+      ],
+      "correct": "C",
+      "explanation": "The articles govern meetings, voting, directors' powers and the transfer of shares.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Companies",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The owners of a limited liability company are its",
+      "type": "single",
+      "options": [
+        "creditors",
+        "shareholders",
+        "directors",
+        "debenture holders"
+      ],
+      "correct": "B",
+      "explanation": "Shareholders own the company; directors merely manage it on their behalf.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Companies",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A business organisation owned and run by its members for their mutual benefit is a",
+      "type": "single",
+      "options": [
+        "co-operative society",
+        "sole proprietorship",
+        "public corporation",
+        "private limited company"
+      ],
+      "correct": "A",
+      "explanation": "Members contribute capital, trade with the society and share the surplus.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Business Units",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A business organisation wholly owned and financed by the government is a",
+      "type": "single",
+      "options": [
+        "co-operative society",
+        "public enterprise",
+        "public limited company",
+        "partnership"
+      ],
+      "correct": "B",
+      "explanation": "Public corporations are set up by statute to provide essential services.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Business Units",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The document sent by a buyer to a seller requesting the supply of goods is the",
+      "type": "single",
+      "options": [
+        "invoice",
+        "order",
+        "credit note",
+        "statement of account"
+      ],
+      "correct": "B",
+      "explanation": "The order follows an enquiry and a quotation and specifies quantities and terms.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Trade Documents",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The document sent by a seller showing the goods supplied and the amount due is the",
+      "type": "single",
+      "options": [
+        "order",
+        "receipt",
+        "debit note",
+        "invoice"
+      ],
+      "correct": "D",
+      "explanation": "The invoice is the seller's claim for payment and lists goods, prices and discounts.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Trade Documents",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A document issued by a seller to correct an overcharge on an invoice is a",
+      "type": "single",
+      "options": [
+        "pro forma invoice",
+        "credit note",
+        "consignment note",
+        "debit note"
+      ],
+      "correct": "B",
+      "explanation": "A credit note reduces the amount the buyer owes.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Trade Documents",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "A seller who finds that a customer has been charged too little on an invoice already sent will issue a",
+      "type": "single",
+      "options": [
+        "receipt",
+        "waybill",
+        "debit note",
+        "credit note"
+      ],
+      "correct": "C",
+      "explanation": "A debit note increases the amount the buyer owes.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Trade Documents",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "A document sent periodically to a credit customer summarising transactions and the balance owing is a",
+      "type": "single",
+      "options": [
+        "delivery note",
+        "quotation",
+        "statement of account",
+        "bill of lading"
+      ],
+      "correct": "C",
+      "explanation": "It reminds the customer of the total outstanding at the end of the period.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Trade Documents",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "A list of goods with their prices sent to a prospective buyer in reply to an enquiry is a",
+      "type": "single",
+      "options": [
+        "invoice",
+        "credit note",
+        "quotation",
+        "receipt"
+      ],
+      "correct": "C",
+      "explanation": "The quotation states prices and terms before any order is placed.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Trade Documents",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Trade discount is a deduction granted",
+      "type": "single",
+      "options": [
+        "to all customers who pay in cash",
+        "for buying damaged goods",
+        "to traders in the same line of business",
+        "by banks on loans"
+      ],
+      "correct": "C",
+      "explanation": "It allows the reseller a margin of profit on the goods.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Trade Documents",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Cash discount is allowed to a customer for",
+      "type": "single",
+      "options": [
+        "buying in very large quantities",
+        "returning empty containers",
+        "ordering by telephone",
+        "prompt payment within a stated period"
+      ],
+      "correct": "D",
+      "explanation": "It encourages early settlement and improves the seller's cash flow.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Trade Documents",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The term 'carriage paid' on an invoice means that the",
+      "type": "single",
+      "options": [
+        "goods are insured in transit",
+        "goods are sold on credit",
+        "buyer must collect the goods himself",
+        "seller bears the cost of transporting the goods"
+      ],
+      "correct": "D",
+      "explanation": "Transport charges have been met by the seller.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Trade Documents",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The chief function of warehousing is to",
+      "type": "single",
+      "options": [
+        "insure goods against fire",
+        "transport goods to the market",
+        "store goods until they are needed",
+        "advertise goods to the public"
+      ],
+      "correct": "C",
+      "explanation": "Warehousing creates time utility by bridging production and consumption.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Warehousing",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The most suitable means of transporting bulky, heavy goods over very long distances between countries is",
+      "type": "single",
+      "options": [
+        "water transport",
+        "pipeline transport",
+        "air transport",
+        "road transport"
+      ],
+      "correct": "A",
+      "explanation": "Sea transport is the cheapest per tonne-kilometre for heavy bulk cargo.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Transport",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Pipeline transport is most suitable for carrying",
+      "type": "single",
+      "options": [
+        "livestock",
+        "textiles",
+        "machinery",
+        "liquids and gases"
+      ],
+      "correct": "D",
+      "explanation": "Crude oil, refined products, gas and water are moved by pipeline.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Transport",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The principle of insurance which requires the insured to disclose all material facts is",
+      "type": "single",
+      "options": [
+        "utmost good faith",
+        "subrogation",
+        "contribution",
+        "indemnity"
+      ],
+      "correct": "A",
+      "explanation": "Concealing a material fact can render the policy void.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Insurance",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The principle of insurance stating that the insured should not profit from a loss but be restored to their former position is",
+      "type": "single",
+      "options": [
+        "utmost good faith",
+        "subrogation",
+        "indemnity",
+        "insurable interest"
+      ],
+      "correct": "C",
+      "explanation": "Compensation is limited to the actual loss suffered.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Insurance",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Insurable interest means that the person insuring",
+      "type": "single",
+      "options": [
+        "must pay premiums annually",
+        "must stand to suffer financially if the event occurs",
+        "must insure with more than one company",
+        "must be a registered trader"
+      ],
+      "correct": "B",
+      "explanation": "You cannot insure property in which you have no financial stake.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Insurance",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Which of the following risks is NOT insurable?",
+      "type": "single",
+      "options": [
+        "Death of a key employee",
+        "Loss arising from a change in fashion",
+        "Damage to goods by fire",
+        "Theft of goods in transit"
+      ],
+      "correct": "B",
+      "explanation": "Ordinary business risks such as changing tastes are speculative, not insurable.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Insurance",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "Life assurance differs from other classes of insurance in that",
+      "type": "single",
+      "options": [
+        "it covers only business property",
+        "it covers an event that is certain to happen",
+        "no premium is payable",
+        "the sum insured is never fixed"
+      ],
+      "correct": "B",
+      "explanation": "Death is certain, so life policies are assurances rather than insurances against risk.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Insurance",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "The document that contains the terms of an insurance contract is the",
+      "type": "single",
+      "options": [
+        "cover note",
+        "policy",
+        "premium receipt",
+        "proposal form"
+      ],
+      "correct": "B",
+      "explanation": "The policy is the formal evidence of the contract between insurer and insured.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Insurance",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The main function of commercial banks is",
+      "type": "single",
+      "options": [
+        "accepting deposits and lending money",
+        "issuing legal tender currency",
+        "fixing the exchange rate",
+        "regulating other banks"
+      ],
+      "correct": "A",
+      "explanation": "Note issue and bank regulation are functions of the central bank.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Banking",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A cheque crossed 'account payee only' must be",
+      "type": "single",
+      "options": [
+        "endorsed by two witnesses",
+        "presented within twenty-four hours",
+        "cashed over the counter",
+        "paid only into the account of the named payee"
+      ],
+      "correct": "D",
+      "explanation": "The crossing prevents the cheque being transferred to someone else.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Banking",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "A cheque bearing a date later than the date of presentation is said to be",
+      "type": "single",
+      "options": [
+        "stale",
+        "mutilated",
+        "dishonoured",
+        "post-dated"
+      ],
+      "correct": "D",
+      "explanation": "The bank will not pay it until the date written on it has arrived.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Banking",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The institution with the sole right to issue currency in Nigeria is the",
+      "type": "single",
+      "options": [
+        "Central Bank of Nigeria",
+        "Nigeria Deposit Insurance Corporation",
+        "Nigerian Stock Exchange",
+        "Federal Ministry of Finance"
+      ],
+      "correct": "A",
+      "explanation": "Note issue is a statutory monopoly of the central bank.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Banking",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The market in which new shares are issued to the public for the first time is the",
+      "type": "single",
+      "options": [
+        "secondary market",
+        "money market",
+        "foreign exchange market",
+        "primary market"
+      ],
+      "correct": "D",
+      "explanation": "Companies raise fresh capital in the primary market.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Capital Market",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Shares already in issue are bought and sold on the",
+      "type": "single",
+      "options": [
+        "retail market",
+        "primary market",
+        "secondary market",
+        "commodity market"
+      ],
+      "correct": "C",
+      "explanation": "The stock exchange provides a secondary market that gives shares liquidity.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Capital Market",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Advertising that seeks mainly to tell consumers about the existence and features of a product is described as",
+      "type": "single",
+      "options": [
+        "persuasive advertising",
+        "corporate advertising",
+        "informative advertising",
+        "competitive advertising"
+      ],
+      "correct": "C",
+      "explanation": "Informative advertising creates awareness rather than attacking rivals.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Advertising",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The principal aim of advertising is to",
+      "type": "single",
+      "options": [
+        "increase sales of goods and services",
+        "determine consumer income",
+        "reduce the cost of production",
+        "train the sales force"
+      ],
+      "correct": "A",
+      "explanation": "Advertising informs and persuades in order to stimulate demand.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Advertising",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A trade mark is",
+      "type": "single",
+      "options": [
+        "a distinctive sign that identifies the goods of a particular producer",
+        "a tax paid on imported goods",
+        "a licence to operate a market stall",
+        "a record of goods in a warehouse"
+      ],
+      "correct": "A",
+      "explanation": "It distinguishes one trader's goods from those of competitors and can be registered.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Consumer Protection",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The federal agency charged with consumer protection in Nigeria is the",
+      "type": "single",
+      "options": [
+        "Corporate Affairs Commission",
+        "Nigerian Customs Service",
+        "Nigerian Stock Exchange",
+        "Federal Competition and Consumer Protection Commission"
+      ],
+      "correct": "D",
+      "explanation": "The FCCPC replaced the former Consumer Protection Council.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Consumer Protection",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Which of the following is an advantage of electronic commerce?",
+      "type": "single",
+      "options": [
+        "It removes the need for any payment system",
+        "It guarantees that goods are never damaged",
+        "It eliminates all forms of competition",
+        "It gives a seller access to a wider market at lower cost"
+      ],
+      "correct": "D",
+      "explanation": "An online shop can reach distant customers without the cost of physical branches.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "E-Commerce",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A bill of lading is a document used in",
+      "type": "single",
+      "options": [
+        "air transport",
+        "road transport",
+        "sea transport",
+        "pipeline transport"
+      ],
+      "correct": "C",
+      "explanation": "It is the shipping company's receipt and a document of title to the goods.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Foreign Trade",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The document which shows the country in which goods were produced is the",
+      "type": "single",
+      "options": [
+        "import licence",
+        "certificate of origin",
+        "bill of lading",
+        "consular invoice"
+      ],
+      "correct": "B",
+      "explanation": "Customs authorities use it to assess duty and apply trade agreements.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Foreign Trade",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Occupations are broadly classified into",
+      "type": "single",
+      "options": [
+        "skilled and unskilled only",
+        "industrial, commercial and direct service",
+        "public and private only",
+        "permanent and temporary only"
+      ],
+      "correct": "B",
+      "explanation": "Industry produces, commerce distributes, and direct services are rendered to persons.",
+      "subject": "Commerce",
+      "exam_type": "JAMB",
+      "topic": "Occupations",
+      "difficulty": "medium",
+      "marks": 1
+    }
+  ]
+}

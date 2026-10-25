@@ -1,0 +1,855 @@
+{
+  "_note": "Original practice items written for the Classic EDU Suite CBT bank. Not reproduced from any past paper. Syllabus-aligned to JAMB Christian Religious Studies.",
+  "questions": [
+    {
+      "question": "According to the Genesis account of creation, God created man on the",
+      "type": "single",
+      "options": [
+        "sixth day",
+        "seventh day",
+        "third day",
+        "fourth day"
+      ],
+      "correct": "A",
+      "explanation": "Man was created on the sixth day, and God rested on the seventh.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Creation",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The first man and woman created by God were",
+      "type": "single",
+      "options": [
+        "Noah and his wife",
+        "Abraham and Sarah",
+        "Adam and Eve",
+        "Cain and Abel"
+      ],
+      "correct": "C",
+      "explanation": "Eve was formed from Adam's rib as a companion for him.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Creation",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The tree from which Adam and Eve were forbidden to eat was the tree of",
+      "type": "single",
+      "options": [
+        "wisdom",
+        "the knowledge of good and evil",
+        "righteousness",
+        "life"
+      ],
+      "correct": "B",
+      "explanation": "Eating from it brought the knowledge of good and evil and the sentence of death.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "The Fall",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Cain killed his brother",
+      "type": "single",
+      "options": [
+        "Seth",
+        "Enoch",
+        "Lamech",
+        "Abel"
+      ],
+      "correct": "D",
+      "explanation": "Cain's offering was rejected while Abel's was accepted, and he killed Abel out of envy.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "The Fall",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "God instructed which man to build an ark before the flood?",
+      "type": "single",
+      "options": [
+        "Methuselah",
+        "Abraham",
+        "Enoch",
+        "Noah"
+      ],
+      "correct": "D",
+      "explanation": "Noah, his family and the animals were preserved in the ark.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "The Flood",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The sign of God's covenant with Noah after the flood was the",
+      "type": "single",
+      "options": [
+        "altar of stone",
+        "dove with an olive branch",
+        "rite of circumcision",
+        "rainbow"
+      ],
+      "correct": "D",
+      "explanation": "The rainbow was given as the token that the earth would not again be destroyed by water.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "The Flood",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The patriarch whom God called out of Ur of the Chaldeans was",
+      "type": "single",
+      "options": [
+        "Joseph",
+        "Isaac",
+        "Abraham",
+        "Jacob"
+      ],
+      "correct": "C",
+      "explanation": "Abraham was promised a land, a great nation and a blessing for all peoples.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Abraham",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The son born to Abraham by his wife Sarah was",
+      "type": "single",
+      "options": [
+        "Jacob",
+        "Isaac",
+        "Ishmael",
+        "Esau"
+      ],
+      "correct": "B",
+      "explanation": "Isaac was the child of promise, born when Abraham and Sarah were old.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Abraham",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "After wrestling with a man at Peniel, Jacob's name was changed to",
+      "type": "single",
+      "options": [
+        "Levi",
+        "Israel",
+        "Benjamin",
+        "Judah"
+      ],
+      "correct": "B",
+      "explanation": "The new name marked him as one who had striven with God and prevailed.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Jacob",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Joseph was sold by his brothers and taken as a slave to",
+      "type": "single",
+      "options": [
+        "Canaan",
+        "Egypt",
+        "Babylon",
+        "Assyria"
+      ],
+      "correct": "B",
+      "explanation": "He rose to become governor of Egypt under Pharaoh.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Joseph",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Joseph was brought out of prison in order to interpret the dreams of",
+      "type": "single",
+      "options": [
+        "Nebuchadnezzar",
+        "Potiphar",
+        "Pharaoh",
+        "the chief baker"
+      ],
+      "correct": "C",
+      "explanation": "He foretold seven years of plenty followed by seven years of famine.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Joseph",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "God called Moses to lead Israel out of Egypt at the",
+      "type": "single",
+      "options": [
+        "burning bush",
+        "Red Sea",
+        "tent of meeting",
+        "well of Midian"
+      ],
+      "correct": "A",
+      "explanation": "At the burning bush God revealed the divine name and commissioned Moses.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Moses",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The deliverance of the Israelites from slavery in Egypt is known as the",
+      "type": "single",
+      "options": [
+        "Exile",
+        "Diaspora",
+        "Exodus",
+        "Conquest"
+      ],
+      "correct": "C",
+      "explanation": "The Exodus is the founding act of deliverance in Israel's history.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "The Exodus",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The Ten Commandments were given to Moses at",
+      "type": "single",
+      "options": [
+        "Mount Sinai",
+        "Mount Carmel",
+        "Mount Nebo",
+        "Mount Zion"
+      ],
+      "correct": "A",
+      "explanation": "The law was given at Sinai, where God made a covenant with Israel.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "The Law",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The first of the Ten Commandments forbids",
+      "type": "single",
+      "options": [
+        "the worship of any other god before God",
+        "swearing falsely in court",
+        "working on the sabbath day",
+        "stealing from a neighbour"
+      ],
+      "correct": "A",
+      "explanation": "Israel was to acknowledge the Lord alone as God.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "The Law",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The Passover was instituted to commemorate",
+      "type": "single",
+      "options": [
+        "the sparing of the Israelite firstborn in Egypt",
+        "the giving of the law at Sinai",
+        "the crossing of the Jordan",
+        "the building of the temple"
+      ],
+      "correct": "A",
+      "explanation": "The blood of the lamb on the doorposts caused the destroyer to pass over those houses.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "The Exodus",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Moses was succeeded as leader of Israel by",
+      "type": "single",
+      "options": [
+        "Joshua",
+        "Samuel",
+        "Aaron",
+        "Caleb"
+      ],
+      "correct": "A",
+      "explanation": "Joshua led the people across the Jordan into Canaan.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Joshua",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The walls of Jericho fell during the leadership of",
+      "type": "single",
+      "options": [
+        "Gideon",
+        "Samson",
+        "Deborah",
+        "Joshua"
+      ],
+      "correct": "D",
+      "explanation": "The city fell after the people marched round it and shouted at the sound of the trumpets.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Joshua",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The prophet who anointed Israel's first king was",
+      "type": "single",
+      "options": [
+        "Samuel",
+        "Elijah",
+        "Ahijah",
+        "Nathan"
+      ],
+      "correct": "A",
+      "explanation": "Samuel, the last of the judges, anointed Saul at the people's demand for a king.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Samuel",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The first king of Israel was",
+      "type": "single",
+      "options": [
+        "Saul",
+        "David",
+        "Solomon",
+        "Jeroboam"
+      ],
+      "correct": "A",
+      "explanation": "Saul was later rejected for disobedience and David was anointed in his place.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Saul",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "David killed the Philistine champion named",
+      "type": "single",
+      "options": [
+        "Achish",
+        "Goliath",
+        "Sisera",
+        "Abner"
+      ],
+      "correct": "B",
+      "explanation": "The young David struck him down with a stone from a sling.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "David",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The king who built the temple in Jerusalem was",
+      "type": "single",
+      "options": [
+        "Solomon",
+        "David",
+        "Hezekiah",
+        "Josiah"
+      ],
+      "correct": "A",
+      "explanation": "David prepared the materials, but it was Solomon who built the temple.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Solomon",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Solomon is especially remembered for his",
+      "type": "single",
+      "options": [
+        "prophecies",
+        "long exile",
+        "military conquests",
+        "wisdom"
+      ],
+      "correct": "D",
+      "explanation": "He asked God for an understanding heart to govern the people.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Solomon",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The prophet who confronted the prophets of Baal on Mount Carmel was",
+      "type": "single",
+      "options": [
+        "Elijah",
+        "Elisha",
+        "Amos",
+        "Hosea"
+      ],
+      "correct": "A",
+      "explanation": "Fire from heaven consumed Elijah's sacrifice, vindicating the Lord as God.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Elijah",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Elijah's successor as prophet in Israel was",
+      "type": "single",
+      "options": [
+        "Obadiah",
+        "Elisha",
+        "Jehu",
+        "Micaiah"
+      ],
+      "correct": "B",
+      "explanation": "Elisha received a double portion of Elijah's spirit as Elijah was taken up.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Elisha",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The prophet who declared, 'Let justice roll down like waters', and denounced the oppression of the poor was",
+      "type": "single",
+      "options": [
+        "Jonah",
+        "Nahum",
+        "Haggai",
+        "Amos"
+      ],
+      "correct": "D",
+      "explanation": "Amos attacked social injustice and empty religious observance in Israel.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Amos",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The prophet whose troubled marriage illustrated God's faithful love for an unfaithful Israel was",
+      "type": "single",
+      "options": [
+        "Malachi",
+        "Ezekiel",
+        "Hosea",
+        "Joel"
+      ],
+      "correct": "C",
+      "explanation": "Hosea's marriage to Gomer became a living parable of the covenant relationship.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Hosea",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The prophet who saw a vision of the Lord in the temple in the year that King Uzziah died was",
+      "type": "single",
+      "options": [
+        "Jeremiah",
+        "Daniel",
+        "Zechariah",
+        "Isaiah"
+      ],
+      "correct": "D",
+      "explanation": "Isaiah responded to the call with the words, 'Here am I; send me'.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Isaiah",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "The prophet who spoke of a new covenant written on the hearts of the people was",
+      "type": "single",
+      "options": [
+        "Ezekiel",
+        "Micah",
+        "Jeremiah",
+        "Habakkuk"
+      ],
+      "correct": "C",
+      "explanation": "Jeremiah promised an inward covenant replacing the broken covenant of Sinai.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Jeremiah",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "Jesus Christ was born in",
+      "type": "single",
+      "options": [
+        "Capernaum",
+        "Bethlehem",
+        "Nazareth",
+        "Jerusalem"
+      ],
+      "correct": "B",
+      "explanation": "He was born in Bethlehem of Judea and brought up in Nazareth.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Birth of Jesus",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The mother of Jesus was",
+      "type": "single",
+      "options": [
+        "Elizabeth",
+        "Anna",
+        "Martha",
+        "Mary"
+      ],
+      "correct": "D",
+      "explanation": "The angel Gabriel announced the birth to Mary, a virgin of Nazareth.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Birth of Jesus",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Jesus was baptised by",
+      "type": "single",
+      "options": [
+        "Peter",
+        "Andrew",
+        "Philip",
+        "John the Baptist"
+      ],
+      "correct": "D",
+      "explanation": "John preached repentance and baptised Jesus, who had no need of repentance.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Baptism of Jesus",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Jesus was baptised in the River",
+      "type": "single",
+      "options": [
+        "Euphrates",
+        "Nile",
+        "Jordan",
+        "Kidron"
+      ],
+      "correct": "C",
+      "explanation": "The Spirit descended as a dove and a voice came from heaven.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Baptism of Jesus",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "After his baptism, Jesus was tempted by the devil in",
+      "type": "single",
+      "options": [
+        "the temple court",
+        "the garden of Gethsemane",
+        "the synagogue at Nazareth",
+        "the wilderness"
+      ],
+      "correct": "D",
+      "explanation": "He fasted forty days and answered each temptation from the scriptures.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Temptation of Jesus",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The Beatitudes form part of",
+      "type": "single",
+      "options": [
+        "the Lord's Prayer",
+        "the Sermon on the Mount",
+        "the farewell discourse",
+        "the parable of the sower"
+      ],
+      "correct": "B",
+      "explanation": "They open the Sermon on the Mount with a series of blessings.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Sermon on the Mount",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "According to the Beatitudes, 'Blessed are the peacemakers, for they shall be called'",
+      "type": "single",
+      "options": [
+        "the light of the world",
+        "children of God",
+        "heirs of the kingdom",
+        "the salt of the earth"
+      ],
+      "correct": "B",
+      "explanation": "Each beatitude pairs a condition with the blessing promised to it.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Sermon on the Mount",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The parable of the sower is chiefly concerned with",
+      "type": "single",
+      "options": [
+        "the duty of almsgiving",
+        "the call to discipleship",
+        "the different responses to the word of God",
+        "the coming judgement of the nations"
+      ],
+      "correct": "C",
+      "explanation": "The soils represent hearers whose response to the word differs.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Parables",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The parable of the Good Samaritan teaches",
+      "type": "single",
+      "options": [
+        "love and compassion for one's neighbour",
+        "the need to pay tithes",
+        "the danger of riches",
+        "the importance of fasting"
+      ],
+      "correct": "A",
+      "explanation": "Jesus told it in answer to the question, 'Who is my neighbour?'",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Parables",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The parable of the prodigal son illustrates",
+      "type": "single",
+      "options": [
+        "the certainty of judgement",
+        "the reward of hard work",
+        "God's readiness to forgive the repentant",
+        "the folly of lending money"
+      ],
+      "correct": "C",
+      "explanation": "The father receives the returning son with joy and restores him fully.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Parables",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The first miracle of Jesus recorded in the Gospel of John was",
+      "type": "single",
+      "options": [
+        "the stilling of the storm",
+        "the raising of Lazarus",
+        "the turning of water into wine at Cana",
+        "the healing of a leper"
+      ],
+      "correct": "C",
+      "explanation": "It was performed at a wedding feast in Cana of Galilee.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Miracles",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Jesus fed the five thousand with",
+      "type": "single",
+      "options": [
+        "seven loaves and a few small fish",
+        "five loaves and two fish",
+        "two loaves and five fish",
+        "twelve loaves and no fish"
+      ],
+      "correct": "B",
+      "explanation": "Twelve baskets of fragments were gathered up afterwards.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Miracles",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The disciple who betrayed Jesus was",
+      "type": "single",
+      "options": [
+        "Simon the Zealot",
+        "Bartholomew",
+        "Judas Iscariot",
+        "Thomas"
+      ],
+      "correct": "C",
+      "explanation": "He betrayed Jesus for thirty pieces of silver.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Passion of Jesus",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The disciple who denied Jesus three times before the cock crowed was",
+      "type": "single",
+      "options": [
+        "James",
+        "Andrew",
+        "John",
+        "Peter"
+      ],
+      "correct": "D",
+      "explanation": "Peter wept bitterly when he remembered the Lord's words, and was later restored.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Passion of Jesus",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Jesus was crucified at a place called",
+      "type": "single",
+      "options": [
+        "Golgotha",
+        "Bethany",
+        "Emmaus",
+        "Gethsemane"
+      ],
+      "correct": "A",
+      "explanation": "Golgotha means 'the place of a skull'.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Passion of Jesus",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "According to the Gospels, Jesus rose from the dead on the",
+      "type": "single",
+      "options": [
+        "second day",
+        "third day",
+        "seventh day",
+        "same evening"
+      ],
+      "correct": "B",
+      "explanation": "The women found the tomb empty early on the first day of the week.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Resurrection",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The outpouring of the Holy Spirit upon the disciples took place on the day of",
+      "type": "single",
+      "options": [
+        "Atonement",
+        "Pentecost",
+        "Passover",
+        "Tabernacles"
+      ],
+      "correct": "B",
+      "explanation": "They spoke in other tongues and Peter preached to the assembled crowd.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Pentecost",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The first Christian martyr was",
+      "type": "single",
+      "options": [
+        "Barnabas",
+        "James",
+        "Stephen",
+        "Philip"
+      ],
+      "correct": "C",
+      "explanation": "Stephen was stoned after his defence before the council, with Saul consenting.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Early Church",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Saul of Tarsus was converted while travelling on the road to",
+      "type": "single",
+      "options": [
+        "Damascus",
+        "Antioch",
+        "Ephesus",
+        "Rome"
+      ],
+      "correct": "A",
+      "explanation": "A light from heaven struck him down and he heard the voice of the risen Christ.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Early Church",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "After his conversion, Saul of Tarsus became known as",
+      "type": "single",
+      "options": [
+        "Titus",
+        "Silas",
+        "Timothy",
+        "Paul"
+      ],
+      "correct": "D",
+      "explanation": "He became the apostle to the Gentiles and wrote many of the New Testament letters.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Early Church",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "According to 1 Corinthians 13, the greatest of faith, hope and love is",
+      "type": "single",
+      "options": [
+        "they are equal",
+        "love",
+        "faith",
+        "hope"
+      ],
+      "correct": "B",
+      "explanation": "Paul concludes that love is the greatest because it never ends.",
+      "subject": "Christian Religious Studies",
+      "exam_type": "JAMB",
+      "topic": "Pauline Teaching",
+      "difficulty": "medium",
+      "marks": 1
+    }
+  ]
+}

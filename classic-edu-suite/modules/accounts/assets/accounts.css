@@ -1,0 +1,589 @@
+/**
+ * Accounts module: Gmail button, onboarding, the locked panel and the
+ * parent's page.
+ *
+ * Depends on the `ces-base` handle for the design tokens, and falls back to
+ * literal values everywhere so the one place this file is loaded without the
+ * base stylesheet — wp-login.php — still looks deliberate.
+ *
+ * Mobile first throughout. Most students are on a phone, and so is every
+ * parent who opens the approval link.
+ */
+
+/* ------------------------------------------------------------------ */
+/* The "Continue with Gmail" button                                    */
+/* ------------------------------------------------------------------ */
+
+.ces-google-wrap {
+	margin: 0 0 1rem;
+}
+
+.ces-google-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	box-sizing: border-box;
+	padding: 11px 18px;
+	border: 1px solid #747775;
+	border-radius: 999px;
+	background: #fff;
+	color: #1f1f1f;
+	font-family: inherit;
+	font-size: 0.95rem;
+	font-weight: 600;
+	line-height: 1.2;
+	text-decoration: none;
+	transition: background-color 0.15s ease;
+}
+
+.ces-google-btn:hover,
+.ces-google-btn:focus {
+	background: #f7f8f8;
+	color: #1f1f1f;
+	text-decoration: none;
+}
+
+.ces-google-btn:focus-visible {
+	outline: 2px solid var( --ces-primary, #2c62cd );
+	outline-offset: 2px;
+}
+
+.ces-google-btn--block {
+	width: 100%;
+}
+
+.ces-google-btn__mark {
+	flex: 0 0 auto;
+}
+
+.ces-google-wrap__note {
+	margin: 8px 0 0;
+	font-size: 0.78rem;
+	line-height: 1.5;
+	color: var( --ces-text-muted, #475569 );
+}
+
+/* The "or" rule between the Gmail button and a password form. */
+.ces-google-wrap__or {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin: 0 0 1rem;
+	font-size: 0.82rem;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-google-wrap__or::before,
+.ces-google-wrap__or::after {
+	content: "";
+	flex: 1 1 auto;
+	height: 1px;
+	background: var( --ces-border, #cbd5e1 );
+}
+
+/* ------------------------------------------------------------------ */
+/* Onboarding                                                          */
+/* ------------------------------------------------------------------ */
+
+.ces-onboard {
+	max-width: 34rem;
+}
+
+.ces-onboard__head {
+	margin: 0 0 1.2rem;
+}
+
+.ces-onboard__step {
+	margin: 0 0 0.25rem;
+	font-size: 0.74rem;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var( --ces-primary, #2c62cd );
+}
+
+.ces-onboard__title {
+	margin: 0 0 0.5rem;
+	font-size: 1.35rem;
+	line-height: 1.25;
+}
+
+.ces-onboard__lead {
+	margin: 0;
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-onboard__group {
+	margin: 0 0 1.2rem;
+	padding: 1rem 1.1rem 0.4rem;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: var( --ces-radius, 12px );
+	background: var( --ces-surface, #fff );
+}
+
+.ces-onboard__group legend {
+	padding: 0 6px;
+	font-weight: 700;
+	font-size: 0.95rem;
+}
+
+.ces-onboard .ces-field {
+	display: block;
+	margin: 0 0 14px;
+}
+
+.ces-onboard .ces-field > label {
+	display: block;
+	margin-bottom: 4px;
+	font-weight: 600;
+	font-size: 0.95rem;
+}
+
+.ces-onboard .ces-field input[type="text"],
+.ces-onboard .ces-field input[type="tel"],
+.ces-onboard .ces-field input[type="email"],
+.ces-onboard .ces-field input[type="date"],
+.ces-onboard .ces-field select {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 11px 12px;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: 8px;
+	background: #fff;
+	color: var( --ces-text, #1f2937 );
+	font-size: 1rem;
+	font-family: inherit;
+}
+
+.ces-onboard .ces-field input:focus,
+.ces-onboard .ces-field select:focus {
+	outline: 2px solid var( --ces-primary, #2c62cd );
+	outline-offset: 1px;
+	border-color: var( --ces-primary, #2c62cd );
+}
+
+.ces-onboard .ces-field--check > label {
+	display: flex;
+	gap: 8px;
+	align-items: flex-start;
+	font-weight: 400;
+	line-height: 1.4;
+}
+
+.ces-onboard .ces-field--check input {
+	flex: 0 0 auto;
+	margin-top: 3px;
+}
+
+.ces-field__optional {
+	font-weight: 400;
+	font-size: 0.8rem;
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-onboard__promise {
+	margin: 0 0 1.2rem;
+	padding: 0.9rem 1.1rem;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-left-width: 4px;
+	border-left-color: var( --ces-primary, #2c62cd );
+	border-radius: var( --ces-radius, 12px );
+	background: var( --ces-surface-alt, #f8fafc );
+}
+
+.ces-onboard__promise h3 {
+	margin: 0 0 0.5rem;
+	font-size: 1rem;
+}
+
+.ces-onboard__promise ul {
+	margin: 0;
+	padding-left: 1.2rem;
+	font-size: 0.92rem;
+	line-height: 1.55;
+}
+
+.ces-onboard__promise li {
+	margin: 0 0 0.3rem;
+}
+
+.ces-onboard__actions {
+	margin: 1.2rem 0 0;
+}
+
+/* Step 2 cards. */
+
+.ces-onboard__card {
+	margin: 0 0 1rem;
+	padding: 1rem 1.1rem;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: var( --ces-radius, 12px );
+	background: var( --ces-surface, #fff );
+}
+
+.ces-onboard__card h3 {
+	margin: 0 0 0.4rem;
+	font-size: 1.05rem;
+}
+
+.ces-onboard__card p {
+	margin: 0 0 0.8rem;
+}
+
+.ces-onboard__card--action {
+	border-color: var( --ces-primary-border, rgba( 44, 98, 205, 0.28 ) );
+	background: var( --ces-primary-soft, rgba( 44, 98, 205, 0.08 ) );
+}
+
+.ces-onboard__card--quiet {
+	background: var( --ces-surface-alt, #f8fafc );
+}
+
+.ces-onboard__hint {
+	display: block;
+	margin: 0.4rem 0 0;
+	font-size: 0.82rem;
+	line-height: 1.5;
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-onboard__code {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	align-items: center;
+	margin: 0;
+}
+
+.ces-code-input {
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 10rem;
+	padding: 12px;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: 8px;
+	background: #fff;
+	font-family: inherit;
+	font-size: 1.5rem;
+	font-weight: 700;
+	letter-spacing: 0.35em;
+	text-align: center;
+}
+
+.ces-code-input:focus {
+	outline: 2px solid var( --ces-primary, #2c62cd );
+	outline-offset: 1px;
+}
+
+.ces-onboard__options {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.ces-onboard__options li {
+	margin: 0 0 0.9rem;
+}
+
+.ces-onboard__options li:last-child {
+	margin-bottom: 0;
+}
+
+.ces-link-btn {
+	padding: 0;
+	border: 0;
+	background: none;
+	color: var( --ces-primary, #2c62cd );
+	font: inherit;
+	font-weight: 600;
+	text-align: left;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.ces-onboard__facts {
+	list-style: none;
+	margin: 0 0 1rem;
+	padding: 0;
+	border-top: 1px solid var( --ces-border, #cbd5e1 );
+}
+
+.ces-onboard__facts li {
+	display: flex;
+	justify-content: space-between;
+	gap: 12px;
+	padding: 0.6rem 0;
+	border-bottom: 1px solid var( --ces-border, #cbd5e1 );
+	font-size: 0.95rem;
+}
+
+.ces-onboard__facts span {
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-onboard__log {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 0.9rem;
+}
+
+.ces-onboard__log li {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	padding: 0.35rem 0;
+	border-bottom: 1px dashed var( --ces-border, #cbd5e1 );
+}
+
+.ces-onboard__log li:last-child {
+	border-bottom: 0;
+}
+
+.ces-onboard__log-when {
+	flex: 0 0 auto;
+	color: var( --ces-text-muted, #475569 );
+	font-variant-numeric: tabular-nums;
+}
+
+.ces-onboard__reason {
+	margin: 0 0 0.8rem;
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-onboard__status {
+	margin: 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* Status pills                                                        */
+/* ------------------------------------------------------------------ */
+
+.ces-pill {
+	display: inline-block;
+	padding: 3px 11px;
+	border-radius: 999px;
+	background: var( --ces-muted-bg, #f1f5f9 );
+	color: var( --ces-text, #1f2937 );
+	font-size: 0.78rem;
+	font-weight: 700;
+	letter-spacing: 0.01em;
+	white-space: nowrap;
+}
+
+.ces-pill--ok {
+	background: #dcfce7;
+	color: #14532d;
+}
+
+.ces-pill--wait {
+	background: #fef3c7;
+	color: #713f12;
+}
+
+.ces-pill--review {
+	background: #dbeafe;
+	color: #1e3a8a;
+}
+
+.ces-pill--bad {
+	background: #fee2e2;
+	color: #7f1d1d;
+}
+
+/* ------------------------------------------------------------------ */
+/* The locked panel                                                    */
+/* ------------------------------------------------------------------ */
+
+/* `.ces-gate` itself comes from ces-base.css; these are the extra parts
+   this module adds to it. */
+
+.ces-gate__icon {
+	display: block;
+	margin: 0 0 0.4rem;
+	font-size: 1.6rem;
+	line-height: 1;
+}
+
+.ces-gate__title {
+	margin: 0 0 0.4rem;
+	font-size: 1.1rem;
+}
+
+.ces-gate__text {
+	margin: 0 0 0.6rem;
+	font-weight: 600;
+}
+
+.ces-gate__why {
+	margin: 0 auto 0.9rem;
+	max-width: 30rem;
+	font-size: 0.88rem;
+	line-height: 1.55;
+	color: var( --ces-text-muted, #475569 );
+}
+
+/* ------------------------------------------------------------------ */
+/* The parent's page, inside the theme                                 */
+/* ------------------------------------------------------------------ */
+
+.ces-portal {
+	box-sizing: border-box;
+	max-width: 36rem;
+	margin: 0 auto;
+}
+
+.ces-portal__kicker {
+	margin: 0 0 0.25rem;
+	font-size: 0.74rem;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var( --ces-primary, #2c62cd );
+}
+
+.ces-portal__title {
+	margin: 0 0 0.7rem;
+	font-size: 1.5rem;
+	line-height: 1.25;
+}
+
+.ces-portal__lead {
+	margin: 0 0 1.1rem;
+}
+
+.ces-portal__facts {
+	list-style: none;
+	margin: 0 0 1.2rem;
+	padding: 0;
+	border-top: 1px solid var( --ces-border, #cbd5e1 );
+}
+
+.ces-portal__facts li {
+	display: flex;
+	justify-content: space-between;
+	gap: 14px;
+	padding: 0.6rem 0;
+	border-bottom: 1px solid var( --ces-border, #cbd5e1 );
+}
+
+.ces-portal__facts span {
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-portal__stats {
+	display: grid;
+	grid-template-columns: repeat( 2, minmax( 0, 1fr ) );
+	gap: 10px;
+	list-style: none;
+	margin: 0 0 1.2rem;
+	padding: 0;
+}
+
+.ces-portal__stats li {
+	padding: 0.7rem 0.8rem;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: var( --ces-radius, 12px );
+	background: var( --ces-surface-alt, #f8fafc );
+}
+
+.ces-portal__stats strong {
+	display: block;
+	font-size: 1.35rem;
+	line-height: 1.2;
+}
+
+.ces-portal__stats span {
+	font-size: 0.8rem;
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-portal__promise {
+	margin: 0 0 1.2rem;
+	padding: 0.9rem 1.1rem;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: var( --ces-radius, 12px );
+	background: var( --ces-surface-alt, #f8fafc );
+}
+
+.ces-portal__promise h2 {
+	margin: 0 0 0.5rem;
+	font-size: 1rem;
+}
+
+.ces-portal__promise ul {
+	margin: 0;
+	padding-left: 1.2rem;
+	font-size: 0.92rem;
+	line-height: 1.55;
+}
+
+.ces-portal__form {
+	margin: 0 0 0.8rem;
+}
+
+.ces-portal__prefs {
+	margin: 1.4rem 0 0;
+	padding: 1.1rem 0 0;
+	border-top: 1px solid var( --ces-border, #cbd5e1 );
+}
+
+.ces-portal__prefs h2 {
+	margin: 0 0 0.7rem;
+	font-size: 1.1rem;
+}
+
+.ces-portal__withdraw {
+	margin: 1rem 0 0;
+	font-size: 0.95rem;
+}
+
+.ces-portal__withdraw summary {
+	cursor: pointer;
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-portal__withdraw p {
+	margin: 0.7rem 0;
+}
+
+.ces-portal .ces-field--check > label {
+	display: flex;
+	gap: 8px;
+	align-items: flex-start;
+	line-height: 1.4;
+}
+
+.ces-portal .ces-field--check input {
+	flex: 0 0 auto;
+	margin-top: 3px;
+}
+
+.ces-portal__note,
+.ces-portal__footer {
+	margin: 1rem 0 0;
+	font-size: 0.82rem;
+	line-height: 1.55;
+	color: var( --ces-text-muted, #475569 );
+}
+
+/* ------------------------------------------------------------------ */
+/* Wider screens                                                       */
+/* ------------------------------------------------------------------ */
+
+@media ( min-width: 40rem ) {
+	.ces-onboard__title {
+		font-size: 1.55rem;
+	}
+
+	.ces-portal__stats {
+		grid-template-columns: repeat( 4, minmax( 0, 1fr ) );
+	}
+
+	.ces-google-btn {
+		font-size: 1rem;
+	}
+}

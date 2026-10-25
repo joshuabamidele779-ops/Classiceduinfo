@@ -1,0 +1,855 @@
+{
+  "_note": "Original practice items written for the Classic EDU Suite CBT bank. Not reproduced from any past paper. Syllabus-aligned to JAMB Principles of Accounts / Financial Accounting.",
+  "questions": [
+    {
+      "question": "Accounting may best be described as the process of",
+      "type": "single",
+      "options": [
+        "preparing tax returns for government",
+        "counting the physical assets of a business",
+        "recording cash receipts only",
+        "identifying, recording, classifying and reporting financial information"
+      ],
+      "correct": "D",
+      "explanation": "Book-keeping records transactions; accounting also classifies, summarises and interprets them.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Nature of Accounting",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The accounting equation is correctly stated as",
+      "type": "single",
+      "options": [
+        "Capital = Assets + Liabilities",
+        "Assets = Capital + Liabilities",
+        "Liabilities = Assets + Capital",
+        "Assets = Capital − Liabilities"
+      ],
+      "correct": "B",
+      "explanation": "Everything the business owns is financed either by the owner or by outsiders.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Accounting Equation",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "If the assets of a business are ₦500,000 and its liabilities are ₦200,000, the capital is",
+      "type": "single",
+      "options": [
+        "₦200,000",
+        "₦500,000",
+        "₦300,000",
+        "₦700,000"
+      ],
+      "correct": "C",
+      "explanation": "Capital = assets − liabilities = 500,000 − 200,000 = ₦300,000.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Accounting Equation",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The principle of double entry means that every transaction",
+      "type": "single",
+      "options": [
+        "is recorded twice in the same account",
+        "must be approved by two persons",
+        "is recorded only in the cash book",
+        "affects two accounts, one debited and the other credited"
+      ],
+      "correct": "D",
+      "explanation": "For every debit entry there must be a corresponding credit entry of equal amount.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Double Entry",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A book in which transactions are recorded for the first time is called a",
+      "type": "single",
+      "options": [
+        "trial balance",
+        "book of original entry",
+        "balance sheet",
+        "ledger"
+      ],
+      "correct": "B",
+      "explanation": "Journals and day books are books of original or prime entry.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Books of Original Entry",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Credit purchases of goods are recorded in the",
+      "type": "single",
+      "options": [
+        "purchases day book",
+        "cash book",
+        "sales day book",
+        "general journal"
+      ],
+      "correct": "A",
+      "explanation": "Only credit purchases of goods for resale enter the purchases day book.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Books of Original Entry",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The cash book is best described as",
+      "type": "single",
+      "options": [
+        "both a book of original entry and a ledger",
+        "a book of original entry only",
+        "a statement of financial position",
+        "a ledger only"
+      ],
+      "correct": "A",
+      "explanation": "It records transactions first and also serves as the cash and bank ledger accounts.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Cash Book",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "A two-column cash book is used to record",
+      "type": "single",
+      "options": [
+        "sales and purchases",
+        "debtors and creditors",
+        "cash and bank transactions",
+        "cash and discount transactions"
+      ],
+      "correct": "C",
+      "explanation": "One column is for cash in hand and the other for the bank balance.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Cash Book",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Discount allowed is treated in the final accounts as",
+      "type": "single",
+      "options": [
+        "an income",
+        "an asset",
+        "an expense",
+        "a liability"
+      ],
+      "correct": "C",
+      "explanation": "It is a cost of obtaining prompt payment and is debited to profit and loss.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Cash Book",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The petty cash book is normally operated on the",
+      "type": "single",
+      "options": [
+        "imprest system",
+        "double column system",
+        "accrual system",
+        "contra system"
+      ],
+      "correct": "A",
+      "explanation": "The petty cashier is reimbursed exactly what was spent, restoring the fixed float.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Petty Cash",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "A debit entry in an account records",
+      "type": "single",
+      "options": [
+        "an increase in capital",
+        "an increase in a liability",
+        "a decrease in an asset",
+        "an increase in an asset"
+      ],
+      "correct": "D",
+      "explanation": "Debit increases assets and expenses; credit increases liabilities, capital and income.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Double Entry",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "A credit entry in an account records",
+      "type": "single",
+      "options": [
+        "an increase in an expense",
+        "a decrease in a liability",
+        "an increase in a liability or capital",
+        "an increase in an asset"
+      ],
+      "correct": "C",
+      "explanation": "Liabilities, capital and revenue all increase on the credit side.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Double Entry",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The trial balance is prepared mainly to",
+      "type": "single",
+      "options": [
+        "calculate the tax payable",
+        "determine the profit for the period",
+        "show the financial position of the business",
+        "check the arithmetical accuracy of the ledger"
+      ],
+      "correct": "D",
+      "explanation": "If total debits equal total credits, the postings are arithmetically in agreement.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Trial Balance",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Which of the following errors will NOT affect the agreement of the trial balance?",
+      "type": "single",
+      "options": [
+        "Omitting one side of a transaction",
+        "Entering different amounts on each side",
+        "Error of complete omission of a transaction",
+        "Posting a debit entry twice"
+      ],
+      "correct": "C",
+      "explanation": "If the transaction is left out entirely, both sides remain equal.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Errors",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "Posting ₦500 to the account of the wrong customer, although in the correct class of account, is an error of",
+      "type": "single",
+      "options": [
+        "commission",
+        "original entry",
+        "complete reversal",
+        "principle"
+      ],
+      "correct": "A",
+      "explanation": "An error of commission puts a correct amount in the wrong account of the right type.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Errors",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "Treating the purchase of a motor vehicle as a motor running expense is an error of",
+      "type": "single",
+      "options": [
+        "commission",
+        "original entry",
+        "principle",
+        "omission"
+      ],
+      "correct": "C",
+      "explanation": "Capital expenditure has been wrongly recorded as revenue expenditure.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Errors",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "A suspense account is opened in order to",
+      "type": "single",
+      "options": [
+        "hold the profit of the business",
+        "record temporarily the difference in the trial balance",
+        "accumulate provision for depreciation",
+        "record all cash transactions"
+      ],
+      "correct": "B",
+      "explanation": "It balances the trial balance until the errors are traced and corrected.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Errors",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The purchase of a delivery van for use in the business is",
+      "type": "single",
+      "options": [
+        "a current liability",
+        "a trading loss",
+        "capital expenditure",
+        "revenue expenditure"
+      ],
+      "correct": "C",
+      "explanation": "It acquires a fixed asset whose benefit lasts beyond the current period.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Capital and Revenue",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Payment for fuel used by the company's delivery van is",
+      "type": "single",
+      "options": [
+        "revenue expenditure",
+        "a fixed asset",
+        "a capital receipt",
+        "capital expenditure"
+      ],
+      "correct": "A",
+      "explanation": "It is consumed within the period and is charged against the period's profit.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Capital and Revenue",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Gross profit is calculated as",
+      "type": "single",
+      "options": [
+        "sales plus closing stock",
+        "purchases minus sales",
+        "net sales minus cost of goods sold",
+        "sales minus all expenses"
+      ],
+      "correct": "C",
+      "explanation": "Gross profit is found in the trading account before other expenses are deducted.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Final Accounts",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Opening stock is ₦20,000, purchases ₦150,000 and closing stock ₦30,000. Calculate the cost of goods sold.",
+      "type": "single",
+      "options": [
+        "₦140,000",
+        "₦120,000",
+        "₦200,000",
+        "₦160,000"
+      ],
+      "correct": "A",
+      "explanation": "20,000 + 150,000 − 30,000 = ₦140,000.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Final Accounts",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Sales are ₦200,000 and the cost of goods sold is ₦140,000. Calculate the gross profit.",
+      "type": "single",
+      "options": [
+        "₦140,000",
+        "₦40,000",
+        "₦60,000",
+        "₦340,000"
+      ],
+      "correct": "C",
+      "explanation": "200,000 − 140,000 = ₦60,000.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Final Accounts",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Gross profit is ₦60,000 and total expenses are ₦25,000. Calculate the net profit.",
+      "type": "single",
+      "options": [
+        "₦85,000",
+        "₦35,000",
+        "₦25,000",
+        "₦60,000"
+      ],
+      "correct": "B",
+      "explanation": "60,000 − 25,000 = ₦35,000.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Final Accounts",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The trading account is prepared in order to determine the",
+      "type": "single",
+      "options": [
+        "capital employed",
+        "gross profit",
+        "net profit",
+        "working capital"
+      ],
+      "correct": "B",
+      "explanation": "The profit and loss account then determines net profit.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Final Accounts",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Carriage inwards is charged to the",
+      "type": "single",
+      "options": [
+        "trading account",
+        "appropriation account",
+        "balance sheet",
+        "profit and loss account"
+      ],
+      "correct": "A",
+      "explanation": "It is part of the cost of bringing in goods purchased and so increases cost of sales.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Final Accounts",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "Carriage outwards is charged to the",
+      "type": "single",
+      "options": [
+        "capital account",
+        "profit and loss account",
+        "trading account",
+        "balance sheet"
+      ],
+      "correct": "B",
+      "explanation": "It is a selling and distribution expense, not part of the cost of goods purchased.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Final Accounts",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "A balance sheet shows the",
+      "type": "single",
+      "options": [
+        "cash received and paid during a period",
+        "gross and net profit for the year",
+        "income and expenditure for a period",
+        "assets, liabilities and capital at a particular date"
+      ],
+      "correct": "D",
+      "explanation": "It is a statement of position at one moment in time, not for a period.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Balance Sheet",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Fixed assets are assets",
+      "type": "single",
+      "options": [
+        "bought specifically for resale at a profit",
+        "that never lose their value",
+        "acquired for long-term use in the business",
+        "that can be converted to cash within days"
+      ],
+      "correct": "C",
+      "explanation": "Land, buildings, plant and vehicles are held to be used, not to be resold.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Balance Sheet",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Working capital is calculated as",
+      "type": "single",
+      "options": [
+        "fixed assets plus current assets",
+        "current assets minus current liabilities",
+        "capital plus long-term loans",
+        "total assets minus total liabilities"
+      ],
+      "correct": "B",
+      "explanation": "It measures the funds available for day-to-day operations.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Balance Sheet",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Current assets are ₦80,000 and current liabilities are ₦30,000. Calculate the working capital.",
+      "type": "single",
+      "options": [
+        "₦110,000",
+        "₦30,000",
+        "₦80,000",
+        "₦50,000"
+      ],
+      "correct": "D",
+      "explanation": "80,000 − 30,000 = ₦50,000.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Balance Sheet",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Depreciation is best described as the",
+      "type": "single",
+      "options": [
+        "reduction in the value of a fixed asset through use and the passage of time",
+        "fall in the market price of stock",
+        "loss made on the sale of goods",
+        "cash set aside to replace an asset"
+      ],
+      "correct": "A",
+      "explanation": "It allocates the cost of a fixed asset over its useful life.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Depreciation",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Under the straight-line method, the depreciation charge each year is",
+      "type": "single",
+      "options": [
+        "the same amount every year",
+        "higher in the early years",
+        "based on the market value each year",
+        "ignored in the final year"
+      ],
+      "correct": "A",
+      "explanation": "The cost less scrap value is spread evenly over the asset's useful life.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Depreciation",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A machine costing ₦100,000 has an estimated scrap value of ₦10,000 and a useful life of 5 years. Calculate the annual depreciation using the straight-line method.",
+      "type": "single",
+      "options": [
+        "₦22,000",
+        "₦18,000",
+        "₦10,000",
+        "₦20,000"
+      ],
+      "correct": "B",
+      "explanation": "(100,000 − 10,000) ÷ 5 = ₦18,000 a year.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Depreciation",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "An asset costing ₦200,000 is depreciated at 10% per annum using the reducing balance method. Calculate the depreciation charge for the second year.",
+      "type": "single",
+      "options": [
+        "₦20,000",
+        "₦40,000",
+        "₦16,200",
+        "₦18,000"
+      ],
+      "correct": "D",
+      "explanation": "Year 1 charge is ₦20,000, leaving ₦180,000; 10% of ₦180,000 is ₦18,000.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Depreciation",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "Bad debts written off during the year are",
+      "type": "single",
+      "options": [
+        "credited to the trading account",
+        "shown as a current asset",
+        "added to debtors in the balance sheet",
+        "charged to the profit and loss account"
+      ],
+      "correct": "D",
+      "explanation": "The irrecoverable amount is an expense of the period in which it is written off.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Bad Debts",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "In the balance sheet, the provision for doubtful debts is",
+      "type": "single",
+      "options": [
+        "added to creditors",
+        "deducted from debtors",
+        "added to debtors",
+        "shown as a fixed asset"
+      ],
+      "correct": "B",
+      "explanation": "Debtors are shown at the amount expected to be collected.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Bad Debts",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Rent paid in advance at the end of the accounting year is treated as",
+      "type": "single",
+      "options": [
+        "part of capital",
+        "a current liability",
+        "an expense of the current year",
+        "a current asset"
+      ],
+      "correct": "D",
+      "explanation": "A prepayment is a benefit still to be received, so it is an asset.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Adjustments",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Wages owing to employees at the end of the accounting year are treated as",
+      "type": "single",
+      "options": [
+        "a fixed asset",
+        "a reduction of capital",
+        "a current liability",
+        "a current asset"
+      ],
+      "correct": "C",
+      "explanation": "An accrued expense is an amount owed and therefore a liability.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Adjustments",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "A bank reconciliation statement is prepared to reconcile the",
+      "type": "single",
+      "options": [
+        "cash book balance with the bank statement balance",
+        "trial balance with the balance sheet",
+        "petty cash float with the main cash book",
+        "sales ledger with the purchases ledger"
+      ],
+      "correct": "A",
+      "explanation": "It explains differences caused by timing and by items known to only one party.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Bank Reconciliation",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "An unpresented cheque is one that has been",
+      "type": "single",
+      "options": [
+        "returned by the bank unpaid",
+        "cancelled by the drawer",
+        "drawn and recorded but not yet paid by the bank",
+        "received but not yet banked"
+      ],
+      "correct": "C",
+      "explanation": "The cash book already shows the payment, but the bank statement does not yet.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Bank Reconciliation",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "The sales ledger control account is used to show the total",
+      "type": "single",
+      "options": [
+        "stock held at the year end",
+        "creditors of the business",
+        "cash sales for the period",
+        "debtors of the business"
+      ],
+      "correct": "D",
+      "explanation": "It summarises the individual accounts in the sales (debtors) ledger.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Control Accounts",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "In the absence of any agreement to the contrary, partnership profits are shared",
+      "type": "single",
+      "options": [
+        "in proportion to capital contributed",
+        "according to the age of the partners",
+        "entirely by the managing partner",
+        "equally among the partners"
+      ],
+      "correct": "D",
+      "explanation": "Where there is no agreement, the law presumes profits and losses are shared equally.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Partnership Accounts",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "Interest on partners' capital is",
+      "type": "single",
+      "options": [
+        "shown as a fixed asset",
+        "ignored in the final accounts",
+        "credited to the trading account",
+        "debited to the appropriation account"
+      ],
+      "correct": "D",
+      "explanation": "It is an appropriation of profit, not an expense of running the business.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Partnership Accounts",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "The partnership appropriation account shows",
+      "type": "single",
+      "options": [
+        "how the net profit is divided among the partners",
+        "the gross profit of the firm",
+        "the assets and liabilities of the firm",
+        "the cash movements of the firm"
+      ],
+      "correct": "A",
+      "explanation": "Salaries, interest on capital and profit shares are dealt with there.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Partnership Accounts",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The authorised capital of a company is the",
+      "type": "single",
+      "options": [
+        "value of its fixed assets",
+        "maximum amount of share capital it may issue",
+        "profit retained in the business",
+        "amount actually paid by shareholders"
+      ],
+      "correct": "B",
+      "explanation": "It is stated in the memorandum and sets a ceiling on the shares that may be issued.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Company Accounts",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Preference shareholders normally",
+      "type": "single",
+      "options": [
+        "are repaid after ordinary shareholders",
+        "receive a fixed rate of dividend",
+        "control the voting at general meetings",
+        "receive a share of profit that varies each year"
+      ],
+      "correct": "B",
+      "explanation": "They rank ahead of ordinary shareholders for dividend and capital repayment.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Company Accounts",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Current assets are ₦80,000 and current liabilities are ₦40,000. Calculate the current ratio.",
+      "type": "single",
+      "options": [
+        "2:1",
+        "4:1",
+        "1:1",
+        "1:2"
+      ],
+      "correct": "A",
+      "explanation": "80,000 ÷ 40,000 = 2, so the ratio is 2:1.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Accounting Ratios",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The accounting concept which assumes that a business will continue to operate for the foreseeable future is the",
+      "type": "single",
+      "options": [
+        "consistency concept",
+        "going concern concept",
+        "prudence concept",
+        "matching concept"
+      ],
+      "correct": "B",
+      "explanation": "It justifies showing assets at cost less depreciation rather than at break-up value.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Accounting Concepts",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Recognising revenue when it is earned rather than when cash is received illustrates the",
+      "type": "single",
+      "options": [
+        "entity concept",
+        "accrual concept",
+        "cost concept",
+        "prudence concept"
+      ],
+      "correct": "B",
+      "explanation": "Income and expenses are matched to the period to which they relate.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Accounting Concepts",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "A receipts and payments account is normally prepared by",
+      "type": "single",
+      "options": [
+        "a non-profit-making organisation",
+        "a public limited company",
+        "a manufacturing company",
+        "a firm of partners"
+      ],
+      "correct": "A",
+      "explanation": "Clubs and societies summarise their cash transactions in this way.",
+      "subject": "Principles of Accounts",
+      "exam_type": "JAMB",
+      "topic": "Non-Profit Organisations",
+      "difficulty": "medium",
+      "marks": 1
+    }
+  ]
+}

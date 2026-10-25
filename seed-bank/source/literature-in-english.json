@@ -1,0 +1,855 @@
+{
+  "_note": "Original practice items written for the Classic EDU Suite CBT bank. Not reproduced from any past paper. Syllabus-aligned to JAMB Literature-in-English. Deliberately built on literary terms, devices, genres and general appreciation rather than the prescribed set texts, which JAMB rotates every few years.",
+  "questions": [
+    {
+      "question": "Literature is conventionally divided into three main genres, namely",
+      "type": "single",
+      "options": [
+        "epic, ballad and sonnet",
+        "fiction, non-fiction and biography",
+        "prose, drama and poetry",
+        "tragedy, comedy and farce"
+      ],
+      "correct": "C",
+      "explanation": "Each genre is then subdivided, for example prose into novel, novella and short story.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Literary Genres",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A long narrative poem which recounts the deeds of a heroic figure is called",
+      "type": "single",
+      "options": [
+        "an epic",
+        "an elegy",
+        "an ode",
+        "a ballad"
+      ],
+      "correct": "A",
+      "explanation": "Epics are elevated in style and often concern the fate of a nation or people.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Poetic Forms",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A poem of fourteen lines is known as",
+      "type": "single",
+      "options": [
+        "a sonnet",
+        "a lyric",
+        "an ode",
+        "a limerick"
+      ],
+      "correct": "A",
+      "explanation": "The two best known forms are the Petrarchan and the Shakespearean sonnet.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Poetic Forms",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A sonnet with the rhyme scheme abab cdcd efef gg is known as a",
+      "type": "single",
+      "options": [
+        "Miltonic sonnet",
+        "Shakespearean sonnet",
+        "Petrarchan sonnet",
+        "Spenserian sonnet"
+      ],
+      "correct": "B",
+      "explanation": "Three quatrains are followed by a concluding couplet.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Poetic Forms",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "A stanza of three lines is called",
+      "type": "single",
+      "options": [
+        "a tercet",
+        "a sestet",
+        "a couplet",
+        "a quatrain"
+      ],
+      "correct": "A",
+      "explanation": "A tercet, or triplet, has three lines; a quatrain has four.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Poetic Forms",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Two successive lines of verse that rhyme with each other form",
+      "type": "single",
+      "options": [
+        "a refrain",
+        "a couplet",
+        "a tercet",
+        "an octave"
+      ],
+      "correct": "B",
+      "explanation": "A rhyming pair of lines of equal length is a couplet.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Poetic Forms",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A stanza of four lines is called",
+      "type": "single",
+      "options": [
+        "a couplet",
+        "a sestet",
+        "a quatrain",
+        "an octave"
+      ],
+      "correct": "C",
+      "explanation": "The quatrain is the commonest stanza form in English verse.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Poetic Forms",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The regular pattern of stressed and unstressed syllables in a line of verse is called",
+      "type": "single",
+      "options": [
+        "tone",
+        "diction",
+        "metre",
+        "rhyme"
+      ],
+      "correct": "C",
+      "explanation": "Metre is measured in feet, such as the iamb, trochee and dactyl.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Prosody",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "A line written in iambic pentameter contains",
+      "type": "single",
+      "options": [
+        "five metrical feet",
+        "two metrical feet",
+        "ten metrical feet",
+        "eight metrical feet"
+      ],
+      "correct": "A",
+      "explanation": "Five iambs give ten syllables, alternating unstressed and stressed.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Prosody",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "The repetition of initial consonant sounds in a line of verse is called",
+      "type": "single",
+      "options": [
+        "alliteration",
+        "assonance",
+        "consonance",
+        "onomatopoeia"
+      ],
+      "correct": "A",
+      "explanation": "For example, 'the furrow followed free'.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Sound Devices",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The repetition of similar vowel sounds within nearby words is called",
+      "type": "single",
+      "options": [
+        "rhythm",
+        "alliteration",
+        "assonance",
+        "rhyme"
+      ],
+      "correct": "C",
+      "explanation": "For example, the long 'o' in 'the lone road home'.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Sound Devices",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "A direct comparison of two unlike things without using 'like' or 'as' is",
+      "type": "single",
+      "options": [
+        "a simile",
+        "personification",
+        "an allusion",
+        "a metaphor"
+      ],
+      "correct": "D",
+      "explanation": "'He is a lion in battle' asserts the identity rather than merely comparing.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Figures of Speech",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A comparison made using 'like' or 'as' is",
+      "type": "single",
+      "options": [
+        "an apostrophe",
+        "a simile",
+        "a symbol",
+        "a metaphor"
+      ],
+      "correct": "B",
+      "explanation": "'As brave as a lion' states the comparison openly.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Figures of Speech",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Attributing human qualities to animals, objects or abstract ideas is called",
+      "type": "single",
+      "options": [
+        "personification",
+        "hyperbole",
+        "metonymy",
+        "irony"
+      ],
+      "correct": "A",
+      "explanation": "'The wind whispered through the trees' gives the wind a human action.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Figures of Speech",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A deliberate exaggeration used for emphasis is called",
+      "type": "single",
+      "options": [
+        "euphemism",
+        "paradox",
+        "litotes",
+        "hyperbole"
+      ],
+      "correct": "D",
+      "explanation": "'I have told you a thousand times' is not meant to be taken literally.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Figures of Speech",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A deliberate understatement, often expressed by denying the opposite, is called",
+      "type": "single",
+      "options": [
+        "hyperbole",
+        "metaphor",
+        "apostrophe",
+        "litotes"
+      ],
+      "correct": "D",
+      "explanation": "'She is not unkind' understates the praise.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Figures of Speech",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "The expression 'bitter sweet' is an example of",
+      "type": "single",
+      "options": [
+        "an oxymoron",
+        "onomatopoeia",
+        "a simile",
+        "euphemism"
+      ],
+      "correct": "A",
+      "explanation": "An oxymoron yokes two contradictory terms together in one phrase.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Figures of Speech",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "A statement which appears self-contradictory yet expresses a truth on reflection is",
+      "type": "single",
+      "options": [
+        "a paradox",
+        "a pun",
+        "an allusion",
+        "a metaphor"
+      ],
+      "correct": "A",
+      "explanation": "'The child is father of the man' seems absurd but conveys a real insight.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Figures of Speech",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The use of words whose sounds suggest their meaning, such as 'buzz' and 'hiss', is called",
+      "type": "single",
+      "options": [
+        "alliteration",
+        "cacophony",
+        "assonance",
+        "onomatopoeia"
+      ],
+      "correct": "D",
+      "explanation": "The sound of the word imitates the sound it denotes.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Sound Devices",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "An indirect reference to a well-known person, event or work of literature is",
+      "type": "single",
+      "options": [
+        "a symbol",
+        "an epigram",
+        "satire",
+        "an allusion"
+      ],
+      "correct": "D",
+      "explanation": "Calling a traitor a 'Judas' alludes to the biblical account.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Figures of Speech",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The substitution of a mild expression for one considered harsh or offensive is",
+      "type": "single",
+      "options": [
+        "irony",
+        "euphemism",
+        "litotes",
+        "hyperbole"
+      ],
+      "correct": "B",
+      "explanation": "'He passed away' is gentler than 'he died'.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Figures of Speech",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The use of a part to represent the whole, as in 'all hands on deck', is",
+      "type": "single",
+      "options": [
+        "apostrophe",
+        "synecdoche",
+        "metonymy",
+        "personification"
+      ],
+      "correct": "B",
+      "explanation": "'Hands' stands for the whole sailors.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Figures of Speech",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "The continuation of a sentence beyond the end of a line of verse without a pause is called",
+      "type": "single",
+      "options": [
+        "refrain",
+        "stanza break",
+        "caesura",
+        "enjambment"
+      ],
+      "correct": "D",
+      "explanation": "The sense runs over into the following line.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Prosody",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "A deliberate pause or break within a line of poetry is called",
+      "type": "single",
+      "options": [
+        "enjambment",
+        "refrain",
+        "stanza",
+        "caesura"
+      ],
+      "correct": "D",
+      "explanation": "It is often marked by punctuation in the middle of the line.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Prosody",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "The attitude of a writer towards the subject of a work is referred to as the",
+      "type": "single",
+      "options": [
+        "plot",
+        "tone",
+        "setting",
+        "theme"
+      ],
+      "correct": "B",
+      "explanation": "Tone may be ironic, bitter, affectionate, playful and so on.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Literary Appreciation",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The prevailing atmosphere or feeling that a literary work creates in the reader is its",
+      "type": "single",
+      "options": [
+        "motif",
+        "mood",
+        "tone",
+        "diction"
+      ],
+      "correct": "B",
+      "explanation": "Tone belongs to the writer; mood is the effect produced in the reader.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Literary Appreciation",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The central idea or underlying message of a literary work is its",
+      "type": "single",
+      "options": [
+        "plot",
+        "theme",
+        "setting",
+        "climax"
+      ],
+      "correct": "B",
+      "explanation": "The plot is what happens; the theme is what it means.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Literary Appreciation",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The arrangement of events and incidents in a narrative is the",
+      "type": "single",
+      "options": [
+        "theme",
+        "setting",
+        "diction",
+        "plot"
+      ],
+      "correct": "D",
+      "explanation": "A plot connects events causally, not merely in sequence.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Elements of Prose",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The point of greatest tension in a play, at which the action turns, is the",
+      "type": "single",
+      "options": [
+        "climax",
+        "epilogue",
+        "exposition",
+        "prologue"
+      ],
+      "correct": "A",
+      "explanation": "The climax is followed by the falling action and the resolution.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Elements of Drama",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The final unravelling and resolution of the complications of a plot is the",
+      "type": "single",
+      "options": [
+        "denouement",
+        "climax",
+        "exposition",
+        "flashback"
+      ],
+      "correct": "A",
+      "explanation": "The loose ends of the story are tied up in the denouement.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Elements of Drama",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The character who stands in opposition to the main character is the",
+      "type": "single",
+      "options": [
+        "narrator",
+        "protagonist",
+        "antagonist",
+        "foil"
+      ],
+      "correct": "C",
+      "explanation": "The conflict between protagonist and antagonist drives the plot.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Characterisation",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A character who undergoes no significant change in the course of a work is described as",
+      "type": "single",
+      "options": [
+        "round",
+        "dynamic",
+        "tragic",
+        "flat"
+      ],
+      "correct": "D",
+      "explanation": "A flat or static character remains essentially the same throughout.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Characterisation",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "A speech in which a character alone on stage reveals their inner thoughts is a",
+      "type": "single",
+      "options": [
+        "dialogue",
+        "aside",
+        "soliloquy",
+        "chorus"
+      ],
+      "correct": "C",
+      "explanation": "The audience overhears the character thinking aloud.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Elements of Drama",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "A brief remark made by a character to the audience and unheard by the other characters is an",
+      "type": "single",
+      "options": [
+        "apostrophe",
+        "aside",
+        "epilogue",
+        "interlude"
+      ],
+      "correct": "B",
+      "explanation": "An aside lets a character share a private comment with the audience.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Elements of Drama",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "When the audience knows something of which a character on stage is ignorant, the device is",
+      "type": "single",
+      "options": [
+        "dramatic irony",
+        "situational irony",
+        "satire",
+        "verbal irony"
+      ],
+      "correct": "A",
+      "explanation": "The gap between the audience's knowledge and the character's creates tension.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Literary Devices",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The time and place in which the action of a literary work occurs is its",
+      "type": "single",
+      "options": [
+        "setting",
+        "plot",
+        "theme",
+        "motif"
+      ],
+      "correct": "A",
+      "explanation": "Setting includes the historical period and social environment as well as the physical place.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Literary Appreciation",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A narrative in which characters and events stand for deeper moral or political meanings is",
+      "type": "single",
+      "options": [
+        "an epic",
+        "a lyric",
+        "an allegory",
+        "a memoir"
+      ],
+      "correct": "C",
+      "explanation": "The surface story carries a sustained second level of meaning.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Literary Genres",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "A short tale, often with animal characters, that teaches a moral lesson is",
+      "type": "single",
+      "options": [
+        "an ode",
+        "a soliloquy",
+        "a fable",
+        "a novella"
+      ],
+      "correct": "C",
+      "explanation": "The fables attributed to Aesop are the best-known examples.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Literary Genres",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A play that ends unhappily, largely through the flaw or error of its principal character, is a",
+      "type": "single",
+      "options": [
+        "comedy",
+        "tragedy",
+        "farce",
+        "melodrama"
+      ],
+      "correct": "B",
+      "explanation": "The protagonist's downfall arouses pity and fear in the audience.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Elements of Drama",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The error of judgement or flaw that brings about the downfall of a tragic hero is called",
+      "type": "single",
+      "options": [
+        "catharsis",
+        "anagnorisis",
+        "peripeteia",
+        "hamartia"
+      ],
+      "correct": "D",
+      "explanation": "Hamartia is the tragic flaw or fatal mistake in Aristotle's account of tragedy.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Tragedy",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "The purging of the emotions of pity and fear which an audience experiences in tragedy is",
+      "type": "single",
+      "options": [
+        "nemesis",
+        "hubris",
+        "hamartia",
+        "catharsis"
+      ],
+      "correct": "D",
+      "explanation": "Aristotle described tragedy as effecting a catharsis of these emotions.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Tragedy",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "The excessive pride that leads a tragic hero to defy the gods or moral order is",
+      "type": "single",
+      "options": [
+        "catharsis",
+        "pathos",
+        "bathos",
+        "hubris"
+      ],
+      "correct": "D",
+      "explanation": "Hubris commonly invites nemesis, the retribution that follows.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Tragedy",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "A story told by a narrator who refers to himself or herself as 'I' uses",
+      "type": "single",
+      "options": [
+        "a dramatic narrator",
+        "an omniscient narrator",
+        "a first-person narrator",
+        "a third-person narrator"
+      ],
+      "correct": "C",
+      "explanation": "The reader is limited to what that narrator knows and perceives.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Point of View",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A narrator who knows the thoughts and feelings of every character is described as",
+      "type": "single",
+      "options": [
+        "participant",
+        "omniscient",
+        "unreliable",
+        "first-person"
+      ],
+      "correct": "B",
+      "explanation": "The all-knowing narrator may move freely between characters and places.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Point of View",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "A literary work that ridicules folly or vice in order to correct it is",
+      "type": "single",
+      "options": [
+        "a satire",
+        "a tragedy",
+        "an elegy",
+        "a eulogy"
+      ],
+      "correct": "A",
+      "explanation": "Satire exposes its target to laughter or scorn with a corrective purpose.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Literary Genres",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "A long speech delivered by one character to others on stage is a",
+      "type": "single",
+      "options": [
+        "dialogue",
+        "prologue",
+        "monologue",
+        "soliloquy"
+      ],
+      "correct": "C",
+      "explanation": "Unlike a soliloquy, a monologue is addressed to listeners who are present.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Elements of Drama",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The introductory speech or section at the beginning of a play is the",
+      "type": "single",
+      "options": [
+        "epilogue",
+        "prologue",
+        "denouement",
+        "interlude"
+      ],
+      "correct": "B",
+      "explanation": "The prologue opens the play; the epilogue closes it.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Elements of Drama",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Which Shakespearean tragedy centres on a Moorish general and his wife Desdemona?",
+      "type": "single",
+      "options": [
+        "Macbeth",
+        "Othello",
+        "Hamlet",
+        "King Lear"
+      ],
+      "correct": "B",
+      "explanation": "Othello is destroyed by jealousy worked upon by Iago.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Shakespeare",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The play in which a Scottish nobleman murders King Duncan in order to seize the throne was written by",
+      "type": "single",
+      "options": [
+        "Christopher Marlowe",
+        "Ben Jonson",
+        "William Shakespeare",
+        "John Webster"
+      ],
+      "correct": "C",
+      "explanation": "Macbeth is one of Shakespeare's four great tragedies.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Shakespeare",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Blank verse may be defined as",
+      "type": "single",
+      "options": [
+        "verse without any metrical pattern",
+        "verse of exactly fourteen lines",
+        "unrhymed iambic pentameter",
+        "rhymed iambic pentameter"
+      ],
+      "correct": "C",
+      "explanation": "It keeps the metre but dispenses with rhyme, and is the staple of Shakespeare's plays.",
+      "subject": "Literature-in-English",
+      "exam_type": "JAMB",
+      "topic": "Prosody",
+      "difficulty": "hard",
+      "marks": 1
+    }
+  ]
+}

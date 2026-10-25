@@ -1,0 +1,51 @@
+﻿question,type,option_a,option_b,option_c,option_d,correct,explanation,subject,exam_type,topic,year,difficulty,marks
+Convert 101101₂ to a number in base ten.,single,37,45,51,43,B,32 + 0 + 8 + 4 + 0 + 1 = 45.,Mathematics,JAMB,Number Bases,,easy,1.0
+Simplify 2/3 + 1/4 − 1/2.,single,5/12,7/12,1/12,11/12,A,Using an LCM of 12: (8 + 3 − 6)/12 = 5/12.,Mathematics,JAMB,Fractions,,easy,1.0
+Simplify (2⁵ × 2⁻³) ÷ 2⁴.,single,2,1/2,1/4,4,C,Add and subtract the indices: 2^(5 − 3 − 4) = 2⁻² = 1/4.,Mathematics,JAMB,Indices,,easy,1.0
+"If log₁₀2 = 0.3010, find log₁₀8.",single,0.9030,0.6020,0.2408,1.2040,A,"8 = 2³, so log₁₀8 = 3 log₁₀2 = 3 × 0.3010 = 0.9030.",Mathematics,JAMB,Logarithms,,medium,1.0
+Simplify √75 − √12.,single,2√3,7√3,3√3,√63,C,"√75 = 5√3 and √12 = 2√3, so the difference is 3√3.",Mathematics,JAMB,Surds,,medium,1.0
+"In a class of 40 students, 25 offer Mathematics, 20 offer Physics and 8 offer neither subject. How many students offer both subjects?",single,12,13,5,7,B,Students offering at least one subject = 40 − 8 = 32. Both = 25 + 20 − 32 = 13.,Mathematics,JAMB,Sets,,medium,1.0
+Solve the equation x² − 5x + 6 = 0.,single,2 and 3,1 and 5,1 and 6,−2 and −3,A,"(x − 2)(x − 3) = 0, so x = 2 or x = 3.",Mathematics,JAMB,Quadratic Equations,,easy,1.0
+Solve the simultaneous equations 2x + y = 7 and x − y = 2.,single,"x = 2, y = 3","x = 4, y = −1","x = 3, y = 1","x = 1, y = 3",C,"Adding the equations gives 3x = 9, so x = 3 and y = 1.",Mathematics,JAMB,Simultaneous Equations,,easy,1.0
+Find the range of values of x for which 3x − 4 < 2x + 1.,single,x < 5,x < −5,x > −5,x > 5,A,"Subtract 2x from both sides: x − 4 < 1, so x < 5.",Mathematics,JAMB,Inequalities,,easy,1.0
+"y varies inversely as the square of x. If y = 4 when x = 3, find y when x = 6.",single,16,1,2,8,B,"y = k/x², so k = 4 × 9 = 36. When x = 6, y = 36/36 = 1.",Mathematics,JAMB,Variation,,medium,1.0
+"Find the 10th term of the arithmetic progression 3, 7, 11, 15, …",single,43,37,40,39,D,"a = 3, d = 4. Tₙ = a + (n − 1)d = 3 + 9 × 4 = 39.",Mathematics,JAMB,Sequences and Series,,easy,1.0
+Find the sum to infinity of the series 1 + 1/3 + 1/9 + …,single,3,1,2/3,3/2,D,S∞ = a/(1 − r) = 1/(1 − 1/3) = 3/2.,Mathematics,JAMB,Sequences and Series,,medium,1.0
+Solve log₂x = 5.,single,25,32,64,10,B,x = 2⁵ = 32.,Mathematics,JAMB,Logarithms,,easy,1.0
+"Find the simple interest on ₦25,000 for 3 years at 8% per annum.",single,"₦7,500","₦6,000","₦2,000",₦600,B,"I = PRT/100 = 25,000 × 8 × 3 / 100 = ₦6,000.",Mathematics,JAMB,Commercial Arithmetic,,easy,1.0
+"A trader bought a bag of rice for ₦4,000 and sold it for ₦5,000. Find the percentage profit.",single,10%,80%,20%,25%,D,"Profit = ₦1,000. Percentage profit = 1,000/4,000 × 100 = 25%.",Mathematics,JAMB,Commercial Arithmetic,,easy,1.0
+"Share ₦7,200 between Ada and Bola in the ratio 5:4. How much does Ada receive?",single,"₦3,600","₦4,500","₦4,000","₦3,200",C,"Ada's share = 5/9 × 7,200 = ₦4,000.",Mathematics,JAMB,Ratio and Proportion,,easy,1.0
+Find the area of a circle of radius 7 cm. [Take π = 22/7],single,308 cm²,44 cm²,154 cm²,22 cm²,C,A = πr² = 22/7 × 7 × 7 = 154 cm².,Mathematics,JAMB,Mensuration,,easy,1.0
+Find the volume of a cylinder of radius 3.5 cm and height 10 cm. [Take π = 22/7],single,110 cm³,38.5 cm³,770 cm³,385 cm³,D,V = πr²h = 22/7 × 12.25 × 10 = 385 cm³.,Mathematics,JAMB,Mensuration,,medium,1.0
+A ladder 13 m long leans against a vertical wall with its foot 5 m from the wall. How far up the wall does the ladder reach?,single,8 m,12 m,18 m,14 m,B,"By Pythagoras, height = √(13² − 5²) = √144 = 12 m.",Mathematics,JAMB,Pythagoras Theorem,,easy,1.0
+"In a right-angled triangle, the side opposite angle θ is 3 cm and the hypotenuse is 5 cm. Find sin θ.",single,4/5,3/5,5/3,3/4,B,sin θ = opposite/hypotenuse = 3/5.,Mathematics,JAMB,Trigonometry,,easy,1.0
+Evaluate sin 30° + cos 60°.,single,1,√3/2,0,1/2,A,"sin 30° = 1/2 and cos 60° = 1/2, so the sum is 1.",Mathematics,JAMB,Trigonometry,,easy,1.0
+The angles of a triangle are in the ratio 2:3:5. Find the largest angle.,single,36°,54°,90°,72°,C,"The parts total 10, so the largest angle = 5/10 × 180° = 90°.",Mathematics,JAMB,Plane Geometry,,easy,1.0
+Find the sum of the interior angles of a hexagon.,single,1080°,720°,540°,900°,B,(n − 2) × 180° = (6 − 2) × 180° = 720°.,Mathematics,JAMB,Plane Geometry,,easy,1.0
+An arc of a circle subtends an angle of 100° at the centre. What angle does the same arc subtend at the circumference?,single,50°,25°,200°,100°,A,"The angle at the centre is twice the angle at the circumference, so 100°/2 = 50°.",Mathematics,JAMB,Circle Theorems,,medium,1.0
+"Find the distance between the points (1, 2) and (4, 6).",single,25,√7,5,7,C,d = √((4 − 1)² + (6 − 2)²) = √(9 + 16) = √25 = 5.,Mathematics,JAMB,Coordinate Geometry,,easy,1.0
+"Find the gradient of the line joining the points (2, 3) and (5, 9).",single,1/2,3,6,2,D,Gradient = (9 − 3)/(5 − 2) = 6/3 = 2.,Mathematics,JAMB,Coordinate Geometry,,easy,1.0
+"Find the equation of the straight line of gradient 2 which passes through the point (0, 3).",single,y = 2 − 3x,y = 3x + 2,y = 2x + 3,y = 2x − 3,C,"With gradient m = 2 and intercept c = 3, y = mx + c gives y = 2x + 3.",Mathematics,JAMB,Coordinate Geometry,,easy,1.0
+Differentiate y = 3x³ − 2x + 5 with respect to x.,single,6x² − 2,9x² − 2,9x² − 2x,x⁴ − x² + 5x,B,Differentiating term by term: 9x² − 2 + 0.,Mathematics,JAMB,Differentiation,,easy,1.0
+"If y = x² + 3x, find dy/dx when x = 2.",single,4,5,7,10,C,"dy/dx = 2x + 3, which is 2(2) + 3 = 7 at x = 2.",Mathematics,JAMB,Differentiation,,easy,1.0
+Evaluate ∫(2x + 3)dx.,single,x² + 3x + c,2x² + 3x + c,x² + 3 + c,2 + 3x + c,A,Integrating term by term gives x² + 3x + c.,Mathematics,JAMB,Integration,,easy,1.0
+Evaluate the definite integral of 3x² with respect to x from x = 0 to x = 1.,single,1,0,3,1/3,A,"∫3x²dx = x³, and [x³] from 0 to 1 = 1 − 0 = 1.",Mathematics,JAMB,Integration,,medium,1.0
+Find the value of x for which y = x² − 6x + 5 has a minimum value.,single,−3,3,5,6,B,"dy/dx = 2x − 6 = 0 gives x = 3, and d²y/dx² = 2 > 0, so it is a minimum.",Mathematics,JAMB,Differentiation,,medium,1.0
+"Find the mean of 4, 7, 9, 12 and 8.",single,8,9,7,10,A,"Sum = 40 and there are 5 values, so the mean is 40/5 = 8.",Mathematics,JAMB,Statistics,,easy,1.0
+"Find the median of 3, 7, 2, 9, 5 and 11.",single,7,9,6,5,C,"In order: 2, 3, 5, 7, 9, 11. The median is (5 + 7)/2 = 6.",Mathematics,JAMB,Statistics,,easy,1.0
+"Find the mode of 2, 3, 3, 4, 5, 3 and 6.",single,4,3,5,2,B,"3 appears three times, more often than any other value.",Mathematics,JAMB,Statistics,,easy,1.0
+"Find the range of the set of numbers 12, 5, 19, 7 and 3.",single,14,19,22,16,D,Range = highest − lowest = 19 − 3 = 16.,Mathematics,JAMB,Statistics,,easy,1.0
+A bag contains 4 red and 6 white balls. One ball is picked at random. What is the probability that it is white?,single,1/2,2/3,2/5,3/5,D,P(white) = 6/10 = 3/5.,Mathematics,JAMB,Probability,,easy,1.0
+A fair die is thrown once. What is the probability of obtaining a prime number?,single,1/2,2/3,1/6,1/3,A,"The primes on a die are 2, 3 and 5, so P = 3/6 = 1/2.",Mathematics,JAMB,Probability,,medium,1.0
+In how many ways can 5 pupils be seated in a row of 5 seats?,single,720,25,60,120,D,5! = 5 × 4 × 3 × 2 × 1 = 120.,Mathematics,JAMB,Permutations and Combinations,,medium,1.0
+In how many ways can 3 prefects be chosen from 7 students?,single,35,21,210,42,A,⁷C₃ = 7!/(3!4!) = 35.,Mathematics,JAMB,Permutations and Combinations,,medium,1.0
+"Find the standard deviation of 2, 4, 4, 4, 5, 5, 7 and 9.",single,4,5,2.5,2,D,"The mean is 5 and the squared deviations total 32, so the variance is 32/8 = 4 and the standard deviation is √4 = 2.",Mathematics,JAMB,Statistics,,hard,1.0
+A man walks 4 km due north and then 3 km due east. How far is he from his starting point?,single,1 km,12 km,7 km,5 km,D,The journey forms a right-angled triangle: √(4² + 3²) = 5 km.,Mathematics,JAMB,Bearings,,easy,1.0
+"Evaluate 11₂ + 101₂, leaving your answer in base two.",single,111₂,1100₂,110₂,1000₂,D,"In base ten, 3 + 5 = 8, and 8 in base two is 1000₂.",Mathematics,JAMB,Number Bases,,medium,1.0
+"In modulo 7 arithmetic, find the value of 5 + 6.",single,4,11,2,1,A,"5 + 6 = 11, and 11 = 7 + 4, so the remainder modulo 7 is 4.",Mathematics,JAMB,Modular Arithmetic,,medium,1.0
+"Find the determinant of the 2 × 2 matrix with first row (3, 2) and second row (4, 5).",single,23,−7,14,7,D,Determinant = (3 × 5) − (2 × 4) = 15 − 8 = 7.,Mathematics,JAMB,Matrices,,medium,1.0
+"Simplify (x² − 9)/(x − 3), where x ≠ 3.",single,3 − x,x − 3,x + 3,x² − 3,C,"x² − 9 = (x − 3)(x + 3), and the factor (x − 3) cancels.",Mathematics,JAMB,Algebraic Fractions,,easy,1.0
+Factorise 6x² + 5x − 6 completely.,single,(3x − 3)(2x + 2),(3x − 2)(2x + 3),(3x + 2)(2x − 3),(6x − 1)(x + 6),B,Expanding (3x − 2)(2x + 3) gives 6x² + 9x − 4x − 6 = 6x² + 5x − 6.,Mathematics,JAMB,Factorisation,,medium,1.0
+The sum of two numbers is 20 and their difference is 4. Find the larger number.,single,10,12,16,8,B,"Adding the two statements gives 2x = 24, so the larger number is 12.",Mathematics,JAMB,Word Problems,,easy,1.0
+Find the total surface area of a cube of edge 5 cm.,single,25 cm²,125 cm²,150 cm²,100 cm²,C,A cube has 6 square faces: 6 × 5² = 150 cm².,Mathematics,JAMB,Mensuration,,easy,1.0
+Find the area of a sector of a circle of radius 14 cm which subtends an angle of 90° at the centre. [Take π = 22/7],single,154 cm²,616 cm²,308 cm²,44 cm²,A,Area = (90/360) × 22/7 × 14² = 1/4 × 616 = 154 cm².,Mathematics,JAMB,Mensuration,,medium,1.0

@@ -1,0 +1,1209 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Classic EDU Suite — Front-end Preview</title>
+
+<!--
+	STATIC PREVIEW. This file is NOT part of the plugin and never ships in the
+	zip (build-plugin.ps1 only packages the classic-edu-suite/ folder).
+
+	It links the plugin's real stylesheets by relative path and reproduces the
+	markup the PHP/JS actually outputs, so what you see here is the genuine
+	design, artwork included. Nothing is wired to a database: no scoring, no
+	coins, no video.
+
+	Links and buttons that would move a student from one screen to another DO
+	work here — they carry data-pv-go and the switcher at the bottom of this
+	file handles them. Anything that would need PHP (scoring, spending coins,
+	copying a link) says so in a small message instead of failing silently.
+-->
+
+<link rel="stylesheet" href="../classic-edu-suite/public/assets/ces-base.css">
+<link rel="stylesheet" href="../classic-edu-suite/modules/cbt/assets/cbt.css">
+<link rel="stylesheet" href="../classic-edu-suite/modules/wallet/assets/wallet.css">
+<link rel="stylesheet" href="../classic-edu-suite/modules/lms/assets/lms.css">
+<link rel="stylesheet" href="../classic-edu-suite/modules/quotes/assets/quotes-popup.css">
+
+<style>
+	/* Preview chrome only. Everything here is prefixed pv- so it can never
+	   collide with or override a ces- rule. */
+	html { box-sizing: border-box; }
+	body {
+		margin: 0;
+		background: #eef1f6;
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+		color: #1f2937;
+	}
+	.pv-bar {
+		position: sticky;
+		top: 0;
+		z-index: 50;
+		background: #0f172a;
+		color: #e2e8f0;
+		padding: 0.75rem 1rem;
+	}
+	.pv-bar__row {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 0.75rem;
+		max-width: 1100px;
+		margin: 0 auto;
+	}
+	.pv-bar__title { font-size: 0.95rem; font-weight: 700; margin: 0; }
+	.pv-bar__note { font-size: 0.78rem; color: #94a3b8; margin: 0; }
+	.pv-spacer { flex: 1 1 auto; }
+	.pv-ctl {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.35rem;
+		font-size: 0.78rem;
+		color: #cbd5e1;
+	}
+	.pv-ctl input[type="color"] {
+		width: 28px; height: 28px; padding: 0;
+		border: 1px solid #334155; border-radius: 6px; background: none; cursor: pointer;
+	}
+	.pv-toggle {
+		border: 1px solid #334155;
+		background: #1e293b;
+		color: #e2e8f0;
+		border-radius: 999px;
+		padding: 0.35rem 0.8rem;
+		font-size: 0.78rem;
+		cursor: pointer;
+	}
+	.pv-toggle.is-on { background: #2563eb; border-color: #2563eb; color: #fff; }
+
+	.pv-nav {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.35rem;
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: 0.6rem 1rem 0;
+	}
+	.pv-nav button {
+		border: 1px solid #cbd5e1;
+		background: #fff;
+		color: #334155;
+		border-radius: 999px;
+		padding: 0.4rem 0.85rem;
+		font-size: 0.8rem;
+		cursor: pointer;
+	}
+	.pv-nav button:hover { border-color: #94a3b8; }
+	.pv-nav button.is-active { background: #0f172a; border-color: #0f172a; color: #fff; }
+
+	.pv-stage { max-width: 1100px; margin: 0 auto; padding: 1rem; }
+	.pv-stage.is-phone { max-width: 420px; }
+
+	.pv-caption {
+		margin: 0 0 0.6rem;
+		font-size: 0.8rem;
+		color: #475569;
+		background: #fff7ed;
+		border: 1px solid #fed7aa;
+		border-left: 3px solid #f97316;
+		border-radius: 8px;
+		padding: 0.5rem 0.7rem;
+	}
+	.pv-caption code { background: #fff; padding: 0.05rem 0.3rem; border-radius: 4px; }
+
+	/* Stands in for the theme's content area. GeneratePress gives the plugin a
+	   white content column like this. */
+	.pv-content {
+		background: #fff;
+		border: 1px solid #e2e8f0;
+		border-radius: 14px;
+		padding: 1.25rem;
+	}
+	.pv-screen { display: none; }
+	.pv-screen.is-active { display: block; }
+
+	.pv-foot {
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: 0.5rem 1rem 3rem;
+		font-size: 0.78rem;
+		color: #64748b;
+	}
+
+	/* Message shown when something genuinely needs WordPress. Without this a
+	   dead button looks like a broken one. */
+	.pv-toast {
+		position: fixed;
+		bottom: 1.25rem;
+		left: 50%;
+		z-index: 99999;
+		max-width: min( 32rem, calc( 100% - 2rem ) );
+		padding: 0.65rem 1rem;
+		transform: translate( -50%, 1.5rem );
+		border-radius: 999px;
+		background: #0f172a;
+		color: #f1f5f9;
+		font-size: 0.82rem;
+		line-height: 1.4;
+		text-align: center;
+		box-shadow: 0 12px 30px -10px rgba( 15, 23, 42, 0.6 );
+		opacity: 0;
+		pointer-events: none;
+		transition: opacity 160ms ease, transform 160ms ease;
+	}
+	.pv-toast.is-on { opacity: 1; transform: translate( -50%, 0 ); }
+</style>
+</head>
+<body>
+
+<div class="pv-bar">
+	<div class="pv-bar__row">
+		<div>
+			<p class="pv-bar__title">Classic EDU Suite — front-end preview</p>
+			<p class="pv-bar__note">Real stylesheets, real markup, fake data. Links between screens work; anything needing PHP tells you so.</p>
+		</div>
+		<span class="pv-spacer"></span>
+		<label class="pv-ctl">
+			Brand colour
+			<input type="color" id="pv-brand" value="#2c62cd">
+		</label>
+		<button type="button" class="pv-toggle" id="pv-width">Phone width</button>
+	</div>
+</div>
+
+<nav class="pv-nav" id="pv-nav">
+	<button type="button" data-screen="overview" class="is-active">Dashboard</button>
+	<button type="button" data-screen="coins">My Coins</button>
+	<button type="button" data-screen="invite">Invite friends</button>
+	<button type="button" data-screen="exams">Exam list</button>
+	<button type="button" data-screen="exam-intro">Exam intro</button>
+	<button type="button" data-screen="exam-run">Exam in progress</button>
+	<button type="button" data-screen="results">My results</button>
+	<button type="button" data-screen="result">Result + review</button>
+	<button type="button" data-screen="courses">Courses</button>
+	<button type="button" data-screen="course">Course lessons</button>
+	<button type="button" data-screen="lesson">Lesson player</button>
+	<button type="button" data-screen="gate">Locked lesson</button>
+	<button type="button" data-screen="popup">Daily quote popup</button>
+</nav>
+
+<div class="pv-stage" id="pv-stage">
+
+<!-- ============================================================ -->
+<!-- DASHBOARD OVERVIEW — templates/dashboard/wrapper.php + overview.php -->
+<!-- ============================================================ -->
+<section class="pv-screen is-active" id="pv-overview">
+	<p class="pv-caption">Page with <code>[ces_dashboard]</code>. Frame from <code>templates/dashboard/wrapper.php</code>, body from <code>overview.php</code>. The tabs and the quick links below are clickable.</p>
+	<div class="pv-content">
+
+		<div class="ces-dash" id="ces-dashboard">
+			<h2 class="ces-dash__title">My Dashboard</h2>
+
+			<nav class="ces-dash__nav" aria-label="Dashboard sections">
+				<ul class="ces-dash__tabs">
+					<li class="ces-dash__tab-item">
+						<a class="ces-dash__tab" href="#" aria-current="page" data-pv-go="overview">
+							<span class="ces-dash__tab-icon" aria-hidden="true">🏠</span>
+							<span class="ces-dash__tab-label">Overview</span>
+						</a>
+					</li>
+					<li class="ces-dash__tab-item">
+						<a class="ces-dash__tab" href="#" data-pv-go="coins">
+							<span class="ces-dash__tab-icon" aria-hidden="true">🪙</span>
+							<span class="ces-dash__tab-label">My Coins</span>
+						</a>
+					</li>
+					<li class="ces-dash__tab-item">
+						<a class="ces-dash__tab" href="#" data-pv-go="results">
+							<span class="ces-dash__tab-icon" aria-hidden="true">📝</span>
+							<span class="ces-dash__tab-label">My Results</span>
+						</a>
+					</li>
+					<li class="ces-dash__tab-item">
+						<a class="ces-dash__tab" href="#" data-pv-go="courses">
+							<span class="ces-dash__tab-icon" aria-hidden="true">🎬</span>
+							<span class="ces-dash__tab-label">My Courses</span>
+						</a>
+					</li>
+					<li class="ces-dash__tab-item">
+						<a class="ces-dash__tab" href="#" data-pv-go="invite">
+							<span class="ces-dash__tab-icon" aria-hidden="true">🤝</span>
+							<span class="ces-dash__tab-label">Invite Friends</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="ces-dash__panel" id="ces-dash-panel-overview">
+				<div class="ces-overview">
+
+					<div class="ces-hero">
+						<h2 class="ces-overview__greeting">Good afternoon, Chidinma</h2>
+						<p class="ces-overview__intro">Here is where you stand today. Keep your streak going.</p>
+						<ul class="ces-hero__facts">
+							<li class="ces-hero__fact">4-day streak</li>
+							<li class="ces-hero__fact">1,240 coins</li>
+							<li class="ces-hero__fact">3 exams taken</li>
+						</ul>
+					</div>
+
+					<div class="ces-overview__grid">
+						<section class="ces-panel ces-panel--wallet">
+							<h3 class="ces-panel__title">Coin balance</h3>
+							<div class="ces-stat">
+								<span class="ces-stat__value">1,240</span>
+								<span class="ces-stat__label">Coin balance</span>
+							</div>
+							<p class="ces-stat__hint">You earned 60 coins this week.</p>
+							<p class="ces-stat__action">
+								<a class="ces-btn ces-btn--ghost" href="#" data-pv-go="coins">See my coins</a>
+							</p>
+						</section>
+
+						<section class="ces-panel ces-panel--quote">
+							<h3 class="ces-panel__title">Today's quote</h3>
+							<figure class="ces-quote-block">
+								<blockquote class="ces-quote-block__text">The expert in anything was once a beginner who refused to quit.</blockquote>
+								<figcaption class="ces-quote-block__author">&mdash; Helen Hayes</figcaption>
+							</figure>
+						</section>
+
+						<section class="ces-panel ces-panel--invite">
+							<h3 class="ces-panel__title">Invite friends</h3>
+							<p class="ces-invite__text">Invite a classmate. When they join and finish one quiz, you both earn coins.</p>
+							<div class="ces-invite__actions">
+								<a class="ces-btn ces-btn--whatsapp" href="#" data-pv-note="On the live site this opens WhatsApp with the student's own referral link.">Share on WhatsApp</a>
+								<button type="button" class="ces-btn ces-btn--ghost" data-ces-copy="#" data-ces-copy-done="Copied" data-pv-note="Copying runs in ces-base.js, which this preview does not load.">Copy link</button>
+							</div>
+							<p class="ces-invite__hint">https://classiceduinfo.com.ng/?ref=CHID4K</p>
+						</section>
+
+						<section class="ces-panel ces-panel--links">
+							<h3 class="ces-panel__title">Quick links</h3>
+							<ul class="ces-links">
+								<li class="ces-links__item">
+									<a class="ces-links__link" href="#" data-pv-go="exams">
+										<span class="ces-links__icon" aria-hidden="true">📝</span>
+										<span class="ces-links__label">Take a practice exam</span>
+									</a>
+								</li>
+								<li class="ces-links__item">
+									<a class="ces-links__link" href="#" data-pv-go="courses">
+										<span class="ces-links__icon" aria-hidden="true">🎬</span>
+										<span class="ces-links__label">Browse video lessons</span>
+									</a>
+								</li>
+								<li class="ces-links__item">
+									<a class="ces-links__link" href="#" data-pv-go="coins">
+										<span class="ces-links__icon" aria-hidden="true">🪙</span>
+										<span class="ces-links__label">How to earn coins</span>
+									</a>
+								</li>
+							</ul>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<!-- ============================================================ -->
+<!-- MY COINS — modules/wallet/class-ces-wallet-dashboard.php -->
+<!-- ============================================================ -->
+<section class="pv-screen" id="pv-coins">
+	<p class="pv-caption">Dashboard tab at <code>?tab=coins</code>, rendered by <code>CES_Wallet_Dashboard::render()</code>.</p>
+	<div class="pv-content">
+		<div class="ces-wallet ces-wallet--coins">
+
+			<div class="ces-coin-hero">
+				<span class="ces-coin-hero__label">Your coin balance</span>
+				<span class="ces-coin-hero__value" data-ces-balance>1,240</span>
+				<span class="ces-coin-hero__unit">coins</span>
+			</div>
+
+			<div class="ces-streak">
+				<p class="ces-streak__line">You have logged in 4 days in a row. Reach 7 days for a bonus.</p>
+				<div class="ces-progress" role="img" aria-label="4 of 7 days">
+					<span class="ces-progress__bar" style="width:57%"></span>
+				</div>
+			</div>
+
+			<h3 class="ces-wallet__heading">How to earn coins</h3>
+			<ul class="ces-earn-list">
+				<li class="ces-earn-list__item">
+					<span class="ces-earn-list__label">Daily login</span>
+					<span class="ces-earn-list__coins">+5</span>
+				</li>
+				<li class="ces-earn-list__item">
+					<span class="ces-earn-list__label">7-day streak bonus</span>
+					<span class="ces-earn-list__coins">+50</span>
+				</li>
+				<li class="ces-earn-list__item">
+					<span class="ces-earn-list__label">Pass a practice exam</span>
+					<span class="ces-earn-list__coins">+20</span>
+				</li>
+				<li class="ces-earn-list__item">
+					<span class="ces-earn-list__label">Friend joins with your link</span>
+					<span class="ces-earn-list__coins">+100</span>
+				</li>
+			</ul>
+			<p class="ces-wallet__cta"><a class="ces-btn ces-btn--primary" href="#" data-pv-go="invite">Invite a friend</a></p>
+
+			<h3 class="ces-wallet__heading">Transaction history</h3>
+			<ul class="ces-ledger" data-ces-ledger>
+				<li class="ces-ledger__item">
+					<span class="ces-ledger__meta">
+						<span class="ces-ledger__label">Quiz passed</span>
+						<span class="ces-ledger__note">JAMB Mathematics 2022 — 72%</span>
+						<span class="ces-ledger__date">19 Oct 2026, 1:42 pm</span>
+					</span>
+					<span class="ces-ledger__amount ces-ledger__amount--in">+20</span>
+				</li>
+				<li class="ces-ledger__item">
+					<span class="ces-ledger__meta">
+						<span class="ces-ledger__label">Video unlocked</span>
+						<span class="ces-ledger__note">Simultaneous Equations — Part 2</span>
+						<span class="ces-ledger__date">19 Oct 2026, 11:08 am</span>
+					</span>
+					<span class="ces-ledger__amount ces-ledger__amount--out">&minus;30</span>
+				</li>
+				<li class="ces-ledger__item">
+					<span class="ces-ledger__meta">
+						<span class="ces-ledger__label">Daily login</span>
+						<span class="ces-ledger__date">19 Oct 2026, 7:15 am</span>
+					</span>
+					<span class="ces-ledger__amount ces-ledger__amount--in">+5</span>
+				</li>
+				<li class="ces-ledger__item">
+					<span class="ces-ledger__meta">
+						<span class="ces-ledger__label">Referral reward</span>
+						<span class="ces-ledger__note">Emeka O. completed their first quiz</span>
+						<span class="ces-ledger__date">18 Oct 2026, 6:30 pm</span>
+					</span>
+					<span class="ces-ledger__amount ces-ledger__amount--in">+100</span>
+				</li>
+				<li class="ces-ledger__item">
+					<span class="ces-ledger__meta">
+						<span class="ces-ledger__label">Signup bonus</span>
+						<span class="ces-ledger__date">02 Oct 2026, 9:00 am</span>
+					</span>
+					<span class="ces-ledger__amount ces-ledger__amount--in">+200</span>
+				</li>
+			</ul>
+			<p class="ces-wallet__more">
+				<button type="button" class="ces-btn ces-btn--ghost" data-ces-load-more="2" data-ces-per-page="20" data-pv-note="This asks the REST API for the next page of the ledger.">Load more</button>
+			</p>
+
+		</div>
+	</div>
+</section>
+
+<!-- ============================================================ -->
+<!-- INVITE / REFERRALS -->
+<!-- ============================================================ -->
+<section class="pv-screen" id="pv-invite">
+	<p class="pv-caption">Dashboard tab at <code>?tab=referrals</code>. Rewards only pay after the invited student confirms and completes one quiz — that rule is enforced server-side.</p>
+	<div class="pv-content">
+		<div class="ces-wallet ces-wallet--invite">
+
+			<p class="ces-invite__intro">Share your link. When a friend signs up and finishes one quiz, you earn 100 coins and they get a bonus too.</p>
+
+			<div class="ces-invite__code-box">
+				<span class="ces-invite__code-label">Your referral code</span>
+				<span class="ces-invite__code">CHID4K</span>
+			</div>
+
+			<div class="ces-invite__link-row">
+				<input type="text" class="ces-invite__link" readonly value="https://classiceduinfo.com.ng/?ref=CHID4K" aria-label="Your referral link" data-ces-link>
+				<button type="button" class="ces-btn ces-btn--ghost ces-invite__copy" data-ces-copy="https://classiceduinfo.com.ng/?ref=CHID4K" data-pv-note="Copying runs in ces-base.js, which this preview does not load.">Copy</button>
+			</div>
+
+			<p class="ces-invite__share">
+				<a class="ces-btn ces-btn--whatsapp" href="#" data-pv-note="On the live site this opens WhatsApp with the student's own referral link.">Share on WhatsApp</a>
+			</p>
+
+			<div class="ces-invite__stats">
+				<div class="ces-stat">
+					<span class="ces-stat__value">7</span>
+					<span class="ces-stat__label">Invited</span>
+				</div>
+				<div class="ces-stat">
+					<span class="ces-stat__value">4</span>
+					<span class="ces-stat__label">Qualified</span>
+				</div>
+				<div class="ces-stat">
+					<span class="ces-stat__value">400</span>
+					<span class="ces-stat__label">Coins earned</span>
+				</div>
+			</div>
+
+			<div class="ces-milestone">
+				<p class="ces-milestone__line">1 more qualified friend and you reach the 5-invite milestone bonus.</p>
+				<div class="ces-progress" role="img" aria-label="4 of 5 invites">
+					<span class="ces-progress__bar" style="width:80%"></span>
+				</div>
+			</div>
+
+			<h3 class="ces-wallet__heading">People you invited</h3>
+			<ul class="ces-referral-list">
+				<li class="ces-referral-list__item">
+					<span class="ces-referral-list__name">Emeka O.</span>
+					<span class="ces-referral-list__hint">Qualified — 100 coins paid</span>
+				</li>
+				<li class="ces-referral-list__item">
+					<span class="ces-referral-list__name">Blessing A.</span>
+					<span class="ces-referral-list__hint">Waiting for them to confirm and take one quiz.</span>
+				</li>
+				<li class="ces-referral-list__item">
+					<span class="ces-referral-list__name">Tunde B.</span>
+					<span class="ces-referral-list__hint">Same device as an existing account</span>
+				</li>
+			</ul>
+
+			<p class="ces-invite__smallprint">Invites from duplicate accounts, the same device or temporary email addresses are not paid.</p>
+
+		</div>
+	</div>
+</section>
+
+<!-- ============================================================ -->
+<!-- CBT EXAM LIST -->
+<!-- ============================================================ -->
+<section class="pv-screen" id="pv-exams">
+	<p class="pv-caption">Page with <code>[ces_exam_list]</code>. The artwork band on each card is chosen from the exam's subject by <code>CES_Helpers::subject_art()</code> — it is drawn in CSS, so there is no image to upload.</p>
+	<div class="pv-content">
+		<div class="ces-cbt ces-cbt--list">
+			<div class="ces-cbt__grid">
+
+				<article class="ces-cbt__card" data-ces-art="maths">
+					<span class="ces-cbt__card-art" aria-hidden="true"></span>
+					<h3 class="ces-cbt__card-title"><a href="#" data-pv-go="exam-intro">JAMB Mathematics 2022</a></h3>
+					<ul class="ces-cbt__chips ces-cbt__chips--sm">
+						<li class="ces-cbt__chip">JAMB</li>
+						<li class="ces-cbt__chip">Mathematics</li>
+						<li class="ces-cbt__chip">2022</li>
+					</ul>
+					<p class="ces-cbt__card-meta">40 questions · 45 minutes · pass mark 50%</p>
+					<p class="ces-cbt__actions">
+						<a class="ces-cbt__btn ces-cbt__btn--primary" href="#" data-pv-go="exam-intro">Start exam</a>
+					</p>
+				</article>
+
+				<article class="ces-cbt__card" data-ces-art="english">
+					<span class="ces-cbt__card-art" aria-hidden="true"></span>
+					<h3 class="ces-cbt__card-title"><a href="#" data-pv-go="exam-intro">WAEC English Language 2021</a></h3>
+					<ul class="ces-cbt__chips ces-cbt__chips--sm">
+						<li class="ces-cbt__chip">WAEC</li>
+						<li class="ces-cbt__chip">English</li>
+						<li class="ces-cbt__chip">2021</li>
+					</ul>
+					<p class="ces-cbt__card-meta">50 questions · 60 minutes · pass mark 50%</p>
+					<p class="ces-cbt__actions">
+						<a class="ces-cbt__btn ces-cbt__btn--primary" href="#" data-pv-go="exam-intro">Start exam</a>
+					</p>
+				</article>
+
+				<article class="ces-cbt__card" data-ces-art="biology">
+					<span class="ces-cbt__card-art" aria-hidden="true"></span>
+					<h3 class="ces-cbt__card-title"><a href="#" data-pv-note="An unpublished exam has no page for a student to open.">NECO Biology 2023</a></h3>
+					<ul class="ces-cbt__chips ces-cbt__chips--sm">
+						<li class="ces-cbt__chip">NECO</li>
+						<li class="ces-cbt__chip">Biology</li>
+						<li class="ces-cbt__chip">2023</li>
+					</ul>
+					<p class="ces-cbt__card-meta">Not published yet</p>
+					<p class="ces-cbt__actions">
+						<span class="ces-cbt__badge ces-cbt__badge--muted">Coming soon</span>
+					</p>
+				</article>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ============================================================ -->
+<!-- CBT EXAM INTRO -->
+<!-- ============================================================ -->
+<section class="pv-screen" id="pv-exam-intro">
+	<p class="pv-caption">Page with <code>[ces_exam id="123"]</code> before the student presses Start. Questions are not in the page source yet — they are fetched only after the attempt opens.</p>
+	<div class="pv-content">
+		<div class="ces-cbt ces-cbt--exam">
+			<section class="ces-cbt__intro">
+				<h2 class="ces-cbt__title">JAMB Mathematics 2022</h2>
+
+				<ul class="ces-cbt__chips">
+					<li class="ces-cbt__chip">40 questions</li>
+					<li class="ces-cbt__chip">45 minutes</li>
+					<li class="ces-cbt__chip">Pass mark 50%</li>
+					<li class="ces-cbt__chip">2 attempts left today</li>
+				</ul>
+
+				<div class="ces-cbt__instructions">
+					<p>Read each question carefully. You can flag a question and come back to it before you submit.</p>
+					<ul class="ces-cbt__bullets">
+						<li>Your answers save automatically as you go.</li>
+						<li>If your network drops, answers are kept and sent when you reconnect.</li>
+						<li>The paper submits itself when the timer reaches zero.</li>
+						<li>Closing the tab does not stop the clock.</li>
+					</ul>
+				</div>
+
+				<p class="ces-cbt__actions">
+					<button type="button" class="ces-cbt__btn ces-cbt__btn--primary ces-cbt__btn--lg" data-ces-action="start" data-pv-go="exam-run">Start exam</button>
+				</p>
+				<p class="ces-cbt__hint" data-ces-role="intro-error" hidden></p>
+			</section>
+		</div>
+	</div>
+</section>
+
+<!-- ============================================================ -->
+<!-- CBT EXAM RUNNER — built by modules/cbt/assets/cbt-exam.js -->
+<!-- ============================================================ -->
+<section class="pv-screen" id="pv-exam-run">
+	<p class="pv-caption">The live exam, built in the browser by <code>cbt-exam.js</code>. The palette and the answer options really do respond here. Correct answers are never sent to the browser until the paper is submitted.</p>
+	<div class="pv-content">
+		<div class="ces-cbt ces-cbt--exam">
+			<section class="ces-cbt__runner">
+
+				<header class="ces-cbt__bar">
+					<div class="ces-cbt__bar-left">
+						<span class="ces-cbt__bar-title">JAMB Mathematics 2022</span>
+						<span class="ces-cbt__progress">12 of 40 answered</span>
+					</div>
+					<div class="ces-cbt__bar-right">
+						<span class="ces-cbt__timer">
+							<span class="ces-cbt__timer-label">Time left</span>
+							<span class="ces-cbt__timer-value">31:08</span>
+						</span>
+						<span class="ces-cbt__save is-saved" aria-live="polite">Saved</span>
+					</div>
+				</header>
+
+				<button type="button" class="ces-cbt__btn ces-cbt__btn--ghost ces-cbt__palette-toggle" aria-expanded="false" id="pv-pal-toggle" data-pv-live>Question palette</button>
+
+				<div class="ces-cbt__palette" id="pv-pal" data-pv-live>
+					<div class="ces-cbt__legend">
+						<span class="ces-cbt__legend-item is-answered">Answered</span>
+						<span class="ces-cbt__legend-item is-unanswered">Not answered</span>
+						<span class="ces-cbt__legend-item is-flagged">Flagged</span>
+					</div>
+					<div class="ces-cbt__palette-grid" id="pv-pal-grid"></div>
+				</div>
+
+				<div class="ces-cbt__question">
+					<div class="ces-cbt__q-head">
+						<span class="ces-cbt__q-number">Question 13 of 40</span>
+						<span class="ces-cbt__q-topic">Mathematics · Algebra</span>
+					</div>
+
+					<div class="ces-cbt__q-body ces-math">
+						<p>If 3x &minus; 7 = 2x + 5, what is the value of x?</p>
+					</div>
+
+					<div class="ces-cbt__options" role="radiogroup" data-pv-live>
+						<label class="ces-cbt__option" for="pv-o-a" data-key="A">
+							<input type="radio" name="pv-q13" value="A" class="ces-cbt__option-input" id="pv-o-a">
+							<span class="ces-cbt__option-key">A</span>
+							<span class="ces-cbt__option-text ces-math">2</span>
+						</label>
+						<label class="ces-cbt__option is-selected" for="pv-o-b" data-key="B">
+							<input type="radio" name="pv-q13" value="B" class="ces-cbt__option-input" id="pv-o-b" checked>
+							<span class="ces-cbt__option-key">B</span>
+							<span class="ces-cbt__option-text ces-math">12</span>
+						</label>
+						<label class="ces-cbt__option" for="pv-o-c" data-key="C">
+							<input type="radio" name="pv-q13" value="C" class="ces-cbt__option-input" id="pv-o-c">
+							<span class="ces-cbt__option-key">C</span>
+							<span class="ces-cbt__option-text ces-math">&minus;2</span>
+						</label>
+						<label class="ces-cbt__option" for="pv-o-d" data-key="D">
+							<input type="radio" name="pv-q13" value="D" class="ces-cbt__option-input" id="pv-o-d">
+							<span class="ces-cbt__option-key">D</span>
+							<span class="ces-cbt__option-text ces-math">5</span>
+						</label>
+					</div>
+
+					<div class="ces-cbt__q-tools">
+						<button type="button" class="ces-cbt__btn ces-cbt__btn--ghost ces-cbt__flag" aria-pressed="false" data-pv-note="Flagging marks the question amber in the palette and is remembered server-side.">Flag for review</button>
+						<button type="button" class="ces-cbt__btn ces-cbt__btn--ghost" data-pv-note="Clearing an answer sends the change to the attempt straight away.">Clear answer</button>
+					</div>
+				</div>
+
+				<nav class="ces-cbt__nav">
+					<button type="button" class="ces-cbt__btn ces-cbt__btn--ghost" data-pv-note="In a real attempt this moves to question 12.">Previous</button>
+					<button type="button" class="ces-cbt__btn ces-cbt__btn--primary" data-pv-note="In a real attempt this moves to question 14.">Next</button>
+					<button type="button" class="ces-cbt__btn ces-cbt__btn--submit" data-pv-go="result">Submit paper</button>
+				</nav>
+
+			</section>
+		</div>
+	</div>
+</section>
+
+<!-- ============================================================ -->
+<!-- CBT RESULTS LIST -->
+<!-- ============================================================ -->
+<section class="pv-screen" id="pv-results">
+	<p class="pv-caption">Dashboard tab at <code>?tab=cbt-results</code>, or the <code>[ces_cbt_results]</code> shortcode.</p>
+	<div class="pv-content">
+		<div class="ces-cbt ces-cbt--results">
+			<div class="ces-cbt__table-wrap">
+				<table class="ces-cbt__table">
+					<thead>
+						<tr>
+							<th scope="col">Exam</th>
+							<th scope="col">Date</th>
+							<th scope="col">Score</th>
+							<th scope="col">Outcome</th>
+							<th scope="col"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>JAMB Mathematics 2022<br><span class="ces-cbt__muted">29 of 40 correct</span></td>
+							<td>19 Oct 2026</td>
+							<td>72.5%</td>
+							<td><span class="ces-cbt__badge ces-cbt__badge--pass">Passed</span></td>
+							<td><a class="ces-cbt__btn ces-cbt__btn--sm" href="#" data-pv-go="result">View</a></td>
+						</tr>
+						<tr>
+							<td>WAEC English Language 2021<br><span class="ces-cbt__muted">21 of 50 correct</span></td>
+							<td>16 Oct 2026</td>
+							<td>42.0%</td>
+							<td><span class="ces-cbt__badge ces-cbt__badge--fail">Not passed</span></td>
+							<td><a class="ces-cbt__btn ces-cbt__btn--sm" href="#" data-pv-go="result">View</a></td>
+						</tr>
+						<tr>
+							<td>NECO Physics 2023<br><span class="ces-cbt__muted">Started 19 Oct, 3:02 pm</span></td>
+							<td>19 Oct 2026</td>
+							<td>&mdash;</td>
+							<td><span class="ces-cbt__badge ces-cbt__badge--muted">In progress</span></td>
+							<td><a class="ces-cbt__btn ces-cbt__btn--sm" href="#" data-pv-go="exam-run">Resume</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ============================================================ -->
+<!-- CBT SINGLE RESULT + REVIEW -->
+<!-- ============================================================ -->
+<section class="pv-screen" id="pv-result">
+	<p class="pv-caption">The result page after submitting. A pass gets the confetti wash; a near miss stays plain on purpose. Whether correct answers and explanations appear here is a per-exam setting.</p>
+	<div class="pv-content">
+		<div class="ces-cbt ces-cbt--result-page">
+			<p class="ces-cbt__back"><a href="#" data-pv-go="results">&larr; All my results</a></p>
+
+			<div class="ces-cbt__scorecard is-pass">
+				<h2 class="ces-cbt__title">JAMB Mathematics 2022</h2>
+				<p class="ces-cbt__score">72.5<span>%</span></p>
+				<p class="ces-cbt__verdict is-pass">
+					Passed
+					<span class="ces-cbt__muted">Pass mark 50%</span>
+				</p>
+			</div>
+
+			<ul class="ces-cbt__stats ces-cbt__stats--wide">
+				<li><strong>29</strong> Correct</li>
+				<li><strong>11</strong> Wrong</li>
+				<li><strong>40</strong> Questions</li>
+				<li><strong>38:12</strong> Time spent</li>
+				<li><strong>+20</strong> Coins earned</li>
+			</ul>
+
+			<h3 class="ces-cbt__section-title">Question review</h3>
+
+			<ol class="ces-cbt__review">
+				<li class="ces-cbt__review-item is-correct">
+					<div class="ces-cbt__review-body"><p>If 3x &minus; 7 = 2x + 5, what is the value of x?</p></div>
+					<ul class="ces-cbt__review-options">
+						<li class="ces-cbt__review-option">
+							<span class="ces-cbt__option-key">A</span>
+							<span class="ces-cbt__option-text">2</span>
+						</li>
+						<li class="ces-cbt__review-option is-right is-given">
+							<span class="ces-cbt__option-key">B</span>
+							<span class="ces-cbt__option-text">12</span>
+						</li>
+						<li class="ces-cbt__review-option">
+							<span class="ces-cbt__option-key">C</span>
+							<span class="ces-cbt__option-text">&minus;2</span>
+						</li>
+						<li class="ces-cbt__review-option">
+							<span class="ces-cbt__option-key">D</span>
+							<span class="ces-cbt__option-text">5</span>
+						</li>
+					</ul>
+					<p class="ces-cbt__review-meta">
+						<span class="ces-cbt__badge ces-cbt__badge--pass">Correct</span>
+					</p>
+					<div class="ces-cbt__explanation">
+						<p>Collect like terms: 3x &minus; 2x = 5 + 7, so x = 12.</p>
+					</div>
+				</li>
+
+				<li class="ces-cbt__review-item is-wrong">
+					<div class="ces-cbt__review-body"><p>Simplify: (a&sup2; &minus; b&sup2;) &divide; (a + b)</p></div>
+					<ul class="ces-cbt__review-options">
+						<li class="ces-cbt__review-option is-given">
+							<span class="ces-cbt__option-key">A</span>
+							<span class="ces-cbt__option-text">a + b</span>
+						</li>
+						<li class="ces-cbt__review-option is-right">
+							<span class="ces-cbt__option-key">B</span>
+							<span class="ces-cbt__option-text">a &minus; b</span>
+						</li>
+						<li class="ces-cbt__review-option">
+							<span class="ces-cbt__option-key">C</span>
+							<span class="ces-cbt__option-text">a&sup2; + b</span>
+						</li>
+						<li class="ces-cbt__review-option">
+							<span class="ces-cbt__option-key">D</span>
+							<span class="ces-cbt__option-text">1</span>
+						</li>
+					</ul>
+					<p class="ces-cbt__review-meta">
+						<span class="ces-cbt__badge ces-cbt__badge--fail">Wrong</span>
+						<span class="ces-cbt__muted">Correct answer: B</span>
+					</p>
+					<div class="ces-cbt__explanation">
+						<p>a&sup2; &minus; b&sup2; factorises to (a + b)(a &minus; b). Cancelling (a + b) leaves a &minus; b.</p>
+					</div>
+				</li>
+
+				<li class="ces-cbt__review-item">
+					<div class="ces-cbt__review-body"><p>What is the median of 4, 9, 2, 7, 5?</p></div>
+					<ul class="ces-cbt__review-options">
+						<li class="ces-cbt__review-option"><span class="ces-cbt__option-key">A</span><span class="ces-cbt__option-text">4</span></li>
+						<li class="ces-cbt__review-option is-right"><span class="ces-cbt__option-key">B</span><span class="ces-cbt__option-text">5</span></li>
+						<li class="ces-cbt__review-option"><span class="ces-cbt__option-key">C</span><span class="ces-cbt__option-text">7</span></li>
+						<li class="ces-cbt__review-option"><span class="ces-cbt__option-key">D</span><span class="ces-cbt__option-text">9</span></li>
+					</ul>
+					<p class="ces-cbt__review-meta">
+						<span class="ces-cbt__badge ces-cbt__badge--muted">Not answered</span>
+						<span class="ces-cbt__muted">Correct answer: B</span>
+					</p>
+				</li>
+			</ol>
+		</div>
+	</div>
+</section>
+
+<!-- ============================================================ -->
+<!-- LMS COURSE LIST -->
+<!-- ============================================================ -->
+<section class="pv-screen" id="pv-courses">
+	<p class="pv-caption">Page with <code>[ces_course_list]</code>. These three courses have no featured image, so each falls back to its subject artwork — maths, English, biology. Upload a thumbnail and it replaces the drawing.</p>
+	<div class="pv-content">
+		<div class="ces-lms ces-courses">
+
+			<form class="ces-filters" method="get" action="">
+				<label class="ces-filters__field">
+					<span class="screen-reader-text">Search courses</span>
+					<input type="search" name="ces_s" placeholder="Search courses" value="">
+				</label>
+				<label class="ces-filters__field">
+					<span class="screen-reader-text">Subject</span>
+					<select name="ces_subject">
+						<option>All subjects</option>
+						<option>Mathematics</option>
+						<option>English</option>
+						<option>Biology</option>
+					</select>
+				</label>
+				<button type="submit" class="ces-btn ces-btn--ghost" data-pv-note="Filtering reloads the page with ?ces_subject= on the live site.">Filter</button>
+			</form>
+
+			<ul class="ces-courses__grid">
+				<li class="ces-card-course">
+					<a class="ces-card-course__link" href="#" data-pv-go="course">
+						<span class="ces-card-course__media ces-card-course__media--art" data-ces-art="maths" aria-hidden="true"></span>
+						<span class="ces-card-course__body">
+							<span class="ces-card-course__title">Mastering Algebra for JAMB</span>
+							<span class="ces-card-course__meta">Mathematics · 12 lessons · 2h 40m</span>
+							<span class="ces-progress" role="img" aria-label="40% complete">
+								<span class="ces-progress__bar" style="width:40%"></span>
+							</span>
+						</span>
+					</a>
+				</li>
+				<li class="ces-card-course">
+					<a class="ces-card-course__link" href="#" data-pv-go="course">
+						<span class="ces-card-course__media ces-card-course__media--art" data-ces-art="english" aria-hidden="true"></span>
+						<span class="ces-card-course__body">
+							<span class="ces-card-course__title">English Comprehension Crash Course</span>
+							<span class="ces-card-course__meta">English · 8 lessons · 1h 55m</span>
+							<span class="ces-progress" role="img" aria-label="0% complete">
+								<span class="ces-progress__bar" style="width:0%"></span>
+							</span>
+						</span>
+					</a>
+				</li>
+				<li class="ces-card-course">
+					<a class="ces-card-course__link" href="#" data-pv-go="course">
+						<span class="ces-card-course__media ces-card-course__media--art" data-ces-art="biology" aria-hidden="true"></span>
+						<span class="ces-card-course__body">
+							<span class="ces-card-course__title">Cell Biology Made Simple</span>
+							<span class="ces-card-course__meta">Biology · 10 lessons · 3h 10m</span>
+							<span class="ces-progress" role="img" aria-label="100% complete">
+								<span class="ces-progress__bar" style="width:100%"></span>
+							</span>
+						</span>
+					</a>
+				</li>
+			</ul>
+
+			<nav class="ces-pager" aria-label="Course pages">
+				<span class="ces-pager__count">Page 1 of 3</span>
+				<a class="ces-btn ces-btn--ghost" href="#" data-pv-note="Pagination keeps the active search and subject filter.">Next</a>
+			</nav>
+
+		</div>
+	</div>
+</section>
+
+<!-- ============================================================ -->
+<!-- LMS COURSE PAGE -->
+<!-- ============================================================ -->
+<section class="pv-screen" id="pv-course">
+	<p class="pv-caption">A single course. Lock, tick and play icons come from the access check, not from the browser. Tap lesson 3 for the player, or lesson 4 for the locked gate.</p>
+	<div class="pv-content">
+		<div class="ces-lms ces-course">
+			<h2 class="ces-course__title">Mastering Algebra for JAMB</h2>
+			<p class="ces-course__progress">4 of 12 lessons completed</p>
+
+			<ol class="ces-lessons">
+				<li class="ces-lesson-row is-open is-done">
+					<a class="ces-lesson-row__link" href="#" data-pv-go="lesson">
+						<span class="ces-lesson-row__num">1</span>
+						<span class="ces-lesson-row__main">
+							<span class="ces-lesson-row__title">What algebra actually asks of you</span>
+							<span class="ces-lesson-row__meta">9:42 · Completed</span>
+						</span>
+						<span class="ces-lesson-row__icon" aria-hidden="true">&#10003;</span>
+					</a>
+				</li>
+				<li class="ces-lesson-row is-open is-done">
+					<a class="ces-lesson-row__link" href="#" data-pv-go="lesson">
+						<span class="ces-lesson-row__num">2</span>
+						<span class="ces-lesson-row__main">
+							<span class="ces-lesson-row__title">Collecting like terms</span>
+							<span class="ces-lesson-row__meta">12:05 · Completed</span>
+						</span>
+						<span class="ces-lesson-row__icon" aria-hidden="true">&#10003;</span>
+					</a>
+				</li>
+				<li class="ces-lesson-row is-open">
+					<a class="ces-lesson-row__link" href="#" data-pv-go="lesson">
+						<span class="ces-lesson-row__num">3</span>
+						<span class="ces-lesson-row__main">
+							<span class="ces-lesson-row__title">Simultaneous equations — Part 1</span>
+							<span class="ces-lesson-row__meta">15:20 · Unlocked</span>
+						</span>
+						<span class="ces-lesson-row__icon" aria-hidden="true">&#9654;</span>
+					</a>
+				</li>
+				<li class="ces-lesson-row is-locked">
+					<a class="ces-lesson-row__link" href="#" data-pv-go="gate">
+						<span class="ces-lesson-row__num">4</span>
+						<span class="ces-lesson-row__main">
+							<span class="ces-lesson-row__title">Simultaneous equations — Part 2</span>
+							<span class="ces-lesson-row__meta">14:38 · 30 coins</span>
+						</span>
+						<span class="ces-lesson-row__icon" aria-hidden="true">&#128274;</span>
+					</a>
+				</li>
+				<li class="ces-lesson-row is-locked">
+					<a class="ces-lesson-row__link" href="#" data-pv-go="gate">
+						<span class="ces-lesson-row__num">5</span>
+						<span class="ces-lesson-row__main">
+							<span class="ces-lesson-row__title">Quadratic equations by factorisation</span>
+							<span class="ces-lesson-row__meta">18:02 · 30 coins</span>
+						</span>
+						<span class="ces-lesson-row__icon" aria-hidden="true">&#128274;</span>
+					</a>
+				</li>
+			</ol>
+		</div>
+	</div>
+</section>
+
+<!-- ============================================================ -->
+<!-- LMS LESSON PLAYER -->
+<!-- ============================================================ -->
+<section class="pv-screen" id="pv-lesson">
+	<p class="pv-caption">An unlocked lesson. The watermark carries the student's name. On the live site the <code>&lt;video&gt;</code> source is a signed, expiring URL — there is no plain .mp4 in the page source.</p>
+	<div class="pv-content">
+		<div class="ces-lms ces-lms-lesson">
+			<h2 class="ces-lms-lesson__title">Simultaneous equations — Part 1</h2>
+			<p class="ces-lms-lesson__course"><a href="#" data-pv-go="course">&larr; Mastering Algebra for JAMB</a></p>
+
+			<div class="ces-player" data-pv-live>
+				<div class="ces-player__stage">
+					<video class="ces-player__video" playsinline preload="metadata" controls poster=""
+						style="background:#0f172a;aspect-ratio:16/9;width:100%"></video>
+					<div class="ces-player__watermark" aria-hidden="true"><span>Chidinma O. · 0812****91</span></div>
+					<div class="ces-player__overlay" data-role="overlay" hidden><p data-role="overlay-text"></p></div>
+				</div>
+				<div class="ces-player__bar">
+					<button type="button" class="ces-player__quality" data-role="quality" aria-haspopup="true">Quality: Auto</button>
+					<ul class="ces-player__levels" data-role="levels" hidden></ul>
+					<span class="ces-player__status" data-role="status" role="status">Watched 6:12 of 15:20</span>
+				</div>
+				<p class="ces-player__hint">Your position is saved, so you can continue on your phone later.</p>
+			</div>
+
+			<div class="ces-lms-notes">
+				<h3>Lesson notes</h3>
+				<p>Two equations, two unknowns. Use elimination when the coefficients line up, substitution when one variable is already isolated.</p>
+			</div>
+
+			<div class="ces-lms-files">
+				<h3>Downloads</h3>
+				<ul>
+					<li><a href="#" data-pv-note="Downloads are served through the same token-gated endpoint as the video.">Worked examples (PDF)</a></li>
+					<li><a href="#" data-pv-note="Downloads are served through the same token-gated endpoint as the video.">Practice sheet (PDF)</a></li>
+				</ul>
+			</div>
+
+			<details class="ces-lms-transcript">
+				<summary>Transcript</summary>
+				<p>Good afternoon. Today we are looking at simultaneous equations…</p>
+			</details>
+		</div>
+	</div>
+</section>
+
+<!-- ============================================================ -->
+<!-- LMS LOCKED GATE -->
+<!-- ============================================================ -->
+<section class="pv-screen" id="pv-gate">
+	<p class="pv-caption">What a student sees instead of the player when the lesson is not unlocked. With no lesson thumbnail the subject artwork stands in behind the padlock. The spend happens server-side; the gate is just the door.</p>
+	<div class="pv-content">
+		<div class="ces-lms ces-lms-lesson">
+			<h2 class="ces-lms-lesson__title">Simultaneous equations — Part 2</h2>
+			<p class="ces-lms-lesson__course"><a href="#" data-pv-go="course">&larr; Mastering Algebra for JAMB</a></p>
+
+			<div class="ces-gate ces-gate--coins">
+				<div class="ces-gate__media ces-gate__media--art" data-ces-art="maths">
+					<span class="ces-gate__lock" aria-hidden="true">&#128274;</span>
+				</div>
+				<p class="ces-gate__message">This lesson costs 30 coins to unlock for 30 days.</p>
+				<div class="ces-gate__actions" data-ces-unlock="456">
+					<button type="button" class="ces-btn ces-btn--primary" data-role="unlock" data-pv-note="Unlocking debits the wallet and issues a stream token — both server-side.">Unlock for 30 coins</button>
+					<span class="ces-gate__balance">You have 1,240 coins</span>
+				</div>
+				<p class="ces-gate__error" data-role="error" hidden></p>
+				<p class="ces-gate__hint"><a href="#" data-pv-go="invite">Short on coins? Invite a friend and earn 100.</a></p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ============================================================ -->
+<!-- QUOTE POPUP -->
+<!-- ============================================================ -->
+<section class="pv-screen" id="pv-popup">
+	<p class="pv-caption">The daily quote. Shown inline here using the same <code>--preview</code> modifier the admin preview uses. Press the button to see it as a real overlay — that is how a student meets it, once per day.</p>
+	<p><button type="button" class="pv-toggle is-on" id="pv-popup-live" style="background:#0f172a;border-color:#0f172a">Show as live overlay</button></p>
+	<div class="pv-content">
+		<div id="ces-quote-popup" class="ces-quote-popup ces-quote-popup--preview is-open" data-quote-id="42" data-pv-live>
+			<div class="ces-quote-popup__scrim" data-ces-quote-close aria-hidden="true"></div>
+			<div class="ces-quote-popup__dialog" role="dialog" aria-modal="true" aria-labelledby="ces-quote-popup-heading" aria-describedby="ces-quote-popup-text" tabindex="-1">
+				<div class="ces-quote-popup__bar">
+					<p class="ces-quote-popup__eyebrow" id="ces-quote-popup-heading">Quote of the day</p>
+					<button type="button" class="ces-quote-popup__close" data-ces-quote-close aria-label="Dismiss">&times;</button>
+				</div>
+
+				<blockquote class="ces-quote-popup__quote">
+					<p class="ces-quote-popup__text" id="ces-quote-popup-text">Success is the sum of small efforts repeated day in and day out.</p>
+					<cite class="ces-quote-popup__author">&mdash; Robert Collier</cite>
+				</blockquote>
+
+				<div class="ces-quote-popup__task">
+					<span class="ces-quote-popup__task-label">Share today's quote with a classmate and earn 10 coins.</span>
+					<div class="ces-quote-popup__actions">
+						<a class="ces-quote-popup__btn ces-quote-popup__btn--whatsapp" href="#" data-ces-quote-cta>Share on WhatsApp</a>
+						<button type="button" class="ces-quote-popup__btn ces-quote-popup__btn--ghost" data-ces-quote-copy="#" data-label-done="Copied">Copy link</button>
+					</div>
+				</div>
+
+				<p class="ces-quote-popup__foot"><a href="#">See all quotes</a></p>
+			</div>
+		</div>
+	</div>
+</section>
+
+</div><!-- /pv-stage -->
+
+<p class="pv-foot">
+	Static preview — no PHP, no database, no video. Navigation between screens works;
+	scoring, coin spending and stream signing only exist on a WordPress install.
+</p>
+
+<div class="pv-toast" id="pv-toast" role="status" aria-live="polite"></div>
+
+<script>
+(function () {
+	'use strict';
+
+	var nav = document.getElementById( 'pv-nav' );
+	var stage = document.getElementById( 'pv-stage' );
+	var toastEl = document.getElementById( 'pv-toast' );
+	var toastTimer = null;
+
+	/**
+	 * Show the named screen. Shared by the grey nav pills at the top and by
+	 * every in-page link that carries data-pv-go, which is what makes the
+	 * preview feel like a site rather than a slideshow.
+	 */
+	function go( name ) {
+		var target = document.getElementById( 'pv-' + name );
+
+		if ( ! target ) {
+			return false;
+		}
+
+		Array.prototype.forEach.call( nav.querySelectorAll( 'button' ), function ( b ) {
+			b.classList.toggle( 'is-active', b.getAttribute( 'data-screen' ) === name );
+		} );
+
+		Array.prototype.forEach.call( stage.querySelectorAll( '.pv-screen' ), function ( s ) {
+			s.classList.toggle( 'is-active', s === target );
+		} );
+
+		window.scrollTo( 0, 0 );
+
+		return true;
+	}
+
+	function toast( message ) {
+		toastEl.textContent = message;
+		toastEl.classList.add( 'is-on' );
+
+		window.clearTimeout( toastTimer );
+		toastTimer = window.setTimeout( function () {
+			toastEl.classList.remove( 'is-on' );
+		}, 2600 );
+	}
+
+	nav.addEventListener( 'click', function ( e ) {
+		var btn = e.target.closest( 'button[data-screen]' );
+
+		if ( btn ) {
+			go( btn.getAttribute( 'data-screen' ) );
+		}
+	} );
+
+	/*
+	 * One delegated handler for everything inside the fake content column.
+	 * data-pv-go navigates. data-pv-live marks the few controls this preview
+	 * genuinely drives (the palette, the answer options, the popup, the
+	 * video) and is left alone. Everything else is a control that needs PHP,
+	 * so it says what it would have done instead of looking broken.
+	 */
+	stage.addEventListener( 'click', function ( e ) {
+		var jump = e.target.closest( '[data-pv-go]' );
+
+		if ( jump ) {
+			e.preventDefault();
+			go( jump.getAttribute( 'data-pv-go' ) );
+			return;
+		}
+
+		var control = e.target.closest( '.pv-content a, .pv-content button' );
+
+		if ( ! control || control.closest( '[data-pv-live]' ) ) {
+			return;
+		}
+
+		e.preventDefault();
+		toast( control.getAttribute( 'data-pv-note' ) || 'Static preview — this one needs WordPress to do anything.' );
+	} );
+
+	// Brand colour — the real plugin seeds these tokens from the brand_primary setting.
+	document.getElementById( 'pv-brand' ).addEventListener( 'input', function ( e ) {
+		var hex = e.target.value;
+		var r = parseInt( hex.substr( 1, 2 ), 16 );
+		var g = parseInt( hex.substr( 3, 2 ), 16 );
+		var b = parseInt( hex.substr( 5, 2 ), 16 );
+		var root = document.documentElement.style;
+
+		root.setProperty( '--ces-primary', hex );
+		root.setProperty( '--ces-primary-dark', 'rgb(' + Math.round( r * 0.8 ) + ',' + Math.round( g * 0.8 ) + ',' + Math.round( b * 0.8 ) + ')' );
+		root.setProperty( '--ces-primary-soft', 'rgba(' + r + ',' + g + ',' + b + ',0.08)' );
+		root.setProperty( '--ces-primary-border', 'rgba(' + r + ',' + g + ',' + b + ',0.28)' );
+	} );
+
+	// Phone-width toggle. Most students are on a phone, so check this view.
+	var widthBtn = document.getElementById( 'pv-width' );
+	widthBtn.addEventListener( 'click', function () {
+		var on = stage.classList.toggle( 'is-phone' );
+		widthBtn.classList.toggle( 'is-on', on );
+		widthBtn.textContent = on ? 'Desktop width' : 'Phone width';
+	} );
+
+	// Exam palette: 40 cells in mixed states, and the collapse toggle.
+	var grid = document.getElementById( 'pv-pal-grid' );
+	if ( grid ) {
+		var flagged = { 7: 1, 19: 1, 26: 1 };
+		for ( var i = 1; i <= 40; i++ ) {
+			var cell = document.createElement( 'button' );
+			var cls = [ 'ces-cbt__pal' ];
+
+			cls.push( i <= 12 ? 'is-answered' : 'is-unanswered' );
+			if ( flagged[ i ] ) { cls.push( 'is-flagged' ); }
+			if ( i === 13 ) { cls.push( 'is-current' ); }
+
+			cell.type = 'button';
+			cell.className = cls.join( ' ' );
+			cell.textContent = String( i );
+			cell.setAttribute( 'aria-label', 'Question ' + i );
+			grid.appendChild( cell );
+		}
+
+		var palToggle = document.getElementById( 'pv-pal-toggle' );
+		var pal = document.getElementById( 'pv-pal' );
+		palToggle.addEventListener( 'click', function () {
+			var open = pal.classList.toggle( 'is-open' );
+			palToggle.setAttribute( 'aria-expanded', open ? 'true' : 'false' );
+		} );
+	}
+
+	// Radio options: mirror the is-selected painting cbt-exam.js does.
+	var optionList = document.querySelector( '#pv-exam-run .ces-cbt__options' );
+	if ( optionList ) {
+		optionList.addEventListener( 'change', function () {
+			Array.prototype.forEach.call( optionList.querySelectorAll( '.ces-cbt__option' ), function ( label ) {
+				var input = label.querySelector( 'input' );
+				label.classList.toggle( 'is-selected', !! ( input && input.checked ) );
+			} );
+		} );
+	}
+
+	// Quote popup: inline preview vs real fixed overlay.
+	var popup = document.getElementById( 'ces-quote-popup' );
+	var liveBtn = document.getElementById( 'pv-popup-live' );
+	if ( popup && liveBtn ) {
+		liveBtn.addEventListener( 'click', function () {
+			popup.classList.remove( 'ces-quote-popup--preview' );
+			popup.classList.add( 'is-open' );
+		} );
+
+		popup.addEventListener( 'click', function ( e ) {
+			if ( ! e.target.closest( '[data-ces-quote-close]' ) ) { return; }
+			popup.classList.add( 'ces-quote-popup--preview' );
+		} );
+	}
+}());
+</script>
+
+</body>
+</html>

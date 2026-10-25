@@ -1,0 +1,1036 @@
+/**
+ * Classic EDU Suite - CBT front-end styles (handle: ces-cbt).
+ *
+ * Self-contained by design: the exam runner owns its own buttons and tokens
+ * rather than depending on `ces-base`, so an exam page loads one stylesheet
+ * and nothing else. `--ces-primary` is seeded inline from the brand setting by
+ * `CES_Cbt_Shortcode::enqueue_style()`.
+ *
+ * Mobile-first, and that is not a slogan here: most students sit these papers
+ * on a phone, one-handed, on a cramped screen. So the status bar is sticky and
+ * compact, options are full-width targets at least 44px tall, the question
+ * palette is a sheet rather than a sidebar, and nothing needs a hover to be
+ * discoverable. The desktop layout is the enhancement, not the baseline.
+ */
+
+.ces-cbt {
+	--ces-primary: #2c62cd;
+	--ces-primary-dark: #22509f;
+	--ces-primary-soft: rgba( 44, 98, 205, 0.08 );
+	--ces-surface: #ffffff;
+	--ces-surface-alt: #f8fafc;
+	--ces-text: #1f2937;
+	--ces-text-muted: #475569;
+	--ces-border: #cbd5e1;
+	--ces-muted-bg: #f1f5f9;
+	--ces-radius: 12px;
+	--ces-good: #1a7f45;
+	--ces-bad: #b42318;
+	--ces-warn: #b45309;
+
+	margin: 1.5rem 0;
+	color: var( --ces-text );
+	font-size: 1rem;
+	line-height: 1.55;
+}
+
+.ces-cbt *,
+.ces-cbt *::before,
+.ces-cbt *::after {
+	box-sizing: border-box;
+}
+
+.ces-cbt__title {
+	margin: 0 0 0.5rem;
+	font-size: 1.3rem;
+	line-height: 1.3;
+}
+
+.ces-cbt__section-title {
+	margin: 1.5rem 0 0.5rem;
+	font-size: 1.05rem;
+}
+
+.ces-cbt__intro {
+	margin: 0 0 1rem;
+}
+
+.ces-cbt__muted,
+.ces-cbt__hint,
+.ces-cbt__q-hint {
+	color: var( --ces-text-muted );
+	font-size: 0.85rem;
+}
+
+.ces-cbt__notice {
+	margin: 0.75rem 0;
+	padding: 0.75rem 1rem;
+	border: 1px solid var( --ces-border );
+	border-left-width: 4px;
+	border-left-color: var( --ces-primary );
+	border-radius: var( --ces-radius );
+	background: var( --ces-surface-alt );
+}
+
+.ces-cbt--warn .ces-cbt__notice,
+.ces-cbt__notice.is-warn {
+	border-left-color: var( --ces-warn );
+	background: #fffbeb;
+}
+
+.ces-cbt__bullets {
+	margin: 0 0 1rem;
+	padding-left: 1.25rem;
+}
+
+.ces-cbt__bullets li {
+	margin: 0 0 0.3rem;
+}
+
+.ces-cbt__instructions {
+	margin: 0 0 1.25rem;
+	padding: 1rem;
+	border: 1px solid var( --ces-border );
+	border-radius: var( --ces-radius );
+	background: var( --ces-surface-alt );
+}
+
+.ces-cbt__back {
+	display: inline-block;
+	margin: 0 0 0.75rem;
+	font-size: 0.9rem;
+}
+
+/* ------------------------------------------------------------------ */
+/* Buttons                                                            */
+/* ------------------------------------------------------------------ */
+
+.ces-cbt__btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.4rem;
+	min-height: 2.75rem;
+	padding: 0.6rem 1.1rem;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	background: var( --ces-muted-bg );
+	color: var( --ces-text );
+	font-family: inherit;
+	font-size: 0.95rem;
+	font-weight: 600;
+	line-height: 1.2;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.ces-cbt__btn:hover,
+.ces-cbt__btn:focus-visible {
+	text-decoration: none;
+}
+
+.ces-cbt__btn[disabled] {
+	opacity: 0.55;
+	cursor: default;
+}
+
+.ces-cbt__btn--primary {
+	background: var( --ces-primary );
+	color: #ffffff;
+}
+
+.ces-cbt__btn--primary:hover,
+.ces-cbt__btn--primary:focus-visible {
+	background: var( --ces-primary-dark );
+	color: #ffffff;
+}
+
+.ces-cbt__btn--ghost {
+	background: transparent;
+	border-color: var( --ces-border );
+}
+
+.ces-cbt__btn--ghost:hover,
+.ces-cbt__btn--ghost:focus-visible {
+	background: var( --ces-muted-bg );
+}
+
+.ces-cbt__btn--sm {
+	min-height: 2.25rem;
+	padding: 0.35rem 0.7rem;
+	font-size: 0.85rem;
+}
+
+.ces-cbt__btn--lg {
+	width: 100%;
+	min-height: 3.1rem;
+	font-size: 1.05rem;
+}
+
+.ces-cbt__btn--submit {
+	background: var( --ces-good );
+	color: #ffffff;
+}
+
+.ces-cbt__btn--submit:hover,
+.ces-cbt__btn--submit:focus-visible {
+	background: #15693a;
+	color: #ffffff;
+}
+
+/* ------------------------------------------------------------------ */
+/* Badges and chips                                                   */
+/* ------------------------------------------------------------------ */
+
+.ces-cbt__badge {
+	display: inline-block;
+	padding: 0.1rem 0.6rem;
+	border-radius: 999px;
+	background: var( --ces-muted-bg );
+	color: var( --ces-text );
+	font-size: 0.75rem;
+	font-weight: 700;
+	line-height: 1.7;
+	white-space: nowrap;
+}
+
+.ces-cbt__badge--pass {
+	background: #e7f7ed;
+	color: #15612c;
+}
+
+.ces-cbt__badge--fail {
+	background: #fdeceb;
+	color: #9b2226;
+}
+
+.ces-cbt__badge--muted {
+	background: var( --ces-muted-bg );
+	color: var( --ces-text-muted );
+}
+
+.ces-cbt__chips {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.35rem;
+	margin: 0 0 0.75rem;
+	padding: 0;
+	list-style: none;
+}
+
+.ces-cbt__chip {
+	display: inline-block;
+	padding: 0.15rem 0.6rem;
+	border: 1px solid var( --ces-border );
+	border-radius: 999px;
+	background: var( --ces-surface );
+	color: var( --ces-text-muted );
+	font-size: 0.78rem;
+	list-style: none;
+	text-decoration: none;
+}
+
+.ces-cbt__chips--sm .ces-cbt__chip {
+	font-size: 0.72rem;
+}
+
+/* ------------------------------------------------------------------ */
+/* Exam cards                                                         */
+/* ------------------------------------------------------------------ */
+
+.ces-cbt__grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 0.85rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+@media ( min-width: 32rem ) {
+	.ces-cbt__grid {
+		grid-template-columns: repeat( 2, minmax( 0, 1fr ) );
+	}
+}
+
+@media ( min-width: 56rem ) {
+	.ces-cbt__grid {
+		grid-template-columns: repeat( 3, minmax( 0, 1fr ) );
+	}
+}
+
+.ces-cbt__card {
+	display: flex;
+	flex-direction: column;
+	gap: 0.4rem;
+	margin: 0;
+	padding: 0 0 1rem;
+	overflow: hidden;
+	border: 1px solid var( --ces-border );
+	border-radius: 16px;
+	background: var( --ces-surface );
+	box-shadow: var( --ces-shadow, 0 1px 2px rgba( 15, 23, 42, 0.05 ) );
+	list-style: none;
+	transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.ces-cbt__card:hover,
+.ces-cbt__card:focus-within {
+	transform: translateY( -2px );
+	box-shadow: var( --ces-shadow-lift, 0 16px 32px -16px rgba( 15, 23, 42, 0.3 ) );
+}
+
+/*
+ * A shallow band of the subject artwork across the top of the card. The
+ * drawing is chosen server-side by CES_Helpers::subject_art() and lives as a
+ * custom property in ces-base.css, so there is no image to upload and no
+ * request to make. `general` doubles as the fallback for an unknown key.
+ */
+.ces-cbt__card-art {
+	display: block;
+	height: 4.75rem;
+	margin: 0 0 0.5rem;
+	background-image: var( --ces-art-general );
+	background-position: center 40%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.ces-cbt__card[data-ces-art="maths"] .ces-cbt__card-art { background-image: var( --ces-art-maths ); }
+.ces-cbt__card[data-ces-art="english"] .ces-cbt__card-art { background-image: var( --ces-art-english ); }
+.ces-cbt__card[data-ces-art="biology"] .ces-cbt__card-art { background-image: var( --ces-art-biology ); }
+.ces-cbt__card[data-ces-art="chemistry"] .ces-cbt__card-art { background-image: var( --ces-art-chemistry ); }
+.ces-cbt__card[data-ces-art="physics"] .ces-cbt__card-art { background-image: var( --ces-art-physics ); }
+.ces-cbt__card[data-ces-art="geography"] .ces-cbt__card-art { background-image: var( --ces-art-geography ); }
+.ces-cbt__card[data-ces-art="history"] .ces-cbt__card-art { background-image: var( --ces-art-history ); }
+
+/* The art band is full-bleed, so the text below it is padded instead. */
+.ces-cbt__card > :not( .ces-cbt__card-art ) {
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+
+.ces-cbt__card-title {
+	margin: 0;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1.35;
+}
+
+.ces-cbt__card-title a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.ces-cbt__card-meta {
+	color: var( --ces-text-muted );
+	font-size: 0.82rem;
+}
+
+.ces-cbt__actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin: 1rem 0 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* Tables and stats                                                   */
+/* ------------------------------------------------------------------ */
+
+.ces-cbt__table-wrap {
+	overflow-x: auto;
+	margin: 0.5rem 0 1rem;
+	-webkit-overflow-scrolling: touch;
+}
+
+.ces-cbt__table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 0.9rem;
+}
+
+.ces-cbt__table th,
+.ces-cbt__table td {
+	padding: 0.5rem 0.65rem;
+	border-bottom: 1px solid var( --ces-border );
+	text-align: left;
+	vertical-align: middle;
+}
+
+.ces-cbt__table th {
+	background: var( --ces-surface-alt );
+	font-size: 0.8rem;
+	white-space: nowrap;
+}
+
+.ces-cbt__stats {
+	display: grid;
+	grid-template-columns: repeat( 2, minmax( 0, 1fr ) );
+	gap: 0.5rem;
+	margin: 0 0 1rem;
+	padding: 0;
+	list-style: none;
+}
+
+.ces-cbt__stats--wide {
+	grid-template-columns: repeat( 2, minmax( 0, 1fr ) );
+}
+
+@media ( min-width: 40rem ) {
+	.ces-cbt__stats--wide {
+		grid-template-columns: repeat( 4, minmax( 0, 1fr ) );
+	}
+}
+
+.ces-cbt__stats li {
+	margin: 0;
+	padding: 0.6rem 0.75rem;
+	border: 1px solid var( --ces-border );
+	border-radius: 10px;
+	background: var( --ces-surface );
+	list-style: none;
+	font-size: 0.82rem;
+}
+
+.ces-cbt__stats strong {
+	display: block;
+	font-size: 1.15rem;
+	line-height: 1.25;
+}
+
+/* ------------------------------------------------------------------ */
+/* Runner: the sticky status bar                                      */
+/* ------------------------------------------------------------------ */
+
+.ces-cbt__bar {
+	position: sticky;
+	top: 0;
+	z-index: 20;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.5rem;
+	margin: 0 0 1rem;
+	padding: 0.6rem 0.75rem;
+	border: 1px solid var( --ces-border );
+	border-radius: var( --ces-radius );
+	background: var( --ces-surface );
+	box-shadow: 0 2px 10px rgba( 15, 23, 42, 0.07 );
+}
+
+.ces-cbt__bar-left,
+.ces-cbt__bar-right {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.5rem;
+	min-width: 0;
+}
+
+.ces-cbt__bar-title {
+	overflow: hidden;
+	max-width: 11rem;
+	font-size: 0.9rem;
+	font-weight: 700;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.ces-cbt__timer {
+	display: inline-flex;
+	align-items: baseline;
+	gap: 0.3rem;
+	padding: 0.25rem 0.6rem;
+	border-radius: 999px;
+	background: var( --ces-muted-bg );
+	font-variant-numeric: tabular-nums;
+}
+
+.ces-cbt__timer-label {
+	color: var( --ces-text-muted );
+	font-size: 0.7rem;
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+}
+
+.ces-cbt__timer-value {
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+/* Five minutes left, then one minute left. */
+.ces-cbt__timer.is-warn {
+	background: #fff7e6;
+	color: var( --ces-warn );
+}
+
+.ces-cbt__timer.is-low {
+	background: #fdeceb;
+	color: var( --ces-bad );
+	animation: ces-cbt-pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes ces-cbt-pulse {
+	50% {
+		opacity: 0.55;
+	}
+}
+
+@media ( prefers-reduced-motion: reduce ) {
+	.ces-cbt__timer.is-low {
+		animation: none;
+	}
+}
+
+.ces-cbt__progress {
+	color: var( --ces-text-muted );
+	font-size: 0.8rem;
+	font-variant-numeric: tabular-nums;
+	white-space: nowrap;
+}
+
+/*
+ * The save indicator. It matters that this is honest and visible: answers are
+ * queued locally and retried, so a student on a dropping connection needs to
+ * see that their answer is held rather than lost.
+ */
+.ces-cbt__save {
+	font-size: 0.75rem;
+	font-weight: 600;
+	white-space: nowrap;
+}
+
+.ces-cbt__save.is-saved {
+	color: var( --ces-good );
+}
+
+.ces-cbt__save.is-saving {
+	color: var( --ces-text-muted );
+}
+
+.ces-cbt__save.is-queued {
+	color: var( --ces-warn );
+}
+
+/* ------------------------------------------------------------------ */
+/* Runner: the question                                               */
+/* ------------------------------------------------------------------ */
+
+.ces-cbt__question {
+	margin: 0 0 1rem;
+	padding: 1rem;
+	border: 1px solid var( --ces-border );
+	border-radius: var( --ces-radius );
+	background: var( --ces-surface );
+}
+
+.ces-cbt__q-head {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.5rem;
+	margin: 0 0 0.6rem;
+}
+
+.ces-cbt__q-number {
+	font-size: 0.85rem;
+	font-weight: 700;
+}
+
+.ces-cbt__q-topic {
+	color: var( --ces-text-muted );
+	font-size: 0.78rem;
+}
+
+.ces-cbt__q-tools {
+	display: flex;
+	gap: 0.4rem;
+	margin-left: auto;
+}
+
+.ces-cbt__q-body {
+	margin: 0 0 0.85rem;
+	font-size: 1.02rem;
+}
+
+.ces-cbt__q-body p:last-child {
+	margin-bottom: 0;
+}
+
+.ces-cbt__q-image,
+.ces-cbt__review-image,
+.ces-cbt__option-image {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin: 0 0 0.75rem;
+	border: 1px solid var( --ces-border );
+	border-radius: 8px;
+}
+
+.ces-cbt__option-image {
+	max-width: 8rem;
+	margin: 0.4rem 0 0;
+}
+
+.ces-cbt__flag.is-on {
+	background: #fff7e6;
+	border-color: #e6cf8b;
+	color: var( --ces-warn );
+}
+
+/* ------------------------------------------------------------------ */
+/* Runner: options                                                    */
+/* ------------------------------------------------------------------ */
+
+.ces-cbt__options {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.ces-cbt__option {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.6rem;
+	min-height: 2.75rem;
+	margin: 0;
+	padding: 0.7rem 0.85rem;
+	border: 1px solid var( --ces-border );
+	border-radius: 10px;
+	background: var( --ces-surface );
+	cursor: pointer;
+}
+
+.ces-cbt__option:hover {
+	background: var( --ces-surface-alt );
+}
+
+/* The native control stays in the layout for keyboard and screen readers. */
+.ces-cbt__option-input {
+	flex: 0 0 auto;
+	width: 1.15rem;
+	height: 1.15rem;
+	margin: 0.15rem 0 0;
+}
+
+.ces-cbt__option-key {
+	flex: 0 0 auto;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 1.6rem;
+	height: 1.6rem;
+	border-radius: 999px;
+	background: var( --ces-muted-bg );
+	font-size: 0.8rem;
+	font-weight: 700;
+}
+
+.ces-cbt__option-text {
+	flex: 1 1 auto;
+	min-width: 0;
+}
+
+.ces-cbt__option.is-selected {
+	border-color: var( --ces-primary );
+	background: var( --ces-primary-soft );
+	box-shadow: inset 0 0 0 1px var( --ces-primary );
+}
+
+.ces-cbt__option.is-selected .ces-cbt__option-key {
+	background: var( --ces-primary );
+	color: #ffffff;
+}
+
+.ces-cbt__option:focus-within {
+	outline: 2px solid var( --ces-primary );
+	outline-offset: 2px;
+}
+
+/* ------------------------------------------------------------------ */
+/* Runner: navigation and palette                                     */
+/* ------------------------------------------------------------------ */
+
+.ces-cbt__nav {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.5rem;
+	margin: 1rem 0;
+}
+
+.ces-cbt__nav .ces-cbt__btn--submit {
+	margin-left: auto;
+}
+
+.ces-cbt__palette {
+	margin: 0 0 1rem;
+	padding: 0;
+	border: 1px solid var( --ces-border );
+	border-radius: var( --ces-radius );
+	background: var( --ces-surface );
+	max-height: 0;
+	overflow: hidden;
+	border-width: 0;
+}
+
+.ces-cbt__palette.is-open {
+	max-height: none;
+	padding: 0.85rem;
+	border-width: 1px;
+}
+
+.ces-cbt__palette-grid {
+	display: grid;
+	grid-template-columns: repeat( auto-fill, minmax( 2.4rem, 1fr ) );
+	gap: 0.35rem;
+}
+
+.ces-cbt__pal {
+	min-height: 2.4rem;
+	padding: 0.3rem;
+	border: 1px solid var( --ces-border );
+	border-radius: 8px;
+	background: var( --ces-surface );
+	color: var( --ces-text );
+	font-family: inherit;
+	font-size: 0.85rem;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.ces-cbt__pal.is-answered {
+	background: #e7f7ed;
+	border-color: #a7e3b4;
+	color: #15612c;
+}
+
+.ces-cbt__pal.is-flagged {
+	background: #fff7e6;
+	border-color: #e6cf8b;
+	color: var( --ces-warn );
+}
+
+.ces-cbt__pal.is-unanswered {
+	background: var( --ces-surface );
+	color: var( --ces-text-muted );
+}
+
+.ces-cbt__pal.is-current {
+	outline: 2px solid var( --ces-primary );
+	outline-offset: 1px;
+}
+
+.ces-cbt__legend {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+	margin: 0.75rem 0 0;
+	padding: 0;
+	list-style: none;
+	color: var( --ces-text-muted );
+	font-size: 0.75rem;
+}
+
+.ces-cbt__legend-item {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.3rem;
+	margin: 0;
+	list-style: none;
+}
+
+.ces-cbt__legend-item::before {
+	content: "";
+	display: inline-block;
+	width: 0.7rem;
+	height: 0.7rem;
+	border: 1px solid var( --ces-border );
+	border-radius: 3px;
+}
+
+.ces-cbt__legend-item.is-answered::before {
+	background: #e7f7ed;
+	border-color: #a7e3b4;
+}
+
+.ces-cbt__legend-item.is-flagged::before {
+	background: #fff7e6;
+	border-color: #e6cf8b;
+}
+
+.ces-cbt__legend-item.is-unanswered::before {
+	background: var( --ces-surface );
+}
+
+/* ------------------------------------------------------------------ */
+/* Runner: modal and lockdown warning                                 */
+/* ------------------------------------------------------------------ */
+
+.ces-cbt__modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100000;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	padding: 1rem;
+	background: rgba( 15, 23, 42, 0.6 );
+}
+
+.ces-cbt__modal.is-open {
+	display: flex;
+}
+
+.ces-cbt__modal-box {
+	width: 100%;
+	max-width: 26rem;
+	max-height: 85vh;
+	overflow-y: auto;
+	padding: 1.25rem;
+	border-radius: var( --ces-radius );
+	background: var( --ces-surface );
+	box-shadow: 0 18px 50px rgba( 15, 23, 42, 0.3 );
+}
+
+.ces-cbt__modal-title {
+	margin: 0 0 0.5rem;
+	font-size: 1.1rem;
+}
+
+.ces-cbt__modal-body {
+	margin: 0 0 1rem;
+	font-size: 0.95rem;
+}
+
+.ces-cbt__modal-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	justify-content: flex-end;
+}
+
+/*
+ * The tab-switch warning. A deterrent, not proctoring — it says plainly that
+ * leaving was noticed rather than pretending to lock the device down.
+ */
+.ces-cbt__warning {
+	margin: 0 0 1rem;
+	padding: 0.75rem 1rem;
+	border: 1px solid #e6cf8b;
+	border-left-width: 4px;
+	border-radius: var( --ces-radius );
+	background: #fffbeb;
+	color: #7a5c00;
+	font-size: 0.9rem;
+}
+
+/* ------------------------------------------------------------------ */
+/* Results and review                                                 */
+/* ------------------------------------------------------------------ */
+
+.ces-cbt__scorecard {
+	position: relative;
+	overflow: hidden;
+	margin: 0 0 1.25rem;
+	padding: 1.5rem 1.25rem;
+	border: 1px solid var( --ces-border );
+	border-radius: 18px;
+	background: var( --ces-surface-alt );
+	box-shadow: var( --ces-shadow, 0 1px 2px rgba( 15, 23, 42, 0.05 ) );
+	text-align: center;
+}
+
+.ces-cbt__scorecard > * {
+	position: relative;
+	z-index: 1;
+}
+
+/*
+ * A pass is worth celebrating, so the card picks up a soft green wash and a
+ * confetti texture. A fail stays calm and plain on purpose — a student who
+ * just missed the pass mark does not need decoration, and the review list
+ * below is where the useful part is.
+ */
+.ces-cbt__scorecard.is-pass {
+	border-color: rgba( 22, 163, 74, 0.35 );
+	background:
+		var( --ces-pattern-confetti ) repeat,
+		radial-gradient( circle at 50% 0%, #e7f7ee 0%, var( --ces-surface-alt ) 70% );
+	background-size: 90px 90px, auto;
+}
+
+.ces-cbt__score {
+	display: block;
+	font-size: 2.9rem;
+	font-weight: 800;
+	line-height: 1.1;
+}
+
+.ces-cbt__scorecard.is-pass .ces-cbt__score,
+.ces-cbt__verdict.is-pass {
+	color: var( --ces-good );
+}
+
+.ces-cbt__scorecard.is-fail .ces-cbt__score,
+.ces-cbt__verdict.is-fail {
+	color: var( --ces-bad );
+}
+
+.ces-cbt__verdict {
+	display: block;
+	margin-top: 0.25rem;
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+.ces-cbt__review {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.ces-cbt__review-item {
+	margin: 0 0 0.85rem;
+	padding: 1rem;
+	border: 1px solid var( --ces-border );
+	border-left-width: 4px;
+	border-radius: var( --ces-radius );
+	background: var( --ces-surface );
+	list-style: none;
+}
+
+.ces-cbt__review-item.is-correct {
+	border-left-color: var( --ces-good );
+}
+
+.ces-cbt__review-item.is-wrong {
+	border-left-color: var( --ces-bad );
+}
+
+.ces-cbt__review-meta {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.5rem;
+	margin: 0 0 0.5rem;
+	color: var( --ces-text-muted );
+	font-size: 0.8rem;
+}
+
+.ces-cbt__review-body {
+	margin: 0 0 0.6rem;
+}
+
+.ces-cbt__review-options {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.ces-cbt__review-option {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.5rem;
+	margin: 0 0 0.3rem;
+	padding: 0.45rem 0.6rem;
+	border: 1px solid transparent;
+	border-radius: 8px;
+	background: var( --ces-surface-alt );
+	list-style: none;
+	font-size: 0.92rem;
+}
+
+/* The right answer, and what the student actually chose. */
+.ces-cbt__review-option.is-right {
+	border-color: #a7e3b4;
+	background: #e7f7ed;
+}
+
+.ces-cbt__review-option.is-given {
+	border-color: #eba0a3;
+	background: #fdeceb;
+}
+
+.ces-cbt__review-option.is-right.is-given {
+	border-color: #a7e3b4;
+	background: #e7f7ed;
+}
+
+.ces-cbt__option-key {
+	font-variant-numeric: tabular-nums;
+}
+
+.ces-cbt__explanation {
+	margin: 0.6rem 0 0;
+	padding: 0.65rem 0.85rem;
+	border-radius: 8px;
+	background: var( --ces-primary-soft );
+	font-size: 0.9rem;
+}
+
+/* ------------------------------------------------------------------ */
+/* Maths                                                              */
+/* ------------------------------------------------------------------ */
+
+/*
+ * Long formulae scroll inside their own box rather than widening the page.
+ * The plugin ships no renderer; this just makes room for one.
+ */
+.ces-math {
+	overflow-x: auto;
+	max-width: 100%;
+}
+
+/* ------------------------------------------------------------------ */
+/* Wider screens                                                      */
+/* ------------------------------------------------------------------ */
+
+@media ( min-width: 48rem ) {
+	.ces-cbt__bar-title {
+		max-width: 22rem;
+	}
+
+	.ces-cbt__question {
+		padding: 1.5rem;
+	}
+
+	.ces-cbt__q-body {
+		font-size: 1.08rem;
+	}
+
+	.ces-cbt__stats {
+		grid-template-columns: repeat( 4, minmax( 0, 1fr ) );
+	}
+}
+
+/* ------------------------------------------------------------------ */
+/* Print: a paper copy of a result is a real request from students.   */
+/* ------------------------------------------------------------------ */
+
+@media print {
+	.ces-cbt__bar,
+	.ces-cbt__nav,
+	.ces-cbt__palette,
+	.ces-cbt__q-tools,
+	.ces-cbt__actions,
+	.ces-cbt__modal {
+		display: none !important;
+	}
+
+	.ces-cbt__review-item,
+	.ces-cbt__question {
+		break-inside: avoid;
+		border-color: #999;
+	}
+}

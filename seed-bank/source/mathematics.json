@@ -1,0 +1,855 @@
+{
+  "_note": "Original practice items written for the Classic EDU Suite CBT bank. Not reproduced from any past paper. Syllabus-aligned to JAMB Mathematics.",
+  "questions": [
+    {
+      "question": "Convert 101101₂ to a number in base ten.",
+      "type": "single",
+      "options": [
+        "37",
+        "45",
+        "51",
+        "43"
+      ],
+      "correct": "B",
+      "explanation": "32 + 0 + 8 + 4 + 0 + 1 = 45.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Number Bases",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Simplify 2/3 + 1/4 − 1/2.",
+      "type": "single",
+      "options": [
+        "5/12",
+        "7/12",
+        "1/12",
+        "11/12"
+      ],
+      "correct": "A",
+      "explanation": "Using an LCM of 12: (8 + 3 − 6)/12 = 5/12.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Fractions",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Simplify (2⁵ × 2⁻³) ÷ 2⁴.",
+      "type": "single",
+      "options": [
+        "2",
+        "1/2",
+        "1/4",
+        "4"
+      ],
+      "correct": "C",
+      "explanation": "Add and subtract the indices: 2^(5 − 3 − 4) = 2⁻² = 1/4.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Indices",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "If log₁₀2 = 0.3010, find log₁₀8.",
+      "type": "single",
+      "options": [
+        "0.9030",
+        "0.6020",
+        "0.2408",
+        "1.2040"
+      ],
+      "correct": "A",
+      "explanation": "8 = 2³, so log₁₀8 = 3 log₁₀2 = 3 × 0.3010 = 0.9030.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Logarithms",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Simplify √75 − √12.",
+      "type": "single",
+      "options": [
+        "2√3",
+        "7√3",
+        "3√3",
+        "√63"
+      ],
+      "correct": "C",
+      "explanation": "√75 = 5√3 and √12 = 2√3, so the difference is 3√3.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Surds",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "In a class of 40 students, 25 offer Mathematics, 20 offer Physics and 8 offer neither subject. How many students offer both subjects?",
+      "type": "single",
+      "options": [
+        "12",
+        "13",
+        "5",
+        "7"
+      ],
+      "correct": "B",
+      "explanation": "Students offering at least one subject = 40 − 8 = 32. Both = 25 + 20 − 32 = 13.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Sets",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Solve the equation x² − 5x + 6 = 0.",
+      "type": "single",
+      "options": [
+        "2 and 3",
+        "1 and 5",
+        "1 and 6",
+        "−2 and −3"
+      ],
+      "correct": "A",
+      "explanation": "(x − 2)(x − 3) = 0, so x = 2 or x = 3.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Quadratic Equations",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Solve the simultaneous equations 2x + y = 7 and x − y = 2.",
+      "type": "single",
+      "options": [
+        "x = 2, y = 3",
+        "x = 4, y = −1",
+        "x = 3, y = 1",
+        "x = 1, y = 3"
+      ],
+      "correct": "C",
+      "explanation": "Adding the equations gives 3x = 9, so x = 3 and y = 1.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Simultaneous Equations",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Find the range of values of x for which 3x − 4 < 2x + 1.",
+      "type": "single",
+      "options": [
+        "x < 5",
+        "x < −5",
+        "x > −5",
+        "x > 5"
+      ],
+      "correct": "A",
+      "explanation": "Subtract 2x from both sides: x − 4 < 1, so x < 5.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Inequalities",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "y varies inversely as the square of x. If y = 4 when x = 3, find y when x = 6.",
+      "type": "single",
+      "options": [
+        "16",
+        "1",
+        "2",
+        "8"
+      ],
+      "correct": "B",
+      "explanation": "y = k/x², so k = 4 × 9 = 36. When x = 6, y = 36/36 = 1.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Variation",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Find the 10th term of the arithmetic progression 3, 7, 11, 15, …",
+      "type": "single",
+      "options": [
+        "43",
+        "37",
+        "40",
+        "39"
+      ],
+      "correct": "D",
+      "explanation": "a = 3, d = 4. Tₙ = a + (n − 1)d = 3 + 9 × 4 = 39.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Sequences and Series",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Find the sum to infinity of the series 1 + 1/3 + 1/9 + …",
+      "type": "single",
+      "options": [
+        "3",
+        "1",
+        "2/3",
+        "3/2"
+      ],
+      "correct": "D",
+      "explanation": "S∞ = a/(1 − r) = 1/(1 − 1/3) = 3/2.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Sequences and Series",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Solve log₂x = 5.",
+      "type": "single",
+      "options": [
+        "25",
+        "32",
+        "64",
+        "10"
+      ],
+      "correct": "B",
+      "explanation": "x = 2⁵ = 32.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Logarithms",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Find the simple interest on ₦25,000 for 3 years at 8% per annum.",
+      "type": "single",
+      "options": [
+        "₦7,500",
+        "₦6,000",
+        "₦2,000",
+        "₦600"
+      ],
+      "correct": "B",
+      "explanation": "I = PRT/100 = 25,000 × 8 × 3 / 100 = ₦6,000.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Commercial Arithmetic",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A trader bought a bag of rice for ₦4,000 and sold it for ₦5,000. Find the percentage profit.",
+      "type": "single",
+      "options": [
+        "10%",
+        "80%",
+        "20%",
+        "25%"
+      ],
+      "correct": "D",
+      "explanation": "Profit = ₦1,000. Percentage profit = 1,000/4,000 × 100 = 25%.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Commercial Arithmetic",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Share ₦7,200 between Ada and Bola in the ratio 5:4. How much does Ada receive?",
+      "type": "single",
+      "options": [
+        "₦3,600",
+        "₦4,500",
+        "₦4,000",
+        "₦3,200"
+      ],
+      "correct": "C",
+      "explanation": "Ada's share = 5/9 × 7,200 = ₦4,000.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Ratio and Proportion",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Find the area of a circle of radius 7 cm. [Take π = 22/7]",
+      "type": "single",
+      "options": [
+        "308 cm²",
+        "44 cm²",
+        "154 cm²",
+        "22 cm²"
+      ],
+      "correct": "C",
+      "explanation": "A = πr² = 22/7 × 7 × 7 = 154 cm².",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Mensuration",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Find the volume of a cylinder of radius 3.5 cm and height 10 cm. [Take π = 22/7]",
+      "type": "single",
+      "options": [
+        "110 cm³",
+        "38.5 cm³",
+        "770 cm³",
+        "385 cm³"
+      ],
+      "correct": "D",
+      "explanation": "V = πr²h = 22/7 × 12.25 × 10 = 385 cm³.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Mensuration",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "A ladder 13 m long leans against a vertical wall with its foot 5 m from the wall. How far up the wall does the ladder reach?",
+      "type": "single",
+      "options": [
+        "8 m",
+        "12 m",
+        "18 m",
+        "14 m"
+      ],
+      "correct": "B",
+      "explanation": "By Pythagoras, height = √(13² − 5²) = √144 = 12 m.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Pythagoras Theorem",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "In a right-angled triangle, the side opposite angle θ is 3 cm and the hypotenuse is 5 cm. Find sin θ.",
+      "type": "single",
+      "options": [
+        "4/5",
+        "3/5",
+        "5/3",
+        "3/4"
+      ],
+      "correct": "B",
+      "explanation": "sin θ = opposite/hypotenuse = 3/5.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Trigonometry",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Evaluate sin 30° + cos 60°.",
+      "type": "single",
+      "options": [
+        "1",
+        "√3/2",
+        "0",
+        "1/2"
+      ],
+      "correct": "A",
+      "explanation": "sin 30° = 1/2 and cos 60° = 1/2, so the sum is 1.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Trigonometry",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The angles of a triangle are in the ratio 2:3:5. Find the largest angle.",
+      "type": "single",
+      "options": [
+        "36°",
+        "54°",
+        "90°",
+        "72°"
+      ],
+      "correct": "C",
+      "explanation": "The parts total 10, so the largest angle = 5/10 × 180° = 90°.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Plane Geometry",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Find the sum of the interior angles of a hexagon.",
+      "type": "single",
+      "options": [
+        "1080°",
+        "720°",
+        "540°",
+        "900°"
+      ],
+      "correct": "B",
+      "explanation": "(n − 2) × 180° = (6 − 2) × 180° = 720°.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Plane Geometry",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "An arc of a circle subtends an angle of 100° at the centre. What angle does the same arc subtend at the circumference?",
+      "type": "single",
+      "options": [
+        "50°",
+        "25°",
+        "200°",
+        "100°"
+      ],
+      "correct": "A",
+      "explanation": "The angle at the centre is twice the angle at the circumference, so 100°/2 = 50°.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Circle Theorems",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Find the distance between the points (1, 2) and (4, 6).",
+      "type": "single",
+      "options": [
+        "25",
+        "√7",
+        "5",
+        "7"
+      ],
+      "correct": "C",
+      "explanation": "d = √((4 − 1)² + (6 − 2)²) = √(9 + 16) = √25 = 5.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Coordinate Geometry",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Find the gradient of the line joining the points (2, 3) and (5, 9).",
+      "type": "single",
+      "options": [
+        "1/2",
+        "3",
+        "6",
+        "2"
+      ],
+      "correct": "D",
+      "explanation": "Gradient = (9 − 3)/(5 − 2) = 6/3 = 2.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Coordinate Geometry",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Find the equation of the straight line of gradient 2 which passes through the point (0, 3).",
+      "type": "single",
+      "options": [
+        "y = 2 − 3x",
+        "y = 3x + 2",
+        "y = 2x + 3",
+        "y = 2x − 3"
+      ],
+      "correct": "C",
+      "explanation": "With gradient m = 2 and intercept c = 3, y = mx + c gives y = 2x + 3.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Coordinate Geometry",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Differentiate y = 3x³ − 2x + 5 with respect to x.",
+      "type": "single",
+      "options": [
+        "6x² − 2",
+        "9x² − 2",
+        "9x² − 2x",
+        "x⁴ − x² + 5x"
+      ],
+      "correct": "B",
+      "explanation": "Differentiating term by term: 9x² − 2 + 0.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Differentiation",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "If y = x² + 3x, find dy/dx when x = 2.",
+      "type": "single",
+      "options": [
+        "4",
+        "5",
+        "7",
+        "10"
+      ],
+      "correct": "C",
+      "explanation": "dy/dx = 2x + 3, which is 2(2) + 3 = 7 at x = 2.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Differentiation",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Evaluate ∫(2x + 3)dx.",
+      "type": "single",
+      "options": [
+        "x² + 3x + c",
+        "2x² + 3x + c",
+        "x² + 3 + c",
+        "2 + 3x + c"
+      ],
+      "correct": "A",
+      "explanation": "Integrating term by term gives x² + 3x + c.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Integration",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Evaluate the definite integral of 3x² with respect to x from x = 0 to x = 1.",
+      "type": "single",
+      "options": [
+        "1",
+        "0",
+        "3",
+        "1/3"
+      ],
+      "correct": "A",
+      "explanation": "∫3x²dx = x³, and [x³] from 0 to 1 = 1 − 0 = 1.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Integration",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Find the value of x for which y = x² − 6x + 5 has a minimum value.",
+      "type": "single",
+      "options": [
+        "−3",
+        "3",
+        "5",
+        "6"
+      ],
+      "correct": "B",
+      "explanation": "dy/dx = 2x − 6 = 0 gives x = 3, and d²y/dx² = 2 > 0, so it is a minimum.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Differentiation",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Find the mean of 4, 7, 9, 12 and 8.",
+      "type": "single",
+      "options": [
+        "8",
+        "9",
+        "7",
+        "10"
+      ],
+      "correct": "A",
+      "explanation": "Sum = 40 and there are 5 values, so the mean is 40/5 = 8.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Statistics",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Find the median of 3, 7, 2, 9, 5 and 11.",
+      "type": "single",
+      "options": [
+        "7",
+        "9",
+        "6",
+        "5"
+      ],
+      "correct": "C",
+      "explanation": "In order: 2, 3, 5, 7, 9, 11. The median is (5 + 7)/2 = 6.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Statistics",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Find the mode of 2, 3, 3, 4, 5, 3 and 6.",
+      "type": "single",
+      "options": [
+        "4",
+        "3",
+        "5",
+        "2"
+      ],
+      "correct": "B",
+      "explanation": "3 appears three times, more often than any other value.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Statistics",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Find the range of the set of numbers 12, 5, 19, 7 and 3.",
+      "type": "single",
+      "options": [
+        "14",
+        "19",
+        "22",
+        "16"
+      ],
+      "correct": "D",
+      "explanation": "Range = highest − lowest = 19 − 3 = 16.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Statistics",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A bag contains 4 red and 6 white balls. One ball is picked at random. What is the probability that it is white?",
+      "type": "single",
+      "options": [
+        "1/2",
+        "2/3",
+        "2/5",
+        "3/5"
+      ],
+      "correct": "D",
+      "explanation": "P(white) = 6/10 = 3/5.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Probability",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "A fair die is thrown once. What is the probability of obtaining a prime number?",
+      "type": "single",
+      "options": [
+        "1/2",
+        "2/3",
+        "1/6",
+        "1/3"
+      ],
+      "correct": "A",
+      "explanation": "The primes on a die are 2, 3 and 5, so P = 3/6 = 1/2.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Probability",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "In how many ways can 5 pupils be seated in a row of 5 seats?",
+      "type": "single",
+      "options": [
+        "720",
+        "25",
+        "60",
+        "120"
+      ],
+      "correct": "D",
+      "explanation": "5! = 5 × 4 × 3 × 2 × 1 = 120.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Permutations and Combinations",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "In how many ways can 3 prefects be chosen from 7 students?",
+      "type": "single",
+      "options": [
+        "35",
+        "21",
+        "210",
+        "42"
+      ],
+      "correct": "A",
+      "explanation": "⁷C₃ = 7!/(3!4!) = 35.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Permutations and Combinations",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Find the standard deviation of 2, 4, 4, 4, 5, 5, 7 and 9.",
+      "type": "single",
+      "options": [
+        "4",
+        "5",
+        "2.5",
+        "2"
+      ],
+      "correct": "D",
+      "explanation": "The mean is 5 and the squared deviations total 32, so the variance is 32/8 = 4 and the standard deviation is √4 = 2.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Statistics",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "A man walks 4 km due north and then 3 km due east. How far is he from his starting point?",
+      "type": "single",
+      "options": [
+        "1 km",
+        "12 km",
+        "7 km",
+        "5 km"
+      ],
+      "correct": "D",
+      "explanation": "The journey forms a right-angled triangle: √(4² + 3²) = 5 km.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Bearings",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Evaluate 11₂ + 101₂, leaving your answer in base two.",
+      "type": "single",
+      "options": [
+        "111₂",
+        "1100₂",
+        "110₂",
+        "1000₂"
+      ],
+      "correct": "D",
+      "explanation": "In base ten, 3 + 5 = 8, and 8 in base two is 1000₂.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Number Bases",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "In modulo 7 arithmetic, find the value of 5 + 6.",
+      "type": "single",
+      "options": [
+        "4",
+        "11",
+        "2",
+        "1"
+      ],
+      "correct": "A",
+      "explanation": "5 + 6 = 11, and 11 = 7 + 4, so the remainder modulo 7 is 4.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Modular Arithmetic",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Find the determinant of the 2 × 2 matrix with first row (3, 2) and second row (4, 5).",
+      "type": "single",
+      "options": [
+        "23",
+        "−7",
+        "14",
+        "7"
+      ],
+      "correct": "D",
+      "explanation": "Determinant = (3 × 5) − (2 × 4) = 15 − 8 = 7.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Matrices",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Simplify (x² − 9)/(x − 3), where x ≠ 3.",
+      "type": "single",
+      "options": [
+        "3 − x",
+        "x − 3",
+        "x + 3",
+        "x² − 3"
+      ],
+      "correct": "C",
+      "explanation": "x² − 9 = (x − 3)(x + 3), and the factor (x − 3) cancels.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Algebraic Fractions",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Factorise 6x² + 5x − 6 completely.",
+      "type": "single",
+      "options": [
+        "(3x − 3)(2x + 2)",
+        "(3x − 2)(2x + 3)",
+        "(3x + 2)(2x − 3)",
+        "(6x − 1)(x + 6)"
+      ],
+      "correct": "B",
+      "explanation": "Expanding (3x − 2)(2x + 3) gives 6x² + 9x − 4x − 6 = 6x² + 5x − 6.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Factorisation",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The sum of two numbers is 20 and their difference is 4. Find the larger number.",
+      "type": "single",
+      "options": [
+        "10",
+        "12",
+        "16",
+        "8"
+      ],
+      "correct": "B",
+      "explanation": "Adding the two statements gives 2x = 24, so the larger number is 12.",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Word Problems",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Find the total surface area of a cube of edge 5 cm.",
+      "type": "single",
+      "options": [
+        "25 cm²",
+        "125 cm²",
+        "150 cm²",
+        "100 cm²"
+      ],
+      "correct": "C",
+      "explanation": "A cube has 6 square faces: 6 × 5² = 150 cm².",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Mensuration",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Find the area of a sector of a circle of radius 14 cm which subtends an angle of 90° at the centre. [Take π = 22/7]",
+      "type": "single",
+      "options": [
+        "154 cm²",
+        "616 cm²",
+        "308 cm²",
+        "44 cm²"
+      ],
+      "correct": "A",
+      "explanation": "Area = (90/360) × 22/7 × 14² = 1/4 × 616 = 154 cm².",
+      "subject": "Mathematics",
+      "exam_type": "JAMB",
+      "topic": "Mensuration",
+      "difficulty": "medium",
+      "marks": 1
+    }
+  ]
+}

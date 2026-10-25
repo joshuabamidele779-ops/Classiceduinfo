@@ -1,0 +1,309 @@
+/**
+ * Classic EDU Suite - CBT admin styles (handle: ces-cbt-admin).
+ *
+ * Loaded on the CBT screens and on the question/exam editors. The shared
+ * `admin/assets/admin.css` only loads on the plugin's own pages, so this file
+ * stands on its own and defines the handful of shared pieces it needs.
+ *
+ * The options repeater is the part that earns its styling: a question can
+ * carry ten options, each with a tick, a textarea and an image, and on a
+ * narrow screen that has to stay usable rather than collapsing into a
+ * scrolling mess.
+ */
+
+.ces-cbt-admin {
+	--ces-primary: #2c62cd;
+	--ces-border: #c3c4c7;
+	--ces-muted: #646970;
+}
+
+.ces-label {
+	display: block;
+	margin: 0 0 0.25rem;
+	font-weight: 600;
+}
+
+.ces-muted {
+	color: var( --ces-muted, #646970 );
+}
+
+.ces-danger {
+	color: #b32d2e;
+}
+
+.ces-danger:hover,
+.ces-danger:focus {
+	color: #8a2224;
+}
+
+.ces-multiselect {
+	width: 100%;
+	max-width: 22rem;
+}
+
+/* ------------------------------------------------------------------ */
+/* Overview cards                                                     */
+/* ------------------------------------------------------------------ */
+
+.ces-cards {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+	margin: 1rem 0;
+	padding: 0;
+	list-style: none;
+}
+
+.ces-card {
+	flex: 1 1 11rem;
+	margin: 0;
+	padding: 0.85rem 1rem;
+	border: 1px solid var( --ces-border, #c3c4c7 );
+	border-radius: 6px;
+	background: #fff;
+	list-style: none;
+}
+
+.ces-card__value {
+	display: block;
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.ces-card__label {
+	display: block;
+	margin-top: 0.15rem;
+	color: var( --ces-muted, #646970 );
+	font-size: 0.85rem;
+}
+
+/* ------------------------------------------------------------------ */
+/* Filter bar, pager, flags                                           */
+/* ------------------------------------------------------------------ */
+
+.ces-cbt-filterbar {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	gap: 0.5rem;
+	margin: 1rem 0;
+	padding: 0.75rem;
+	border: 1px solid var( --ces-border, #c3c4c7 );
+	border-radius: 6px;
+	background: #fff;
+}
+
+.ces-cbt-filterbar label {
+	display: block;
+	font-size: 0.8rem;
+	font-weight: 600;
+}
+
+.ces-cbt-pager {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.4rem;
+	margin: 1rem 0;
+}
+
+.ces-cbt-pager .page-numbers {
+	display: inline-block;
+	min-width: 1.8rem;
+	padding: 0.2rem 0.45rem;
+	border: 1px solid var( --ces-border, #c3c4c7 );
+	border-radius: 4px;
+	background: #fff;
+	text-align: center;
+	text-decoration: none;
+}
+
+.ces-cbt-pager .page-numbers.current {
+	background: var( --ces-primary, #2c62cd );
+	border-color: var( --ces-primary, #2c62cd );
+	color: #fff;
+}
+
+.ces-flag-good {
+	color: #15612c;
+	font-weight: 600;
+}
+
+.ces-flag-bad {
+	color: #b32d2e;
+	font-weight: 600;
+}
+
+/* ------------------------------------------------------------------ */
+/* Import / export                                                    */
+/* ------------------------------------------------------------------ */
+
+.ces-cbt-format,
+.ces-cbt-sample {
+	max-width: 46rem;
+	overflow-x: auto;
+	margin: 0.75rem 0;
+	padding: 0.75rem 1rem;
+	border: 1px solid var( --ces-border, #c3c4c7 );
+	border-radius: 6px;
+	background: #fbfbfc;
+	font-size: 0.9rem;
+}
+
+.ces-cbt-sample {
+	font-family: Consolas, Monaco, monospace;
+	white-space: pre;
+}
+
+.ces-import-errors {
+	max-height: 18rem;
+	overflow-y: auto;
+	margin: 0.75rem 0;
+	padding: 0.75rem 1rem 0.75rem 2rem;
+	border-left: 4px solid #b32d2e;
+	background: #fcf0f1;
+	font-size: 0.9rem;
+}
+
+.ces-import-errors li {
+	margin: 0 0 0.25rem;
+}
+
+/* ------------------------------------------------------------------ */
+/* Image fields                                                       */
+/* ------------------------------------------------------------------ */
+
+.ces-image-field {
+	margin: 0.75rem 0 0;
+}
+
+.ces-image-field__preview {
+	margin: 0 0 0.4rem;
+}
+
+.ces-image-field__preview:empty {
+	display: none;
+}
+
+.ces-image-field__preview img {
+	max-width: 100%;
+	height: auto;
+	border: 1px solid var( --ces-border, #c3c4c7 );
+	border-radius: 4px;
+	vertical-align: top;
+}
+
+/* ------------------------------------------------------------------ */
+/* Options repeater                                                   */
+/* ------------------------------------------------------------------ */
+
+.ces-options__tf[hidden],
+.ces-options__list[hidden],
+.ces-options__actions[hidden] {
+	display: none;
+}
+
+.ces-options__tf {
+	margin: 0.5rem 0 1rem;
+	padding: 0.75rem 1rem;
+	border: 1px solid var( --ces-border, #c3c4c7 );
+	border-radius: 6px;
+	background: #fbfbfc;
+}
+
+.ces-options__tf p {
+	margin: 0 0 0.35rem;
+}
+
+.ces-option {
+	display: grid;
+	grid-template-columns: 1.6rem 1.6rem minmax( 0, 1fr );
+	align-items: start;
+	gap: 0.5rem;
+	margin: 0 0 0.6rem;
+	padding: 0.6rem;
+	border: 1px solid var( --ces-border, #c3c4c7 );
+	border-radius: 6px;
+	background: #fff;
+}
+
+.ces-option__letter {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 1.6rem;
+	height: 1.6rem;
+	border-radius: 999px;
+	background: #f0f0f1;
+	color: #3c434a;
+	font-size: 0.8rem;
+	font-weight: 700;
+}
+
+.ces-option__correct {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 1.6rem;
+	margin: 0;
+}
+
+.ces-option__text {
+	grid-column: 3;
+	width: 100%;
+	min-height: 3.2rem;
+	resize: vertical;
+}
+
+/*
+ * The image controls and the remove button sit under the textarea in the
+ * third column rather than adding columns of their own, so a long option and
+ * a short one line up and the row never needs horizontal scrolling.
+ */
+.ces-option__image {
+	grid-column: 3;
+	margin: 0.35rem 0 0;
+}
+
+.ces-option__image .ces-image-field__preview img {
+	max-width: 7rem;
+}
+
+.ces-option__remove {
+	grid-column: 3;
+	justify-self: start;
+	margin: 0.2rem 0 0;
+}
+
+.ces-option__remove[disabled] {
+	color: var( --ces-muted, #646970 );
+	cursor: default;
+	text-decoration: none;
+}
+
+/* A row holding the ticked answer is worth seeing at a glance. */
+.ces-option:focus-within {
+	border-color: var( --ces-primary, #2c62cd );
+	box-shadow: 0 0 0 1px var( --ces-primary, #2c62cd );
+}
+
+.ces-options__actions {
+	margin: 0.25rem 0 0;
+}
+
+@media ( max-width: 782px ) {
+	.ces-option {
+		grid-template-columns: 1.6rem minmax( 0, 1fr );
+	}
+
+	.ces-option__correct {
+		justify-content: flex-start;
+	}
+
+	.ces-option__text,
+	.ces-option__image,
+	.ces-option__remove {
+		grid-column: 1 / -1;
+	}
+}

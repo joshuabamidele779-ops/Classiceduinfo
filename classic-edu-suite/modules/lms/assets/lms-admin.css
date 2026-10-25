@@ -1,0 +1,428 @@
+/**
+ * Classic EDU Suite - LMS admin styles (handle: ces-lms-admin).
+ *
+ * Loaded on the LMS screens and on the lesson/course editors. The shared
+ * `admin/assets/admin.css` only loads on the plugin's own pages, so this file
+ * is written to stand on its own: it defines the few shared pieces it needs
+ * rather than depending on them.
+ *
+ * Everything sits on top of core's admin styles and reuses core's `.button`,
+ * so it stays recognisable when WordPress changes its admin theme.
+ */
+
+.ces-lms-admin {
+	--ces-primary: #2c62cd;
+	--ces-border: #c3c4c7;
+	--ces-muted: #646970;
+}
+
+.ces-lms-admin .ces-sub {
+	max-width: 46rem;
+	margin: 0.25rem 0 1rem;
+	color: var( --ces-muted, #646970 );
+	font-size: 0.95rem;
+}
+
+.ces-muted {
+	color: var( --ces-muted, #646970 );
+}
+
+.ces-error {
+	color: #b32d2e;
+}
+
+/* Several small POST forms sit side by side in a table cell. */
+.ces-inline-form {
+	display: inline-block;
+	margin: 0 0.25rem 0.25rem 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* Status pills                                                       */
+/* ------------------------------------------------------------------ */
+
+.ces-pill {
+	display: inline-block;
+	padding: 0.1rem 0.55rem;
+	border: 1px solid transparent;
+	border-radius: 999px;
+	background: #f0f0f1;
+	color: #3c434a;
+	font-size: 0.75rem;
+	font-weight: 600;
+	line-height: 1.6;
+	white-space: nowrap;
+}
+
+.ces-pill--ready,
+.ces-pill--remote {
+	background: #edfaef;
+	border-color: #a7e3b4;
+	color: #15612c;
+}
+
+.ces-pill--source_only {
+	background: #fcf6e5;
+	border-color: #e6cf8b;
+	color: #7a5c00;
+}
+
+.ces-pill--queued,
+.ces-pill--processing {
+	background: #eef3fb;
+	border-color: #a9c4ec;
+	color: #1d4ea0;
+}
+
+.ces-pill--failed {
+	background: #fcf0f1;
+	border-color: #eba0a3;
+	color: #9b2226;
+}
+
+.ces-pill--none {
+	background: #f0f0f1;
+	color: #646970;
+}
+
+/* ------------------------------------------------------------------ */
+/* Fact lists and tables                                              */
+/* ------------------------------------------------------------------ */
+
+.ces-lms-facts {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem 1.75rem;
+	margin: 0 0 1rem;
+	padding: 0.75rem 1rem;
+	list-style: none;
+	border: 1px solid var( --ces-border, #c3c4c7 );
+	border-radius: 6px;
+	background: #fff;
+}
+
+.ces-lms-facts li {
+	margin: 0;
+}
+
+.ces-lms-table {
+	margin-top: 0.5rem;
+}
+
+.ces-lms-table td,
+.ces-lms-table th {
+	vertical-align: middle;
+}
+
+.ces-lms-pager {
+	margin: 1rem 0;
+}
+
+.ces-lms-pager .page-numbers {
+	display: inline-block;
+	min-width: 1.8rem;
+	padding: 0.2rem 0.45rem;
+	border: 1px solid var( --ces-border, #c3c4c7 );
+	border-radius: 4px;
+	background: #fff;
+	text-align: center;
+	text-decoration: none;
+}
+
+.ces-lms-pager .page-numbers.current {
+	background: var( --ces-primary, #2c62cd );
+	border-color: var( --ces-primary, #2c62cd );
+	color: #fff;
+}
+
+.ces-lms-files {
+	margin: 0.5rem 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+.ces-lms-files li {
+	margin: 0 0 0.25rem;
+}
+
+.ces-lms-form .ces-lms-field {
+	margin: 0 0 0.75rem;
+}
+
+/* Reused by the analytics "average reach" column. */
+.ces-progress {
+	display: block;
+	height: 8px;
+	overflow: hidden;
+	border-radius: 999px;
+	background: #e9ecf2;
+}
+
+.ces-progress__bar {
+	display: block;
+	height: 100%;
+	border-radius: 999px;
+	background: var( --ces-primary, #2c62cd );
+}
+
+/* ------------------------------------------------------------------ */
+/* Uploader                                                           */
+/* ------------------------------------------------------------------ */
+
+.ces-up {
+	margin: 0;
+}
+
+.ces-up__status {
+	margin: 0 0 0.5rem;
+}
+
+.ces-up__facts {
+	margin: 0 0 0.75rem;
+	padding: 0;
+	list-style: none;
+	font-size: 0.9rem;
+}
+
+.ces-up__facts li {
+	margin: 0 0 0.2rem;
+}
+
+.ces-up__hint,
+.ces-up__limits {
+	margin: 0.35rem 0 0;
+	color: var( --ces-muted, #646970 );
+	font-size: 0.85rem;
+}
+
+.ces-up__error {
+	margin: 0.5rem 0;
+	padding: 0.5rem 0.75rem;
+	border-left: 4px solid #b32d2e;
+	background: #fcf0f1;
+	color: #9b2226;
+	font-size: 0.9rem;
+}
+
+.ces-up__drop {
+	padding: 1.25rem 1rem;
+	border: 2px dashed var( --ces-border, #c3c4c7 );
+	border-radius: 8px;
+	background: #fbfbfc;
+	text-align: center;
+}
+
+.ces-up__drop.is-over {
+	border-color: var( --ces-primary, #2c62cd );
+	background: #eef3fb;
+}
+
+.ces-up__drop[hidden] {
+	display: none;
+}
+
+.ces-up__drop-text {
+	margin: 0 0 0.5rem;
+	color: var( --ces-muted, #646970 );
+}
+
+/*
+ * The file input is wrapped by its label, which is styled as a button. It has
+ * to stay focusable for keyboard users, so it is moved out of sight rather
+ * than hidden with `display: none`.
+ */
+.ces-up__pick {
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.ces-up__input {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect( 0, 0, 0, 0 );
+	white-space: nowrap;
+	border: 0;
+}
+
+.ces-up__pick:focus-within {
+	outline: 2px solid var( --ces-primary, #2c62cd );
+	outline-offset: 1px;
+}
+
+.ces-up__progress {
+	margin: 0.75rem 0 0;
+}
+
+.ces-up__progress[hidden] {
+	display: none;
+}
+
+.ces-up__bar {
+	height: 10px;
+	overflow: hidden;
+	border-radius: 999px;
+	background: #e9ecf2;
+}
+
+.ces-up__fill {
+	display: block;
+	width: 0;
+	height: 100%;
+	border-radius: 999px;
+	background: var( --ces-primary, #2c62cd );
+	transition: width 0.2s ease;
+}
+
+.ces-up__msg {
+	margin: 0.4rem 0 0;
+	font-size: 0.9rem;
+}
+
+.ces-up__msg [data-role="pct"] {
+	font-weight: 700;
+}
+
+.ces-up__notice {
+	margin: 0.6rem 0 0;
+	padding: 0.5rem 0.75rem;
+	border-left: 4px solid #2271b1;
+	background: #f0f6fc;
+	font-size: 0.9rem;
+}
+
+.ces-up__notice[hidden] {
+	display: none;
+}
+
+.ces-up__notice--error {
+	border-left-color: #b32d2e;
+	background: #fcf0f1;
+	color: #9b2226;
+}
+
+.ces-up__actions {
+	margin: 0.9rem 0 0;
+}
+
+.ces-up--page .ces-up__drop {
+	max-width: 38rem;
+}
+
+/* ------------------------------------------------------------------ */
+/* Course builder                                                     */
+/* ------------------------------------------------------------------ */
+
+.ces-builder__rows {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: 1px solid var( --ces-border, #c3c4c7 );
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+.ces-builder__row {
+	display: flex;
+	align-items: center;
+	gap: 0.6rem;
+	margin: 0;
+	padding: 0.5rem 0.65rem;
+	border-top: 1px solid var( --ces-border, #c3c4c7 );
+	background: #fff;
+}
+
+.ces-builder__row:first-child {
+	border-top: 0;
+}
+
+.ces-builder__move {
+	display: flex;
+	flex: 0 0 auto;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.ces-builder__btn.button {
+	min-height: 0;
+	padding: 0 0.35rem;
+	font-size: 11px;
+	line-height: 1.6;
+}
+
+.ces-builder__main {
+	flex: 1 1 auto;
+	min-width: 0;
+}
+
+.ces-builder__title {
+	display: block;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.ces-builder__meta {
+	display: block;
+	color: var( --ces-muted, #646970 );
+	font-size: 0.8rem;
+}
+
+.ces-builder__remove {
+	flex: 0 0 auto;
+	color: #b32d2e;
+}
+
+.ces-builder__empty {
+	margin: 0;
+	padding: 0.75rem;
+	border: 1px dashed var( --ces-border, #c3c4c7 );
+	border-radius: 6px;
+	color: var( --ces-muted, #646970 );
+}
+
+.ces-builder__msg {
+	min-height: 1.2em;
+	margin: 0.5rem 0;
+	color: var( --ces-muted, #646970 );
+	font-size: 0.85rem;
+}
+
+.ces-builder__msg--error {
+	color: #b32d2e;
+}
+
+.ces-builder__attach {
+	margin: 0.75rem 0 0;
+}
+
+.ces-builder__attach select {
+	max-width: 100%;
+}
+
+.ces-builder__foot {
+	margin: 0.75rem 0 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* Narrow screens: the site owner does edit on a phone.               */
+/* ------------------------------------------------------------------ */
+
+@media ( max-width: 782px ) {
+	.ces-lms-facts {
+		flex-direction: column;
+		gap: 0.35rem;
+	}
+
+	.ces-builder__row {
+		flex-wrap: wrap;
+	}
+
+	.ces-builder__main {
+		flex: 1 1 100%;
+		order: 3;
+	}
+}

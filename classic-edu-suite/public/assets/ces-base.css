@@ -1,0 +1,710 @@
+/**
+ * Classic EDU Suite - shared front-end styles (handle: ces-base).
+ *
+ * Carries the design tokens (emitted inline by CES_Assets::tokens_css() so the
+ * brand colour stays editable) plus the shared components: the dashboard
+ * frame, buttons, stat tiles, notices and the inline quote block.
+ *
+ * Mobile-first throughout: most students are on a phone. Every selector is
+ * class-scoped and prefixed `ces-`, with no bare element selectors, so this
+ * file is also safe to load inside wp-admin for the popup preview.
+ */
+
+:root {
+	--ces-primary: #2c62cd;
+	--ces-primary-dark: #22509f;
+	--ces-primary-soft: rgba( 44, 98, 205, 0.08 );
+	--ces-primary-border: rgba( 44, 98, 205, 0.28 );
+	--ces-surface: #ffffff;
+	--ces-surface-alt: #f8fafc;
+	--ces-text: #1f2937;
+	--ces-text-muted: #475569;
+	--ces-border: #cbd5e1;
+	--ces-muted-bg: #f1f5f9;
+	--ces-muted-bg-strong: #e2e8f0;
+	--ces-radius: 12px;
+	--ces-coin: #d9a300;
+	--ces-accent: #f59e0b;
+	--ces-ink: #0f172a;
+	--ces-shadow: 0 1px 2px rgba( 15, 23, 42, 0.05 ), 0 10px 24px -14px rgba( 15, 23, 42, 0.22 );
+	--ces-shadow-lift: 0 2px 4px rgba( 15, 23, 42, 0.06 ), 0 16px 32px -16px rgba( 15, 23, 42, 0.3 );
+}
+
+/* ------------------------------------------------------------------ */
+/* Artwork                                                            */
+/* ------------------------------------------------------------------ */
+
+/*
+ * Every illustration in the plugin is an inline SVG data URI declared here.
+ * That is deliberate. They ship inside this stylesheet, so there is nothing
+ * to upload to the media library, no extra HTTP request per card, nothing
+ * that breaks when a CDN is switched on later, and they stay sharp on a
+ * cheap phone screen at any size.
+ *
+ * Hash characters are percent-encoded as %23 because an unescaped # ends a
+ * url() token. Attributes use single quotes so the whole thing can sit in a
+ * double-quoted url(). Each value must stay on one line.
+ *
+ * `--ces-art-*`     16:9 subject scenes, keyed by the slug
+ *                   CES_Helpers::subject_art() returns, used as card
+ *                   artwork wherever a course or exam has no featured image.
+ * `--ces-pattern-*` Tileable textures.
+ * `--ces-icon-*`    Single-colour shapes, used through mask-image so they
+ *                   take the brand colour rather than a baked-in one.
+ */
+:root {
+	--ces-art-maths: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 90'><rect width='160' height='90' fill='%23e7efff'/><g stroke='%23c3d6f5' stroke-width='1'><path d='M0 22h160M0 45h160M0 68h160M32 0v90M64 0v90M96 0v90M128 0v90'/></g><path d='M18 76h126' stroke='%231f3f80' stroke-width='2' stroke-linecap='round'/><path d='M26 84V12' stroke='%231f3f80' stroke-width='2' stroke-linecap='round'/><path d='M26 72q30-62 62-4 16 15 32-26' fill='none' stroke='%232c62cd' stroke-width='3.5' stroke-linecap='round'/><circle cx='88' cy='68' r='4.5' fill='%23f59e0b'/><text x='102' y='32' font-family='Georgia,serif' font-size='24' font-style='italic' fill='%232c62cd' opacity='.8'>f(x)</text></svg>");
+	--ces-art-english: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 90'><rect width='160' height='90' fill='%23e6f2f7'/><path d='M22 28c18-8 36-8 58 0 22-8 40-8 58 0v38c-18-8-36-8-58 0-22-8-40-8-58 0z' fill='%23ffffff' stroke='%230e7490' stroke-width='2.5' stroke-linejoin='round'/><path d='M80 28v38' stroke='%230e7490' stroke-width='2.5'/><g stroke='%2392c4d6' stroke-width='2' stroke-linecap='round'><path d='M32 40h38M32 48h38M32 56h26M90 40h38M90 48h38M90 56h26'/></g><path d='M120 16l10 6-24 22-7 1 1-7z' fill='%23fcd34d' stroke='%23a16207' stroke-width='1.6' stroke-linejoin='round'/></svg>");
+	--ces-art-biology: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 90'><rect width='160' height='90' fill='%23e5f7ed'/><g stroke='%2315803d' stroke-width='3.5' fill='none' stroke-linecap='round'><path d='M40 8c20 14-20 24 0 37s-20 24 0 37'/><path d='M74 8c-20 14 20 24 0 37s20 24 0 37'/></g><g stroke='%2334d399' stroke-width='2.5' stroke-linecap='round'><path d='M44 18h26M42 31h30M44 45h26M42 59h30M44 72h26'/></g><circle cx='124' cy='45' r='21' fill='%23ffffff' stroke='%2315803d' stroke-width='2.5'/><circle cx='124' cy='45' r='7.5' fill='%2386efac'/><circle cx='114' cy='33' r='2.6' fill='%2315803d'/><circle cx='135' cy='54' r='2.6' fill='%2315803d'/><circle cx='117' cy='57' r='2' fill='%2315803d'/></svg>");
+	--ces-art-chemistry: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 90'><rect width='160' height='90' fill='%23f1ecfe'/><path d='M58 14h18v22l16 34a7 7 0 0 1-6.3 10H48.3A7 7 0 0 1 42 70l16-34z' fill='%23ffffff' stroke='%236d28d9' stroke-width='2.5' stroke-linejoin='round'/><path d='M50 58h34l8 12a7 7 0 0 1-6.3 10H48.3A7 7 0 0 1 42 70z' fill='%23a78bfa'/><path d='M56 14h22' stroke='%236d28d9' stroke-width='3.5' stroke-linecap='round'/><circle cx='60' cy='70' r='3.2' fill='%23ede9fe'/><circle cx='72' cy='75' r='2.2' fill='%23ede9fe'/><path d='M124 22l15 8.5v17L124 56l-15-8.5v-17z' fill='none' stroke='%236d28d9' stroke-width='2.5' stroke-linejoin='round'/><circle cx='124' cy='39' r='7' fill='none' stroke='%23a78bfa' stroke-width='2'/><path d='M112 68h24' stroke='%23a78bfa' stroke-width='2.5' stroke-linecap='round'/></svg>");
+	--ces-art-physics: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 90'><rect width='160' height='90' fill='%23fff3e4'/><g transform='translate(56 45)' stroke='%23ea580c' stroke-width='2.6' fill='none'><ellipse rx='32' ry='13'/><ellipse rx='32' ry='13' transform='rotate(60)'/><ellipse rx='32' ry='13' transform='rotate(-60)'/></g><circle cx='56' cy='45' r='6.5' fill='%23c2410c'/><circle cx='84' cy='37' r='3.6' fill='%23f59e0b'/><circle cx='34' cy='58' r='3.6' fill='%23f59e0b'/><path d='M102 50q7-16 14 0t14 0' fill='none' stroke='%23ea580c' stroke-width='2.6' stroke-linecap='round'/><path d='M102 68h32' stroke='%23fbbf24' stroke-width='2.6' stroke-linecap='round'/></svg>");
+	--ces-art-geography: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 90'><rect width='160' height='90' fill='%23e4f5f8'/><circle cx='60' cy='45' r='27' fill='%23ffffff' stroke='%230e7490' stroke-width='2.5'/><g stroke='%230891b2' stroke-width='2' fill='none'><path d='M33 45h54M60 18v54'/><ellipse cx='60' cy='45' rx='13.5' ry='27'/><path d='M39 29h42M39 61h42'/></g><g stroke='%230e7490' stroke-width='2.2' fill='none' stroke-linecap='round' opacity='.75'><path d='M100 70q16-28 48-12M106 80q15-25 44-13'/></g><path d='M126 24l7 12h-14z' fill='%2334d399' stroke='%230e7490' stroke-width='1.6'/></svg>");
+	--ces-art-history: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 90'><rect width='160' height='90' fill='%23f7f1e4'/><path d='M28 26l30-12 30 12z' fill='%23fde68a' stroke='%23a16207' stroke-width='2.5' stroke-linejoin='round'/><g stroke='%23a16207' stroke-width='2.5' fill='none' stroke-linecap='round'><path d='M34 30h48M40 30v42M52 30v42M64 30v42M76 30v42M30 76h56'/></g><rect x='104' y='28' width='38' height='36' rx='5' fill='%23ffffff' stroke='%23a16207' stroke-width='2.5'/><g stroke='%23d6a93f' stroke-width='2' stroke-linecap='round'><path d='M111 38h24M111 46h24M111 54h16'/></g></svg>");
+	--ces-art-general: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 90'><rect width='160' height='90' fill='%23ebf1fa'/><path d='M26 34c17-7 34-7 54 0 20-7 37-7 54 0v34c-17-7-34-7-54 0-20-7-37-7-54 0z' fill='%23ffffff' stroke='%232c62cd' stroke-width='2.5' stroke-linejoin='round'/><path d='M80 34v34' stroke='%232c62cd' stroke-width='2.5'/><g stroke='%23a9c3ea' stroke-width='2' stroke-linecap='round'><path d='M36 45h34M36 53h34M90 45h34M90 53h34'/></g><g transform='translate(132 20)' stroke='%23f59e0b' stroke-width='2' fill='none'><ellipse rx='14' ry='6'/><ellipse rx='14' ry='6' transform='rotate(60)'/><ellipse rx='14' ry='6' transform='rotate(-60)'/></g><circle cx='132' cy='20' r='3.4' fill='%23f59e0b'/></svg>");
+
+	--ces-pattern-science: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'><g fill='none' stroke='%23ffffff' stroke-width='1.6' stroke-linecap='round' opacity='.45'><circle cx='26' cy='28' r='7'/><ellipse cx='26' cy='28' rx='16' ry='6.5'/><ellipse cx='26' cy='28' rx='16' ry='6.5' transform='rotate(60 26 28)'/><ellipse cx='26' cy='28' rx='16' ry='6.5' transform='rotate(-60 26 28)'/><path d='M78 12h11v9l8 17a4 4 0 0 1-3.6 5.8H73.6A4 4 0 0 1 70 38l8-17z'/><path d='M8 92q7-13 14 0t14 0'/><path d='M94 70l9.5 5.5v11L94 92l-9.5-5.5v-11z'/><path d='M50 78h18M59 69v18'/></g><g fill='%23ffffff' opacity='.3'><circle cx='108' cy='34' r='2'/><circle cx='54' cy='46' r='2'/><circle cx='16' cy='62' r='2'/><circle cx='112' cy='112' r='2'/></g></svg>");
+	--ces-pattern-confetti: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='90' height='90' viewBox='0 0 90 90'><g opacity='.5'><rect x='10' y='12' width='3.4' height='9' rx='1.7' fill='%2316a34a' transform='rotate(24 11.7 16.5)'/><rect x='44' y='6' width='3.4' height='9' rx='1.7' fill='%23f59e0b' transform='rotate(-32 45.7 10.5)'/><rect x='70' y='26' width='3.4' height='9' rx='1.7' fill='%232c62cd' transform='rotate(16 71.7 30.5)'/><rect x='24' y='48' width='3.4' height='9' rx='1.7' fill='%23f59e0b' transform='rotate(-14 25.7 52.5)'/><rect x='58' y='62' width='3.4' height='9' rx='1.7' fill='%2316a34a' transform='rotate(40 59.7 66.5)'/><circle cx='84' cy='56' r='2.2' fill='%23f59e0b'/><circle cx='34' cy='78' r='2.2' fill='%232c62cd'/><circle cx='6' cy='40' r='2.2' fill='%2316a34a'/></g></svg>");
+
+	--ces-icon-coin: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000000' stroke-width='1.8' stroke-linecap='round'><circle cx='12' cy='12' r='9.2'/><path d='M12 6.6v10.8M9.4 9.1h5.2a2.6 2.6 0 0 1 0 5.2H9.4'/></svg>");
+	/* Gold variant, for the places that use the coin as a plain background
+	   image rather than through mask-image. */
+	--ces-icon-coin-gold: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23b8860b' stroke-width='2' stroke-linecap='round'><circle cx='12' cy='12' r='9.2' fill='%23fde68a'/><path d='M12 6.6v10.8M9.4 9.1h5.2a2.6 2.6 0 0 1 0 5.2H9.4'/></svg>");
+	--ces-icon-people: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000000' stroke-width='1.8' stroke-linecap='round'><circle cx='9' cy='8' r='3.4'/><path d='M3.2 20a5.8 5.8 0 0 1 11.6 0'/><circle cx='17.6' cy='9.6' r='2.6'/><path d='M15.6 20a4.6 4.6 0 0 1 5.6-4.4'/></svg>");
+	--ces-icon-compass: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000000' stroke-width='1.8' stroke-linejoin='round'><circle cx='12' cy='12' r='9.2'/><path d='M15.6 8.4l-2.2 5.2-5.2 2.2 2.2-5.2z'/></svg>");
+	--ces-icon-flask: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000000' stroke-width='1.8' stroke-linejoin='round'><path d='M9 3h6v6l4.6 9.4A2 2 0 0 1 17.8 21H6.2a2 2 0 0 1-1.8-2.6L9 9z'/><path d='M8.4 3h7.2M6.6 15h10.8'/></svg>");
+}
+
+/* ------------------------------------------------------------------ */
+/* Utilities                                                          */
+/* ------------------------------------------------------------------ */
+
+.ces-sr-only {
+	position: absolute !important;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect( 0, 0, 0, 0 );
+	white-space: nowrap;
+	border: 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* Buttons                                                            */
+/* ------------------------------------------------------------------ */
+
+.ces-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.4rem;
+	box-sizing: border-box;
+	min-height: 2.75rem;
+	padding: 0.6rem 1.1rem;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	background: var( --ces-muted-bg );
+	color: var( --ces-text );
+	font-size: 0.95rem;
+	font-weight: 600;
+	line-height: 1.2;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.ces-btn:hover,
+.ces-btn:focus-visible {
+	text-decoration: none;
+}
+
+.ces-btn--primary {
+	background: linear-gradient( 135deg, var( --ces-primary ), var( --ces-primary-dark ) );
+	color: #ffffff;
+	box-shadow: 0 6px 16px -8px var( --ces-primary );
+}
+
+.ces-btn--primary:hover,
+.ces-btn--primary:focus-visible {
+	background: var( --ces-primary-dark );
+	color: #ffffff;
+	transform: translateY( -1px );
+	box-shadow: 0 10px 22px -10px var( --ces-primary );
+}
+
+.ces-btn--whatsapp {
+	background: #25d366;
+	color: #04301a;
+}
+
+.ces-btn--whatsapp:hover,
+.ces-btn--whatsapp:focus-visible {
+	background: #1fb855;
+	color: #04301a;
+}
+
+.ces-btn--ghost {
+	background: transparent;
+	border-color: var( --ces-border );
+	color: var( --ces-text );
+}
+
+.ces-btn--ghost:hover,
+.ces-btn--ghost:focus-visible {
+	background: var( --ces-muted-bg );
+}
+
+.ces-btn--block {
+	width: 100%;
+}
+
+/* ------------------------------------------------------------------ */
+/* Notices and gates                                                  */
+/* ------------------------------------------------------------------ */
+
+.ces-notice {
+	margin: 0 0 1rem;
+	padding: 0.8rem 1rem;
+	border-left: 4px solid var( --ces-primary );
+	border-radius: 8px;
+	background: var( --ces-surface-alt );
+	color: var( --ces-text );
+	font-size: 0.92rem;
+}
+
+.ces-notice p:last-child {
+	margin-bottom: 0;
+}
+
+.ces-notice--error {
+	border-left-color: #c0392b;
+}
+
+.ces-notice--success {
+	border-left-color: #16a34a;
+}
+
+.ces-gate {
+	padding: 1.1rem;
+	border: 1px solid var( --ces-border );
+	border-radius: var( --ces-radius );
+	background: var( --ces-surface-alt );
+	text-align: center;
+}
+
+.ces-gate__message {
+	margin: 0 0 0.9rem;
+	font-weight: 600;
+}
+
+.ces-gate__action {
+	margin: 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* Login prompt                                                       */
+/* ------------------------------------------------------------------ */
+
+.ces-login {
+	box-sizing: border-box;
+	max-width: 34rem;
+	margin: 0 auto;
+	padding: 1.4rem 1.2rem;
+	border: 1px solid var( --ces-border );
+	border-radius: var( --ces-radius );
+	background: var( --ces-surface );
+}
+
+.ces-login__title {
+	margin: 0 0 0.5rem;
+	font-size: 1.3rem;
+	line-height: 1.3;
+}
+
+.ces-login__message {
+	margin: 0 0 1rem;
+	color: var( --ces-text-muted );
+}
+
+.ces-login__list {
+	margin: 0 0 1.25rem;
+	padding: 0;
+	list-style: none;
+}
+
+.ces-login__list li {
+	position: relative;
+	padding: 0 0 0 1.4rem;
+	margin: 0 0 0.5rem;
+	font-size: 0.93rem;
+}
+
+.ces-login__list li::before {
+	content: "✓";
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: var( --ces-primary );
+	font-weight: 700;
+}
+
+.ces-login__action {
+	margin: 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* Dashboard frame                                                    */
+/* ------------------------------------------------------------------ */
+
+.ces-dash {
+	--ces-dash-gap: 1rem;
+
+	box-sizing: border-box;
+	width: 100%;
+	color: var( --ces-text );
+}
+
+.ces-dash__title {
+	margin: 0 0 0.75rem;
+	font-size: 1.35rem;
+	line-height: 1.3;
+}
+
+/*
+ * Phone-first tab strip: a single horizontally scrollable row with momentum
+ * scrolling and snap points. No JavaScript, nothing wraps into a broken
+ * second line, and the active tab is scrolled into view by the browser
+ * because it is the one carrying aria-current.
+ */
+.ces-dash__nav {
+	position: relative;
+	margin: 0 0 var( --ces-dash-gap );
+	border-bottom: 1px solid var( --ces-border );
+}
+
+.ces-dash__tabs {
+	display: flex;
+	gap: 0.25rem;
+	margin: 0;
+	padding: 0 0 1px;
+	overflow-x: auto;
+	overflow-y: hidden;
+	scrollbar-width: thin;
+	-webkit-overflow-scrolling: touch;
+	scroll-snap-type: x proximity;
+	list-style: none;
+}
+
+.ces-dash__tabs::-webkit-scrollbar {
+	height: 3px;
+}
+
+.ces-dash__tabs::-webkit-scrollbar-thumb {
+	background: var( --ces-border );
+	border-radius: 3px;
+}
+
+.ces-dash__tab-item {
+	flex: 0 0 auto;
+	margin: 0;
+	scroll-snap-align: start;
+}
+
+.ces-dash__tab {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.35rem;
+	padding: 0.65rem 0.9rem;
+	border: 0;
+	border-bottom: 3px solid transparent;
+	border-radius: 8px 8px 0 0;
+	color: var( --ces-text-muted );
+	font-size: 0.92rem;
+	font-weight: 600;
+	line-height: 1.2;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.ces-dash__tab:hover,
+.ces-dash__tab:focus-visible {
+	background: var( --ces-muted-bg );
+	color: var( --ces-text );
+	text-decoration: none;
+}
+
+.ces-dash__tab[aria-current="page"] {
+	border-bottom-color: var( --ces-primary );
+	background: var( --ces-primary-soft );
+	color: var( --ces-primary );
+}
+
+.ces-dash__tab-icon {
+	font-size: 1rem;
+	line-height: 1;
+}
+
+.ces-dash__panel {
+	min-height: 6rem;
+}
+
+.ces-dash--empty {
+	padding: 1rem;
+	border: 1px dashed var( --ces-border );
+	border-radius: var( --ces-radius );
+	color: var( --ces-text-muted );
+}
+
+/* ------------------------------------------------------------------ */
+/* Overview tab                                                       */
+/* ------------------------------------------------------------------ */
+
+/*
+ * The greeting sits on a brand-coloured band textured with the science
+ * pattern: atoms, a flask, a benzene ring, a wave. The pattern is drawn in
+ * white at low opacity, so it re-tints itself for free whenever the brand
+ * colour setting changes, and the band needs no image file.
+ */
+.ces-hero {
+	position: relative;
+	overflow: hidden;
+	margin: 0 0 1.1rem;
+	padding: 1.25rem 1.1rem;
+	border-radius: 18px;
+	background-color: var( --ces-primary );
+	background-image: var( --ces-pattern-science );
+	background-repeat: repeat;
+	background-size: 120px 120px;
+	color: #ffffff;
+	box-shadow: var( --ces-shadow );
+}
+
+.ces-hero::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: linear-gradient( 110deg, var( --ces-primary-dark ) 0%, rgba( 15, 23, 42, 0 ) 70% );
+	pointer-events: none;
+}
+
+.ces-hero > * {
+	position: relative;
+	z-index: 1;
+}
+
+.ces-hero .ces-overview__greeting {
+	color: #ffffff;
+	font-size: 1.35rem;
+}
+
+.ces-hero .ces-overview__intro {
+	margin: 0;
+	color: rgba( 255, 255, 255, 0.88 );
+}
+
+/* Small "40 questions · 4-day streak" style facts under the greeting. */
+.ces-hero__facts {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+	margin: 0.8rem 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+.ces-hero__fact {
+	margin: 0;
+	padding: 0.3rem 0.65rem;
+	border: 1px solid rgba( 255, 255, 255, 0.35 );
+	border-radius: 999px;
+	background: rgba( 255, 255, 255, 0.14 );
+	font-size: 0.78rem;
+	font-weight: 600;
+	white-space: nowrap;
+}
+
+.ces-overview__greeting {
+	margin: 0 0 0.25rem;
+	font-size: 1.2rem;
+	line-height: 1.3;
+}
+
+.ces-overview__intro {
+	margin: 0 0 1rem;
+	color: var( --ces-text-muted );
+}
+
+/*
+ * Panels carry a thin brand-to-accent strip along the top edge and a large,
+ * faint piece of line art in the top-right corner. The art is applied as a
+ * mask rather than a background image so a single shape picks up whatever
+ * colour the rule asks for — the brand colour, or coin gold on the wallet.
+ */
+.ces-panel {
+	position: relative;
+	box-sizing: border-box;
+	overflow: hidden;
+	margin: 0 0 1rem;
+	padding: 1.15rem 1rem 1rem;
+	border: 1px solid var( --ces-border );
+	border-radius: 16px;
+	background: var( --ces-surface );
+	box-shadow: var( --ces-shadow );
+}
+
+.ces-panel::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 4px;
+	background: linear-gradient( 90deg, var( --ces-primary ), var( --ces-accent ) );
+}
+
+.ces-panel--wallet::before,
+.ces-panel--invite::before,
+.ces-panel--links::before {
+	content: "";
+	position: absolute;
+	top: -0.75rem;
+	right: -0.75rem;
+	width: 5.75rem;
+	height: 5.75rem;
+	opacity: 0.1;
+	background-color: var( --ces-primary );
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	pointer-events: none;
+}
+
+.ces-panel--wallet::before {
+	background-color: var( --ces-coin );
+	opacity: 0.16;
+	-webkit-mask-image: var( --ces-icon-coin );
+	mask-image: var( --ces-icon-coin );
+}
+
+.ces-panel--invite::before {
+	-webkit-mask-image: var( --ces-icon-people );
+	mask-image: var( --ces-icon-people );
+}
+
+.ces-panel--links::before {
+	-webkit-mask-image: var( --ces-icon-compass );
+	mask-image: var( --ces-icon-compass );
+}
+
+/* The quote panel gets a typographic mark instead — cheaper than any SVG. */
+.ces-panel--quote::before {
+	content: "\201C";
+	position: absolute;
+	top: -2.1rem;
+	right: 0.5rem;
+	color: var( --ces-primary );
+	opacity: 0.12;
+	font: 700 7rem/1 Georgia, "Times New Roman", serif;
+	pointer-events: none;
+}
+
+.ces-panel__title {
+	margin: 0 0 0.6rem;
+	font-size: 0.74rem;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var( --ces-text-muted );
+}
+
+.ces-stat {
+	display: flex;
+	flex-direction: column;
+	gap: 0.15rem;
+}
+
+.ces-stat__value {
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 1.1;
+	color: var( --ces-coin );
+}
+
+.ces-stat__label {
+	font-size: 0.85rem;
+	font-weight: 600;
+	color: var( --ces-text-muted );
+}
+
+.ces-stat__hint {
+	margin: 0.35rem 0 0;
+	font-size: 0.82rem;
+	color: var( --ces-text-muted );
+}
+
+.ces-stat__action {
+	margin: 0.75rem 0 0;
+}
+
+.ces-links {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 0.5rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.ces-links__item {
+	margin: 0;
+}
+
+.ces-links__link {
+	display: flex;
+	align-items: center;
+	gap: 0.6rem;
+	box-sizing: border-box;
+	width: 100%;
+	min-height: 3.1rem;
+	padding: 0.6rem 0.85rem;
+	border: 1px solid var( --ces-border );
+	border-radius: 12px;
+	background: var( --ces-surface-alt );
+	color: var( --ces-text );
+	font-weight: 600;
+	font-size: 0.93rem;
+	text-decoration: none;
+	transition: transform 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.ces-links__link:hover,
+.ces-links__link:focus-visible {
+	border-color: var( --ces-primary-border );
+	background: var( --ces-primary-soft );
+	color: var( --ces-primary );
+	text-decoration: none;
+	transform: translateY( -1px );
+}
+
+/* The icon is theme text (an emoji from the quick-link array), so this is a
+   tinted tile behind it rather than artwork of its own. */
+.ces-links__icon {
+	display: inline-flex;
+	flex: 0 0 auto;
+	align-items: center;
+	justify-content: center;
+	width: 2.1rem;
+	height: 2.1rem;
+	border-radius: 10px;
+	background: var( --ces-primary-soft );
+	font-size: 1.05rem;
+	line-height: 1;
+}
+
+.ces-invite__text {
+	margin: 0 0 0.75rem;
+	font-weight: 600;
+}
+
+.ces-invite__actions {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.ces-invite__hint {
+	margin: 0.6rem 0 0;
+	font-size: 0.8rem;
+	color: var( --ces-text-muted );
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* ------------------------------------------------------------------ */
+/* Inline quote block ([ces_quote_of_the_day], [ces_random_quote])    */
+/* ------------------------------------------------------------------ */
+
+.ces-quote-block {
+	margin: 0 0 1rem;
+	padding: 0.1rem 0 0.1rem 0.9rem;
+	border-left: 3px solid var( --ces-primary );
+}
+
+.ces-quote-block__text {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 1.02rem;
+	line-height: 1.5;
+	quotes: none;
+}
+
+.ces-quote-block__author {
+	margin: 0.4rem 0 0;
+	font-size: 0.85rem;
+	font-weight: 600;
+	font-style: normal;
+	color: var( --ces-text-muted );
+}
+
+/* ------------------------------------------------------------------ */
+/* Tablet and up                                                      */
+/* ------------------------------------------------------------------ */
+
+@media ( min-width: 600px ) {
+
+	.ces-dash {
+		--ces-dash-gap: 1.25rem;
+	}
+
+	.ces-links {
+		grid-template-columns: repeat( 2, minmax( 0, 1fr ) );
+	}
+
+	.ces-invite__actions {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.ces-invite__actions .ces-btn {
+		flex: 1 1 11rem;
+	}
+
+	.ces-overview__grid {
+		display: grid;
+		grid-template-columns: repeat( 2, minmax( 0, 1fr ) );
+		gap: 1rem;
+		align-items: start;
+	}
+
+	.ces-overview__grid .ces-panel {
+		margin: 0;
+	}
+}
+
+@media ( min-width: 960px ) {
+
+	.ces-overview__grid {
+		grid-template-columns: repeat( 3, minmax( 0, 1fr ) );
+	}
+}
+
+/* ------------------------------------------------------------------ */
+/* Motion preferences                                                 */
+/* ------------------------------------------------------------------ */
+
+@media ( prefers-reduced-motion: reduce ) {
+
+	.ces-dash__tabs {
+		scroll-behavior: auto;
+	}
+
+	.ces-btn,
+	.ces-links__link,
+	.ces-dash__tab {
+		transition: none !important;
+	}
+}

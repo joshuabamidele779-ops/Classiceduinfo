@@ -1,0 +1,855 @@
+{
+  "_note": "Original practice items written for the Classic EDU Suite CBT bank. Not reproduced from any past paper. Syllabus-aligned to JAMB Islamic Studies.",
+  "questions": [
+    {
+      "question": "The Arabic word 'Islam' literally means",
+      "type": "single",
+      "options": [
+        "submission to the will of Allah",
+        "belief in one God",
+        "the straight path",
+        "peace of mind"
+      ],
+      "correct": "A",
+      "explanation": "Islam denotes submission, and a Muslim is one who submits to Allah.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Basic Concepts",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The doctrine of Tawhid refers to",
+      "type": "single",
+      "options": [
+        "the finality of prophethood",
+        "the obligation of pilgrimage",
+        "the oneness of Allah",
+        "belief in the angels"
+      ],
+      "correct": "C",
+      "explanation": "Tawhid affirms the absolute unity of Allah and rejects associating partners with Him.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Tawhid",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "How many pillars of Islam are there?",
+      "type": "single",
+      "options": [
+        "Three",
+        "Six",
+        "Seven",
+        "Five"
+      ],
+      "correct": "D",
+      "explanation": "Shahadah, Salah, Zakah, Sawm and Hajj.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Pillars of Islam",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The first pillar of Islam is",
+      "type": "single",
+      "options": [
+        "Hajj",
+        "Shahadah",
+        "Salah",
+        "Zakah"
+      ],
+      "correct": "B",
+      "explanation": "The declaration of faith in the oneness of Allah and the prophethood of Muhammad.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Pillars of Islam",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "How many obligatory prayers must a Muslim observe each day?",
+      "type": "single",
+      "options": [
+        "Four",
+        "Five",
+        "Seven",
+        "Three"
+      ],
+      "correct": "B",
+      "explanation": "Subh, Zuhr, Asr, Maghrib and Isha.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Salah",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Zakah refers to",
+      "type": "single",
+      "options": [
+        "the pilgrimage to Makkah",
+        "the obligatory payment of alms on one's wealth",
+        "voluntary charity given at any time",
+        "the fast of the month of Ramadan"
+      ],
+      "correct": "B",
+      "explanation": "Zakah is a fixed obligation on wealth above a minimum threshold.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Zakah",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Fasting during the month of Ramadan is known as",
+      "type": "single",
+      "options": [
+        "Sawm",
+        "Hajj",
+        "Adhan",
+        "Zakah"
+      ],
+      "correct": "A",
+      "explanation": "Sawm is observed from dawn until sunset throughout Ramadan.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Sawm",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The pilgrimage to Makkah which every able Muslim should perform at least once is",
+      "type": "single",
+      "options": [
+        "Hijrah",
+        "Jumu'ah",
+        "Hajj",
+        "Umrah"
+      ],
+      "correct": "C",
+      "explanation": "Hajj is obligatory once in a lifetime for those with the means and health.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Hajj",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The Prophet Muhammad was born in",
+      "type": "single",
+      "options": [
+        "Jerusalem",
+        "Madinah",
+        "Taif",
+        "Makkah"
+      ],
+      "correct": "D",
+      "explanation": "He was born into the clan of Hashim of the tribe of Quraysh in Makkah.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Life of the Prophet",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The Prophet Muhammad was born in about",
+      "type": "single",
+      "options": [
+        "632 CE",
+        "570 CE",
+        "610 CE",
+        "622 CE"
+      ],
+      "correct": "B",
+      "explanation": "He was born around 570 CE, in what is remembered as the Year of the Elephant.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Life of the Prophet",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The father of the Prophet Muhammad was",
+      "type": "single",
+      "options": [
+        "Abdul Muttalib",
+        "Hamzah",
+        "Abu Talib",
+        "Abdullah"
+      ],
+      "correct": "D",
+      "explanation": "Abdullah died before the Prophet was born.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Life of the Prophet",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The Prophet Muhammad's mother, who died when he was about six years old, was named",
+      "type": "single",
+      "options": [
+        "Khadijah",
+        "Fatimah",
+        "Halimah",
+        "Aminah"
+      ],
+      "correct": "D",
+      "explanation": "Aminah died when the Prophet was about six years old.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Life of the Prophet",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "After the death of his grandfather, the Prophet Muhammad was brought up by his uncle",
+      "type": "single",
+      "options": [
+        "Hamzah",
+        "Abu Talib",
+        "Abu Lahab",
+        "Abbas"
+      ],
+      "correct": "B",
+      "explanation": "Abu Talib took him into his household and later protected him in Makkah.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Life of the Prophet",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The first revelation came to the Prophet Muhammad in the cave of",
+      "type": "single",
+      "options": [
+        "Uhud",
+        "Safa",
+        "Hira",
+        "Thawr"
+      ],
+      "correct": "C",
+      "explanation": "The cave of Hira is on the mountain of Nur near Makkah.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Revelation",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The angel who brought the revelation to the Prophet Muhammad was",
+      "type": "single",
+      "options": [
+        "Israfil",
+        "Izra'il",
+        "Mika'il",
+        "Jibril"
+      ],
+      "correct": "D",
+      "explanation": "Jibril (Gabriel) is the angel entrusted with conveying revelation.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Revelation",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The first surah revealed to the Prophet Muhammad was",
+      "type": "single",
+      "options": [
+        "Al-Fatihah",
+        "Al-Baqarah",
+        "An-Nas",
+        "Al-Alaq"
+      ],
+      "correct": "D",
+      "explanation": "Its opening command was 'Read, in the name of your Lord who created'.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "The Qur'an",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The first wife of the Prophet Muhammad was",
+      "type": "single",
+      "options": [
+        "Khadijah",
+        "Zaynab",
+        "Aisha",
+        "Hafsah"
+      ],
+      "correct": "A",
+      "explanation": "Khadijah bint Khuwaylid was the first to believe in his message.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Life of the Prophet",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The migration of the Prophet and his followers from Makkah to Madinah is called the",
+      "type": "single",
+      "options": [
+        "Isra",
+        "Hajj",
+        "Umrah",
+        "Hijrah"
+      ],
+      "correct": "D",
+      "explanation": "The Hijrah marks the beginning of the Muslim community in Madinah.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "The Hijrah",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The Hijrah took place in",
+      "type": "single",
+      "options": [
+        "630 CE",
+        "632 CE",
+        "610 CE",
+        "622 CE"
+      ],
+      "correct": "D",
+      "explanation": "The migration to Madinah occurred in 622 CE.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "The Hijrah",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The Islamic calendar is reckoned from",
+      "type": "single",
+      "options": [
+        "the conquest of Makkah",
+        "the year of the Hijrah",
+        "the birth of the Prophet",
+        "the first revelation"
+      ],
+      "correct": "B",
+      "explanation": "Years are counted from the migration to Madinah and marked AH.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "The Hijrah",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The first Caliph after the death of the Prophet Muhammad was",
+      "type": "single",
+      "options": [
+        "Abu Bakr",
+        "Uthman ibn Affan",
+        "Umar ibn al-Khattab",
+        "Ali ibn Abi Talib"
+      ],
+      "correct": "A",
+      "explanation": "Abu Bakr as-Siddiq was chosen as the first successor.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "The Caliphate",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The second Caliph of Islam was",
+      "type": "single",
+      "options": [
+        "Umar ibn al-Khattab",
+        "Uthman ibn Affan",
+        "Ali ibn Abi Talib",
+        "Mu'awiyah"
+      ],
+      "correct": "A",
+      "explanation": "Under Umar the Muslim state expanded greatly and administration was organised.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "The Caliphate",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The Caliph during whose reign the text of the Qur'an was standardised into a single authorised copy was",
+      "type": "single",
+      "options": [
+        "Abu Bakr",
+        "Uthman ibn Affan",
+        "Umar ibn al-Khattab",
+        "Ali ibn Abi Talib"
+      ],
+      "correct": "B",
+      "explanation": "Uthman had standard copies prepared and distributed to the provinces.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "The Qur'an",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "The fourth of the Rightly Guided Caliphs was",
+      "type": "single",
+      "options": [
+        "Uthman",
+        "Ali ibn Abi Talib",
+        "Abu Bakr",
+        "Umar"
+      ],
+      "correct": "B",
+      "explanation": "Ali was both cousin and son-in-law of the Prophet.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "The Caliphate",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Abu Bakr, Umar, Uthman and Ali are collectively known as the",
+      "type": "single",
+      "options": [
+        "Imams of the schools of law",
+        "Rightly Guided Caliphs",
+        "Scribes of the revelation",
+        "Companions of the Cave"
+      ],
+      "correct": "B",
+      "explanation": "They are the Khulafa' ar-Rashidun, who ruled immediately after the Prophet.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "The Caliphate",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "How many surahs are there in the Qur'an?",
+      "type": "single",
+      "options": [
+        "124",
+        "110",
+        "114",
+        "99"
+      ],
+      "correct": "C",
+      "explanation": "The Qur'an consists of 114 surahs of varying length.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "The Qur'an",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The longest surah of the Qur'an is",
+      "type": "single",
+      "options": [
+        "An-Nisa",
+        "Al-Fatihah",
+        "Al-Baqarah",
+        "Yasin"
+      ],
+      "correct": "C",
+      "explanation": "Surah Al-Baqarah, 'The Cow', is the longest chapter of the Qur'an.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "The Qur'an",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The opening surah of the Qur'an is",
+      "type": "single",
+      "options": [
+        "Al-Ikhlas",
+        "Al-Fatihah",
+        "Al-Alaq",
+        "An-Nas"
+      ],
+      "correct": "B",
+      "explanation": "Al-Fatihah is recited in every unit of the obligatory prayers.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "The Qur'an",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Surah Al-Ikhlas is principally concerned with",
+      "type": "single",
+      "options": [
+        "the absolute oneness of Allah",
+        "the rules of fasting",
+        "the laws of inheritance",
+        "the story of Prophet Yusuf"
+      ],
+      "correct": "A",
+      "explanation": "It declares that Allah is One, eternal, and without offspring or equal.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "The Qur'an",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Hadith refers to",
+      "type": "single",
+      "options": [
+        "the recorded sayings and deeds of the Prophet Muhammad",
+        "the text of the Qur'an itself",
+        "the consensus of Muslim jurists",
+        "the ruling of a judge in a court"
+      ],
+      "correct": "A",
+      "explanation": "Hadith reports what the Prophet said, did or approved.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Hadith",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The Sunnah means",
+      "type": "single",
+      "options": [
+        "the month of fasting",
+        "the obligatory prayers only",
+        "the practice and example of the Prophet",
+        "the Arabic language of revelation"
+      ],
+      "correct": "C",
+      "explanation": "The Sunnah is the model of conduct established by the Prophet.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Sunnah",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The two primary sources of Islamic law are",
+      "type": "single",
+      "options": [
+        "the Qur'an and the Sunnah",
+        "Ijma and Qiyas",
+        "custom and judicial precedent",
+        "the rulings of the four imams"
+      ],
+      "correct": "A",
+      "explanation": "Ijma and Qiyas are secondary sources derived from these two.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Sources of Shari'ah",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Ijma as a source of Islamic law means",
+      "type": "single",
+      "options": [
+        "the consensus of qualified Muslim scholars",
+        "the direct command of the Qur'an",
+        "the personal opinion of a single scholar",
+        "the custom of the Arabs before Islam"
+      ],
+      "correct": "A",
+      "explanation": "Where scholars agree on a ruling, that agreement carries authority.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Sources of Shari'ah",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Qiyas in Islamic jurisprudence refers to",
+      "type": "single",
+      "options": [
+        "reasoning by analogy from an established ruling",
+        "the abrogation of an earlier verse",
+        "the recitation of the Qur'an in public",
+        "the collection of Zakah"
+      ],
+      "correct": "A",
+      "explanation": "A new case is judged by analogy with a case already settled in the sources.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Sources of Shari'ah",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "The ritual ablution performed with water before prayer is called",
+      "type": "single",
+      "options": [
+        "Adhan",
+        "Tayammum",
+        "Wudu",
+        "Ghusl"
+      ],
+      "correct": "C",
+      "explanation": "Wudu involves washing the face, arms, head and feet in a prescribed order.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Purification",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "Tayammum is performed with",
+      "type": "single",
+      "options": [
+        "warm water",
+        "clean earth or sand when water is unavailable",
+        "running water only",
+        "sea water"
+      ],
+      "correct": "B",
+      "explanation": "It is the permitted substitute for Wudu where water cannot be obtained or used.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Purification",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The Qiblah is the direction",
+      "type": "single",
+      "options": [
+        "of Jerusalem",
+        "of the rising sun",
+        "in which the Prophet migrated",
+        "of the Ka'bah in Makkah"
+      ],
+      "correct": "D",
+      "explanation": "Muslims face the Ka'bah when performing the prayers.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Salah",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The call to prayer in Islam is known as",
+      "type": "single",
+      "options": [
+        "Khutbah",
+        "Adhan",
+        "Iqamah",
+        "Takbir"
+      ],
+      "correct": "B",
+      "explanation": "The Adhan summons the faithful; the Iqamah announces that prayer is beginning.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Salah",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The congregational prayer observed on Fridays is called",
+      "type": "single",
+      "options": [
+        "Witr",
+        "Tahajjud",
+        "Tarawih",
+        "Jumu'ah"
+      ],
+      "correct": "D",
+      "explanation": "It is preceded by a sermon, the Khutbah, delivered by the Imam.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Salah",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The festival that marks the end of the fast of Ramadan is",
+      "type": "single",
+      "options": [
+        "Mawlid",
+        "Id al-Fitr",
+        "Id al-Adha",
+        "Ashura"
+      ],
+      "correct": "B",
+      "explanation": "Id al-Fitr is celebrated on the first day of Shawwal.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Festivals",
+      "difficulty": "easy",
+      "marks": 1
+    },
+    {
+      "question": "The festival of sacrifice, observed during the period of pilgrimage, is",
+      "type": "single",
+      "options": [
+        "Laylat al-Qadr",
+        "Id al-Fitr",
+        "Ashura",
+        "Id al-Adha"
+      ],
+      "correct": "D",
+      "explanation": "It commemorates the willingness of Prophet Ibrahim to sacrifice his son.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Festivals",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The night journey of the Prophet from Makkah to Jerusalem and his ascension are known as",
+      "type": "single",
+      "options": [
+        "Badr and Uhud",
+        "Sawm and Qiyam",
+        "Isra and Mi'raj",
+        "Hijrah and Fath"
+      ],
+      "correct": "C",
+      "explanation": "The five daily prayers are traditionally associated with this event.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Life of the Prophet",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The Battle of Badr was fought in",
+      "type": "single",
+      "options": [
+        "632 CE",
+        "622 CE",
+        "624 CE",
+        "630 CE"
+      ],
+      "correct": "C",
+      "explanation": "It took place in 2 AH, corresponding to 624 CE, and ended in victory for the Muslims.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Battles of Islam",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "The conquest of Makkah by the Muslims took place in",
+      "type": "single",
+      "options": [
+        "624 CE",
+        "627 CE",
+        "630 CE",
+        "622 CE"
+      ],
+      "correct": "C",
+      "explanation": "Makkah was entered peacefully in 8 AH, about 630 CE.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Battles of Islam",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "The Prophet Muhammad died in",
+      "type": "single",
+      "options": [
+        "661 CE",
+        "622 CE",
+        "630 CE",
+        "632 CE"
+      ],
+      "correct": "D",
+      "explanation": "He died in 11 AH, corresponding to 632 CE.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Life of the Prophet",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The Prophet Muhammad died and was buried in",
+      "type": "single",
+      "options": [
+        "Madinah",
+        "Makkah",
+        "Jerusalem",
+        "Taif"
+      ],
+      "correct": "A",
+      "explanation": "His grave is in Madinah, within the precinct of the Prophet's Mosque.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Life of the Prophet",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "How many prophets are mentioned by name in the Qur'an?",
+      "type": "single",
+      "options": [
+        "Twenty-five",
+        "Forty",
+        "One hundred and twenty-four",
+        "Twelve"
+      ],
+      "correct": "A",
+      "explanation": "Twenty-five prophets are named, although many more were sent.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Prophethood",
+      "difficulty": "hard",
+      "marks": 1
+    },
+    {
+      "question": "The Islamic belief in the life to come is known as",
+      "type": "single",
+      "options": [
+        "Tawhid",
+        "Risalah",
+        "Akhirah",
+        "Qadar"
+      ],
+      "correct": "C",
+      "explanation": "Akhirah is belief in resurrection, judgement and the hereafter.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Articles of Faith",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "The jihad of Usman dan Fodio, which led to the founding of the Sokoto Caliphate, began in",
+      "type": "single",
+      "options": [
+        "1754",
+        "1776",
+        "1804",
+        "1830"
+      ],
+      "correct": "C",
+      "explanation": "The jihad began in 1804 and reshaped the political order of Hausaland.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Islam in Nigeria",
+      "difficulty": "medium",
+      "marks": 1
+    },
+    {
+      "question": "Islam first reached the Kanem-Borno area of Nigeria mainly through",
+      "type": "single",
+      "options": [
+        "the trans-Saharan trade routes",
+        "European missionaries",
+        "the Atlantic coastal trade",
+        "British colonial administration"
+      ],
+      "correct": "A",
+      "explanation": "Traders and scholars crossing the Sahara brought the faith from North Africa.",
+      "subject": "Islamic Studies",
+      "exam_type": "JAMB",
+      "topic": "Islam in Nigeria",
+      "difficulty": "medium",
+      "marks": 1
+    }
+  ]
+}

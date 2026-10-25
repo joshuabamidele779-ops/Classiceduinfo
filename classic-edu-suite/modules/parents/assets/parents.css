@@ -1,0 +1,136 @@
+/**
+ * Parent contact form and dashboard tab.
+ *
+ * Depends on the tokens in ces-base.css (--ces-primary and friends). Mobile
+ * first: the form is a single column until there is room for two.
+ */
+
+.ces-parent-card {
+	background: var( --ces-surface, #fff );
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: var( --ces-radius, 12px );
+	padding: 18px;
+	margin: 0 0 20px;
+}
+
+.ces-parent-card--prompt {
+	border-color: var( --ces-primary-border, rgba( 44, 98, 205, 0.28 ) );
+	background: var( --ces-primary-soft, rgba( 44, 98, 205, 0.08 ) );
+}
+
+.ces-parent-card__title {
+	margin: 0 0 6px;
+	font-size: 1.1rem;
+	line-height: 1.3;
+}
+
+.ces-parent-card__intro {
+	margin: 0 0 14px;
+	color: var( --ces-text-muted, #475569 );
+	font-size: 0.92rem;
+}
+
+.ces-parent-form .ces-field {
+	display: block;
+	margin: 0 0 14px;
+}
+
+.ces-parent-form .ces-field label {
+	display: block;
+	font-weight: 600;
+	margin-bottom: 4px;
+	font-size: 0.95rem;
+}
+
+.ces-parent-form .ces-field input[type="text"],
+.ces-parent-form .ces-field input[type="tel"],
+.ces-parent-form .ces-field select {
+	width: 100%;
+	max-width: 420px;
+	padding: 11px 12px;
+	font-size: 1rem;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: 8px;
+	background: #fff;
+	color: var( --ces-text, #1f2937 );
+	box-sizing: border-box;
+}
+
+.ces-parent-form .ces-field input:focus,
+.ces-parent-form .ces-field select:focus {
+	outline: 2px solid var( --ces-primary, #2c62cd );
+	outline-offset: 1px;
+	border-color: var( --ces-primary, #2c62cd );
+}
+
+.ces-parent-form .ces-field--check label {
+	font-weight: 400;
+	display: flex;
+	gap: 8px;
+	align-items: flex-start;
+	line-height: 1.4;
+}
+
+.ces-parent-form .ces-field--check input {
+	margin-top: 3px;
+	flex: 0 0 auto;
+}
+
+.ces-field__hint {
+	display: block;
+	margin-top: 4px;
+	font-size: 0.84rem;
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-parent-form__actions {
+	margin: 18px 0 0;
+}
+
+.ces-parent-explainer {
+	background: var( --ces-surface-alt, #f8fafc );
+	border-radius: var( --ces-radius, 12px );
+	padding: 16px 18px;
+	margin: 0 0 18px;
+}
+
+.ces-parent-explainer h3 {
+	margin: 0 0 8px;
+	font-size: 1rem;
+}
+
+.ces-parent-explainer__list {
+	margin: 0 0 10px;
+	padding-left: 20px;
+}
+
+.ces-parent-explainer__list li {
+	margin-bottom: 4px;
+}
+
+.ces-parent-explainer__note {
+	margin: 0;
+	font-size: 0.86rem;
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-parent-tab__status {
+	font-size: 0.9rem;
+	color: var( --ces-text-muted, #475569 );
+}
+
+/* Registration forms rendered by WordPress or WooCommerce. */
+.ces-parent-field label {
+	display: block;
+}
+
+.ces-parent-note {
+	font-size: 0.85rem;
+	color: var( --ces-text-muted, #475569 );
+}
+
+@media ( min-width: 640px ) {
+	.ces-parent-card {
+		padding: 24px;
+	}
+}

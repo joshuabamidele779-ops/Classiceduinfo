@@ -1,0 +1,1441 @@
+/**
+ * Classroom module styles: the Studio, the recorder, class pages, chat and
+ * the live room.
+ *
+ * Mobile first, because every student and most tutors are on a phone. The
+ * room is the only place with a two-column layout, and it collapses to one
+ * under 56rem with the chat below the video — which is the right order on a
+ * phone, since you watch more than you type.
+ *
+ * Everything leans on the `ces-base` design tokens and falls back to literal
+ * values, so a page that somehow loads this without the base stylesheet is
+ * plain rather than broken.
+ */
+
+/* ------------------------------------------------------------------ */
+/* Shared pieces                                                      */
+/* ------------------------------------------------------------------ */
+
+.ces-studio,
+.ces-classpage,
+.ces-chatpage,
+.ces-myclasses,
+.ces-room,
+.ces-directory {
+	--ces-c-gap: 1rem;
+}
+
+.ces-studio__panel,
+.ces-onboard__card {
+	margin: 0 0 var( --ces-c-gap );
+	padding: 1rem 1.1rem;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: var( --ces-radius, 12px );
+	background: var( --ces-surface, #fff );
+}
+
+.ces-studio__panel > summary {
+	font-weight: 700;
+	cursor: pointer;
+	font-size: 1.02rem;
+}
+
+.ces-studio__panel > summary:focus-visible {
+	outline: 2px solid var( --ces-primary, #2c62cd );
+	outline-offset: 2px;
+}
+
+.ces-studio__panel h3 {
+	margin: 0 0 0.5rem;
+	font-size: 1.05rem;
+}
+
+.ces-studio__hint,
+.ces-room__hint {
+	margin: 0 0 0.8rem;
+	font-size: 0.86rem;
+	line-height: 1.55;
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-studio__status {
+	display: inline-block;
+	margin-left: 0.5rem;
+	font-size: 0.85rem;
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-studio__status.is-good {
+	color: #15803d;
+}
+
+.ces-studio__status.is-bad {
+	color: #b91c1c;
+}
+
+.ces-studio .ces-field,
+.ces-classpage .ces-field,
+.ces-room .ces-field,
+.ces-rec .ces-field {
+	display: block;
+	margin: 0 0 0.9rem;
+}
+
+.ces-studio .ces-field > label,
+.ces-room .ces-field > label,
+.ces-rec .ces-field > label {
+	display: block;
+	margin-bottom: 0.25rem;
+	font-weight: 600;
+	font-size: 0.94rem;
+}
+
+.ces-studio .ces-field input[type="text"],
+.ces-studio .ces-field input[type="url"],
+.ces-studio .ces-field input[type="tel"],
+.ces-studio .ces-field input[type="number"],
+.ces-studio .ces-field input[type="datetime-local"],
+.ces-studio .ces-field textarea,
+.ces-studio .ces-field select,
+.ces-room .ces-field input,
+.ces-room .ces-field textarea,
+.ces-rec .ces-field select,
+.ces-rec .ces-field input[type="file"] {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.65rem 0.7rem;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: 8px;
+	background: #fff;
+	color: var( --ces-text, #1f2937 );
+	font: inherit;
+	font-size: 0.98rem;
+}
+
+.ces-studio .ces-field--check > label {
+	display: flex;
+	gap: 0.5rem;
+	align-items: flex-start;
+	font-weight: 400;
+	line-height: 1.45;
+}
+
+.ces-studio .ces-field--check input {
+	flex: 0 0 auto;
+	margin-top: 0.2rem;
+}
+
+.ces-link-btn {
+	padding: 0;
+	border: 0;
+	background: none;
+	color: var( --ces-primary, #2c62cd );
+	font: inherit;
+	font-weight: 600;
+	text-align: left;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.ces-muted {
+	color: var( --ces-text-muted, #475569 );
+	font-size: 0.85rem;
+}
+
+/* ------------------------------------------------------------------ */
+/* The Studio                                                         */
+/* ------------------------------------------------------------------ */
+
+.ces-studio__head {
+	margin: 0 0 1.1rem;
+}
+
+.ces-studio__title {
+	margin: 0 0 0.35rem;
+	font-size: 1.4rem;
+	line-height: 1.25;
+}
+
+.ces-studio__lead {
+	margin: 0;
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-studio__back {
+	margin: 0 0 0.6rem;
+	font-size: 0.9rem;
+}
+
+.ces-studio__section {
+	margin: 1.4rem 0 0.7rem;
+	font-size: 1.1rem;
+}
+
+.ces-studio__stats {
+	display: grid;
+	grid-template-columns: repeat( 2, minmax( 0, 1fr ) );
+	gap: 0.6rem;
+	list-style: none;
+	margin: 0 0 var( --ces-c-gap );
+	padding: 0;
+}
+
+.ces-studio__stats li {
+	padding: 0.7rem 0.8rem;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: var( --ces-radius, 12px );
+	background: var( --ces-surface-alt, #f8fafc );
+}
+
+.ces-studio__stats strong {
+	display: block;
+	font-size: 1.3rem;
+	line-height: 1.2;
+}
+
+.ces-studio__stats span {
+	font-size: 0.8rem;
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-studio__classes,
+.ces-studio__sessions,
+.ces-studio__lessons,
+.ces-studio__roster {
+	list-style: none;
+	margin: 0 0 0.8rem;
+	padding: 0;
+}
+
+.ces-studio__lessons {
+	list-style: decimal;
+	padding-left: 1.4rem;
+}
+
+.ces-studio__class {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.7rem;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 0.85rem 0;
+	border-bottom: 1px solid var( --ces-border, #cbd5e1 );
+}
+
+.ces-studio__class.is-archived {
+	opacity: 0.6;
+}
+
+.ces-studio__class h4 {
+	margin: 0 0 0.2rem;
+	font-size: 1.05rem;
+}
+
+.ces-studio__class-meta,
+.ces-studio__lesson-meta {
+	margin: 0;
+	font-size: 0.85rem;
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-studio__waiting {
+	color: #b45309;
+	font-weight: 700;
+}
+
+.ces-studio__live {
+	color: #b91c1c;
+}
+
+.ces-studio__code {
+	margin: 0.3rem 0 0;
+	font-size: 0.85rem;
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-studio__code code {
+	padding: 0.1rem 0.4rem;
+	border-radius: 5px;
+	background: var( --ces-muted-bg, #f1f5f9 );
+	font-size: 0.95rem;
+	letter-spacing: 0.08em;
+}
+
+.ces-studio__class-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+}
+
+.ces-studio__panel--share {
+	border-color: var( --ces-primary-border, rgba( 44, 98, 205, 0.28 ) );
+	background: var( --ces-primary-soft, rgba( 44, 98, 205, 0.08 ) );
+}
+
+.ces-studio__panel--alert {
+	border-left: 4px solid #d97706;
+}
+
+.ces-studio__share-link {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+	margin: 0 0 0.6rem;
+}
+
+.ces-studio__share-link input {
+	flex: 1 1 14rem;
+	min-width: 0;
+	padding: 0.6rem 0.7rem;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: 8px;
+	background: #fff;
+	font: inherit;
+	font-size: 0.88rem;
+}
+
+.ces-studio__share-row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.6rem;
+	align-items: center;
+	margin: 0 0 0.6rem;
+}
+
+.ces-studio__roster li {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.55rem 0;
+	border-bottom: 1px solid var( --ces-border, #cbd5e1 );
+}
+
+.ces-studio__roster-actions {
+	display: flex;
+	gap: 0.35rem;
+}
+
+.ces-studio__table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 0.9rem;
+}
+
+.ces-studio__table th,
+.ces-studio__table td {
+	padding: 0.5rem 0.4rem;
+	border-bottom: 1px solid var( --ces-border, #cbd5e1 );
+	text-align: left;
+	vertical-align: top;
+}
+
+.ces-studio__empty,
+.ces-classpage__empty,
+.ces-myclasses__empty,
+.ces-directory__empty {
+	padding: 1rem;
+	border: 1px dashed var( --ces-border, #cbd5e1 );
+	border-radius: var( --ces-radius, 12px );
+	background: var( --ces-surface-alt, #f8fafc );
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-studio__sell {
+	margin: 0;
+	padding-left: 1.2rem;
+	line-height: 1.6;
+}
+
+/* The quality review */
+
+.ces-studio__review {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	align-items: flex-start;
+}
+
+.ces-studio__score {
+	flex: 0 0 auto;
+	width: 5.2rem;
+	padding: 0.8rem 0.4rem;
+	border-radius: var( --ces-radius, 12px );
+	text-align: center;
+	background: var( --ces-muted-bg, #f1f5f9 );
+}
+
+.ces-studio__score strong {
+	display: block;
+	font-size: 1.8rem;
+	line-height: 1;
+}
+
+.ces-studio__score span {
+	font-size: 0.7rem;
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-studio__score--ok {
+	background: #dcfce7;
+}
+
+.ces-studio__score--wait {
+	background: #fef3c7;
+}
+
+.ces-studio__score--bad {
+	background: #fee2e2;
+}
+
+.ces-studio__review-body {
+	flex: 1 1 16rem;
+	min-width: 0;
+}
+
+.ces-studio__verdict {
+	margin: 0 0 0.7rem;
+	font-weight: 600;
+}
+
+.ces-studio__checks {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 0.9rem;
+}
+
+.ces-studio__checks li {
+	display: grid;
+	grid-template-columns: 1.3rem 1fr;
+	gap: 0.3rem 0.4rem;
+	padding: 0.35rem 0;
+	border-bottom: 1px dashed var( --ces-border, #cbd5e1 );
+}
+
+.ces-studio__checks li:last-child {
+	border-bottom: 0;
+}
+
+.ces-studio__checks .is-done {
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-studio__checks .is-done .ces-studio__check-mark {
+	color: #15803d;
+}
+
+.ces-studio__check-advice {
+	grid-column: 2;
+	font-size: 0.84rem;
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-studio__point {
+	margin: 0 0 1rem;
+	padding: 0.8rem;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: 10px;
+	background: var( --ces-surface-alt, #f8fafc );
+}
+
+/* ------------------------------------------------------------------ */
+/* The recorder                                                       */
+/* ------------------------------------------------------------------ */
+
+.ces-rec__tabs {
+	display: flex;
+	gap: 0.3rem;
+	margin: 0 0 1rem;
+	border-bottom: 1px solid var( --ces-border, #cbd5e1 );
+}
+
+.ces-rec__tab {
+	padding: 0.5rem 0.8rem;
+	border: 0;
+	border-bottom: 3px solid transparent;
+	background: none;
+	color: var( --ces-text-muted, #475569 );
+	font: inherit;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.ces-rec__tab.is-active {
+	border-bottom-color: var( --ces-primary, #2c62cd );
+	color: var( --ces-text, #1f2937 );
+}
+
+.ces-rec__preview-wrap {
+	position: relative;
+	margin: 0 0 0.8rem;
+	background: #0f172a;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.ces-rec__preview,
+.ces-rec__playback {
+	display: block;
+	width: 100%;
+	max-height: 22rem;
+	background: #0f172a;
+}
+
+.ces-rec__canvas {
+	display: none;
+}
+
+.ces-rec__meter-wrap {
+	margin: 0 0 0.8rem;
+}
+
+.ces-rec__meter-label {
+	display: block;
+	font-size: 0.82rem;
+	font-weight: 600;
+	margin-bottom: 0.25rem;
+}
+
+.ces-rec__meter {
+	display: block;
+	height: 0.6rem;
+	border-radius: 999px;
+	background: var( --ces-muted-bg-strong, #e2e8f0 );
+	overflow: hidden;
+}
+
+.ces-rec__meter > span {
+	display: block;
+	width: 0;
+	height: 100%;
+	background: #94a3b8;
+	transition: width 0.08s linear;
+}
+
+.ces-rec__meter > span.is-good {
+	background: #16a34a;
+}
+
+.ces-rec__meter > span.is-loud {
+	background: #dc2626;
+}
+
+.ces-rec__meter-hint {
+	display: block;
+	margin-top: 0.3rem;
+	font-size: 0.82rem;
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-rec__meter-hint.is-bad {
+	color: #b91c1c;
+}
+
+.ces-rec__meter-hint.is-good {
+	color: #15803d;
+}
+
+.ces-rec__meter-hint.is-warn {
+	color: #b45309;
+}
+
+.ces-rec__advice {
+	margin: 0 0 0.8rem;
+	padding-left: 1.2rem;
+	font-size: 0.86rem;
+	line-height: 1.55;
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-rec__readout {
+	margin: 0 0 0.6rem;
+	font-size: 0.82rem;
+	color: var( --ces-text-muted, #475569 );
+	font-variant-numeric: tabular-nums;
+}
+
+.ces-rec__controls {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+	align-items: center;
+	margin: 0.8rem 0;
+}
+
+.ces-rec__timer {
+	font-variant-numeric: tabular-nums;
+	font-weight: 700;
+}
+
+.ces-rec__hint {
+	margin: 0 0 0.6rem;
+	font-size: 0.88rem;
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-rec__hint.is-bad {
+	color: #b91c1c;
+}
+
+.ces-rec__unsupported {
+	padding: 0.8rem;
+	border-radius: 8px;
+	background: #fef3c7;
+	color: #713f12;
+}
+
+.ces-rec__script {
+	max-height: 12rem;
+	padding: 0.8rem;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: 8px;
+	background: #0f172a;
+	color: #f8fafc;
+	font-size: 1.15rem;
+	line-height: 1.7;
+	overflow-y: auto;
+	white-space: pre-wrap;
+}
+
+.ces-rec__progress {
+	margin: 0.8rem 0 0;
+}
+
+.ces-rec__bar {
+	height: 0.55rem;
+	border-radius: 999px;
+	background: var( --ces-muted-bg-strong, #e2e8f0 );
+	overflow: hidden;
+}
+
+.ces-rec__bar > span {
+	display: block;
+	width: 0;
+	height: 100%;
+	background: var( --ces-primary, #2c62cd );
+	transition: width 0.2s ease;
+}
+
+.ces-rec__progress-text {
+	margin: 0.35rem 0 0;
+	font-size: 0.85rem;
+	color: var( --ces-text-muted, #475569 );
+}
+
+/* ------------------------------------------------------------------ */
+/* Class page                                                         */
+/* ------------------------------------------------------------------ */
+
+.ces-classpage__kicker {
+	margin: 0 0 0.2rem;
+	font-size: 0.72rem;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var( --ces-primary, #2c62cd );
+}
+
+.ces-classpage__title {
+	margin: 0 0 0.4rem;
+	font-size: 1.5rem;
+	line-height: 1.2;
+}
+
+.ces-classpage__tutor,
+.ces-classpage__about {
+	margin: 0 0 0.5rem;
+}
+
+.ces-classpage__facts {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.8rem;
+	margin: 0 0 1rem;
+	font-size: 0.86rem;
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-classpage__section {
+	margin: 1.5rem 0 0.7rem;
+	font-size: 1.15rem;
+}
+
+.ces-classpage__join {
+	padding: 1rem;
+	border: 1px solid var( --ces-primary-border, rgba( 44, 98, 205, 0.28 ) );
+	border-radius: var( --ces-radius, 12px );
+	background: var( --ces-primary-soft, rgba( 44, 98, 205, 0.08 ) );
+}
+
+.ces-classpage__status,
+.ces-joinbox__status {
+	margin: 0.5rem 0 0;
+	font-size: 0.88rem;
+}
+
+.ces-classpage__status.is-bad,
+.ces-joinbox__status.is-bad {
+	color: #b91c1c;
+}
+
+.ces-classpage__session {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.8rem;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 0 1rem;
+	padding: 0.9rem 1rem;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: var( --ces-radius, 12px );
+	background: var( --ces-surface-alt, #f8fafc );
+}
+
+.ces-classpage__session.is-live {
+	border-color: #dc2626;
+	background: #fef2f2;
+}
+
+.ces-classpage__session h2 {
+	margin: 0 0 0.2rem;
+	font-size: 1.05rem;
+}
+
+.ces-classpage__session p {
+	margin: 0;
+	font-size: 0.88rem;
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-classpage__lessons {
+	list-style: none;
+	margin: 0 0 1rem;
+	padding: 0;
+	counter-reset: none;
+}
+
+.ces-classpage__lesson {
+	border-bottom: 1px solid var( --ces-border, #cbd5e1 );
+}
+
+.ces-classpage__lesson > a {
+	display: flex;
+	gap: 0.8rem;
+	align-items: flex-start;
+	padding: 0.8rem 0.2rem;
+	text-decoration: none;
+	color: inherit;
+}
+
+.ces-classpage__lesson > a:hover,
+.ces-classpage__lesson > a:focus {
+	background: var( --ces-surface-alt, #f8fafc );
+}
+
+.ces-classpage__lesson-no {
+	flex: 0 0 1.9rem;
+	height: 1.9rem;
+	border-radius: 999px;
+	background: var( --ces-muted-bg, #f1f5f9 );
+	font-size: 0.85rem;
+	font-weight: 700;
+	line-height: 1.9rem;
+	text-align: center;
+}
+
+.ces-classpage__lesson.is-done .ces-classpage__lesson-no {
+	background: #dcfce7;
+	color: #14532d;
+}
+
+.ces-classpage__lesson-body strong {
+	display: block;
+}
+
+.ces-classpage__lesson-meta {
+	font-size: 0.82rem;
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-classpage__leave {
+	margin: 1.5rem 0 0;
+	font-size: 0.88rem;
+}
+
+.ces-joinbox {
+	margin: 1.2rem 0 0;
+	padding: 1rem;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: var( --ces-radius, 12px );
+	background: var( --ces-surface-alt, #f8fafc );
+}
+
+.ces-joinbox h3 {
+	margin: 0 0 0.4rem;
+	font-size: 1.05rem;
+}
+
+.ces-joinbox p {
+	margin: 0 0 0.8rem;
+	font-size: 0.9rem;
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-joinbox .ces-field {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+	margin: 0;
+}
+
+.ces-joinbox__code {
+	flex: 1 1 8rem;
+	min-width: 0;
+	padding: 0.7rem;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: 8px;
+	font: inherit;
+	font-size: 1.25rem;
+	font-weight: 700;
+	letter-spacing: 0.18em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.ces-myclasses__list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.ces-myclasses__list > li {
+	border-bottom: 1px solid var( --ces-border, #cbd5e1 );
+}
+
+.ces-myclasses__list a {
+	display: block;
+	padding: 0.8rem 0.2rem;
+	text-decoration: none;
+	color: inherit;
+}
+
+.ces-myclasses__list a:hover {
+	background: var( --ces-surface-alt, #f8fafc );
+}
+
+.ces-myclasses__list span {
+	display: block;
+	font-size: 0.84rem;
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-myclasses__list .is-pending {
+	opacity: 0.75;
+}
+
+/* ------------------------------------------------------------------ */
+/* Chat                                                               */
+/* ------------------------------------------------------------------ */
+
+.ces-chat {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: var( --ces-radius, 12px );
+	background: var( --ces-surface, #fff );
+	overflow: hidden;
+}
+
+.ces-chat__title {
+	margin: 0;
+	padding: 0.6rem 0.9rem;
+	border-bottom: 1px solid var( --ces-border, #cbd5e1 );
+	font-size: 0.95rem;
+	background: var( --ces-surface-alt, #f8fafc );
+}
+
+.ces-chat__list {
+	list-style: none;
+	margin: 0;
+	padding: 0.7rem 0.9rem;
+	max-height: 24rem;
+	min-height: 10rem;
+	overflow-y: auto;
+	overscroll-behavior: contain;
+}
+
+.ces-chat--room .ces-chat__list {
+	max-height: 30rem;
+}
+
+.ces-chat__msg {
+	position: relative;
+	margin: 0 0 0.7rem;
+	font-size: 0.93rem;
+	line-height: 1.45;
+}
+
+.ces-chat__msg:last-child {
+	margin-bottom: 0;
+}
+
+.ces-chat__meta {
+	display: block;
+	font-size: 0.78rem;
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-chat__name {
+	font-weight: 700;
+	color: var( --ces-text, #1f2937 );
+}
+
+.ces-chat__time {
+	font-variant-numeric: tabular-nums;
+}
+
+.ces-chat__badge {
+	display: inline-block;
+	padding: 0 0.35rem;
+	border-radius: 4px;
+	background: #e2e8f0;
+	color: #334155;
+	font-size: 0.64rem;
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	vertical-align: 1px;
+}
+
+.ces-chat__badge--tutor {
+	background: var( --ces-primary, #2c62cd );
+	color: #fff;
+}
+
+.ces-chat__badge--staff {
+	background: #0f172a;
+	color: #fff;
+}
+
+.ces-chat__body {
+	display: block;
+	overflow-wrap: break-word;
+	word-break: break-word;
+}
+
+.ces-chat__msg--bot .ces-chat__body {
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-chat__system {
+	display: block;
+	padding: 0.2rem 0;
+	font-size: 0.82rem;
+	font-style: italic;
+	color: var( --ces-text-muted, #475569 );
+	text-align: center;
+}
+
+.ces-chat__note {
+	display: block;
+	font-size: 0.76rem;
+	color: #b45309;
+}
+
+.ces-chat__msg.is-hidden {
+	opacity: 0.55;
+}
+
+.ces-chat__msg.is-own .ces-chat__name {
+	color: var( --ces-primary, #2c62cd );
+}
+
+.ces-chat__actions {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: none;
+	gap: 0.2rem;
+}
+
+.ces-chat__msg:hover .ces-chat__actions,
+.ces-chat__msg:focus-within .ces-chat__actions {
+	display: flex;
+}
+
+.ces-chat__action {
+	padding: 0 0.3rem;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: 5px;
+	background: #fff;
+	color: var( --ces-text-muted, #475569 );
+	font-size: 0.72rem;
+	cursor: pointer;
+}
+
+.ces-chat__empty {
+	padding: 1.5rem 0;
+	color: var( --ces-text-muted, #475569 );
+	font-size: 0.9rem;
+	text-align: center;
+	list-style: none;
+}
+
+.ces-chat__form {
+	display: flex;
+	gap: 0.4rem;
+	padding: 0.6rem;
+	border-top: 1px solid var( --ces-border, #cbd5e1 );
+	background: var( --ces-surface-alt, #f8fafc );
+}
+
+.ces-chat__form input {
+	flex: 1 1 auto;
+	min-width: 0;
+	padding: 0.6rem 0.7rem;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: 999px;
+	font: inherit;
+	font-size: 0.95rem;
+}
+
+.ces-chat__status {
+	margin: 0;
+	padding: 0 0.9rem 0.5rem;
+	font-size: 0.8rem;
+	min-height: 1rem;
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-chat__status.is-bad {
+	color: #b91c1c;
+}
+
+.ces-chat__closed {
+	margin: 0;
+	padding: 0.7rem 0.9rem;
+	font-size: 0.85rem;
+	color: var( --ces-text-muted, #475569 );
+	border-top: 1px solid var( --ces-border, #cbd5e1 );
+}
+
+/* The chat page, with its room list */
+
+.ces-chatpage__rooms {
+	display: flex;
+	gap: 0.35rem;
+	margin: 0 0 1rem;
+	padding-bottom: 0.3rem;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+.ces-chatpage__room {
+	flex: 0 0 auto;
+	padding: 0.45rem 0.8rem;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: 999px;
+	background: #fff;
+	color: var( --ces-text, #1f2937 );
+	font-size: 0.86rem;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.ces-chatpage__room.is-active {
+	border-color: var( --ces-primary, #2c62cd );
+	background: var( --ces-primary, #2c62cd );
+	color: #fff;
+}
+
+.ces-chatpage__head h2 {
+	margin: 0 0 0.2rem;
+	font-size: 1.2rem;
+}
+
+.ces-chatpage__head p {
+	margin: 0 0 0.8rem;
+	font-size: 0.88rem;
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-chatpage__rules {
+	margin: 1rem 0 0;
+	font-size: 0.88rem;
+}
+
+.ces-chatpage__rules summary {
+	cursor: pointer;
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-chatpage__rules ul {
+	margin: 0.6rem 0 0;
+	padding-left: 1.2rem;
+	line-height: 1.6;
+}
+
+/* ------------------------------------------------------------------ */
+/* The live room                                                      */
+/* ------------------------------------------------------------------ */
+
+.ces-room__head {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.8rem;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 0 0 1rem;
+}
+
+.ces-room__kicker {
+	margin: 0 0 0.2rem;
+	font-size: 0.78rem;
+}
+
+.ces-room__kicker a {
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-room__title {
+	margin: 0 0 0.25rem;
+	font-size: 1.35rem;
+	line-height: 1.2;
+}
+
+.ces-room__meta {
+	margin: 0;
+	font-size: 0.86rem;
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-room__state {
+	font-weight: 700;
+	color: var( --ces-text, #1f2937 );
+}
+
+.ces-room__meet {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.6rem;
+	align-items: center;
+	margin: 0 0 1rem;
+}
+
+.ces-room__grid {
+	display: grid;
+	grid-template-columns: minmax( 0, 1fr );
+	gap: 1rem;
+}
+
+.ces-room__driving {
+	margin: 0 0 0.5rem;
+	padding: 0.5rem 0.7rem;
+	border-radius: 8px;
+	background: var( --ces-muted-bg, #f1f5f9 );
+	font-size: 0.84rem;
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-room__novideo {
+	padding: 2rem 1rem;
+	border: 1px dashed var( --ces-border, #cbd5e1 );
+	border-radius: var( --ces-radius, 12px );
+	text-align: center;
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-room__gesture {
+	display: block;
+	width: 100%;
+	margin: 0.5rem 0 0;
+}
+
+.ces-room__poll {
+	margin: 1rem 0 0;
+	padding: 0.9rem 1rem;
+	border: 1px solid var( --ces-primary-border, rgba( 44, 98, 205, 0.28 ) );
+	border-radius: var( --ces-radius, 12px );
+	background: var( --ces-primary-soft, rgba( 44, 98, 205, 0.08 ) );
+}
+
+.ces-room__poll-q {
+	margin: 0 0 0.6rem;
+	font-size: 1rem;
+}
+
+.ces-room__poll-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.ces-room__poll-list li {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	gap: 0.3rem 0.5rem;
+	align-items: center;
+	margin: 0 0 0.45rem;
+}
+
+.ces-room__vote {
+	padding: 0.5rem 0.7rem;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: 8px;
+	background: #fff;
+	font: inherit;
+	text-align: left;
+	cursor: pointer;
+}
+
+.ces-room__vote:hover {
+	border-color: var( --ces-primary, #2c62cd );
+}
+
+.ces-room__poll-list .is-mine .ces-room__poll-label,
+.ces-room__poll-list .is-mine .ces-room__vote {
+	font-weight: 700;
+}
+
+.ces-room__poll-list .is-right .ces-room__poll-label {
+	color: #15803d;
+	font-weight: 700;
+}
+
+.ces-room__poll-bar {
+	grid-column: 1 / -1;
+	display: block;
+	height: 0.35rem;
+	border-radius: 999px;
+	background: var( --ces-muted-bg-strong, #e2e8f0 );
+	overflow: hidden;
+}
+
+.ces-room__poll-bar > span {
+	display: block;
+	height: 100%;
+	background: var( --ces-primary, #2c62cd );
+}
+
+.ces-room__poll-count {
+	font-size: 0.8rem;
+	color: var( --ces-text-muted, #475569 );
+	font-variant-numeric: tabular-nums;
+}
+
+.ces-room__poll-note {
+	margin: 0.5rem 0 0;
+	font-size: 0.82rem;
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-room__ask {
+	margin: 1rem 0 0;
+	padding: 0.8rem 1rem;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: var( --ces-radius, 12px );
+}
+
+.ces-room__ask summary {
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.ces-room__hands {
+	margin: 0 0 1rem;
+	padding: 0.8rem 1rem;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: var( --ces-radius, 12px );
+	background: var( --ces-surface, #fff );
+}
+
+.ces-room__hands h3 {
+	display: flex;
+	gap: 0.4rem;
+	align-items: center;
+	margin: 0 0 0.5rem;
+	font-size: 0.98rem;
+}
+
+.ces-room__count {
+	padding: 0 0.45rem;
+	border-radius: 999px;
+	background: var( --ces-primary, #2c62cd );
+	color: #fff;
+	font-size: 0.78rem;
+}
+
+.ces-room__handlist {
+	list-style: none;
+	margin: 0 0 0.5rem;
+	padding: 0;
+	font-size: 0.9rem;
+}
+
+.ces-room__handlist li {
+	padding: 0.3rem 0;
+	border-bottom: 1px dashed var( --ces-border, #cbd5e1 );
+}
+
+.ces-room__handempty {
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-room__register {
+	margin: 1.2rem 0 0;
+	padding: 0.8rem 1rem;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: var( --ces-radius, 12px );
+}
+
+.ces-room__register summary {
+	cursor: pointer;
+	font-weight: 600;
+}
+
+/* ------------------------------------------------------------------ */
+/* Tutor directory                                                    */
+/* ------------------------------------------------------------------ */
+
+.ces-directory__search {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+	margin: 0 0 1rem;
+}
+
+.ces-directory__search input {
+	flex: 1 1 12rem;
+	min-width: 0;
+	padding: 0.6rem 0.7rem;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: 8px;
+	font: inherit;
+}
+
+.ces-directory__list {
+	display: grid;
+	grid-template-columns: minmax( 0, 1fr );
+	gap: 0.8rem;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.ces-directory__card {
+	display: flex;
+	gap: 0.9rem;
+	padding: 1rem;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: var( --ces-radius, 12px );
+	background: var( --ces-surface, #fff );
+}
+
+.ces-directory__avatar {
+	flex: 0 0 auto;
+	width: 3.5rem;
+	height: 3.5rem;
+	border-radius: 999px;
+	object-fit: cover;
+}
+
+.ces-directory__body {
+	min-width: 0;
+}
+
+.ces-directory__body h3 {
+	margin: 0 0 0.2rem;
+	font-size: 1.05rem;
+}
+
+.ces-directory__subjects {
+	margin: 0 0 0.2rem;
+	font-weight: 600;
+	font-size: 0.9rem;
+}
+
+.ces-directory__org,
+.ces-directory__private {
+	margin: 0 0 0.3rem;
+	font-size: 0.84rem;
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-directory__bio {
+	margin: 0 0 0.5rem;
+	font-size: 0.9rem;
+}
+
+.ces-directory__classes {
+	margin: 0;
+	padding-left: 1.1rem;
+	font-size: 0.9rem;
+}
+
+/* ------------------------------------------------------------------ */
+/* Status pills, shared with the accounts module                      */
+/* ------------------------------------------------------------------ */
+
+.ces-classpage .ces-pill,
+.ces-studio .ces-pill {
+	display: inline-block;
+	padding: 0.1rem 0.55rem;
+	border-radius: 999px;
+	background: var( --ces-muted-bg, #f1f5f9 );
+	font-size: 0.72rem;
+	font-weight: 700;
+	vertical-align: 2px;
+}
+
+/* ------------------------------------------------------------------ */
+/* Wider screens                                                      */
+/* ------------------------------------------------------------------ */
+
+@media ( min-width: 40rem ) {
+	.ces-studio__stats {
+		grid-template-columns: repeat( 4, minmax( 0, 1fr ) );
+	}
+
+	.ces-directory__list {
+		grid-template-columns: repeat( 2, minmax( 0, 1fr ) );
+	}
+
+	.ces-studio__title {
+		font-size: 1.6rem;
+	}
+}
+
+@media ( min-width: 56rem ) {
+	.ces-room__grid {
+		grid-template-columns: minmax( 0, 2fr ) minmax( 18rem, 1fr );
+		align-items: start;
+	}
+
+	.ces-chat--room .ces-chat__list {
+		max-height: 26rem;
+	}
+
+	.ces-chatpage {
+		display: grid;
+		grid-template-columns: minmax( 10rem, 14rem ) minmax( 0, 1fr );
+		gap: 1.2rem;
+		align-items: start;
+	}
+
+	.ces-chatpage__rooms {
+		flex-direction: column;
+		overflow: visible;
+	}
+
+	.ces-chatpage__room {
+		white-space: normal;
+	}
+}
+
+@media ( prefers-reduced-motion: reduce ) {
+	.ces-rec__meter > span,
+	.ces-rec__bar > span {
+		transition: none;
+	}
+}

@@ -1,0 +1,709 @@
+/**
+ * Classic EDU Suite - LMS front-end styles (handle: ces-lms).
+ *
+ * Depends on `ces-base` for the design tokens and the button styles, so the
+ * custom properties referenced here are already defined. Fallback values are
+ * still written out in case this file is ever loaded on its own.
+ *
+ * Mobile-first: single column by default, grids only once there is room. Most
+ * of these students are on a phone on metered data, so the player chrome stays
+ * small and nothing relies on hover to be usable.
+ */
+
+/* ------------------------------------------------------------------ */
+/* Shared bits the LMS needs                                          */
+/* ------------------------------------------------------------------ */
+
+.ces-lms {
+	margin: 1.5rem 0;
+	color: var( --ces-text, #1f2937 );
+}
+
+.ces-lms * {
+	box-sizing: border-box;
+}
+
+.ces-muted {
+	color: var( --ces-text-muted, #475569 );
+	font-size: 0.875rem;
+}
+
+.ces-note {
+	margin: 0.75rem 0;
+	padding: 0.75rem 1rem;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-left-width: 4px;
+	border-radius: var( --ces-radius, 12px );
+	background: var( --ces-surface-alt, #f8fafc );
+	font-size: 0.95rem;
+}
+
+.ces-note--info {
+	border-left-color: var( --ces-primary, #2c62cd );
+}
+
+.ces-note--good {
+	border-left-color: #1a7f45;
+	background: #f0fdf4;
+}
+
+.ces-note--warn {
+	border-left-color: #b45309;
+	background: #fffbeb;
+}
+
+.ces-note--error {
+	border-left-color: #b42318;
+	background: #fef2f2;
+}
+
+.ces-progress {
+	display: block;
+	height: 9px;
+	overflow: hidden;
+	border-radius: 999px;
+	background: #e9ecf2;
+}
+
+.ces-progress__bar {
+	display: block;
+	height: 100%;
+	border-radius: 999px;
+	background: linear-gradient( 90deg, var( --ces-primary, #2c62cd ), var( --ces-accent, #f59e0b ) );
+	transition: width 0.3s ease;
+}
+
+/* ------------------------------------------------------------------ */
+/* Player                                                             */
+/* ------------------------------------------------------------------ */
+
+.ces-player {
+	margin: 0 0 1.25rem;
+}
+
+.ces-player__stage {
+	position: relative;
+	overflow: hidden;
+	border-radius: var( --ces-radius, 12px );
+	background: #000000;
+	line-height: 0;
+}
+
+.ces-player__video {
+	display: block;
+	width: 100%;
+	max-height: 80vh;
+	aspect-ratio: 16 / 9;
+	background: #000000;
+}
+
+/*
+ * The watermark is a deterrent against casual screen recording, not a
+ * security control. It drifts slowly so it cannot simply be cropped out of
+ * one corner, and it never intercepts taps on the video controls.
+ */
+.ces-player__watermark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	user-select: none;
+}
+
+.ces-player__watermark span {
+	position: absolute;
+	top: 8%;
+	left: 6%;
+	padding: 0.15rem 0.5rem;
+	border-radius: 6px;
+	background: rgba( 0, 0, 0, 0.25 );
+	color: rgba( 255, 255, 255, 0.55 );
+	font-size: 0.7rem;
+	line-height: 1.4;
+	white-space: nowrap;
+	animation: ces-watermark-drift 47s linear infinite alternate;
+}
+
+@keyframes ces-watermark-drift {
+	0% {
+		top: 8%;
+		left: 6%;
+	}
+
+	50% {
+		top: 72%;
+		left: 44%;
+	}
+
+	100% {
+		top: 34%;
+		left: 12%;
+	}
+}
+
+@media ( prefers-reduced-motion: reduce ) {
+	.ces-player__watermark span {
+		animation: none;
+	}
+}
+
+.ces-player__overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	padding: 1.5rem;
+	background: rgba( 0, 0, 0, 0.78 );
+	text-align: center;
+}
+
+.ces-player__overlay[hidden] {
+	display: none;
+}
+
+.ces-player__overlay p {
+	margin: 0;
+	color: #ffffff;
+	font-size: 0.95rem;
+	line-height: 1.5;
+}
+
+.ces-player__bar {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	min-height: 2.25rem;
+	padding: 0.5rem 0.25rem;
+}
+
+.ces-player__quality {
+	padding: 0.35rem 0.75rem;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: 999px;
+	background: var( --ces-surface, #ffffff );
+	color: var( --ces-text, #1f2937 );
+	font-size: 0.8rem;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.ces-player__quality[hidden] {
+	display: none;
+}
+
+.ces-player__levels {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	z-index: 5;
+	min-width: 8rem;
+	margin: 0 0 0.35rem;
+	padding: 0.25rem;
+	list-style: none;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: 10px;
+	background: var( --ces-surface, #ffffff );
+	box-shadow: 0 8px 24px rgba( 15, 23, 42, 0.14 );
+}
+
+.ces-player__levels[hidden] {
+	display: none;
+}
+
+.ces-player__levels li {
+	margin: 0;
+	list-style: none;
+}
+
+.ces-player__level {
+	display: block;
+	width: 100%;
+	padding: 0.5rem 0.75rem;
+	border: 0;
+	border-radius: 8px;
+	background: transparent;
+	color: var( --ces-text, #1f2937 );
+	font-size: 0.85rem;
+	text-align: left;
+	cursor: pointer;
+}
+
+.ces-player__level:hover,
+.ces-player__level:focus-visible {
+	background: var( --ces-muted-bg, #f1f5f9 );
+}
+
+.ces-player__level[aria-current="true"] {
+	background: var( --ces-primary-soft, rgba( 44, 98, 205, 0.08 ) );
+	color: var( --ces-primary, #2c62cd );
+	font-weight: 700;
+}
+
+.ces-player__status {
+	flex: 1 1 auto;
+	min-width: 0;
+	color: var( --ces-text-muted, #475569 );
+	font-size: 0.8rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.ces-player__hint {
+	margin: 0 0 1rem;
+	color: var( --ces-text-muted, #475569 );
+	font-size: 0.8rem;
+}
+
+.ces-lms-lesson__title {
+	margin: 0 0 0.35rem;
+	font-size: 1.25rem;
+}
+
+.ces-lms-lesson__course {
+	margin: 0 0 0.75rem;
+	font-size: 0.875rem;
+}
+
+.ces-lms-notes {
+	margin: 1.25rem 0;
+	padding: 1rem;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: var( --ces-radius, 12px );
+	background: var( --ces-surface-alt, #f8fafc );
+}
+
+.ces-lms-notes h3 {
+	margin: 0 0 0.5rem;
+	font-size: 1rem;
+}
+
+.ces-lms-transcript {
+	margin: 1rem 0;
+	padding: 0.75rem 1rem;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: var( --ces-radius, 12px );
+}
+
+.ces-lms-transcript summary {
+	font-weight: 600;
+	cursor: pointer;
+}
+
+/* ------------------------------------------------------------------ */
+/* Access gate                                                        */
+/* ------------------------------------------------------------------ */
+
+.ces-gate {
+	padding: 1.25rem;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: var( --ces-radius, 12px );
+	background: var( --ces-surface-alt, #f8fafc );
+	text-align: center;
+}
+
+.ces-gate__media {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	margin: 0 0 1rem;
+	border-radius: 10px;
+	line-height: 0;
+}
+
+.ces-gate__poster {
+	display: block;
+	width: 100%;
+	height: auto;
+	filter: blur( 6px ) brightness( 0.65 );
+	transform: scale( 1.06 );
+}
+
+/* Artwork stand-in when the lesson has no thumbnail. Dimmed the same way a
+   real poster is, so the padlock stays the thing you notice. */
+.ces-gate__media--art {
+	aspect-ratio: 16 / 9;
+	background-image: var( --ces-art-general );
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.ces-gate__media--art::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: rgba( 15, 23, 42, 0.45 );
+}
+
+.ces-gate__media--art[data-ces-art="maths"] { background-image: var( --ces-art-maths ); }
+.ces-gate__media--art[data-ces-art="english"] { background-image: var( --ces-art-english ); }
+.ces-gate__media--art[data-ces-art="biology"] { background-image: var( --ces-art-biology ); }
+.ces-gate__media--art[data-ces-art="chemistry"] { background-image: var( --ces-art-chemistry ); }
+.ces-gate__media--art[data-ces-art="physics"] { background-image: var( --ces-art-physics ); }
+.ces-gate__media--art[data-ces-art="geography"] { background-image: var( --ces-art-geography ); }
+.ces-gate__media--art[data-ces-art="history"] { background-image: var( --ces-art-history ); }
+
+.ces-gate__lock {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 4rem;
+	height: 4rem;
+	transform: translate( -50%, -50% );
+	border-radius: 999px;
+	background: rgba( 255, 255, 255, 0.92 );
+	box-shadow: 0 10px 24px -10px rgba( 15, 23, 42, 0.6 );
+	font-size: 1.9rem;
+	line-height: 1;
+}
+
+.ces-gate__message {
+	margin: 0 0 1rem;
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 1.5;
+}
+
+.ces-gate__actions {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.ces-gate__balance {
+	color: var( --ces-text-muted, #475569 );
+	font-size: 0.85rem;
+}
+
+.ces-gate__error {
+	margin: 0;
+	color: #b42318;
+	font-size: 0.85rem;
+}
+
+.ces-gate__error[hidden] {
+	display: none;
+}
+
+.ces-gate__hint {
+	margin: 0.75rem 0 0;
+	color: var( --ces-text-muted, #475569 );
+	font-size: 0.8rem;
+	line-height: 1.5;
+}
+
+/* ------------------------------------------------------------------ */
+/* Course listing                                                     */
+/* ------------------------------------------------------------------ */
+
+.ces-filters {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin: 0 0 1rem;
+}
+
+.ces-filters__field {
+	flex: 1 1 10rem;
+	min-width: 0;
+}
+
+.ces-filters__field input,
+.ces-filters__field select {
+	width: 100%;
+	min-height: 2.75rem;
+	padding: 0.5rem 0.75rem;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: 10px;
+	background: var( --ces-surface, #ffffff );
+	color: var( --ces-text, #1f2937 );
+	font-size: 0.95rem;
+}
+
+.ces-courses__grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+@media ( min-width: 30rem ) {
+	.ces-courses__grid {
+		grid-template-columns: repeat( 2, minmax( 0, 1fr ) );
+	}
+}
+
+@media ( min-width: 52rem ) {
+	.ces-courses__grid {
+		grid-template-columns: repeat( 3, minmax( 0, 1fr ) );
+	}
+}
+
+.ces-card-course {
+	margin: 0;
+	overflow: hidden;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: 16px;
+	background: var( --ces-surface, #ffffff );
+	box-shadow: var( --ces-shadow, 0 1px 2px rgba( 15, 23, 42, 0.05 ) );
+	list-style: none;
+	transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.ces-card-course:hover,
+.ces-card-course:focus-within {
+	transform: translateY( -2px );
+	box-shadow: var( --ces-shadow-lift, 0 16px 32px -16px rgba( 15, 23, 42, 0.3 ) );
+}
+
+.ces-card-course__link {
+	display: block;
+	color: inherit;
+	text-decoration: none;
+}
+
+.ces-card-course__link:hover .ces-card-course__title,
+.ces-card-course__link:focus-visible .ces-card-course__title {
+	color: var( --ces-primary, #2c62cd );
+}
+
+.ces-card-course__media {
+	display: block;
+	overflow: hidden;
+	background: var( --ces-muted-bg, #f1f5f9 );
+	line-height: 0;
+}
+
+/*
+ * Artwork fallback for a course with no featured image. The illustration is
+ * chosen by CES_Helpers::subject_art() and lives as a custom property in
+ * ces-base.css, so nothing is fetched over the network. `general` is also
+ * the default here, which means an unknown or filtered-in art key still
+ * gets a picture rather than an empty box.
+ */
+.ces-card-course__media--art {
+	aspect-ratio: 16 / 9;
+	background-image: var( --ces-art-general );
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.ces-card-course__media--art[data-ces-art="maths"] { background-image: var( --ces-art-maths ); }
+.ces-card-course__media--art[data-ces-art="english"] { background-image: var( --ces-art-english ); }
+.ces-card-course__media--art[data-ces-art="biology"] { background-image: var( --ces-art-biology ); }
+.ces-card-course__media--art[data-ces-art="chemistry"] { background-image: var( --ces-art-chemistry ); }
+.ces-card-course__media--art[data-ces-art="physics"] { background-image: var( --ces-art-physics ); }
+.ces-card-course__media--art[data-ces-art="geography"] { background-image: var( --ces-art-geography ); }
+.ces-card-course__media--art[data-ces-art="history"] { background-image: var( --ces-art-history ); }
+
+.ces-card-course__img {
+	display: block;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+}
+
+.ces-card-course__body {
+	display: block;
+	padding: 0.85rem 1rem 1rem;
+}
+
+.ces-card-course__title {
+	display: block;
+	margin: 0 0 0.35rem;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1.35;
+}
+
+.ces-card-course__meta {
+	display: block;
+	margin: 0 0 0.5rem;
+	color: var( --ces-text-muted, #475569 );
+	font-size: 0.8rem;
+}
+
+.ces-pager {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	margin: 1.25rem 0 0;
+}
+
+.ces-pager__count {
+	color: var( --ces-text-muted, #475569 );
+	font-size: 0.85rem;
+}
+
+/* ------------------------------------------------------------------ */
+/* Single course and lesson list                                      */
+/* ------------------------------------------------------------------ */
+
+.ces-course__title {
+	margin: 0 0 0.35rem;
+	font-size: 1.2rem;
+}
+
+.ces-course__progress {
+	margin: 0 0 1rem;
+	color: var( --ces-text-muted, #475569 );
+	font-size: 0.85rem;
+}
+
+.ces-lessons {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: var( --ces-radius, 12px );
+	overflow: hidden;
+}
+
+.ces-lessons > li {
+	margin: 0;
+	list-style: none;
+	border-top: 1px solid var( --ces-border, #cbd5e1 );
+}
+
+.ces-lessons > li:first-child {
+	border-top: 0;
+}
+
+.ces-lesson-row__link {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	padding: 0.85rem 1rem;
+	background: var( --ces-surface, #ffffff );
+	color: inherit;
+	text-decoration: none;
+}
+
+.ces-lesson-row__link:hover,
+.ces-lesson-row__link:focus-visible {
+	background: var( --ces-muted-bg, #f1f5f9 );
+	text-decoration: none;
+}
+
+.ces-lesson-row__num {
+	flex: 0 0 auto;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 2.1rem;
+	height: 2.1rem;
+	border-radius: 999px;
+	background: var( --ces-muted-bg, #f1f5f9 );
+	color: var( --ces-text-muted, #475569 );
+	font-size: 0.85rem;
+	font-weight: 700;
+}
+
+.ces-lesson-row__main {
+	flex: 1 1 auto;
+	min-width: 0;
+}
+
+.ces-lesson-row__title {
+	display: block;
+	font-weight: 600;
+	line-height: 1.35;
+}
+
+.ces-lesson-row__meta {
+	display: block;
+	margin-top: 0.15rem;
+	color: var( --ces-text-muted, #475569 );
+	font-size: 0.78rem;
+}
+
+.ces-lesson-row__icon {
+	flex: 0 0 auto;
+	font-size: 0.95rem;
+	opacity: 0.7;
+}
+
+.ces-lesson-row.is-locked .ces-lesson-row__title {
+	color: var( --ces-text-muted, #475569 );
+}
+
+.ces-lesson-row.is-done .ces-lesson-row__num {
+	background: #e7f7ee;
+	color: #15803d;
+}
+
+.ces-lesson-row.is-done .ces-lesson-row__icon {
+	color: #1a7f45;
+	opacity: 1;
+}
+
+/* An unlocked, not-yet-watched lesson is the one a student should tap next,
+   so it gets the brand colour and the play triangle is drawn as a button. */
+.ces-lesson-row.is-open:not( .is-done ) .ces-lesson-row__num {
+	background: var( --ces-primary, #2c62cd );
+	color: #ffffff;
+}
+
+.ces-lesson-row.is-open:not( .is-done ) .ces-lesson-row__icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 1.9rem;
+	height: 1.9rem;
+	border-radius: 999px;
+	background: var( --ces-primary-soft, rgba( 44, 98, 205, 0.08 ) );
+	color: var( --ces-primary, #2c62cd );
+	opacity: 1;
+}
+
+.ces-lesson-row.is-locked .ces-lesson-row__num {
+	background: repeating-linear-gradient( 45deg, #eef1f6 0 4px, #e4e8ef 4px 8px );
+}
+
+/* ------------------------------------------------------------------ */
+/* Dashboard tab                                                      */
+/* ------------------------------------------------------------------ */
+
+.ces-dash-lms__unlocks,
+.ces-dash-lms__courses {
+	margin: 0 0 1.25rem;
+	padding: 0;
+	list-style: none;
+}
+
+.ces-dash-lms__unlocks li,
+.ces-dash-lms__course {
+	margin: 0 0 0.6rem;
+	padding: 0.75rem 1rem;
+	list-style: none;
+	border: 1px solid var( --ces-border, #cbd5e1 );
+	border-radius: 10px;
+	background: var( --ces-surface, #ffffff );
+}
+
+.ces-dash-lms__course .ces-progress {
+	margin: 0.5rem 0 0.35rem;
+}
+
+.ces-my-courses .ces-courses__grid {
+	margin-top: 0.5rem;
+}
